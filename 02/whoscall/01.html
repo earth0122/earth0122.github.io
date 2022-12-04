@@ -16,10 +16,10 @@
       .logo {
         width: 100px;
       }
-      .topbar {
+      .top-bar {
         background-color: white;
       }
-      .topbarlist {
+      .top-bar-list {
         display: flex;
       }
       .list {
@@ -36,15 +36,31 @@
       a:hover {
         color: green;
       }
-      .bigpic img {
+      .banner .bpic {
         width: 100%;
+      }
+      .banner .pic-left {
+        width: 10%;
+      }
+      .banner .pic-right {
+        width: 10%;
+      }
+      .mid-message {
+        display: flex;
+      }
+      .partner-serve .partner-serve-item-pic {
+        width: 10%;
+      }
+      .partner-serve {
+        display: flex;
       }
     </style>
   </head>
   <body>
     <div class="all">
-      <div class="topbar">
-        <div class="topbarlist">
+      <!-- 導覽列選單 -->
+      <div class="top-bar">
+        <div class="topbar-list">
           <div class="logo">
             <img
               src="/02/whoscall/whoscall網站圖片檔/asset 6.svg"
@@ -61,13 +77,150 @@
             </ul>
           </nav>
         </div>
-        <div class="freedownload">免費下載</div>
+        <div class="freedownload">
+          <a href="#">免費下載</a>
+        </div>
       </div>
-      <div class="bigpic">
+      <!-- whoscall認證號碼 -->
+      <div class="banner">
+        <div class="banner-text">
+          <img
+            src="https://d3qzy1rn79qj7v.cloudfront.net/number-hero-title-1479.png.webp"
+            alt=""
+          />
+          <p>電話接通前</p>
+          <p>讓專業形象為你開場</p>
+          <div class="bottom">
+            <a href="#">立即申請</a>
+          </div>
+          <p>企業方案優惠$200/月 起</p>
+        </div>
         <img
-          src="https://d3qzy1rn79qj7v.cloudfront.net/hero_images/valid-number-2880.jpg"
-          alt=""
+          class="pic-left"
+          src="/02/whoscall/whoscall網站圖片檔/asset 7.svg"
+          alt="圖片左上"
         />
+        <img
+          class="pic-mid"
+          src="https://d3qzy1rn79qj7v.cloudfront.net/hero_images/valid-number-2880.jpg"
+          alt="上放大圖"
+        />
+
+        <img
+          class="pic-right"
+          src="/02/whoscall/whoscall網站圖片檔/asset 8.svg"
+          alt="圖片右上"
+        />
+      </div>
+      <!-- 根據市場調查 -->
+      <div class="mid-text">
+        <h2>根據市場調查顯示</h2>
+        <p>超過<strong>60%</strong>的民眾會選擇忽視或 <br />拒絕陌生來電。</p>
+        <p>※Pollster 波仕特線上市調(2014)</p>
+      </div>
+      <!-- 三組一樣 -->
+      <div class="mid-message">
+        <div class="box">
+          <div class="text">
+            <h3>提高2倍電話接聽意願</h3>
+            <p>
+              Whoscall認證號碼讓您在全台百萬用戶的來電視窗，顯示公司名稱、姓名等資訊。從此不再視客戶的陌生來電!
+            </p>
+            <p>※Whoscall 調查 (2018)</p>
+          </div>
+          <p>Whoscall調查(2018)</p>
+          <div class="pic">
+            <img
+              src="/02/whoscall/whoscall網站圖片檔/asset 0.webp"
+              alt="圖片1"
+            />
+          </div>
+        </div>
+        <div class="box">
+          <div class="text">
+            <h3>創造主動回撥的潛在客戶</h3>
+            <p>再來電紀錄中，留下最佳企業形象，創造客戶主動聯繫的契機</p>
+          </div>
+          <div class="pic">
+            <img
+              src="/02/whoscall/whoscall網站圖片檔/asset 1.webp"
+              alt="圖片2"
+            />
+          </div>
+        </div>
+        <div class="box">
+          <div class="text">
+            <h3>眾多來電一秒看見</h3>
+            <p>
+              不再客戶的通訊錄裡，也能於通話紀錄顯示企業資訊，輕鬆提升工作效率與拓客程功率
+            </p>
+          </div>
+          <div class="pic">
+            <img
+              src="/02/whoscall/whoscall網站圖片檔/asset 2.webp"
+              alt="圖片3"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- 拓展業務夥伴 -->
+      <div class="partner">
+        <div class="partner-title">
+          <h3>拓展業務的最佳夥伴!</h3>
+        </div>
+        <div class="partner-serve">
+          <div class="partner-serve-item">
+            <div class="partner-serve-item-pic">
+              <img src="/02/whoscall/whoscall網站圖片檔/asset 3.svg" alt="" />
+            </div>
+            <div class="partner-serve-item-text">
+              <h4>實名認證</h4>
+              <p>Whoscall嚴謹的實名審核，讓認證過的電話號碼更值得信任。</p>
+            </div>
+          </div>
+          <div class="partner-serve-item">
+            <div class="partner-serve-item-pic">
+              <img src="/02/whoscall/whoscall網站圖片檔/asset 4.svg" alt="" />
+            </div>
+            <div class="partner-serve-item-text">
+              <h4>支援手機雙系統</h4>
+              <p>支援在iOS與Android系統上的來電顯示，全台淺在客戶一網打盡</p>
+            </div>
+            <div class="partner-serve-item">
+              <div class="partner-serve-item-pic">
+                <img src="/02/whoscall/whoscall網站圖片檔/asset 5.svg" alt="" />
+              </div>
+              <div class="partner-serve-item-text">
+                <h4>一對一專人服務</h4>
+                <p>專人服務、輕鬆申請認證流程不再複雜惱人</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 用戶經驗分享 -->
+      <div class="experience">
+        <div class="user-experience">
+          <h3>用戶經驗分享</h3>
+        </div>
+        <div class="experience-contain">
+          <div class="card">
+            <div class="pic"><img src="/02/whoscall/whoscall網站圖片檔/asset 9.svg" alt="">
+            </div>
+            <h3>沒想到客戶主動回電!</h3>
+            <p>申請Whoscall認證號碼後，業務撥打出去的未接來電，客戶更樂意回電了，保險方案的介紹與推動也比以前更即時有效了!</p>
+            <div class="logo">
+              <img src="/02/whoscall/whoscall網站圖片檔/國泰.png" alt="">
+            </div>
+          </div>
+          <div class="card">
+            <div class="pic"><img src="../whoscall/whoscall網站圖片檔/asset 9.svg" alt="">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
       </div>
     </div>
   </body>
