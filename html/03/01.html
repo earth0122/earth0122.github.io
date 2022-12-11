@@ -1,12 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      main {
+        margin: auto;
+        /* display: block; */
+      }
+      .box-contain {
+        width: 960px;
+        display: flex;
+        padding: 100px 50px;
+        margin: auto;
+        flex-direction: column;
+        position: relative;
+      }
+      .box-contain .advantage {
+        width: 320px;
+        background-color: black;
+        color: white;
+        position: absolute;
+        z-index: 2;
+        text-align: center;
+      }
+
+      .box-contain .advantage .title {
+        background-color: red;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 20px;
+      }
+      .box-contain .advantage .title p {
+        transform: rotate(90deg);
+        font-size: 60px;
+      }
+      .box-contain .advantage .txt {
+        line-height: 1.7;
+        text-align: center;
+        padding: 10px;
+      }
+      strong {
+        display: block;
+        font-size: 20px;
+        padding: 5px;
+      }
+
+      .box {
+        width: 440px;
+        height: 250px;
+        background-color: rgb(242, 229, 229);
+        position: absolute;
+        top: 150px;
+        right: 0px;
+      }
+      .box-contain:nth-child(even) .advantage {
+        right: 0;
+      }
+     
+      .box-contain:nth-child(even) .box {
+        right: 100px;
+        height: 400px;
+      }
+      .box-contain .main-pic {
+        width: 680px;
+        position: relative;
+        display: flex;
+        left: 200px;
+        top: 122px;
+        z-index: 1;
+      }
+      .box-contain .main-pic img {
+        vertical-align: middle;
+        width: 100%;
+      }
+      .box-contain .main-pic .youtube {
+        position: absolute;
+        top: 50%;
+        right: -2%;
+      }
+      .box-contain:nth-child(even) .main-pic .youtube {
+        left: -2%;
+      }
+      .box-contain .main-pic .youtube img {
+        width: 40px;
+        height: 30px;
+        vertical-align: middle;
+      }
+      .box-contain .innovation {
+        width: 650px;
+        background-color: rgb(242, 229, 229);
+        position: relative;
+        left: 20px;
+        top: 95px;
+        z-index: 2;
+      }
+      .box-contain:nth-child(even) .innovation {
+        position: relative;
+        left: 320px;
+      }
     
-</body>
+      .box-contain .innovation .main-title {
+        color: rgb(196, 20, 20);
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+      .box-contain .innovation .main-title p {
+        font-weight: bold;
+      }
+      .box-contain .innovation .innovation-item h3 {
+        font-weight: lighter;
+        font-size: 15px;
+        background-color: black;
+        color: white;
+        width: 120px;
+        text-align: center;
+        margin: 2px 5px 5px 2px;
+      }
+      .box-contain .innovation .main-title .line {
+        background-color: rgb(196, 20, 20);
+        height: 1px;
+        width: 420px;
+      }
+      .box-contain .innovation li {
+        color: rgb(133, 115, 115);
+        margin: 5px;
+        padding: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- 第一 -->
+      <section class="box-contain">
+        <div class="wrap">
+          <div class="advantage">
+            <div class="title">
+              <p>01</p>
+              <h2>操控樂趣</h2>
+            </div>
+            <div class="txt">
+              <p>
+                <strong>人人滿意的駕駛體驗</strong>
+                透過最佳重量分配，實現平順起步、直線穩定加
+                入，過彎同時保持車身平穩，帶給駕駛更靈敏的 道路馳騁的型使快感。
+              </p>
+            </div>
+          </div>
+          <div class="box"></div>
+          <div class="main-pic">
+            <img src="/html/03/TOYOTA圖片/TOYOTA圖片/toyota1.png" alt="" />
+            <div class="youtube">
+              <img src="/html/03/TOYOTA圖片/TOYOTA圖片/yt.jpg" alt="" />
+            </div>
+          </div>
+          <div class="innovation">
+            <div class="main-title">
+              <p>因為我們做了這些革新</p>
+              <div class="line"></div>
+            </div>
+            <div class="innovation-item">
+              <h3>低重心設計</h3>
+              <p>
+                <li>
+                  透過低重心設計，不僅呈現更低伏的外觀，更能減少
+                  車身側傾，保持高速行駛穩定性。
+                </li>
+              </p>
+              <h3>車體剛性強化</h3>
+              <p>
+                <li>
+                  車身結構採用超高強度鋼材，提高車輛穩定性，同時
+                  藉由雷射強化焊接技術，大幅增加焊點數量，
+                  提升車身抗扭剛性，強化駕駛穩定性及安全性。
+                </li>
+              </p>
+              <h3>四輪獨立懸吊</h3>
+              <p>
+                <li>
+                  搭載全新四輪獨立懸吊設定，透過懸吊的高承載強
+                  度，保持輪胎抓地力，同時兼顧轉向靈敏度與
+                  清晰路感回饋，提升駕駛樂趣。
+                </li>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 第二 -->
+      <section class="box-contain">
+        <div class="wrap">
+          <div class="advantage">
+            <div class="title">
+              <p>02</p>
+              <h2>安全守護</h2>
+            </div>
+            <div class="txt">
+              <p>
+                <strong>行車更安心的高剛性車體</strong>
+                您的愛車會妥善保護您，強悍穩固的車身
+                可使您安全無虞。世界級的安全功能讓您輕鬆自
+                如享受旅程、毫無後顧之憂。
+              </p>
+            </div>
+          </div>
+          <div class="box"></div>
+          <div class="main-pic">
+            <img src="/html/03/TOYOTA圖片/TOYOTA圖片/toyota2.png" alt="" />
+            <div class="youtube">
+              <img src="/html/03/TOYOTA圖片/TOYOTA圖片/yt.jpg" alt="" />
+            </div>
+          </div>
+          <div class="innovation">
+            <div class="main-title">
+              <p>因為我們做了這些革新</p>
+              <div class="line"></div>
+            </div>
+            <div class="innovation-item">
+              <h3>主動安全</h3>
+              <p>
+                <li>
+                  以先進的TSS系統，動偵測路況，輔助駕駛判斷路況 並維持行車安全。
+                </li>
+              </p>
+              <h3>被動安全</h3>
+              <p>
+                <li>
+                  堅固的高剛性車體，使用熱沖壓材料的高強度抗扭鋼，強化座對意外事故的保力。
+                </li>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 第三 -->
+      <section class="box-contain">
+        <div class="wrap">
+          <div class="advantage">
+            <div class="title">
+              <p>03</p>
+              <h2>乘坐舒適</h2>
+            </div>
+            <div class="txt">
+              <p>
+                <strong>令人放鬆舒適的車室空間</strong>
+                車室空間設計著重人體工學，透過方向盤、踏板等位置優化，追求更舒適的駕駛位置，並以新型座椅設計，提高座椅包覆性，致力實現長途駕駛不疲勞的舒適駕馭體驗。
+              </p>
+            </div>
+          </div>
+          <div class="box"></div>
+          <div class="main-pic">
+            <img src="/html/03/TOYOTA圖片/TOYOTA圖片/toyota3.png" alt="" />
+            <div class="youtube">
+              <img src="/html/03/TOYOTA圖片/TOYOTA圖片/yt.jpg" alt="" />
+            </div>
+          </div>
+          <div class="innovation">
+            <div class="main-title">
+              <p>因為我們做了這些革新</p>
+              <div class="line"></div>
+            </div>
+            <div class="innovation-item">
+              <h3>駕駛位置最佳化</h3>
+              <p>
+                <li>
+                  針對駕駛位置進行徹底的修改，讓駕馭者可如同握手般自然且舒適地操控方向盤。
+                </li>
+              </p>
+              <h3>駕馭視野佳</h3>
+              <p>
+                <li>
+                  考量駕駛坐進車內的高度，透過前擋風玻璃位的調整，達到盲區極小化，使駕駛視野更開闊，同步提升駕馭安全。
+                </li>
+              </p>
+              <h3>更寧靜的車室</h3>
+              <p>
+                <li>
+                  採用最新三層結構的隔音材料，與引擎、變速箱的零件改革，將座艙的震動抑制在最小限度，提供乘客舒適安靜的感受。
+                </li>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 第四 -->
+      <section class="box-contain">
+        <div class="wrap">
+          <div class="advantage">
+            <div class="title">
+              <p>04</p>
+              <h2>以人為本</h2>
+            </div>
+            <div class="txt">
+              <p>
+                <strong>使用者導向的貼心設計</strong>
+                藉由高度人性化的介面整合、傳遞車輛資訊豐富日常駕駛體驗。從提升油耗表現到行李廂空間最適化，均細心考量，更加貼近使用者真正所需與習慣，並給予即時回應。
+              </p>
+            </div>
+          </div>
+          <div class="box"></div>
+          <div class="main-pic">
+            <img src="/html/03/TOYOTA圖片/TOYOTA圖片/toyota4.png" alt="" />
+            <div class="youtube">
+              <img src="/html/03/TOYOTA圖片/TOYOTA圖片/yt.jpg" alt="" />
+            </div>
+          </div>
+          <div class="innovation">
+            <div class="main-title">
+              <p>因為我們做了這些革新</p>
+              <div class="line"></div>
+            </div>
+            <div class="innovation-item">
+              <h3>優異油耗表現</h3>
+              <p>
+                <li>
+                  以AURIS為例更強勁的高效引擎將熱效率提升40%，達到世界級水準，突破燃油效率新境界。
+                </li>
+              </p>
+              <h3>行李箱空間最適化</h3>
+              <p>
+                <li>
+                  以PRIUS為例，透過將電池位置移到後座下方，讓行李廂擁有更大的空間。
+                </li>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 第五 -->
+      <section class="box-contain">
+        <div class="wrap">
+          <div class="advantage">
+            <div class="title">
+              <p>05</p>
+              <h2>引以為傲</h2>
+            </div>
+            <div class="txt">
+              <p>
+                <strong>極具吸引力的精心設計</strong>
+                TNGA
+                車款擁有讓人忍不住回頭的新潮外觀、讓駕駛充滿自信的駕馭快感!不僅讓車主能展現個人風格，也能讓擁有者都能引以為傲。
+              </p>
+            </div>
+          </div>
+          <div class="box"></div>
+          <div class="main-pic">
+            <img src="/html/03/TOYOTA圖片/TOYOTA圖片/toyota5.png" alt="" />
+            <div class="youtube">
+              <img src="/html/03/TOYOTA圖片/TOYOTA圖片/yt.jpg" alt="" />
+            </div>
+          </div>
+          <div class="innovation">
+            <div class="main-title">
+              <p>因為我們做了這些革新</p>
+              <div class="line"></div>
+            </div>
+            <div class="innovation-item">
+              <h3>設計概念</h3>
+              <p>
+                <li>
+                  TNGA低重心設計，不僅呈現更低伏的運動化外觀，更講高品質內裝的一致性。
+                </li>
+              </p>
+              <h3>環保概念</h3>
+              <p>
+                <li>
+                  為了對環境保護盡一份心力，我們全面提升傳統引擎、變速箱與油電複合動力的動力效能。
+                </li>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
