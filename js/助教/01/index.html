@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .warning{
+            color:red;
+        }
+        .h1{
+            font-size: 50px;
+        }
+    </style>
+  </head>
+  <body>
+    <ul id="food" class="h1 foo" >
+      <li>麵包</li>
+      <li>蛋糕</li>
+    </ul>
+
+    <input type="text" class="num-input" value="123">
+
+    <script>
+      //裡面可以寫JS
+      console.log("hello world");
+
+      //DOM - document object model
+      let ulDOM = document.querySelector("#food");
+      //  console.log(ulDOM)
+      //ulDOM.children[0]
+     let myBody = document.querySelector('body')
+      console.dir(ulDOM);
+  /*    console.dir(ulDOM.children[0])
+
+      //抓到 ul 裡面 第二個 元素內文字
+      console.log(ulDOM.children[1].innerText)
+
+      //修改 ul 裡面 第二個 元素內的文字
+      ulDOM.children[1].innerText = '蘋果汁'*/
+      //對 ul 的 class 新增 warnung class  
+      ulDOM.classList.add('warning')
+
+      //把 ul 的 h1 class 移除
+      ulDOM .classList.remove('h1')
+
+
+      let numInput = document.querySelector('.num-input')
+      console.log(numInput)
+
+      console.log(numInput.value)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+C:\Users\tommy\Desktop\class\正課\C#\DLLSamples\DLLSample001\bin\Debug\DLLSample001.exe.config
+C:\Users\tommy\Desktop\class\正課\C#\DLLSamples\DLLSample001\bin\Debug\DLLSample001.exe
+C:\Users\tommy\Desktop\class\正課\C#\DLLSamples\DLLSample001\bin\Debug\DLLSample001.pdb
+C:\Users\tommy\Desktop\class\正課\C#\DLLSamples\DLLSample001\bin\Debug\MyLibrary.dll
+C:\Users\tommy\Desktop\class\正課\C#\DLLSamples\DLLSample001\bin\Debug\MyLibrary.pdb
+C:\Users\tommy\Desktop\class\正課\C#\DLLSamples\DLLSample001\obj\Debug\DLLSample001.csproj.AssemblyReference.cache
+C:\Users\tommy\Desktop\class\正課\C#\DLLSamples\DLLSample001\obj\Debug\DLLSample001.csproj.SuggestedBindingRedirects.cache
+C:\Users\tommy\Desktop\class\正課\C#\DLLSamples\DLLSample001\obj\Debug\DLLSample001.csproj.CoreCompileInputs.cache
+C:\Users\tommy\Desktop\class\正課\C#\DLLSamples\DLLSample001\obj\Debug\DLLSample001.csproj.CopyComplete
+C:\Users\tommy\Desktop\class\正課\C#\DLLSamples\DLLSample001\obj\Debug\DLLSample001.exe
+C:\Users\tommy\Desktop\class\正課\C#\DLLSamples\DLLSample001\obj\Debug\DLLSample001.pdb

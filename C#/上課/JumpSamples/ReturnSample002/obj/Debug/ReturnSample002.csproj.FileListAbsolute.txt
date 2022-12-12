@@ -1,0 +1,8 @@
+C:\Users\tommy\Desktop\class\正課\C#\JumpSamples\ReturnSample002\bin\Debug\ReturnSample002.exe.config
+C:\Users\tommy\Desktop\class\正課\C#\JumpSamples\ReturnSample002\bin\Debug\ReturnSample002.exe
+C:\Users\tommy\Desktop\class\正課\C#\JumpSamples\ReturnSample002\bin\Debug\ReturnSample002.pdb
+C:\Users\tommy\Desktop\class\正課\C#\JumpSamples\ReturnSample002\obj\Debug\ReturnSample002.csproj.AssemblyReference.cache
+C:\Users\tommy\Desktop\class\正課\C#\JumpSamples\ReturnSample002\obj\Debug\ReturnSample002.csproj.SuggestedBindingRedirects.cache
+C:\Users\tommy\Desktop\class\正課\C#\JumpSamples\ReturnSample002\obj\Debug\ReturnSample002.csproj.CoreCompileInputs.cache
+C:\Users\tommy\Desktop\class\正課\C#\JumpSamples\ReturnSample002\obj\Debug\ReturnSample002.exe
+C:\Users\tommy\Desktop\class\正課\C#\JumpSamples\ReturnSample002\obj\Debug\ReturnSample002.pdb

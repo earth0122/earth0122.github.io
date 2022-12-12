@@ -1,0 +1,11 @@
+C:\Users\tommy\Desktop\class\正課\C#\WinFormSolution\SimpleCalculator03\bin\Debug\SimpleCalculator03.exe.config
+C:\Users\tommy\Desktop\class\正課\C#\WinFormSolution\SimpleCalculator03\bin\Debug\SimpleCalculator03.exe
+C:\Users\tommy\Desktop\class\正課\C#\WinFormSolution\SimpleCalculator03\bin\Debug\SimpleCalculator03.pdb
+C:\Users\tommy\Desktop\class\正課\C#\WinFormSolution\SimpleCalculator03\obj\Debug\SimpleCalculator03.csproj.AssemblyReference.cache
+C:\Users\tommy\Desktop\class\正課\C#\WinFormSolution\SimpleCalculator03\obj\Debug\SimpleCalculator03.csproj.SuggestedBindingRedirects.cache
+C:\Users\tommy\Desktop\class\正課\C#\WinFormSolution\SimpleCalculator03\obj\Debug\SimpleCalculator03.Form1.resources
+C:\Users\tommy\Desktop\class\正課\C#\WinFormSolution\SimpleCalculator03\obj\Debug\SimpleCalculator03.Properties.Resources.resources
+C:\Users\tommy\Desktop\class\正課\C#\WinFormSolution\SimpleCalculator03\obj\Debug\SimpleCalculator03.csproj.GenerateResource.cache
+C:\Users\tommy\Desktop\class\正課\C#\WinFormSolution\SimpleCalculator03\obj\Debug\SimpleCalculator03.csproj.CoreCompileInputs.cache
+C:\Users\tommy\Desktop\class\正課\C#\WinFormSolution\SimpleCalculator03\obj\Debug\SimpleCalculator03.exe
+C:\Users\tommy\Desktop\class\正課\C#\WinFormSolution\SimpleCalculator03\obj\Debug\SimpleCalculator03.pdb

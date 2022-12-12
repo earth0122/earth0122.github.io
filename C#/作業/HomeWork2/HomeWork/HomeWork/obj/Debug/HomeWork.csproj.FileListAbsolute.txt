@@ -1,0 +1,11 @@
+C:\Users\tommy\Desktop\class\正課\作業\HomeWork2\HomeWork\HomeWork\obj\Debug\HomeWork.csproj.AssemblyReference.cache
+C:\Users\tommy\Desktop\class\正課\作業\HomeWork2\HomeWork\HomeWork\obj\Debug\HomeWork.csproj.SuggestedBindingRedirects.cache
+C:\Users\tommy\Desktop\class\正課\作業\HomeWork2\HomeWork\HomeWork\obj\Debug\HomeWork.Form1.resources
+C:\Users\tommy\Desktop\class\正課\作業\HomeWork2\HomeWork\HomeWork\obj\Debug\HomeWork.Properties.Resources.resources
+C:\Users\tommy\Desktop\class\正課\作業\HomeWork2\HomeWork\HomeWork\obj\Debug\HomeWork.csproj.GenerateResource.cache
+C:\Users\tommy\Desktop\class\正課\作業\HomeWork2\HomeWork\HomeWork\obj\Debug\HomeWork.csproj.CoreCompileInputs.cache
+C:\Users\tommy\Desktop\class\正課\作業\HomeWork2\HomeWork\HomeWork\bin\Debug\HomeWork.exe.config
+C:\Users\tommy\Desktop\class\正課\作業\HomeWork2\HomeWork\HomeWork\bin\Debug\HomeWork.exe
+C:\Users\tommy\Desktop\class\正課\作業\HomeWork2\HomeWork\HomeWork\bin\Debug\HomeWork.pdb
+C:\Users\tommy\Desktop\class\正課\作業\HomeWork2\HomeWork\HomeWork\obj\Debug\HomeWork.exe
+C:\Users\tommy\Desktop\class\正課\作業\HomeWork2\HomeWork\HomeWork\obj\Debug\HomeWork.pdb

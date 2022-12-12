@@ -1,0 +1,11 @@
+C:\Users\tommy\Desktop\class\正課\C#\WinFormSolution\MyFirstWinForm\bin\Debug\MyFirstWinForm.exe.config
+C:\Users\tommy\Desktop\class\正課\C#\WinFormSolution\MyFirstWinForm\bin\Debug\MyFirstWinForm.exe
+C:\Users\tommy\Desktop\class\正課\C#\WinFormSolution\MyFirstWinForm\bin\Debug\MyFirstWinForm.pdb
+C:\Users\tommy\Desktop\class\正課\C#\WinFormSolution\MyFirstWinForm\obj\Debug\MyFirstWinForm.csproj.AssemblyReference.cache
+C:\Users\tommy\Desktop\class\正課\C#\WinFormSolution\MyFirstWinForm\obj\Debug\MyFirstWinForm.csproj.SuggestedBindingRedirects.cache
+C:\Users\tommy\Desktop\class\正課\C#\WinFormSolution\MyFirstWinForm\obj\Debug\MyFirstWinForm.Form1.resources
+C:\Users\tommy\Desktop\class\正課\C#\WinFormSolution\MyFirstWinForm\obj\Debug\MyFirstWinForm.Properties.Resources.resources
+C:\Users\tommy\Desktop\class\正課\C#\WinFormSolution\MyFirstWinForm\obj\Debug\MyFirstWinForm.csproj.GenerateResource.cache
+C:\Users\tommy\Desktop\class\正課\C#\WinFormSolution\MyFirstWinForm\obj\Debug\MyFirstWinForm.csproj.CoreCompileInputs.cache
+C:\Users\tommy\Desktop\class\正課\C#\WinFormSolution\MyFirstWinForm\obj\Debug\MyFirstWinForm.exe
+C:\Users\tommy\Desktop\class\正課\C#\WinFormSolution\MyFirstWinForm\obj\Debug\MyFirstWinForm.pdb

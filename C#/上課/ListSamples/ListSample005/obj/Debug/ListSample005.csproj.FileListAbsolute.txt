@@ -1,0 +1,11 @@
+C:\Users\tommy\Desktop\class\正課\作業\ListSamples\ListSample005\bin\Debug\ListSample005.exe.config
+C:\Users\tommy\Desktop\class\正課\作業\ListSamples\ListSample005\bin\Debug\ListSample005.exe
+C:\Users\tommy\Desktop\class\正課\作業\ListSamples\ListSample005\bin\Debug\ListSample005.pdb
+C:\Users\tommy\Desktop\class\正課\作業\ListSamples\ListSample005\obj\Debug\ListSample005.csproj.AssemblyReference.cache
+C:\Users\tommy\Desktop\class\正課\作業\ListSamples\ListSample005\obj\Debug\ListSample005.csproj.SuggestedBindingRedirects.cache
+C:\Users\tommy\Desktop\class\正課\作業\ListSamples\ListSample005\obj\Debug\ListSample005.Form1.resources
+C:\Users\tommy\Desktop\class\正課\作業\ListSamples\ListSample005\obj\Debug\ListSample005.Properties.Resources.resources
+C:\Users\tommy\Desktop\class\正課\作業\ListSamples\ListSample005\obj\Debug\ListSample005.csproj.GenerateResource.cache
+C:\Users\tommy\Desktop\class\正課\作業\ListSamples\ListSample005\obj\Debug\ListSample005.csproj.CoreCompileInputs.cache
+C:\Users\tommy\Desktop\class\正課\作業\ListSamples\ListSample005\obj\Debug\ListSample005.exe
+C:\Users\tommy\Desktop\class\正課\作業\ListSamples\ListSample005\obj\Debug\ListSample005.pdb

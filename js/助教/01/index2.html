@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="num-input">
+    <button class="btn">點我</button>
+    <button class="btn">點我2</button>
+<span class="mySpan"></span>
+
+
+<script>
+// 去 html 抓到 input id=num-input
+let myInput = document.querySelector('#num-input')
+let myBtn = document.querySelector('.btn')
+
+// let myBtns = document.querySelectorAll('.btn') 
+// myInput 的 value 印出來
+console.log(
+    myInput.value
+)
+//對 myInput 新增 輸入(input)的 事件監聽
+// myInput.addEventListener('input',function(){
+// console.log(myInput.value)
+// })
+//對 myBtn 新增 點擊事件 監聽
+// myBtn.addEventListener('click',function(){
+//     console.log(
+//         myBtn.value)
+// })
+let ooo= document.querySelector('.mySpan')
+myBtn.addEventListener('click',function(){
+
+let tmp = myInput.value
+
+ooo.innerText = tmp
+
+})
+
+
+</script>    
+</body>
+</html>

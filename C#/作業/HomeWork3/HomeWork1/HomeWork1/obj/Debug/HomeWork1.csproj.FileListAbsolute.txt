@@ -1,0 +1,8 @@
+C:\Users\tommy\Desktop\class\正課\C#\HomeWork1\HomeWork1\bin\Debug\HomeWork1.exe.config
+C:\Users\tommy\Desktop\class\正課\C#\HomeWork1\HomeWork1\bin\Debug\HomeWork1.exe
+C:\Users\tommy\Desktop\class\正課\C#\HomeWork1\HomeWork1\bin\Debug\HomeWork1.pdb
+C:\Users\tommy\Desktop\class\正課\C#\HomeWork1\HomeWork1\obj\Debug\HomeWork1.csproj.AssemblyReference.cache
+C:\Users\tommy\Desktop\class\正課\C#\HomeWork1\HomeWork1\obj\Debug\HomeWork1.csproj.SuggestedBindingRedirects.cache
+C:\Users\tommy\Desktop\class\正課\C#\HomeWork1\HomeWork1\obj\Debug\HomeWork1.csproj.CoreCompileInputs.cache
+C:\Users\tommy\Desktop\class\正課\C#\HomeWork1\HomeWork1\obj\Debug\HomeWork1.exe
+C:\Users\tommy\Desktop\class\正課\C#\HomeWork1\HomeWork1\obj\Debug\HomeWork1.pdb
