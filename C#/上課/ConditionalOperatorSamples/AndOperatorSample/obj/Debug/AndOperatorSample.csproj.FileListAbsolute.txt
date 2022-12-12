@@ -1,8 +1,0 @@
-C:\Users\tommy\Desktop\class\正課\C#\ConditionalOperatorSamples\AndOperatorSample\obj\Debug\AndOperatorSample.csproj.AssemblyReference.cache
-C:\Users\tommy\Desktop\class\正課\C#\ConditionalOperatorSamples\AndOperatorSample\obj\Debug\AndOperatorSample.csproj.SuggestedBindingRedirects.cache
-C:\Users\tommy\Desktop\class\正課\C#\ConditionalOperatorSamples\AndOperatorSample\obj\Debug\AndOperatorSample.csproj.CoreCompileInputs.cache
-C:\Users\tommy\Desktop\class\正課\C#\ConditionalOperatorSamples\AndOperatorSample\bin\Debug\AndOperatorSample.exe.config
-C:\Users\tommy\Desktop\class\正課\C#\ConditionalOperatorSamples\AndOperatorSample\bin\Debug\AndOperatorSample.exe
-C:\Users\tommy\Desktop\class\正課\C#\ConditionalOperatorSamples\AndOperatorSample\bin\Debug\AndOperatorSample.pdb
-C:\Users\tommy\Desktop\class\正課\C#\ConditionalOperatorSamples\AndOperatorSample\obj\Debug\AndOperatorSample.exe
-C:\Users\tommy\Desktop\class\正課\C#\ConditionalOperatorSamples\AndOperatorSample\obj\Debug\AndOperatorSample.pdb

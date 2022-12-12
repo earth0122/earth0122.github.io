@@ -1,8 +1,0 @@
-C:\Users\tommy\Desktop\class\lesson\C#\StaticSamples\StaticSample001\bin\Debug\StaticSample001.exe.config
-C:\Users\tommy\Desktop\class\lesson\C#\StaticSamples\StaticSample001\bin\Debug\StaticSample001.exe
-C:\Users\tommy\Desktop\class\lesson\C#\StaticSamples\StaticSample001\bin\Debug\StaticSample001.pdb
-C:\Users\tommy\Desktop\class\lesson\C#\StaticSamples\StaticSample001\obj\Debug\StaticSample001.csproj.AssemblyReference.cache
-C:\Users\tommy\Desktop\class\lesson\C#\StaticSamples\StaticSample001\obj\Debug\StaticSample001.csproj.SuggestedBindingRedirects.cache
-C:\Users\tommy\Desktop\class\lesson\C#\StaticSamples\StaticSample001\obj\Debug\StaticSample001.csproj.CoreCompileInputs.cache
-C:\Users\tommy\Desktop\class\lesson\C#\StaticSamples\StaticSample001\obj\Debug\StaticSample001.exe
-C:\Users\tommy\Desktop\class\lesson\C#\StaticSamples\StaticSample001\obj\Debug\StaticSample001.pdb

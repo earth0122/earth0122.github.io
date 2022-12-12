@@ -1,8 +1,0 @@
-C:\Users\tommy\Desktop\class\lesson\C#\DelegateSamples\DelegateSample002\bin\Debug\DelegateSample002.exe.config
-C:\Users\tommy\Desktop\class\lesson\C#\DelegateSamples\DelegateSample002\bin\Debug\DelegateSample002.exe
-C:\Users\tommy\Desktop\class\lesson\C#\DelegateSamples\DelegateSample002\bin\Debug\DelegateSample002.pdb
-C:\Users\tommy\Desktop\class\lesson\C#\DelegateSamples\DelegateSample002\obj\Debug\DelegateSample002.csproj.AssemblyReference.cache
-C:\Users\tommy\Desktop\class\lesson\C#\DelegateSamples\DelegateSample002\obj\Debug\DelegateSample002.csproj.SuggestedBindingRedirects.cache
-C:\Users\tommy\Desktop\class\lesson\C#\DelegateSamples\DelegateSample002\obj\Debug\DelegateSample002.csproj.CoreCompileInputs.cache
-C:\Users\tommy\Desktop\class\lesson\C#\DelegateSamples\DelegateSample002\obj\Debug\DelegateSample002.exe
-C:\Users\tommy\Desktop\class\lesson\C#\DelegateSamples\DelegateSample002\obj\Debug\DelegateSample002.pdb

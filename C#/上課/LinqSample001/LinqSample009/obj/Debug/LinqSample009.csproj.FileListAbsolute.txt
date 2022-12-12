@@ -1,8 +1,0 @@
-C:\Users\tommy\Desktop\class\正課\C#\LinqSample001\LinqSample009\bin\Debug\LinqSample009.exe.config
-C:\Users\tommy\Desktop\class\正課\C#\LinqSample001\LinqSample009\bin\Debug\LinqSample009.exe
-C:\Users\tommy\Desktop\class\正課\C#\LinqSample001\LinqSample009\bin\Debug\LinqSample009.pdb
-C:\Users\tommy\Desktop\class\正課\C#\LinqSample001\LinqSample009\obj\Debug\LinqSample009.csproj.AssemblyReference.cache
-C:\Users\tommy\Desktop\class\正課\C#\LinqSample001\LinqSample009\obj\Debug\LinqSample009.csproj.SuggestedBindingRedirects.cache
-C:\Users\tommy\Desktop\class\正課\C#\LinqSample001\LinqSample009\obj\Debug\LinqSample009.csproj.CoreCompileInputs.cache
-C:\Users\tommy\Desktop\class\正課\C#\LinqSample001\LinqSample009\obj\Debug\LinqSample009.exe
-C:\Users\tommy\Desktop\class\正課\C#\LinqSample001\LinqSample009\obj\Debug\LinqSample009.pdb

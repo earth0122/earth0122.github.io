@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 200px;
+        background-color: #ccc;
+      }
+      /* @media 裝置類型 and (條件一) and (條件二){
+        符合條件時執行CSS
+    }*/
+      @media screen and (min-width: 768px) {
+        .box {
+          background-color: #f00;
+        }
+      }
+      @media screen and (min-width: 1024px) {
+        .box {
+          background-color: #fa0;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        .box {
+          background-color: #00f;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

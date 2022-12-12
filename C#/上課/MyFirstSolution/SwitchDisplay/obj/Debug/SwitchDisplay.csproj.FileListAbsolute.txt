@@ -1,8 +1,0 @@
-C:\Users\tommy\Desktop\class\正課\C#\MyFirstSolution\SwitchDisplay\bin\Debug\SwitchDisplay.exe.config
-C:\Users\tommy\Desktop\class\正課\C#\MyFirstSolution\SwitchDisplay\bin\Debug\SwitchDisplay.exe
-C:\Users\tommy\Desktop\class\正課\C#\MyFirstSolution\SwitchDisplay\bin\Debug\SwitchDisplay.pdb
-C:\Users\tommy\Desktop\class\正課\C#\MyFirstSolution\SwitchDisplay\obj\Debug\SwitchDisplay.csproj.AssemblyReference.cache
-C:\Users\tommy\Desktop\class\正課\C#\MyFirstSolution\SwitchDisplay\obj\Debug\SwitchDisplay.csproj.SuggestedBindingRedirects.cache
-C:\Users\tommy\Desktop\class\正課\C#\MyFirstSolution\SwitchDisplay\obj\Debug\SwitchDisplay.csproj.CoreCompileInputs.cache
-C:\Users\tommy\Desktop\class\正課\C#\MyFirstSolution\SwitchDisplay\obj\Debug\SwitchDisplay.exe
-C:\Users\tommy\Desktop\class\正課\C#\MyFirstSolution\SwitchDisplay\obj\Debug\SwitchDisplay.pdb

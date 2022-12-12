@@ -1,8 +1,0 @@
-C:\Users\tommy\Desktop\class\正課\C#\MyFirstSolution\ConditionDisplay\bin\Debug\ConditionDisplay.exe.config
-C:\Users\tommy\Desktop\class\正課\C#\MyFirstSolution\ConditionDisplay\bin\Debug\ConditionDisplay.exe
-C:\Users\tommy\Desktop\class\正課\C#\MyFirstSolution\ConditionDisplay\bin\Debug\ConditionDisplay.pdb
-C:\Users\tommy\Desktop\class\正課\C#\MyFirstSolution\ConditionDisplay\obj\Debug\ConditionDisplay.csproj.AssemblyReference.cache
-C:\Users\tommy\Desktop\class\正課\C#\MyFirstSolution\ConditionDisplay\obj\Debug\ConditionDisplay.csproj.SuggestedBindingRedirects.cache
-C:\Users\tommy\Desktop\class\正課\C#\MyFirstSolution\ConditionDisplay\obj\Debug\ConditionDisplay.csproj.CoreCompileInputs.cache
-C:\Users\tommy\Desktop\class\正課\C#\MyFirstSolution\ConditionDisplay\obj\Debug\ConditionDisplay.exe
-C:\Users\tommy\Desktop\class\正課\C#\MyFirstSolution\ConditionDisplay\obj\Debug\ConditionDisplay.pdb
