@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        --col-count: 3;
+      }
+      .card {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        text-align: center;
+        align-items: center;
+      }
+      .card .card-pic {
+        width: 50%;
+      }
+      .card .card-pic img {
+        width: 100%;
+        vertical-align: bottom;
+      }
+      .card .card-text {
+        width: 50%;
+      }
+      @media screen and (min-width: 768px) {
+        .wrap {
+          display: flex;
+          flex-wrap: wrap;
+          margin: auto;
+        }
+        .card {
+          width: calc(100% / var(--col-count) - 20px);
+          flex-direction: column;
+        }
+      }
+      @media screen and (min-width: 1024px) {
+        .card:nth-child(-n + 2) {
+          --col-count: 2;
+          width: calc(100% / var(--col-count) - 20px);
+          flex-direction: row;
+        }
+        .card:nth-child(n + 3) {
+          --col-count: 4;
+          width: calc(100% / var(--col-count) - 20px);
+          position: relative;
+          overflow: hidden;
+        }
+        .card:nth-child(n + 3) .card-pic {
+          width: 100%;
+        }
+        .card:nth-child(n + 3) .card-text {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background-color: rgba(0, 0, 0, 0.665);
+          color: white;
+          padding: 10px;
+          top: 100%;
+          transition: 0.7s;
+        }
+        .card:nth-child(n + 3):hover .card-text {
+          top: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="card">
+        <div class="card-pic">
+          <img src="https://picsum.photos/300/200/?random=1" />
+        </div>
+        <div class="card-text">
+          <h2>title</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus,
+            quo!
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-pic">
+          <img src="https://picsum.photos/300/200/?random=1" />
+        </div>
+        <div class="card-text">
+          <h2>title</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus,
+            quo!
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-pic">
+          <img src="https://picsum.photos/300/200/?random=1" />
+        </div>
+        <div class="card-text">
+          <h2>title</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus,
+            quo!
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-pic">
+          <img src="https://picsum.photos/300/200/?random=1" />
+        </div>
+        <div class="card-text">
+          <h2>title</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus,
+            quo!
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-pic">
+          <img src="https://picsum.photos/300/200/?random=1" />
+        </div>
+        <div class="card-text">
+          <h2>title</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus,
+            quo!
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-pic">
+          <img src="https://picsum.photos/300/200/?random=1" />
+        </div>
+        <div class="card-text">
+          <h2>title</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus,
+            quo!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
