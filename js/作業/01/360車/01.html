@@ -81,13 +81,12 @@
       let btnLeft = document.querySelector(".btn-left");
       let btnRight = document.querySelector(".btn-right");
       let picture = document.querySelector(".pic img");
+      let carPic = document.querySelector("img");
       let index = 0;
 
       window.onload = function () {
         carGray();
-        let carPic = document.querySelector("img");
         picture.src = carArray[index];
-
         btnLeft.addEventListener("click", function () {
           if (index === 59) {
             index = 0;
