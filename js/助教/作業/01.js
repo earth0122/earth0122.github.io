@@ -1,18 +1,18 @@
-//1.產生亂數1~100
+//產生亂數1~100
 let answer = getAnswerNumber();
-//2.輸入數字
+//輸入數字
 let inputDom = document.getElementById("num-input");
-//3.抓到按鈕
+//抓到按鈕
 let btn = document.querySelector(".btn-guess");
 console.log(btn);
-//4.輸入數字變數
+//輸入數字變數
 let inputNumberValue;
-//5.猜的數字
+//猜的數字
 let guessNumber;
-//6.宣告p
+//宣告p
 let p = document.querySelector("p");
 
-//產生1~100的隨機數字
+//1.產生1~100的隨機數字
 function getAnswerNumber(min, max) {
   min = Math.ceil(1);
   max = Math.floor(100);
@@ -20,7 +20,7 @@ function getAnswerNumber(min, max) {
 }
 console.log(answer);
 
-//鍵盤選擇到的按鈕 並監聽按按鈕的時候輸入的數字 並把輸入的值放入
+//2.選擇到的按鈕 並監聽按按鈕的時候輸入的數字 並把輸入的值放入
 let btnNum = document.querySelectorAll(".btn-num");
 console.log(btnNum);
 btnNum.forEach((item) => {
@@ -28,17 +28,19 @@ btnNum.forEach((item) => {
     inputDom.value += item.innerHTML;
   });
 });
-//看答案 選到看答案的按鈕 並利用監聽的點擊事件
+//2.看答案 選到看答案的按鈕 並利用監聽的點擊事件
 let getAnswer = document.querySelector(".btn-answer");
 getAnswer.addEventListener("click", function () {
   answer = getAnswerNumber();
   alert(answer);
+  // ---------------
   min = 1;
   max = 100;
   p.innerText = `${min} ~ ${max}`;
   console.log(answer);
+  // --------------
 });
-//監聽按按鈕
+//3.監聽按按鈕
 btn.addEventListener("click", function () {
   //取得輸入的值
   let inputValue = inputDom.value;
@@ -48,9 +50,10 @@ btn.addEventListener("click", function () {
     alert("請輸入數字");
     inputDom.value = "";
   }
-  //判斷是不是答案
+  //4.判斷是不是答案 2個等號 左右先轉型再比較 3個等號 會先判斷型別
   if (guessNumber === answer) {
     alert("恭喜猜對");
+    // ---------
     inputDom.value = "";
     min = 1;
     max = 100;
