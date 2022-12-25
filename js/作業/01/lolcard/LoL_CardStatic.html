@@ -3410,17 +3410,24 @@
           alert("從DOM建立英雄人物陣列資料成功！");
 
           //1.從DOM建立英雄人物資料
-          let heroDomList = Array.from(container.children); //152英雄節點
-          heroDomList.forEach((node, index) => {
-            let heroObj = {
-              id: ++index,
-              name: node.querySelector(".card").getAttribute("id"),
-              content: node.querySelector(".card-text").innerText,
-              url: node.querySelector(".card-img-top").src,
-            };
-            heroArray.push(heroObj);
-          });
-          console.log(heroDomList);
+          // let hreoDomList = Array.from(container.children) //152英雄節點
+          // hreoDomList.forEach((node, index) => {
+          //     let heroObj = {
+          //         id: ++index,
+          //         name: node.querySelector('.card').getAttribute('id'),
+          //         content: node.querySelector('.card-text').innerText,
+          //         url: node.querySelector('.card-img-top').src
+          //
+          //     heroArray.push(heroObj)
+          // });
+
+          heroArray = Array.from(container.children).map((node, index) => ({
+            id: ++index,
+            name: node.querySelector(".card").getAttribute("id"),
+            content: node.querySelector(".card-text").innerText,
+            url: node.querySelector(".card-img-top").src,
+          }));
+
           //2.清除container
           document.querySelector("#container").innerHTML = "";
         });
