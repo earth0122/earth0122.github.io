@@ -3450,6 +3450,37 @@
           }
 
           alert("以表格呈現英雄人物資料！");
+          document.querySelector("#container").innerHTML = "";
+          let table = document.createElement("table");
+          table.setAttribute(
+            "class",
+            "table table-bordered table-striped table-dark"
+          );
+
+          let thead = document.createElement("thead");
+          let tbody = document.createElement("tbody");
+          let theadTr = document.createElement("tr");
+
+          Object.keys(heroArray[0]).forEach((key) => {
+            let th = document.createElement("th");
+            th.innerText = key;
+            theadTr.appendChild(th);
+          });
+          thead.appendChild(theadTr);
+
+          heroArray.forEach((hero) => {
+            let tr = document.createElement("tr");
+            Object.keys(hero).forEach((key) => {
+              let td = document.createElement("td");
+              td.innerText = hero[key];
+              tr.appendChild(td);
+            });
+            tbody.appendChild(tr);
+          });
+          table.appendChild(thead);
+          table.appendChild(tbody);
+
+          container.appendChild(table);
         });
       };
     </script>
