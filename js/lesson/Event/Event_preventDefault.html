@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>preventDefault()取消事件預設行為</h1>
+    <form>
+      <label for="agree">是否同意:</label>
+      <input type="checkbox" id="agree" name="agree" />
+    </form>
+
+    <div id="msg"></div>
+
+    <script>
+      document.querySelector("#agree").addEventListener(
+        "click",
+        function (event) {
+          let msg = document.getElementById("msg");
+          event.preventDefault();
+          msg.innerHTML += "preventDefault()事件發生，故不執行核選！<br>";
+        },
+        false
+      );
+    </script>
+  </body>
+</html>

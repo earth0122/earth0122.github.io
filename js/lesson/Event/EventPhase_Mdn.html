@@ -117,6 +117,7 @@
         //AT_TARGET (2)
         if (e.eventPhase === 2) {
           e.currentTarget.style.backgroundColor = "red";
+          e.stopPorpagation;
         }
 
         //BUBBLING_PHASE (3)
@@ -124,8 +125,6 @@
           //e.currentTarget.style.backgroundColor = 'lightgreen';
 
           setTimeout(() => {
-
-            
             target.style.backgroundColor = "lightgreen";
           }, (time += 500));
         }

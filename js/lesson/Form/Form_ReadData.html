@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Basic</title>
+</head>
+
+<body>
+
+    <form name="UserMessage" action="#" method="POST" 
+          onsubmit="return validateForm(this)">
+        <div>
+            <label for="name">姓名：</label>
+            <input type="text" id="user" name="user">
+        </div>
+        <div>
+            <label for="email">電郵：</label>
+            <input type="text" id="email" name="email">
+        </div>
+        <div>
+            <label for="msg">留言：</label>
+            <textarea id="msg" name="msg"></textarea>
+        </div>
+
+        <input type="submit" value="submit">
+    </form>
+
+    <form name="EmployeeForm" action="#" method="POST"  
+        onsubmit="return validateForm(this)">
+        <div>
+            <label for="name">員工：</label>
+            <input type="text" id="employee" name="employee">
+        </div>
+        <div>
+            <label for="email">電郵：</label>
+            <input type="text" id="email" name="email">
+        </div>
+        <div>
+            <label for="msg">意見：</label>
+            <textarea id="msg" name="msg"></textarea>
+        </div>
+
+        <input type="submit" value="submit">
+    </form>
+
+    <button onclick="readFormData()">Read Form Data</button>
+
+    <script>
+        function validateForm(form){
+            alert(form.name);
+            return true;
+        }
+
+
+        function readFormData(){
+            var form1 = document.forms; //HTMLCollection
+            var form2 = document.forms.item(0); //form
+            var form3 = document.forms.namedItem("UserMessage");    //form
+            var form4 = document.forms["EmployeeForm"];
+            var form5 = document.forms.EmployeeForm;
+            
+            alert('表單的名字是：' + form3.name);
+        }
+
+        //HTMLFormElement.submit()
+        //HTMLFormElement.reset()
+    </script>
+</body>
+</html>

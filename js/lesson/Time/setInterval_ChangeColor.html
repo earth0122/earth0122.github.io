@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <h1>setInterval() - 時間間隔</h1>
+    <button onclick="Start()">Start</button>
+    <button onclick="Stop()">Stop</button>
+
+    <script>
+        const colors = ["green", "blue", "yellow", "red", "orange", "pink", "purple", "white", "black"];
+        const poem = ["春花秋月何時了", "往事知多少", "小樓昨夜又東風", "故國不堪回首月明中"];
+
+        let body = document.querySelector("body");
+
+        let intervalId;
+
+        function Start() {
+            intervalId = setInterval(changeColor, 1000);
+        }
+
+        function Stop() {
+            clearInterval(intervalId);
+        }
+
+        function changeColor() {
+            body.style.backgroundColor = colors[getRandom(0, 4)];
+            console.log(Math.random());
+        }
+
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min) + min);
+        }
+    </script>
+</body>
+
+</html>
