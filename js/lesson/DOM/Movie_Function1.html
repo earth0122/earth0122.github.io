@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1></h1>
+    <img id="img1" src="" alt="" />
+    <div id="video"></div>
+
+    <script>
+      let movietitle = "Tron光速戰技";
+
+      const movieUrl =
+        "https://news.agentm.tw/wp-content/uploads/cover-1-312.jpg";
+
+      const videoUrl =
+        '<iframe width="560" height="315" src="https://www.youtube.com/embed/RzH0n6Rizhg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+
+        //c# Console - Main()  
+        window.onload = function(){
+            setMovie();
+          }
+    function setMovie(){
+        //設定H1
+        let h1 = document.querySelector("h1");
+      h1.innerHTML = `<b>${movietitle}</b>`;
+
+      //設定Img
+      let img = document.getElementById("img1");
+
+      img.setAttribute("src", movieUrl);
+      img.src = movieUrl;
+
+      //顯示圖片網址
+      // document.write(img.src);
+      // document.write(img.getAttribute("src"));
+
+      //video
+      let video = document.getElementById("video");
+      video.innerHTML = videoUrl;
+
+      document.getElementById("video").innerHTML = videoUrl;
+
+      // dynamic create DOM element
+      let image = document.createElement("img");
+      image.src = movieUrl;
+
+      document.body.append(image);
+    }
+    </script>
+  </body>
+</html>

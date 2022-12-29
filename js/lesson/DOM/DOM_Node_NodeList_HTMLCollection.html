@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head name="head">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body name="body">
+    <h1>自訂Selector function</h1>
+
+    <p>iPhone</p>
+    <p>iPad</p>
+    <p>Mac</p>
+
+    <ul>
+      <li>JavaScript</li>
+      <li>ASP.NET MVC</li>
+      <li>.NET Core</li>
+    </ul>
+
+    <button>Access Node/NodeList/HTMLCollection</button>
+
+    <script>
+      let h1, ps, ul, btn;
+
+      window.onload = function () {
+        btn = document.querySelector("button");
+
+        btn.addEventListener("click", showInfo);
+      };
+
+      function showInfo() {
+        h1 = document.querySelector("h1");
+
+        ps = document.querySelectorAll("p");
+
+        ul = document.querySelector("ul");
+
+        console.log("* Node - ELEMENT_NODE:");
+        //H1, Node - ELEMENT_NODE
+        console.log(`${h1} , ${h1.nodeName}, ${h1.nodeType}`);
+
+        console.log("* NodeList:");
+        //P, NodeList - 支援forEach
+        console.log(`${ps} , ${ps.nodeName}, ${ps.nodeType}`);
+
+        ps.forEach((p, index) => {
+          console.log(`${index}, ${p} , ${p.nodeName}, ${p.nodeType}`);
+        });
+
+        //UL
+        console.log("* Node:");
+        console.log(`${ul} , ${ul.nodeName}, ${ul.nodeType}`);
+        console.log("* NodeList:");
+        console.log(ul.childNodes);
+        console.log("* HTMLCollection:");
+        console.log(ul.children);
+
+        [...ul.children].forEach((item) => {
+          console.log(item.innerText);
+        });
+      }
+    </script>
+  </body>
+</html>

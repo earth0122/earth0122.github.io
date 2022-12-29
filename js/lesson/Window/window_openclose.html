@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        width: 400px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <label for="targetUrl">網址</label>
+    <input type="text" id="targetUrl" name="targetUrl" />
+    <br />
+    <button id="btnOpen">開啟新視窗</button>
+    <button id="btnClose">關閉目前視窗</button>
+    <button id="btnLoad">視窗載入新網址</button>
+
+    <script>
+      // window.open('');
+      let btnOpen = document.getElementById("btnOpen");
+      let btnClose = document.getElementById("btnClose");
+      let btnLoad = document.getElementById("btnLoad");
+      let newWindow;
+      //open
+      btnOpen.addEventListener("click", (event) => {
+        window.open(document.getElementById("targetUrl").value);
+      });
+      //window.close
+      btnClose.addEventListener("click", (event) => {
+        window.close();
+      });
+      //window.location
+      btnLoad.addEventListener("click", (event) => {
+        window.location = document.getElementById("targetUrl").value;
+      });
+    </script>
+  </body>
+</html>

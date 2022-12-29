@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <!--     <style>
+        table, th, td{
+            border: 1px solid black;
+            /* cell: 1px solid black; */
+        }
+    </style> -->
+    <style>
+      table > thead {
+        color: white;
+        background-color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="jumbotron bg-info">
+      <h1>全球肺炎統計</h1>
+    </div>
+
+    <!-- <table class="table table-bordered table-striped table-hover"> -->
+    <table>
+      <thead class="thead-dark">
+        <tr>
+          <td>國家</td>
+          <td>確診</td>
+          <td>死亡</td>
+          <td>治癒</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-active">
+          <td>台灣</td>
+          <td>41</td>
+          <td>1</td>
+          <td>12</td>
+        </tr>
+        <tr class="table-danger">
+          <td>中國</td>
+          <td>80134</td>
+          <td>2914</td>
+          <td>44595</td>
+        </tr>
+        <tr>
+          <td>美國</td>
+          <td>9665</td>
+          <td>146</td>
+          <td>694</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+      let table, row;
+    </script>
+
+    <script type="module">
+      import { $ct as $ctext } from "../modules/helpers.js";
+
+      window.onload = function () {
+        table = document.querySelector("table");
+
+        //className
+        table.className = "table";
+
+        //classList - add
+        /*table.classList.add("table-bordered");
+        table.classList.add("table-striped");
+        table.classList.add("table-hover");*/
+
+        table.classList.add("table-bordered", "table-striped", "table-hover");
+
+        row = document.querySelector(".table-danger");
+
+        row.addEventListener("click", removeClass);
+
+        //註冊function，但在呼叫時要傳入參數
+        row.addEventListener("click", showName.bind(event, "Kevin", "Xi"));
+      };
+
+      function removeClass(event) {
+        // document.querySelector(".table-danger").classList.remove("table-danger");
+        event.target.parentElement.classList.remove("table-danger");
+      }
+
+      //firstname - 即為Kevin
+      function showName(firstname, lastname) {
+        /*
+            let h2 = document.createElement("h2");
+            h2.innerText = `${firstname}, ${lastname}`;
+            */
+
+        let h2 = $ctext("h2", `${firstname}, ${lastname}`);
+
+        document.querySelector("h1").prepend(h2);
+        document.querySelector("h1").append(h2.cloneNode(true));
+        document.querySelector("h1").append(h2.cloneNode());
+      }
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

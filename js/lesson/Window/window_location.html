@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- <style>
+        img {
+            border: 2px solid white;
+        }
+        img:hover{
+            cursor: pointer ;
+            border: 2px solid black;
+        }
+    </style> -->
+  </head>
+
+  <body>
+    <button id="btnPchome">PCHOME購物</button>
+    <button id="btnMomo">Momo購物</button>
+    <button id="btnYahoo">yahoo購物</button>
+    <button id="btnReload">重新載入網頁</button>
+    <img src="https://s4.lativ.com.tw/i/56268/56268_M_02_n.jpg" />
+
+    <script>
+      let btnPchome, btnMomo, btnYahoo, imgLativ, btnReload;
+
+      window.onload = function () {
+        btnPchome = document.getElementById("btnPchome");
+        btnMomo = document.getElementById("btnMomo");
+        btnYahoo = document.getElementById("btnYahoo");
+        imgLativ = document.querySelector("img");
+
+        btnPchome.addEventListener("click", () => {
+          window.location = "https://www.pchome.tw/";
+        });
+        btnMomo.addEventListener("click", () => {
+          window.location.assign("https://www.momoshop.com.tw/");
+        });
+        btnYahoo.addEventListener("click", () => {
+          location = "https://tw.buy.yahoo.com/";
+        });
+        btnReload.addEventListener("click", () => {
+          location.reload(); //重新載入網頁
+        });
+      };
+    </script>
+  </body>
+</html>

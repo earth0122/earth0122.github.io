@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>寶可夢圖鑑列表</h1>
+    <button onclick="fetchPokemon()">載入寶可夢圖鑑列表fetchPokemon()</button>
+    <button onclick="fetchPokemon_appendChild()">
+      載入寶可夢圖鑑列表appendChild()
+    </button>
+    <button id="reset" onclick="resetPokemon()">Reset</button>
+
+    <div id="container"></div>
+
+    <script>
+      let h1, container;
+
+      window.onload = function () {
+        h1 = document.getElementsByTagName("h1")[0];
+        h1.innerText = "Pokemon圖鑑列表";
+
+        container = document.getElementById("container");
+
+        //document.getElementsByTagName('h1')[0].innerText='Pokemon圖鑑列表';
+
+        setPokemon();
+
+        //appendPokemon();
+      };
+
+      //方式1:利用Element.innerHTML設定HTML字串
+      function setPokemon() {
+        let fileName = "001";
+        let filePath = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`;
+        let pokemonImg = `<img src = "${filePath}" title = "寶可夢">`;
+        container.innerHTML = pokemonImg;
+      }
+
+      //方式2:新增DOM元素
+      function appendPokemon() {
+        let img = document.createElement("img");
+        img.setAttribute(
+          "src",
+          "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png"
+        );
+        img.setAttribute("title", "寶可夢");
+
+        container.appendChild(img);
+      }
+
+      //方式1:for迴圈 + Element.innerHTML設定HTML字串
+      function fetchPokemon() {
+        container.innerHTML = ""; //清除containner所有內容
+        console.time("Pokemon"); //建立Label名稱
+        console.log("紀錄時間開始");
+        console.timeLog("Pokemon"); //紀錄時間開始
+
+        let pokemons = "";
+
+        for (let i = 1; i <= 905; i++) {
+          let fileName = i.toString().padStart(3, "0");
+
+          let filePath = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`;
+          let pokemonImg = `<img src = "${filePath}" title = "寶可夢">`;
+          pokemons += pokemonImg;
+        }
+        container.innerHTML = pokemons;
+        console.log("-----紀錄時間結束-------");
+      }
+
+      //方式2:for迴圈 ＋ 新增DOM元素
+      function fetchPokemon_appendChild() {
+        container.innerHTML = ""; //清除containner所有內容
+
+        console.time("Pokemon"); //建立Label名稱
+        console.log("紀錄時間開始");
+        console.timeLog("Pokemon"); //紀錄時間開始
+        for (let i = 1; i <= 905; i++) {
+          let fileName = i.toString().padStart(3, "0");
+          let filePath = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`;
+
+          //建立<img src"">元素 =>
+          let img = document.createElement("img");
+          img.setAttribute("src", filePath);
+          //加入DOM元素
+          container.appendChild(img);
+        }
+        container.innerHTML = pokemons;
+        console.log("-----紀錄時間結束-------");
+      }
+
+      function resetPokemon() {
+        // container.innerHTML = "";
+        //window.location.reload();
+
+        while (container.first.Child) {
+          container.removeChild(container.firstChild);
+        }
+      }
+    </script>
+  </body>
+</html>

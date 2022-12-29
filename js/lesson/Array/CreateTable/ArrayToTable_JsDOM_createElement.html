@@ -1,0 +1,173 @@
+```jsx
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="jumbotron bg-info">
+      <h1>用Array陣列資料結合DOM API動態產生Table</h1>
+    </div>
+    <div id="container"></div>
+
+    <!--<table class="table table-bordered table-striped table-dark">
+        <thead>
+            <tr>
+                <th>國家</th>
+                <th>確診</th>
+                <th>死亡</th>
+                <th>治癒</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+               <td>資料欄1</td>
+               <td>資料欄2</td>
+               <td>資料欄3</td>
+               <td>資料欄4</td>
+            </tr>
+        </tbody>
+    </table> -->
+
+    <script>
+      let Titles = ["國家", "確診", "死亡", "治癒"];
+
+      let Taiwan = ["台灣", 41, 1, 12];
+      let China = ["中國", 80134, 2914, 44595];
+      let America = ["美國", 9665, 146, 694];
+
+      let Global = [Taiwan, China, America];
+
+      let container;
+      let table, thead, tbody;
+
+      window.onload = function () {
+        container = document.getElementById("container");
+
+        table = document.createElement("table");
+        table.setAttribute(
+          "class",
+          "table table-bordered table-striped table-dark"
+        );
+
+        thead = document.createElement("thead");
+        tbody = document.createElement("tbody");
+
+        //虛擬碼 Pseudo— Code
+
+        //1.建立Thead
+        //(1)建立tr
+        //(2)建立th,設定資料,th加入tr
+        //(3)將tr加入thead
+        //(4)將Thead加入Table
+
+        CreateThead();
+
+        CreateTbody();
+      };
+
+      function CreateThead() {
+        //(1)建立tr
+        let theadTR = document.createElement("tr");
+        //(2)建立th,設定資料,th加入tr
+        Titles.forEach((title, index) => {
+          let th = document.createElement("th");
+          th.innerHTML = title;
+          theadTR.append(th);
+        });
+
+        thead.append(theadTR);
+        table.append(thead);
+        container.append(table);
+      }
+
+      function CreateTbody() {
+        Global.forEach((country) => {
+          //(1)建立tr
+          let tbodyTR = document.createElement("tr");
+          //(2)建立th,設定資料,th加入tr
+          country.forEach((value) => {
+            let th = document.createElement("th");
+            th.innerHTML = value;
+            tbodyTR.append(th);
+          });
+
+          tbody.append(tbodyTR);
+          table.append(tbody);
+        });
+      }
+
+      function SimpleThead() {
+        //(1)
+        let theadTR = document.createElement("tr");
+        //(2)
+        let th1 = document.createElement("th");
+        th1.innerText = Titles[0];
+        let th2 = document.createElement("th");
+        th2.innerText = Titles[1];
+        let th3 = document.createElement("th");
+        th3.innerText = Titles[2];
+        let th4 = document.createElement("th");
+        th4.innerText = Titles[3];
+        //(3)
+        theadTR.append(th1, th2, th3, th4);
+        //(4)
+        thead.append(theadTR);
+        table.append(thead);
+
+        container.append(table);
+      }
+
+      function SimpleTbody() {
+        //1.建立Tbody
+        //(1)建立tr
+        //(2)建立td,設定資料,td加入tr
+        //(3)將tr加入Tbody
+        //(4)將Tbody加入Table
+
+        //(1)
+        let tr1 = document.createElement("tr");
+        //(2)建立td,設定資料,td加入tr
+        Taiwan.forEach((item) => {
+          let td = document.createElement("td");
+          td.innerText = item;
+
+          tr1.append(td);
+        });
+
+        tbody.append(tr1);
+        table.append(tbody);
+
+        let tr2 = document.createElement("tr");
+        //(2)建立td,設定資料,td加入tr
+        America.forEach((item) => {
+          let td = document.createElement("td");
+          td.innerText = item;
+
+          tr2.append(td);
+        });
+
+        tbody.append(tr2);
+        table.append(tbody);
+
+        let tr3 = document.createElement("tr");
+        //(2)建立td,設定資料,td加入tr
+        China.forEach((item) => {
+          let td = document.createElement("td");
+          td.innerText = item;
+
+          tr3.append(td);
+        });
+
+        tbody.append(tr3);
+        table.append(tbody);
+      }
+    </script>
+  </body>
+</html>

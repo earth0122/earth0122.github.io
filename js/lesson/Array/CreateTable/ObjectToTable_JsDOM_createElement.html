@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="jumbotron bg-info">
+      <h1>用Object資料結合DOM API動態產生Table</h1>
+    </div>
+    <div id="container"></div>
+
+    <!-- <table class="table table-bordered table-striped table-dark">
+        <thead>
+            <tr>
+                <th>國家</th>
+                <th>確診</th>
+                <th>死亡</th>
+                <th>治癒</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+               <td>資料欄1</td>
+               <td>資料欄2</td>
+               <td>資料欄3</td>
+               <td>資料欄4</td>
+            </tr>
+        </tbody>
+    </table> -->
+
+    <script>
+      //country, infected, dead, cure
+      // let Titles = ['國家', '確診', '死亡', '治癒'];
+
+      // let Taiwan = ['台灣', 41, 1, 12];
+      // let China = ['中國', 80134, 2914, 44595];
+      // let America = ['美國', 9665, 146, 694];
+
+      // let Global = [Taiwan, China, America];
+
+      let GlobalCountry = {
+        Taiwan: { country: "台灣", infected: 41, dead: 1, cure: 12 },
+        China: { country: "中國", infected: 80134, dead: 2914, cure: 44595 },
+        America: { country: "美國", infected: 9665, dead: 146, cure: 694 },
+      };
+
+      let GlobalCountry2 = {
+        Titles: ["國家", "確診", "死亡", "治癒"],
+        Country: [
+          { country: "台灣", infected: 41, dead: 1, cure: 12 },
+          { country: "中國", infected: 80134, dead: 2914, cure: 44595 },
+          { country: "美國", infected: 9665, dead: 146, cure: 694 },
+        ],
+      };
+
+      let GlobalCountry2dArray = [];
+
+      let GlobalCountry3 = {
+        Publish: "2019/05/30",
+        Version: "1.0",
+        Titles: ["國家", "確診", "死亡", "治癒"],
+        Country: {
+          Taiwan: { country: "台灣", infected: 41, dead: 1, cure: 12 },
+          China: { country: "中國", infected: 80134, dead: 2914, cure: 44595 },
+          America: { country: "美國", infected: 9665, dead: 146, cure: 694 },
+        },
+      };
+
+      let container;
+      let table, thead, tbody;
+
+      window.onload = function () {
+        container = document.getElementById("container");
+
+        table = document.createElement("table");
+        table.setAttribute(
+          "class",
+          "table table-bordered table-striped table-dark"
+        );
+        thead = document.createElement("thead");
+        tbody = document.createElement("tbody");
+
+        CreateThead(GlobalCountry2.Titles);
+
+        //Object-->2D Array
+
+        GlobalCountry2.Country.forEach((country) => {
+          let values = Object.values(country);
+          GlobalCountry2dArray.push(values);
+        });
+
+        CreateTbody(GlobalCountry2dArray);
+      };
+
+      function CreateThead(titleArray) {
+        //(1)
+        let theadTR = document.createElement("tr");
+        //(2)建立th,設定資料,th加入tr
+        titleArray.forEach((title, index) => {
+          let th = document.createElement("th");
+          th.innerText = title;
+          theadTR.append(th);
+        });
+
+        thead.append(theadTR);
+        table.append(thead);
+        container.append(table);
+      }
+
+      function CreateTbody(globalCountry) {
+        globalCountry.forEach((country) => {
+          let tr = document.createElement("tr");
+          //(2)建立td,設定資料,td加入tr
+          //['台灣', 41, 1, 12]
+          country.forEach((columndata) => {
+            let td = document.createElement("td");
+            td.innerText = columndata;
+
+            tr.append(td);
+          });
+          tbody.append(tr);
+        });
+
+        table.append(tbody);
+      }
+    </script>
+  </body>
+</html>
