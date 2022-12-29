@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        display: flex;
+      }
+      .box div {
+        width: 100px;
+        height: 100px;
+      }
+      .box div:nth-child(1) {
+        background-color: red;
+      }
+      .box div:nth-child(2) {
+        background-color: blue;
+      }
+      .box div:nth-child(3) {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div id="red" class="div"></div>
+      <div class="div"></div>
+      <div></div>
+    </div>
+
+    <div class="box"></div>
+
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+
+    <script>
+      // document.getElementById()
+      // get <div id="red" class="div"></div>
+      const div_1 = document.getElementById("red");
+      console.log(div_1);
+
+      // document.getElementsByClassName()
+      // get all class = box
+      const div_2 = document.getElementsByClassName("box");
+      console.log(div_2);
+
+      // document.getElementsByTagName()
+      // get all div
+      const div_3 = document.getElementsByTagName("div");
+      console.log(div_3);
+
+      // document.querySelector()
+      // 我想要取到 <div id="red" class="div"></div>
+      const div_4 = document.querySelector("#red");
+      console.log(div_4);
+
+      // document.querySelectorAll()
+      // get all class = div
+      const div_5 = document.querySelectorAll(".div");
+      console.log(div_5);
+
+      //NodeList & HTMLCollection 差異
+      // -NodeList 可以foreach
+
+      const arr = document.querySelectorAll("li");
+      const arr2 = document.getElementsByTagName("li");
+
+      console.log(arr); //NodeList          靜態
+      console.log(arr2); //HTMLCollection    動態
+
+      //往ul 內塞 li
+      document.querySelector("ul").appendChild(document.createElement("li"));
+
+      console.log(arr);
+      console.log(arr2);
+
+      arr.forEach((el) => console.log(el));
+      // arr2.forEach(el => console.log(el))
+
+      //Array.form & 解構
+      Array.from(arr2).forEach((el) => console.log(el));
+      [...arr2].forEach((el) => console.log(el)); //展開(spread) 運算符
+
+      // ([].concat(...arr2)).forEach(el => console.log(el))
+    </script>
+  </body>
+</html>

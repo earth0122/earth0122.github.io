@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- localStorage -->
+    <input type="text" />
+    <button>儲存</button>
+    <p></p>
+
+    <!-- 冒泡 -->
+    <ul>
+      <li>123</li>
+    </ul>
+
+    <script>
+      // #region localStorage
+
+      // localStorage
+      const input = document.querySelector("input");
+      const btn = document.querySelector("button");
+      const p = document.querySelector("p");
+
+      // input keyin -> btn click -> input store to LocalStorage
+
+      btn.addEventListener("click", () => {
+        const value = input.value;
+        localStorage.setItem("key", value);
+        p.innerText = value;
+      });
+
+      window.onload = () => {
+        const value = localStorage.getItem("key");
+        p.innerText = value;
+      };
+      // #endregion localStorage
+
+      // 事件冒泡
+      const ul = document.querySelector("ul");
+      const li = document.querySelector("li");
+
+      // 捕獲跟冒泡
+      // document -> html -> body -> ul -> li // 捕獲 capture
+      // li // 目標 target
+      // li -> ul -> body -> html -> document // 冒泡 bubble
+
+      ul.addEventListener("click", () => {
+        console.log("ul");
+      });
+      li.addEventListener("click", (e) => {
+        // e.stopPropagation()
+        console.log("li");
+      });
+    </script>
+  </body>
+</html>

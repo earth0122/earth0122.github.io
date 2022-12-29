@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="password" />
+    <img src="" alt="" />
+
+    <button onclick="changeImg()">點我換圖片</button>
+    <button onclick="watchPassword()">點我看密碼</button>
+
+    <ul></ul>
+
+    <!-- <ul>
+    <li data-item="{ id: '1', name: 'cal' }">cal</li>
+    <li data-item="{ id: '2', name: 'andy' }">andy</li>
+    <li data-item="{ id: '3', name: 'jimmy' }">jimmy</li>
+  </ul> -->
+
+    <script>
+      const arr = [
+        { id: "1", name: "cal" },
+        { id: "2", name: "andy" },
+        { id: "3", name: "jimmy" },
+      ];
+
+      const ul = document.querySelector("ul");
+
+      // 自定義屬性可以 以 data 開頭 或不以 data 開頭
+      // data 開頭 方便區分 是否為自定義
+      // DOM 也有對 data 開頭的 attr 做處理
+
+      arr.forEach((value) => {
+        // TODO: 依序把資料塞進ul
+        // 1. 先建立一個li
+        const li = document.createElement("li");
+
+        // 2. li 設定 innerText & attribute
+        li.innerText = value.name;
+        li.setAttribute("item", JSON.stringify(value));
+
+        // 2.1 點擊事件
+        li.addEventListener("click", (event) => {
+          // console.dir(event.target)
+          alert(event.target.getAttribute("item"));
+        });
+
+        // 3. 塞進去到ul
+        ul.appendChild(li);
+      });
+
+      const input = document.querySelector("input");
+      const img = document.querySelector("img");
+
+      // img
+      // attribute[屬性]
+      // - src
+      // - alt
+
+      function changeImg() {
+        // TODO:
+        // 點了按鈕 V
+        // 塞圖片進去
+
+        img.src = "https://picsum.photos/300/200/?random=10";
+      }
+      function watchPassword() {
+        // TODO:
+        // 點了按鈕
+        // 可以看見密碼
+
+        input.type = "text";
+
+        console.log(input.value);
+      }
+    </script>
+  </body>
+</html>

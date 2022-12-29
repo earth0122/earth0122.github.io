@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <table class="table" id="sample">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table" id="practice"></table>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const tableData = {
+        column: ["#", "First", "Last", "Handle"],
+        data: [
+          { First: "Mark", Last: "Otto", Handle: "@mdo" },
+          { First: "Jacob", Last: "Thornton", Handle: "@fat" },
+        ],
+      };
+
+      // 抓table
+      const table = document.querySelector("#practice");
+
+      // 先做 thead
+      // thead -> tr -> th[scope=col]
+      const thead = document.createElement("thead");
+      const thead_tr = document.createElement("tr");
+
+      // 根據 tableData.column 長出 th
+      tableData.column.forEach((val) => {
+        const th = document.createElement("th");
+        th.setAttribute("scope", "col");
+        th.innerText = val;
+
+        // 上面 th 設定完後, 要塞到 thead_tr 裏面
+        thead_tr.appendChild(th);
+      });
+
+      // 把 thead_tr 塞回 thead
+      thead.appendChild(thead_tr);
+
+      // tbody -> tr -> [th, td...]
+
+      // 先建 tbody
+      const tbody = document.createElement("tbody");
+      tbody.classList.add("table-group-divider");
+
+      // const tableData = {
+      //   column: ['#', 'First', 'Last', 'Handle'],
+      //   data: [
+      //     { First: 'Mark', Last: 'Otto', Handle: '@mdo' },
+      //     { First: 'Jacob', Last: 'Thornton', Handle: '@fat' },
+      //   ]
+      // }
+
+      // 靠tableData.data內的資料 去決定 tbody 內 tr 的筆數
+      tableData.data.forEach((val) => {
+        // tableData.data
+        // Aloop 0: val => { First: 'Mark', Last: 'Otto', Handle: '@mdo' }
+        // Aloop 1: val => { First: 'Jacob', Last: 'Thornton', Handle: '@fat' }
+
+        // create tr
+        const tr = document.createElement("tr");
+
+        // const tableData = {
+        //   column: ['#', 'First', 'Last', 'Handle'],
+        //   data: [
+        //     { First: 'Mark', Last: 'Otto', Handle: '@mdo' },
+        //     { First: 'Jacob', Last: 'Thornton', Handle: '@fat' },
+        //   ]
+        // }
+
+        // 靠 column 的資料 去決定 tr 內會有多少筆 td & th
+        tableData.column.forEach((col, idx) => {
+          // tableData.column Bloop 0: col: '#', idx: 0
+          // tableData.column Bloop 1: col: 'First', idx: 1
+
+          const data = val[col];
+          // A loop 0, B loop 0: { First: 'Mark', Last: 'Otto', Handle: '@mdo' }['#'] => undefined
+          // A loop 0, B loop 1: { First: 'Mark', Last: 'Otto', Handle: '@mdo' }['First'] => 'Mark'
+          // A loop 0, B loop 2: { First: 'Mark', Last: 'Otto', Handle: '@mdo' }['Last'] => 'Otto'
+          // A loop 0, B loop 3: { First: 'Mark', Last: 'Otto', Handle: '@mdo' }['Handle'] => '@mdo'
+
+          if (data == undefined) {
+            const th = document.createElement("th");
+            th.setAttribute("scope", "row");
+            th.innerText = idx + 1;
+            tr.appendChild(th);
+          } else {
+            const td = document.createElement("td");
+            td.innerText = data;
+            tr.appendChild(td);
+          }
+        });
+
+        tbody.appendChild(tr);
+      });
+
+      // 把 thead 塞回 table
+      table.appendChild(thead);
+      table.appendChild(tbody);
+    </script>
+  </body>
+</html>

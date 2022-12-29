@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="one()">btn1</button>
+    <button>btn2</button>
+    <button>btn3</button>
+
+    <br />
+
+    <button>btn4</button>
+    <button>btn5</button>
+
+    <br />
+
+    <button>btn6</button>
+    <button>btn7</button>
+
+    <br />
+
+    <button>remove</button>
+
+    <script>
+      const btnArr = document.querySelectorAll("button");
+
+      // 1. HTML tag 直接掛 onclick
+      // TODO: 在 btn1 上直接掛 onclick = one
+      function one() {
+        alert("one");
+      }
+
+      // 2. DOM.onclick 屬性上掛方法
+      // TODO: 在 btn2 上掛上 two() 這個方法
+
+      // 1. 先找到btn2的DOM
+      const btn2 = btnArr[1];
+      // 2. 掛在onclick
+      btn2.onclick = two;
+
+      function two() {
+        alert("two");
+      }
+
+      // 3. DOM.addEventListener() 新增事件監聽
+      // TODO: 在 btn3 上掛 three() 這個方法
+
+      const btn3 = btnArr[2];
+
+      btn3.addEventListener("click", three);
+
+      function three() {
+        alert("three");
+      }
+
+      // 進階 2, 3 通常不會直接指派function
+
+      const btn4 = btnArr[3];
+      btn4.onclick = function () {
+        two();
+        three();
+      };
+
+      const btn5 = btnArr[4];
+      btn5.addEventListener("click", function () {
+        two();
+        three();
+      });
+
+      // onclick vs addEventListener
+      const btn6 = btnArr[5];
+      btn6.onclick = function () {
+        alert("AAAA");
+      };
+
+      btn6.onclick = function () {
+        alert("BBBB");
+      };
+
+      const btn7 = btnArr[6];
+      btn7.addEventListener("click", function () {
+        alert("AAAAA");
+      });
+
+      btn7.addEventListener("click", function () {
+        alert("BBBBB");
+      });
+
+      const removeBtn = btnArr[7];
+
+      function handleBtn() {
+        alert("100");
+      }
+
+      removeBtn.addEventListener("click", handleBtn);
+      removeBtn.removeEventListener("click", handleBtn);
+    </script>
+  </body>
+</html>

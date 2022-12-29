@@ -1,0 +1,25 @@
+1.  HTML CSS JS 前端
+    HTML 骨架 CSS 外觀設定 JS讓它動起來有互動性(透過DOM or BOM)
+
+2.  善加利用 console.log() 和 console.dir() 前者可以看有沒有抓到自己想要的東西 
+    後者可以看DOM 元素屬性
+
+3.  要讓一個東西有互動性 首先要先選曲到他 利用選取器的方式 然後要設定一個變數去接
+    以便於後要要做的操作(ex: 讓選取到的東西 做事件監聽)
+   (1) 透過id
+  
+    let a = document.getElementById("a")
+   
+   (2) 透過class
+   
+    let b = document.getElementByClassName("b")
+
+   (3) 透過html tag
+   
+
+
+   (4) 透過CSS 選取器 取第一個
+   
+
+
+   (5) 透過CSS 選取器 取所有

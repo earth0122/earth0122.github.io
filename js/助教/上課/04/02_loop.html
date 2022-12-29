@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const myArr = [
+        { A: 100, B: "s" },
+        { A: 200, B: "ss" },
+        { A: 300, B: "sss" },
+        { A: 400, B: "ssss" },
+        { A: 500, B: "sssss" },
+      ];
+
+      const person = {};
+
+      //for
+      for (let i = 0; i < myArr.length; i++) {
+        console.log(myArr[i]);
+      }
+
+      //for...of
+      //item 的值是陣列內的值
+      for (let item of myArr) {
+        console.log(item);
+      }
+
+      //for...in
+      //array: k -> index
+      //object: k ->key
+      for (let k in myArr) {
+        console.log(k);
+      }
+
+      //foreach
+      myArr.forEach((val, idx, arr) => {
+        console.log(val);
+        console.log(idx);
+        console.log(arr);
+      });
+
+      //object
+      const person1 = {
+        name: "calvin",
+        age: 24,
+      };
+
+      console.log(Object.keys(person1)).forEach((val) => console.log(person1[val]));
+    //   console.log(Object.values(person1)).forEach((values) => console.log(person1[values]));
+      console.log(Object.values(person1));
+      console.log(Object.entries(person1));
+    </script>
+  </body>
+</html>

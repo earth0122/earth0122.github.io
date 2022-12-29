@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let list = [
+        { item: "啤酒", type: "喝的" },
+        { item: "汽水", type: "喝的" },
+        { item: "火鍋", type: "吃的" },
+        { item: "燒烤", type: "吃的" },
+        { item: "冰淇淋", type: "吃的" },
+      ];
+
+      // 找到第一個 '吃的' C#: first, js: find
+      let r1 = list.find((x) => x.type == "吃的");
+      console.log(r1);
+
+      // 找到所有 '吃的' C#: where, js: filter
+      let r2 = list.filter((x) => x.type == "吃的");
+      console.log(r2);
+
+      // 找冰淇淋的索引 C#: elementAt, js: indexOf, findIndex
+
+      // indexOf
+      let ice = list.find((x) => x.item == "冰淇淋");
+      let r3_1 = list.indexOf(ice);
+      console.log(r3_1);
+
+      // findIndex
+      let r3_2 = list.findIndex((x) => x.item == "冰淇淋");
+      console.log(r3_2);
+
+      // 用 list 資料產生 ['啤酒','汽水','火鍋','燒烤','冰淇淋']
+      // C#: Select, js: map
+
+      let r4 = list.map((el) => el.item);
+      console.log(r4);
+
+      // 用 list 資料產生
+      // [{ id: 0, name: '啤酒' }, ...]
+      let r5 = list.map((el, idx) => {
+        return {
+          id: idx,
+          name: el.item,
+        };
+      });
+
+      console.log(r5);
+
+      // 排序
+      const nums_1 = [9, 6, 4, 2, 1];
+      console.log(nums_1);
+      let r6 = nums_1.sort((a, b) => {
+        console.log(`a: ${a}, b: ${b}`);
+        return b - a;
+      }); // 大到小
+      console.log(r6);
+
+      let r7 = r5.sort((a, b) => b.id - a.id);
+      console.log(r7);
+
+      //挑戰: 12 生肖排序
+      const zodic = [
+        "鼠",
+        "牛",
+        "虎",
+        "兔",
+        "龍",
+        "蛇",
+        "馬",
+        "羊",
+        "猴",
+        "雞",
+        "狗",
+        "豬",
+      ];
+      const animal = ["牛", "鼠", "豬", "兔"]; // output: ['鼠', '牛', '兔', '豬']
+
+      const zodicReduce = zodic.reduce((prev, curr, currentIndex, arr) => {
+        // loop 0: prev : '', curr: '鼠', currentIndex: 0, arr: ['鼠','牛','虎','兔','龍','蛇','馬','羊','猴','雞','狗','豬']
+        // loop 1: prev: '鼠', curr: '牛', ..
+        // loop 2: prev: '鼠牛', curr: '虎' ..
+        return prev + curr;
+      }, "");
+
+      // zodicReduct output : 鼠牛虎兔龍蛇馬羊猴雞狗豬
+      console.log(zodicReduce);
+
+      // reduce
+      const arrr = [1, 2, 3];
+      const r8 = arrr.reduce((prev, curr, idx, arr) => {
+        // arrr.reduce
+        // loop 0: prev: 0, curr: 1
+        // loop 1: prev: 1, curr: 2
+        // loop 2: prev: 3, curr: 3
+        // finally: 6
+        console.log(prev, curr);
+        return prev + curr;
+      }, 0);
+
+      console.log(r8);
+      // 挑戰: GroupBy
+
+      // 挑戰: 攤平
+      const arr3 = [
+        [1, 2],
+        [3, 4],
+        [6, 5, 2],
+      ]; // output: [1, 2, 3, 4, 6, 5, 2]
+    </script>
+  </body>
+</html>

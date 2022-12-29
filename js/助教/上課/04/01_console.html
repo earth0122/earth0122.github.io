@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Build School</h1>
+
+    <script>
+      //console.log & console.dir
+      const h1 = document.querySelector("h1");
+
+      console.log(h1);
+      console.dir(h1); //作用在DOM
+
+      const obj = {
+        name: "calvin",
+      };
+
+      console.log(obj);
+      console.dir(obj); //dir 在 一般 object 沒有特別作用
+
+      //console.table
+      const arr = [1, 2, 3];
+      console.table(arr);
+
+      const arr2 = [
+        { name: "calvin", age: 24 },
+        { name: "andy", age: 29 },
+        { name: "jimmy", age: 26 },
+      ];
+      console.table(arr2);
+
+      //console.warn & console.error
+      console.warn("這是警告");
+      console.error("這是錯誤");
+    </script>
+  </body>
+</html>

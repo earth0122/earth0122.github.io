@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row">
+        <!-- 3 * 3 的表格 -->
+    </div>
+
+    <script>
+        // step1. 先抓父節點
+        const row = document.querySelector('.row')
+
+        // step2. 規劃表格
+        // table
+        //   thead
+        //      tr
+        //        th
+        //   tbody
+        //      tr
+        //        td
+
+        // step3. 產出表格DOM節點
+        let table = document.createElement('table')
+        table.setAttribute('border', '1')
+
+        let thead = document.createElement('thead')
+        let tbody = document.createElement('tbody')
+
+        let theadTr = document.createElement('tr')
+        for (let i = 1; i <= 3; i++) {
+            let th = document.createElement('th')
+            th.innerText = i
+
+            theadTr.appendChild(th)
+        }
+        thead.appendChild(theadTr)
+        table.appendChild(thead)
+
+        for (let i = 1; i < 3; i++) {
+            let tr = document.createElement('tr')
+            for (let j = 1; j <= 3; j++) {
+                let td = document.createElement('td')
+                td.innerText = j
+
+                tr.appendChild(td)
+            }
+
+            tbody.appendChild(tr)
+        }
+
+        table.appendChild(tbody)
+
+        // step4. 把完成的需求節點放進父節點
+        row.appendChild(table)
+    </script>
+</body>
+
+</html>
