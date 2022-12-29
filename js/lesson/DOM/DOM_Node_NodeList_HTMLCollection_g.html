@@ -20,22 +20,26 @@
     </ul>
 
     <button>Access Node/NodeList/HTMLCollection</button>
+    <script>
+              let h1, ps, ul, btn;
+
+    </script>
 
     <script type="module">
-      import { $g } from "../modules/helpers.js";
+      import { $g as $got, $log , showName } from "../modules/helpers.js";
 
-      let h1, ps, ul, btn;
 
       window.onload = function () {
-        btn = $g("button");
+        btn = $got("button");
 
         btn.addEventListener("click", showInfo);
+        showName();
       };
 
       function showInfo() {
-        h1 = $g("h1");
-        ps = $g("p");
-        ul = $g("ul");
+        h1 = $got("h1");
+        ps = $got("p");
+        ul = $got("ul");
 
         console.log("* Node - ELEMENT_NODE:");
         //Node - ELEMENT_NODE

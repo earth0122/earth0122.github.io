@@ -58,4 +58,4 @@ function $random(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
 
-export { displayName, $title, $ex, $log, $random, $c, $ct };
+export { displayName as showName, $title, $ex, $log, $random, $c, $ct };

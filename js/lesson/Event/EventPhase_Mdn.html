@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        margin: 20px;
+        padding: 4px;
+        border: thin black solid;
+      }
+
+      #divInfo {
+        margin: 18px;
+        padding: 8px;
+        background-color: white;
+        font-size: 80%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h4>事件傳播鏈</h4>
+    <ul>
+      <li>Click 'd1'</li>
+      <li>Analyze event propagation chain</li>
+      <li>Click next div and repeat the experience</li>
+      <li>Change Capturing mode</li>
+      <li>Repeat the experience</li>
+    </ul>
+    <label for="cbxCapture">Use Capturing</label>
+    <input type="checkbox" id="cbxCapture" />
+
+    <div id="d1">
+      div1:太極生兩儀
+      <div id="d2">
+        div2:兩儀生四象
+        <div id="d3">
+          div3:四象生八卦
+          <div id="d4">div4:八卦生六十四卦</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="divInfo"></div>
+
+    <script>
+      let clear = false;
+      let divInfo = null;
+      let divs = null;
+      let cbxCapture = null;
+
+      window.onload = function () {
+        divs = document.getElementsByTagName("div");
+        divInfo = document.getElementById("divInfo");
+        cbxCapture = document.getElementById("cbxCapture");
+
+        cbxCapture.onchange = () => {
+          removeListeners();
+          addListeners();
+          clearDivs();
+        };
+
+        clearDivs();
+        addListeners();
+      };
+
+      function removeListeners() {
+        for (let div of divs) {
+          if (div.id !== "divInfo") {
+            div.removeEventListener("click", onDivClick, true); //把捕獲階段的Listener事件移除
+            div.removeEventListener("click", onDivClick, false); //把冒泡階段的Listener事件移除
+          }
+        }
+      }
+
+      //把所有div的click事件註冊onDivClick function=>onDivClick
+      function addListeners() {
+        for (const div of divs) {
+          if (div.id !== "divInfo") {
+            if (cbxCapture.checked) {
+              //關於第三個參數的作用:決定捕獲階段還是冒泡階段去監聽這個事件呢
+              //true表示將這個Listener加到捕獲階段
+              div.addEventListener("click", onDivClick, true);
+            } else {
+              //false或沒有設定,表示將這個Listener加到冒泡階段
+              div.addEventListener("click", onDivClick, false);
+              div.onmousemove = () => {
+                clear = true;
+              };
+            }
+          }
+        }
+      }
+
+      let time = 1000;
+      //
+      function onDivClick(e) {
+        if (clear) {
+          clearDivs();
+          clear = false;
+        }
+
+        console.log(e.eventPhase);
+
+        let target = e.currentTarget;
+        //CAPTURING_PHASE (1)
+        if (e.eventPhase === 1) {
+          //e.currentTarget.style.backgroundColor = 'yellow';
+          setTimeout(() => {
+            target.style.backgroundColor = "yellow";
+          }, (time += 500));
+        }
+
+        //AT_TARGET (2)
+        if (e.eventPhase === 2) {
+          e.currentTarget.style.backgroundColor = "red";
+        }
+
+        //BUBBLING_PHASE (3)
+        if (e.eventPhase === 3) {
+          //e.currentTarget.style.backgroundColor = 'lightgreen';
+
+          setTimeout(() => {
+
+            
+            target.style.backgroundColor = "lightgreen";
+          }, (time += 500));
+        }
+
+        const phaseName =
+          ["none", "capturing", "target", "bubbling"][e.eventPhase] ?? "error";
+        const para = document.createElement("p");
+        para.innerText = `${e.currentTarget.id}, eventPhase : ${e.eventPhase}, ${phaseName}`;
+        divInfo.append(para);
+      }
+
+      //重設樣式及內容
+      function clearDivs() {
+        [...divs].forEach((div, index) => {
+          div.style.backgroundColor = index % 2 !== 0 ? "#f6eedb" : "#cceeff";
+        });
+
+        divInfo.innerText = "";
+      }
+    </script>
+  </body>
+</html>
