@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/js/CSS/reset.css" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 32px;
+      }
+      .main-input {
+        text-align: center;
+        /* background-color: #fa0; */
+      }
+      .box {
+        display: flex;
+        flex-wrap: wrap;
+        /* background-color: #fa0; */
+        margin: auto;
+        width: 960px;
+      }
+      .all-btn {
+        width: 480px;
+      }
+      .btn-num,
+      .btn-reset,
+      .btn-answer {
+        width: 157px;
+        height: 50px;
+      }
+      .btn-guess {
+        width: 479px;
+        height: 50px;
+      }
+      .num-input {
+        /* background-color: white; */
+        border: 1px solid black;
+        width: 478px;
+      }
+    </style>
+  </head>
+  <body>
+    <head>
+      <h1>猜數字</h1>
+    </head>
+    <main>
+      <div class="main-input">
+        <input type="text" id="input-num" />
+      </div>
+      <div class="box">
+        <div class="all-btn">
+          <button class="btn-num">1</button>
+          <button class="btn-num">2</button>
+          <button class="btn-num">3</button>
+          <button class="btn-num">4</button>
+          <button class="btn-num">5</button>
+          <button class="btn-num">6</button>
+          <button class="btn-num">7</button>
+          <button class="btn-num">8</button>
+          <button class="btn-num">9</button>
+          <button class="btn-reset">reset</button>
+          <button class="btn-num">0</button>
+          <button class="btn-answer">answer</button>
+          <button class="btn-guess">guess</button>
+        </div>
+        <div class="num-input">
+          <div class="show-result"></div>
+        </div>
+      </div>
+    </main>
+
+    <script></script>
+  </body>
+</html>
