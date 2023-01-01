@@ -1,27 +1,60 @@
+//#region
+//亂數產生(洗牌方式)
+//把陣列中的最後一個元素 和陣列中隨機一個位置互換 然後再把倒數第二個隨機互換(位置有可能選到自己的位置)
+let shuffle = function () {
+  let arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+  let length = arr.length;
+  let lastIndex = length - 1;
+  for (let i = 0; i < lastIndex; i++) {
+    let random = Math.floor(Math.random() * (lastIndex - i + 1)) + i;
+    console.log(i, random);
+    let temp = arr[random];
+    arr[random] = arr[i];
+    arr[i] = temp;
+    // console.log(arr);
+  }
+  //因為取4位數 所以把索引4以後的都刪除
+  arr.splice(4);
+  // console.log(arr);
+  //把陣列轉為字串
+  let arrString = arr.toString();
+  // console.log(arrString);
+  //把,號拿掉
+  let arrSTring = arrString.replace(/,/g, "");
+  // console.log(arrSTring);
+  let arrNum = parseInt(arrSTring);
+  // console.log(arrNum);
+  // console.log(typeof arrNum);
+  return arrNum;
+};
+//#endregion
+//#region
 //取得DOM元素和需要用到的變數
-//抓到DOM input-num
 let inputNum = document.querySelector("#input-num");
-console.log(inputNum);
-//抓到DOM btn-num
+// console.log(inputNum);
 // let allBtn = document.querySelectorAll(".btn-num");
 // console.log(allBtn);
-//抓到DOM btn-reset
 let resetBtn = document.querySelector(".btn-reset");
-console.log(resetBtn);
-//抓到DOM btn-answer
+// console.log(resetBtn);
 let answerBtn = document.querySelector(".btn-answer");
-console.log(answerBtn);
-//抓到DOM btn-guess
+// console.log(answerBtn);
 let guessBtn = document.querySelector(".btn-guess");
-console.log(guessBtn);
-//抓到DOM btn-start
+// console.log(guessBtn);
 let startBtn = document.querySelector(".btn-start");
-//輸入數字變數
-let inputNumValue;
+// console.log(startBtn);
+let showResult = document.querySelector(".show-result");
+let inputNumValue = inputNum.value;
 //猜的數字
-let guessNum;
+let guessNum = inputNum.value;
 //猜數字的答案
-let answer = getRandomInt();
+let answer = shuffle();
+//A
+let A = 0;
+//B
+let B = 0;
+//#endregion
+//#region
+/*事件*/
 //案答案按鈕要彈出答案
 answerBtn.addEventListener("click", function () {
   alert(answer);
@@ -32,6 +65,43 @@ answerBtn.addEventListener("click", function () {
 //     inputNum.value += item.innerHTML;
 //   });
 // });
+//案開始
+startBtn.addEventListener("click", function () {
+  answerBtn.disabled = false;
+  guessBtn.disabled = false;
+  resetBtn.disabled = false;
+});
+//案猜TODO:
+guessBtn.addEventListener("click", function () {
+  //判斷輸入的值是不是數字
+  // guessNumber = parseInt(inputNumValue, 10);
+  // if (isNaN(guessNumber)) {
+  //   alert("請輸入數字");
+  //   inputNum.value = "";
+  // }
+  if (guessNum === answer) {
+    alert("恭喜猜對");
+    inputNum.value = "";
+  } else if (guessNum.length != 4) {
+    alert("請輸入4個數字");
+    inputNum.value = "";
+  } else if (checkRepeat != 4) {
+    alert("請輸入四個不一樣的數字");
+    input.value = "";
+  }
+});
+//重新開始遊戲
+resetBtn.addEventListener("click", function () {
+  answer = shuffle();
+  answerBtn.disabled = true;
+  guessBtn.disabled = true;
+  resetBtn.disabled = true;
+  inputNum.value = "";
+  showResult.innerHTML = "";
+
+  // allBtn.disabled = true;
+});
+//#endregion
 
 //鎖住按鈕
 window.onload = function () {
@@ -40,27 +110,8 @@ window.onload = function () {
   guessBtn.disabled = true;
   resetBtn.disabled = true;
 };
-//案開始
-startBtn.addEventListener("click", function () {
-  answerBtn.disabled = false;
-  guessBtn.disabled = false;
-  resetBtn.disabled = false;
-});
 
 //猜數字
+//1.產生亂數(最上面)
+//2.將輸入的數字和答案去做對比 如果數字有一樣去判對位置一不一樣 一樣的話(A)位置不一樣的話(B)
 
-//1產生一組4位數
-function getRandomInt(min, max) {
-  min = Math.ceil(1000);
-  max = Math.floor(10000);
-  return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
-}
-
-//2.將輸入的數字判斷是否正確&位置是否正確
-
-//3.重新開始遊戲
-resetBtn.addEventListener("click", function () {
-  answer = getRandomInt();
-  inputNum.value("");
-  // allBtn.disabled = true;
-});
