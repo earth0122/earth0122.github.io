@@ -7,7 +7,7 @@ let shuffle = function () {
   let lastIndex = length - 1;
   for (let i = 0; i < lastIndex; i++) {
     let random = Math.floor(Math.random() * (lastIndex - i + 1)) + i;
-    console.log(i, random);
+    // console.log(i, random);
     let temp = arr[random];
     arr[random] = arr[i];
     arr[i] = temp;
@@ -22,10 +22,11 @@ let shuffle = function () {
   //把,號拿掉
   let arrSTring = arrString.replace(/,/g, "");
   // console.log(arrSTring);
-  let arrNum = parseInt(arrSTring);
+  // let arrNum = parseInt(arrSTring);
   // console.log(arrNum);
   // console.log(typeof arrNum);
-  return arrNum;
+
+  return arrSTring;
 };
 //#endregion
 //#region
@@ -74,20 +75,19 @@ startBtn.addEventListener("click", function () {
 //案猜TODO:
 guessBtn.addEventListener("click", function () {
   //判斷輸入的值是不是數字
-  // guessNumber = parseInt(inputNumValue, 10);
-  // if (isNaN(guessNumber)) {
-  //   alert("請輸入數字");
-  //   inputNum.value = "";
-  // }
-  if (guessNum === answer) {
-    alert("恭喜猜對");
+  guessNum = parseInt(inputNum.value, 10);
+  if (isNaN(guessNum)) {
+    alert("請輸入數字");
     inputNum.value = "";
-  } else if (guessNum.length != 4) {
+  } else if (guessNum.length < 4 || guessNum.length > 4) {
     alert("請輸入4個數字");
     inputNum.value = "";
   } else if (checkRepeat != 4) {
     alert("請輸入四個不一樣的數字");
     input.value = "";
+  } else if (guessNum === answer) {
+    alert("恭喜猜對");
+    inputNum.value = "";
   }
 });
 //重新開始遊戲
@@ -114,4 +114,3 @@ window.onload = function () {
 //猜數字
 //1.產生亂數(最上面)
 //2.將輸入的數字和答案去做對比 如果數字有一樣去判對位置一不一樣 一樣的話(A)位置不一樣的話(B)
-
