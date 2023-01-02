@@ -22,11 +22,11 @@ let shuffle = function () {
   //把,號拿掉
   let arrSTring = arrString.replace(/,/g, "");
   // console.log(arrSTring);
-  // let arrNum = parseInt(arrSTring);
+  //轉成number
+  let arrNum = parseInt(arrSTring);
   // console.log(arrNum);
   // console.log(typeof arrNum);
-
-  return arrSTring;
+  return arrNum;
 };
 //#endregion
 //#region
