@@ -23,10 +23,10 @@ let shuffle = function () {
   let arrSTring = arrString.replace(/,/g, "");
   // console.log(arrSTring);
   //轉成number
-  let arrNum = parseInt(arrSTring);
+  // let arrNum = parseInt(arrSTring);
   // console.log(arrNum);
   // console.log(typeof arrNum);
-  return arrNum;
+  return arrSTring;
 };
 //#endregion
 //#region
@@ -44,9 +44,8 @@ let guessBtn = document.querySelector(".btn-guess");
 let startBtn = document.querySelector(".btn-start");
 // console.log(startBtn);
 let showResult = document.querySelector(".show-result");
-let inputNumValue = inputNum.value;
 //猜的數字
-let guessNum = inputNum.value;
+let guessNum;
 //猜數字的答案
 let answer = shuffle();
 //A
@@ -74,18 +73,23 @@ startBtn.addEventListener("click", function () {
 });
 //案猜TODO:
 guessBtn.addEventListener("click", function () {
+  let inputValue = inputNum.value;
   //判斷輸入的值是不是數字
-  guessNum = parseInt(inputNum.value, 10);
+  guessNum = parseInt(inputValue, 10);
   if (isNaN(guessNum)) {
     alert("請輸入數字");
     inputNum.value = "";
-  } else if (guessNum.length < 4 || guessNum.length > 4) {
+  }
+  if (guessNum.toString().length != 4) {
     alert("請輸入4個數字");
     inputNum.value = "";
-  } else if (checkRepeat != 4) {
+  }
+  //用個let去接這個Function判斷
+  if (checkRepeat()) {
     alert("請輸入四個不一樣的數字");
     input.value = "";
-  } else if (guessNum === answer) {
+  }
+  if (guessNum === answer) {
     alert("恭喜猜對");
     inputNum.value = "";
   }
