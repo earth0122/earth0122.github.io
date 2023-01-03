@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>XHR</h1>
+
+    <button id="btnGetJson">XHR-Get</button>
+
+    <!-- <div id="msg"></div> -->
+    <ul id="container"></ul>
+
+    <script>
+      let btnGetJson, container;
+
+      const url =
+        "https://raw.githubusercontent.com/apprunner/FileStorage/master/apple_array.json";
+
+      window.onload = function () {
+        btnGetJson = document.getElementById("btnGetJson");
+
+        btnGetJson.addEventListener("click", requestAppleJson.bind(null, url));
+        //btnGetJson.addEventListener("click", requestAppleJson.bind(event,url));
+
+        container = document.getElementById("container");
+      };
+
+      let xhr = new XMLHttpRequest();
+
+      let appleArray = [];
+      function requestAppleJson(uri) {
+        xhr.onload = function () {
+          console.log(this);
+          // msg.innerText = this.responseText;
+          appleArray = JSON.parse(this.responseText);
+            // debugger
+          appleArray.forEach((item, index) => {
+            let li = document.createElement("li");
+
+            li.innerText = `${index}. ${item.type}, ${item.id}, ${item.color}, ${item.storage}, ${item.network}, ${item.price}`;
+            container.append(li);
+          });
+        };
+
+        xhr.open("GET", uri);
+        xhr.send();
+      }
+    </script>
+  </body>
+</html>
