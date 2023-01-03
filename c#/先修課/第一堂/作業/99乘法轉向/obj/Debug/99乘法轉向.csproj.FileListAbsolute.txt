@@ -1,0 +1,8 @@
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\作業\99乘法轉向\bin\Debug\99乘法轉向.exe.config
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\作業\99乘法轉向\bin\Debug\99乘法轉向.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\作業\99乘法轉向\bin\Debug\99乘法轉向.pdb
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\作業\99乘法轉向\obj\Debug\99乘法轉向.csproj.AssemblyReference.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\作業\99乘法轉向\obj\Debug\99乘法轉向.csproj.SuggestedBindingRedirects.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\作業\99乘法轉向\obj\Debug\99乘法轉向.csproj.CoreCompileInputs.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\作業\99乘法轉向\obj\Debug\99乘法轉向.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\作業\99乘法轉向\obj\Debug\99乘法轉向.pdb

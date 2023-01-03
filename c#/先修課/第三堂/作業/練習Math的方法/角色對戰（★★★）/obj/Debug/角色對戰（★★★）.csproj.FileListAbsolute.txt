@@ -1,0 +1,8 @@
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\角色對戰（★★★）\bin\Debug\角色對戰（★★★）.exe.config
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\角色對戰（★★★）\bin\Debug\角色對戰（★★★）.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\角色對戰（★★★）\bin\Debug\角色對戰（★★★）.pdb
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\角色對戰（★★★）\obj\Debug\角色對戰（★★★）.csproj.AssemblyReference.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\角色對戰（★★★）\obj\Debug\角色對戰（★★★）.csproj.SuggestedBindingRedirects.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\角色對戰（★★★）\obj\Debug\角色對戰（★★★）.csproj.CoreCompileInputs.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\角色對戰（★★★）\obj\Debug\角色對戰（★★★）.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\角色對戰（★★★）\obj\Debug\角色對戰（★★★）.pdb

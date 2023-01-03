@@ -1,0 +1,8 @@
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\上課\MyFirstSolution\MyFirstApp\bin\Debug\MyFirstApp.exe.config
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\上課\MyFirstSolution\MyFirstApp\bin\Debug\MyFirstApp.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\上課\MyFirstSolution\MyFirstApp\bin\Debug\MyFirstApp.pdb
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\上課\MyFirstSolution\MyFirstApp\obj\Debug\MyFirstApp.csproj.AssemblyReference.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\上課\MyFirstSolution\MyFirstApp\obj\Debug\MyFirstApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\上課\MyFirstSolution\MyFirstApp\obj\Debug\MyFirstApp.csproj.CoreCompileInputs.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\上課\MyFirstSolution\MyFirstApp\obj\Debug\MyFirstApp.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\上課\MyFirstSolution\MyFirstApp\obj\Debug\MyFirstApp.pdb

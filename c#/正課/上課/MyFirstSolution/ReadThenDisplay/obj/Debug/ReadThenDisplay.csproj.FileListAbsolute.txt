@@ -1,0 +1,8 @@
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\上課\MyFirstSolution\ReadThenDisplay\bin\Debug\ReadThenDisplay.exe.config
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\上課\MyFirstSolution\ReadThenDisplay\bin\Debug\ReadThenDisplay.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\上課\MyFirstSolution\ReadThenDisplay\bin\Debug\ReadThenDisplay.pdb
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\上課\MyFirstSolution\ReadThenDisplay\obj\Debug\ReadThenDisplay.csproj.AssemblyReference.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\上課\MyFirstSolution\ReadThenDisplay\obj\Debug\ReadThenDisplay.csproj.SuggestedBindingRedirects.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\上課\MyFirstSolution\ReadThenDisplay\obj\Debug\ReadThenDisplay.csproj.CoreCompileInputs.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\上課\MyFirstSolution\ReadThenDisplay\obj\Debug\ReadThenDisplay.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\上課\MyFirstSolution\ReadThenDisplay\obj\Debug\ReadThenDisplay.pdb
