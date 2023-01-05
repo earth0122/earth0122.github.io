@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Apple Products - XHR Get JSON</h1>
+    <h5>
+      MDN -
+      https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/readystatechange_event
+    </h5>
+    <button id="btnGetJSON">GET - Apple JSON</button>
+    <div id="msg"></div>
+    <ul id="container"></ul>
+
+    <script>
+      const urlAppleArray =
+        "https://raw.githubusercontent.com/apprunner/FileStorage/master/apple_array.json";
+      const urlAppleObject =
+        "https://raw.githubusercontent.com/apprunner/FileStorage/master/apple_object.json";
+
+      let appleArray = [];
+      let appleObject = {};
+
+      let query, query2;
+      let appleNewArray = [];
+      window.onload = function () {
+        msg = document.getElementById("msg");
+        ul = document.getElementById("container");
+        btnGetJSON = document.getElementById("btnGetJSON");
+
+        //1.
+        // btnGetJSON.addEventListener("click",function(){
+        //     requestJson(urlAppleArray);
+        //     requestJson(urlAppleObject);
+        // });
+
+        //2.
+        // btnGetJSON.addEventListener("click", ()=>{
+        //     requestJson(urlAppleArray);
+        //     requestJson(urlAppleObject);
+        // });
+
+        //3.具名Function, For Bind()
+        btnGetJSON.addEventListener(
+          "click",
+          requestJson.bind(null, urlAppleArray)
+        );
+        btnGetJSON.addEventListener(
+          "click",
+          requestJson.bind(null, urlAppleObject)
+        );
+      };
+
+      function requestJson(uri) {
+        let xhr = new XMLHttpRequest();
+
+        xhr.onreadystatechange = () => {
+          if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (Array.isArray(xhr.response)) {
+              appleArray = xhr.response;
+              msg.innerText = JSON.stringify(xhr.response);
+            } else {
+              appleObject = xhr.response;
+            }
+          }
+        };
+
+        xhr.open("GET", uri);
+        xhr.responseType = "json";
+        xhr.send();
+      }
+
+      function filtering() {
+        query = appleArray.filter((x) => x.price >= 24900);
+
+        query2 = appleArray.filter(function (item, index) {
+          if (item.price >= 24900 && item.storage !== "64GB") {
+            let newItem = {
+              type: item.type,
+              id: item.id,
+              price: item.price * 1.05,
+            };
+            appleNewArray.push(newItem);
+          }
+        });
+      }
+
+      //1. forEach()
+      function KeysValues() {
+        let nameArray = Object.keys(appleObject);
+
+        nameArray.forEach((name) => {
+          console.log(name);
+          document.writeln(JSON.stringify(appleObject[name]) + "<br>");
+        });
+      }
+
+      //2.for...of
+
+      //3.for...in
+    </script>
+  </body>
+</html>
