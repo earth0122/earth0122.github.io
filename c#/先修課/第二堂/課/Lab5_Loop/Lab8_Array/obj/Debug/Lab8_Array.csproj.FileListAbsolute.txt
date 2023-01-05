@@ -1,0 +1,8 @@
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab8_Array\obj\Debug\Lab8_Array.csproj.AssemblyReference.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab8_Array\obj\Debug\Lab8_Array.csproj.SuggestedBindingRedirects.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab8_Array\obj\Debug\Lab8_Array.csproj.CoreCompileInputs.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab8_Array\bin\Debug\Lab8_Array.exe.config
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab8_Array\bin\Debug\Lab8_Array.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab8_Array\bin\Debug\Lab8_Array.pdb
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab8_Array\obj\Debug\Lab8_Array.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab8_Array\obj\Debug\Lab8_Array.pdb
