@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2023 - Calendar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <h1 class="year-month">0000年 - 00月</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>日</th>
+          <th>一</th>
+          <th>二</th>
+          <th>三</th>
+          <th>四</th>
+          <th>五</th>
+          <th>六</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 動態渲染日期 -->
+      </tbody>
+    </table>
+    <button onclick="previousMonth()" class="btn btn-primary">往上月</button>
+    <button onclick="nextMonth()" class="btn btn-primary">往下月</button>
+
+    <!-- 新增行程Modal -->
+    <div id="add-modal" class="modal fade" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">新增</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <input id="add-date" type="text" />
+            <input id="add-value" type="text" />
+          </div>
+          <div class="modal-footer">
+            <button
+              onclick="addTodoItem()"
+              type="button"
+              class="btn btn-primary"
+            >
+              新增
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 編輯行程Modal -->
+    <div id="edit-modal" class="modal fade" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">編輯</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <input id="edit-date" type="text" />
+            <input id="edit-value" type="text" />
+          </div>
+          <div class="modal-footer">
+            <button
+              onclick="deleteTodoItem()"
+              type="button"
+              class="btn btn-danger"
+            >
+              刪除
+            </button>
+            <button
+              onclick="editTodoItem()"
+              type="button"
+              class="btn btn-primary"
+            >
+              修改
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      //宣告
+      const today = new Date(); //今天
+      let year = today.getFullYear(); //年
+      let month = today.getMonth(); //月份 1月是0
+
+      let currentIndex;
+      //DOM
+      const yearMonthText = document.querySelector(".year-month");
+      const dateArea = document.querySelector("tbody");
+
+      const addModal = document.querySelector("#add-modal");
+      const editModal = document.querySelector("#edit-modal");
+
+      const addDateInput = document.querySelector("#add-date");
+      const addValueInput = document.querySelector("#add-value");
+      const editDateInput = document.querySelector("#edit-date");
+      const editValueInput = document.querySelector("#edit-value");
+
+      //function
+      function renderDate() {
+        dateArea.innerHTML = "";
+
+        yearMonthText.innerText = `${year}年 - ${month + 1}月`;
+
+        //這個月第一天禮拜幾?
+        let firstDay = new Date(year, month, 1).getDay();
+        //這個月有幾天?
+        let dayOfMonth = new Date(year, month + 1, 0).getDate();
+
+        let rows = Math.ceil((dayOfMonth + firstDay) / 7);
+        let day = 1;
+
+        for (let row = 0; row < rows; row++) {
+          let tr = document.createElement("tr");
+          for (let col = 0; col < 7; col++) {
+            let td = document.createElement("td");
+            if (row == 0 && col < firstDay) {
+              //上個月
+              td.innerText = "A";
+            } else {
+              if (day <= dayOfMonth) {
+                //這個月
+                let d = day;
+                td.innerText = day;
+
+                if (
+                  localStorage.getItem(`${year}-${month + 1}-${day}`) != null
+                ) {
+                  let ul = document.createElement("ul");
+
+                  let todoList = JSON.parse(
+                    localStorage.getItem(`${year}-${month + 1}-${day}`)
+                  );
+                  todoList.forEach((item, index) => {
+                    let li = document.createElement("li");
+                    li.innerText = item.title;
+
+                    li.onclick = function (e) {
+                      editDateInput.value = `${year}-${month + 1}-${d}`;
+                      editValueInput.value = item.title;
+
+                      currentIndex = index;
+
+                      bootstrap.Modal.getOrCreateInstance(editModal).show();
+                      e.stopPropagation();
+                    };
+
+                    ul.appendChild(li);
+                  });
+                  td.appendChild(ul);
+                }
+
+                td.onclick = function () {
+                  addDateInput.value = `${year}-${month + 1}-${d}`;
+                  bootstrap.Modal.getOrCreateInstance(addModal).show();
+                };
+              } else {
+                //下個月
+                td.innerText = "B";
+              }
+              day++;
+            }
+            tr.appendChild(td);
+          }
+          dateArea.appendChild(tr);
+        }
+      }
+
+      function nextMonth() {
+        month++;
+        if (month == 12) {
+          year++;
+          month = 0;
+        }
+        renderDate();
+      }
+
+      function previousMonth() {
+        month--;
+        if (month == -1) {
+          year--;
+          month = 11;
+        }
+        renderDate();
+      }
+
+      function addTodoItem() {
+        let date = addDateInput.value;
+        let todoItem = addValueInput.value;
+
+        let todoObj = {
+          title: todoItem,
+        };
+
+        let todoList = [];
+
+        if (localStorage.getItem(date) == null) {
+          todoList.push(todoObj);
+        } else {
+          todoList = JSON.parse(localStorage.getItem(date));
+          todoList.push(todoObj);
+        }
+
+        localStorage.setItem(date, JSON.stringify(todoList));
+
+        bootstrap.Modal.getOrCreateInstance(addModal).hide();
+
+        renderDate();
+      }
+
+      function editTodoItem() {
+        let date = editDateInput.value;
+        let todoItem = editValueInput.value;
+
+        let todoList = JSON.parse(localStorage.getItem(date));
+
+        todoList[currentIndex] = {
+          title: todoItem,
+        };
+
+        localStorage.setItem(date, JSON.stringify(todoList));
+
+        bootstrap.Modal.getOrCreateInstance(editModal).hide();
+
+        renderDate();
+      }
+
+      function deleteTodoItem() {
+        let date = editDateInput.value;
+
+        let todoList = JSON.parse(localStorage.getItem(date));
+        todoList.splice(currentIndex, 1);
+
+        localStorage.setItem(date, JSON.stringify(todoList));
+
+        bootstrap.Modal.getOrCreateInstance(editModal).hide();
+
+        renderDate();
+      }
+
+      //window.onload
+      window.onload = function () {
+        renderDate();
+      };
+    </script>
+  </body>
+</html>

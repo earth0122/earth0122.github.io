@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <button class="start-btn">開始遊戲</button>
+    <br />
+    <input type="text" value="3456" />
+    <br />
+    <button class="guess-btn">猜</button>
+
+    <script>
+      //宣告
+      let answer = [];
+      let guess = [];
+
+      //DOM
+      const startBtn = document.querySelector(".start-btn");
+      const guessBtn = document.querySelector(".guess-btn");
+      const guessInput = document.querySelector("input");
+
+      //function
+      function getFourNum() {
+        return [...Array(10)]
+          .map((x, index) => index.toString())
+          .sort(() => Math.random() - Math.random())
+          .splice(6);
+      }
+
+      function check() {
+        guess = guessInput.value.split("");
+
+        let intersectArr = answer.filter((x) => guess.includes(x));
+        let a = intersectArr.filter(
+          (x) => answer.indexOf(x) == guess.indexOf(x)
+        ).length;
+        let b = intersectArr.length - a;
+
+        console.log(`${a}A${b}B`);
+      }
+
+      //window.onload
+      window.onload = function () {
+        startBtn.onclick = function () {
+          //answer = getFourNum()
+          answer = ["1", "2", "3", "4"];
+        };
+
+        guessBtn.onclick = function () {
+          check();
+        };
+      };
+    </script>
+  </body>
+</html>
