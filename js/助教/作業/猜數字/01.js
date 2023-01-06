@@ -94,11 +94,7 @@ guessBtn.addEventListener("click", function () {
     alert("恭喜猜對");
     inputNum.value = "";
   } else {
-<<<<<<< HEAD
     if (isNaN(guessNum) || guessNum.toString().length != 4) {
-=======
-    if (isNaN(guessNum)) {
->>>>>>> f0233bb519f8c309d58eaa2177ea65da3277574b
       //|| guessNum.toString().length != 4 開頭0有bug 處理中
       alert("請輸入4位數字");
       inputNum.value = "";
