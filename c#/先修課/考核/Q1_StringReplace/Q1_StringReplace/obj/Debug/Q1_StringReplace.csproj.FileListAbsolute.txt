@@ -1,0 +1,8 @@
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\考核\Q1_StringReplace\Q1_StringReplace\bin\Debug\Q1_StringReplace.exe.config
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\考核\Q1_StringReplace\Q1_StringReplace\bin\Debug\Q1_StringReplace.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\考核\Q1_StringReplace\Q1_StringReplace\bin\Debug\Q1_StringReplace.pdb
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\考核\Q1_StringReplace\Q1_StringReplace\obj\Debug\Q1_StringReplace.csproj.AssemblyReference.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\考核\Q1_StringReplace\Q1_StringReplace\obj\Debug\Q1_StringReplace.csproj.SuggestedBindingRedirects.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\考核\Q1_StringReplace\Q1_StringReplace\obj\Debug\Q1_StringReplace.csproj.CoreCompileInputs.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\考核\Q1_StringReplace\Q1_StringReplace\obj\Debug\Q1_StringReplace.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\考核\Q1_StringReplace\Q1_StringReplace\obj\Debug\Q1_StringReplace.pdb

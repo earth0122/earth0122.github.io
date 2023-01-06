@@ -1,0 +1,8 @@
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\課\Lab10-1_Random\Lab11-2_Class\bin\Debug\Lab11-2_Class.exe.config
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\課\Lab10-1_Random\Lab11-2_Class\bin\Debug\Lab11-2_Class.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\課\Lab10-1_Random\Lab11-2_Class\bin\Debug\Lab11-2_Class.pdb
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\課\Lab10-1_Random\Lab11-2_Class\obj\Debug\Lab11-2_Class.csproj.AssemblyReference.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\課\Lab10-1_Random\Lab11-2_Class\obj\Debug\Lab11-2_Class.csproj.SuggestedBindingRedirects.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\課\Lab10-1_Random\Lab11-2_Class\obj\Debug\Lab11-2_Class.csproj.CoreCompileInputs.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\課\Lab10-1_Random\Lab11-2_Class\obj\Debug\Lab11-2_Class.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\課\Lab10-1_Random\Lab11-2_Class\obj\Debug\Lab11-2_Class.pdb

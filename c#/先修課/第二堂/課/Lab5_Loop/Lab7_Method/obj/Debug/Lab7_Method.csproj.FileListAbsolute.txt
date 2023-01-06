@@ -1,0 +1,8 @@
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab7_Method\bin\Debug\Lab7_Method.exe.config
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab7_Method\bin\Debug\Lab7_Method.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab7_Method\bin\Debug\Lab7_Method.pdb
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab7_Method\obj\Debug\Lab7_Method.csproj.AssemblyReference.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab7_Method\obj\Debug\Lab7_Method.csproj.SuggestedBindingRedirects.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab7_Method\obj\Debug\Lab7_Method.csproj.CoreCompileInputs.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab7_Method\obj\Debug\Lab7_Method.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab7_Method\obj\Debug\Lab7_Method.pdb

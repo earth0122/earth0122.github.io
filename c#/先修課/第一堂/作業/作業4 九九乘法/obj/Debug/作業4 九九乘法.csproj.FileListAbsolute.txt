@@ -1,0 +1,24 @@
+C:\Users\earth\OneDrive\桌面\程式\c#\作業3 奇偶數判斷\作業4 九九乘法\bin\Debug\作業4 九九乘法.exe.config
+C:\Users\earth\OneDrive\桌面\程式\c#\作業3 奇偶數判斷\作業4 九九乘法\bin\Debug\作業4 九九乘法.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\作業3 奇偶數判斷\作業4 九九乘法\bin\Debug\作業4 九九乘法.pdb
+C:\Users\earth\OneDrive\桌面\程式\c#\作業3 奇偶數判斷\作業4 九九乘法\obj\Debug\作業4 九九乘法.csproj.AssemblyReference.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\作業3 奇偶數判斷\作業4 九九乘法\obj\Debug\作業4 九九乘法.csproj.SuggestedBindingRedirects.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\作業3 奇偶數判斷\作業4 九九乘法\obj\Debug\作業4 九九乘法.csproj.CoreCompileInputs.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\作業3 奇偶數判斷\作業4 九九乘法\obj\Debug\作業4 九九乘法.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\作業3 奇偶數判斷\作業4 九九乘法\obj\Debug\作業4 九九乘法.pdb
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\作業\作業4 九九乘法\bin\Debug\作業4 九九乘法.exe.config
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\作業\作業4 九九乘法\bin\Debug\作業4 九九乘法.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\作業\作業4 九九乘法\bin\Debug\作業4 九九乘法.pdb
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\作業\作業4 九九乘法\obj\Debug\作業4 九九乘法.csproj.AssemblyReference.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\作業\作業4 九九乘法\obj\Debug\作業4 九九乘法.csproj.SuggestedBindingRedirects.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\作業\作業4 九九乘法\obj\Debug\作業4 九九乘法.csproj.CoreCompileInputs.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\作業\作業4 九九乘法\obj\Debug\作業4 九九乘法.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\作業\作業4 九九乘法\obj\Debug\作業4 九九乘法.pdb
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\作業\作業4 九九乘法\bin\Debug\作業4 九九乘法.exe.config
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\作業\作業4 九九乘法\bin\Debug\作業4 九九乘法.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\作業\作業4 九九乘法\bin\Debug\作業4 九九乘法.pdb
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\作業\作業4 九九乘法\obj\Debug\作業4 九九乘法.csproj.AssemblyReference.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\作業\作業4 九九乘法\obj\Debug\作業4 九九乘法.csproj.SuggestedBindingRedirects.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\作業\作業4 九九乘法\obj\Debug\作業4 九九乘法.csproj.CoreCompileInputs.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\作業\作業4 九九乘法\obj\Debug\作業4 九九乘法.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\作業\作業4 九九乘法\obj\Debug\作業4 九九乘法.pdb

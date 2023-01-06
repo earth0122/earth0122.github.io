@@ -1,0 +1,11 @@
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\作業\第二次\homework\homework\bin\Debug\homework.exe.config
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\作業\第二次\homework\homework\bin\Debug\homework.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\作業\第二次\homework\homework\bin\Debug\homework.pdb
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\作業\第二次\homework\homework\obj\Debug\homework.csproj.AssemblyReference.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\作業\第二次\homework\homework\obj\Debug\homework.csproj.SuggestedBindingRedirects.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\作業\第二次\homework\homework\obj\Debug\homework.Form1.resources
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\作業\第二次\homework\homework\obj\Debug\homework.Properties.Resources.resources
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\作業\第二次\homework\homework\obj\Debug\homework.csproj.GenerateResource.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\作業\第二次\homework\homework\obj\Debug\homework.csproj.CoreCompileInputs.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\作業\第二次\homework\homework\obj\Debug\homework.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\正課\作業\第二次\homework\homework\obj\Debug\homework.pdb

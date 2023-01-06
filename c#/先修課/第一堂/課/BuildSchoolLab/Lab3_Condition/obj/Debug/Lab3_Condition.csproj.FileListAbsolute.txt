@@ -1,0 +1,8 @@
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab3_Condition\bin\Debug\Lab3_Condition.exe.config
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab3_Condition\bin\Debug\Lab3_Condition.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab3_Condition\bin\Debug\Lab3_Condition.pdb
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab3_Condition\obj\Debug\Lab3_Condition.csproj.AssemblyReference.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab3_Condition\obj\Debug\Lab3_Condition.csproj.SuggestedBindingRedirects.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab3_Condition\obj\Debug\Lab3_Condition.csproj.CoreCompileInputs.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab3_Condition\obj\Debug\Lab3_Condition.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab3_Condition\obj\Debug\Lab3_Condition.pdb

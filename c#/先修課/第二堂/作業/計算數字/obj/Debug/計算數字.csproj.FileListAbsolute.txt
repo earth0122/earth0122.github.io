@@ -1,0 +1,8 @@
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\作業\計算數字\obj\Debug\計算數字.csproj.AssemblyReference.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\作業\計算數字\obj\Debug\計算數字.csproj.SuggestedBindingRedirects.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\作業\計算數字\obj\Debug\計算數字.csproj.CoreCompileInputs.cache
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\作業\計算數字\bin\Debug\計算數字.exe.config
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\作業\計算數字\bin\Debug\計算數字.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\作業\計算數字\bin\Debug\計算數字.pdb
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\作業\計算數字\obj\Debug\計算數字.exe
+C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\作業\計算數字\obj\Debug\計算數字.pdb
