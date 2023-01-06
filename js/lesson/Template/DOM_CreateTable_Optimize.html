@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        table-layout: fixed;
+        width: 100%;
+        border-collapse: collapse;
+        border: 3px solid purple;
+      }
+
+      tbody tr:nth-child(odd) {
+        background-color: lightblue;
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: aqua;
+      }
+
+      thead th:nth-child(1) {
+        width: 10%;
+        cursor: pointer;
+      }
+
+      thead th:nth-child(2) {
+        width: 10%;
+        cursor: pointer;
+      }
+
+      thead th:nth-child(3) {
+        width: 10%;
+        cursor: pointer;
+      }
+
+      thead th:nth-child(4) {
+        width: 60%;
+      }
+
+      thead th:nth-child(5) {
+        width: 10%;
+      }
+
+      img {
+        /* width: auto; */
+        height: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="msg"></div>
+
+    <script>
+      let ipads = {
+        titles: ["產品編號", "售價", "儲存容量", "說明", "PIC"],
+        data: [
+          {
+            sku: "MW762",
+            price: 10900,
+            storage: "32GB",
+            description: "10.2 吋 iPad Wi-Fi 機型 32GB - 金色",
+            picture: "ipad_gold.png",
+          },
+          {
+            sku: "MW772",
+            price: 13900,
+            storage: "128GB",
+            description: "10.2 吋 iPad Wi-Fi 機型 128GB - 太空灰色",
+            picture: "ipad_space.png",
+          },
+        ],
+      };
+
+      let table, thead, tbody;
+
+      let data2DArray = [];
+      window.onload = function () {
+        //重製資料列 -> 二維陣列, 只含value不含title標題
+        ipads.data.forEach((ipad) => {
+          data2DArray.push(Object.values(ipad));
+        });
+
+        data2DArray = ipads.data.map((ipad) => Object.values(ipad));
+
+        createTable(ipads.titles, data2DArray);
+      };
+
+      //create element & innerText
+      function $ce(element, text) {
+        let el = document.createElement(element);
+
+        //判斷text參數是否合規?
+        if (text !== undefined && text !== "" && text !== null) {
+          el.innerText = text;
+        }
+
+        return el;
+      }
+
+      function createTable(titles, rowsArray) {
+        //Create a table dynamically
+        table = $ce("table");
+        thead = createThead(titles);
+        tbody = createTbody(rowsArray);
+
+        table.append(thead, tbody);
+
+        document.body.appendChild(table);
+
+        //<h1>用DOM動態建立Table</h1>
+        let h1 = $ce("h1");
+        h1.innerText = "用DOM動態建立Table";
+        document.body.insertBefore(h1, table);
+      }
+
+      //建立標題
+      function createThead(titles) {
+        let Thead = $ce("thead", null);
+        let tr = document.createElement("tr");
+
+        titles.forEach((title) => {
+          let th = $ce("th");
+          th.innerText = title;
+
+          tr.append(th);
+        });
+        Thead.append(tr);
+
+        //debugger;
+        return Thead;
+      }
+
+      function createTbody(rowsArray) {
+        let Tbody = $ce("tbody", "");
+        rowsArray.forEach((row) => {
+          let tr = $ce("tr");
+          row.forEach((column) => {
+            let td = $ce("td");
+            if (column.toString().includes("png")) {
+              td.innerHTML = `<img src="${column}">`;
+            } else {
+              td.innerText = column;
+            }
+
+            tr.append(td);
+          });
+          Tbody.append(tr);
+        });
+
+        return Tbody;
+      }
+    </script>
+  </body>
+</html>

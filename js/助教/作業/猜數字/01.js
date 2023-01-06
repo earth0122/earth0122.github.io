@@ -48,6 +48,14 @@ let showResult = document.querySelector(".show-result");
 let guessNum;
 //猜數字的答案
 let answer = shuffle();
+// function checkrepeat(item) {
+//   console.log(item);
+//   for(i=0;i<=stringAry.length;i++){
+//     if(兩個索引位置的值一樣)
+//     break;
+//     alert("請輸入不重複的數字")
+//   }
+// }
 //A
 let A = 0;
 //B
@@ -71,27 +79,43 @@ startBtn.addEventListener("click", function () {
   guessBtn.disabled = false;
   resetBtn.disabled = false;
 });
-//案猜TODO:
+//案猜
 guessBtn.addEventListener("click", function () {
   let inputValue = inputNum.value;
   //判斷輸入的值是不是數字
   guessNum = parseInt(inputValue, 10);
-  if (isNaN(guessNum)) {
-    alert("請輸入數字");
-    inputNum.value = "";
-  }
-  if (guessNum.toString().length != 4) {
-    alert("請輸入4個數字");
-    inputNum.value = "";
-  }
-  //用個let去接這個Function判斷
-  if (checkRepeat()) {
-    alert("請輸入四個不一樣的數字");
-    input.value = "";
-  }
-  if (guessNum === answer) {
+  let stringNum = guessNum.toString();
+  let stringAry = [...stringNum]; //猜 陣列
+  let ansNum = [...answer]; //答案 陣列
+  // checkrepeat(stringAry);
+  // console.log(stringAry); //陣列
+  // console.log(typeof stringAry);
+  if (stringNum === answer) {
     alert("恭喜猜對");
     inputNum.value = "";
+  } else {
+    if (isNaN(guessNum) || guessNum.toString().length != 4) {
+      //|| guessNum.toString().length != 4 開頭0有bug 處理中
+      alert("請輸入4位數字");
+      inputNum.value = "";
+    } else {
+      A = 0;
+      B = 0;
+      for (let i = 0; i < answer.length; i++) {
+        if (stringAry[i] === ansNum[i]) {
+          A++;
+        } else if (stringAry.includes(ansNum[i])) {
+          B++;
+        }
+      }
+      showResult.innerHTML += `${A}A${B}B ${inputValue}<br>`;
+      inputNum.value = "";
+    }
+    //用個let去接這個Function判斷
+    // if () {
+    //   alert("請輸入四個不一樣的數字");
+    //   input.value = "";
+    // }
   }
 });
 //重新開始遊戲

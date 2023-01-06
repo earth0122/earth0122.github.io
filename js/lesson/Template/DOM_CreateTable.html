@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        table-layout: fixed;
+        width: 100%;
+        border-collapse: collapse;
+        border: 3px solid purple;
+      }
+
+      tbody tr:nth-child(odd) {
+        background-color: lightblue;
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: aqua;
+      }
+
+      thead th:nth-child(1) {
+        width: 10%;
+        cursor: pointer;
+      }
+
+      thead th:nth-child(2) {
+        width: 10%;
+        cursor: pointer;
+      }
+
+      thead th:nth-child(3) {
+        width: 10%;
+        cursor: pointer;
+      }
+
+      thead th:nth-child(4) {
+        width: 60%;
+      }
+
+      thead th:nth-child(5) {
+        width: 10%;
+      }
+
+      img {
+        /* width: auto; */
+        height: 10%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>⽤用DOM動態建立Table</h1>
+    <div id="msg"></div>
+
+    <script>
+      let table, thead, tbody;
+
+      window.onload = function () {
+        //Create a table dynamically
+        table = document.createElement("table");
+        thead = document.createElement("thead");
+        tbody = document.createElement("tbody");
+
+        table.append(thead, tbody);
+
+        //body
+        document.body.appendChild(table);
+        //document.body.insertBefore(table, document.querySelector("script"));
+
+        createTable();
+      };
+
+      //create element & innerText
+      function createElement(element, text) {
+        let el = document.createElement(element);
+        el.innerText = text;
+
+        return el;
+      }
+
+      function createTable() {
+        createThead();
+        createTbody();
+      }
+
+      function createThead() {
+        let tr = document.createElement("tr");
+        tr.append(createElement("th", "Sku"));
+        tr.append(createElement("th", "Price"));
+        tr.append(createElement("th", "Storage"));
+        tr.append(createElement("th", "Description"));
+        thead.append(tr);
+      }
+
+      function createTbody() {
+        let tr = document.createElement("tr");
+        tr.append(createElement("td", "MW762"));
+        tr.append(createElement("td", "10900"));
+        tr.append(createElement("td", "32GB"));
+        tr.append(createElement("td", "10.2 吋 iPad Wi-Fi 機型 32GB - 金色"));
+
+        tbody.appendChild(tr);
+      }
+    </script>
+  </body>
+</html>
