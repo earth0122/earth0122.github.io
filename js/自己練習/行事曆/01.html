@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2023 - Calendar</title>
+  </head>
+
+  <body>
+    <h1 class="year-month">0000年 - 00月</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>日</th>
+          <th>一</th>
+          <th>二</th>
+          <th>三</th>
+          <th>四</th>
+          <th>五</th>
+          <th>六</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 動態渲染日期 -->
+      </tbody>
+    </table>
+    <button onclick="previousMonth()" class="btn btn-primary">往上月</button>
+    <button onclick="nextMonth()" class="btn btn-primary">往下月</button>
+    <script>
+      const today = new Date(); //抓到今天
+      let year = today.getFullYear(); //年
+      let month = today.getMonth(); //月份 1月是0
+      const yearMonthText = document.querySelector(".year-month");
+      const dateArea = document.querySelector("tbody");
+
+      //function
+      function renderDate() {
+        dateArea.innerHTML = "";
+        yearMonthText.innerText = `${year}年 - ${month + 1}月`;
+        //第一天是星期幾
+        let firstDay = new Date(year, month, 1).getDay(); //因為換月要重新渲染所以要放到function裡面
+        //這個月有幾天
+        let dayOfMonth = new Date(year, month + 1, 0).getDate(); //要推算有幾天 看下個月的第一天 再往前一天
+        //這個月有幾周 要看這個月第一天是星期幾如果是周6要加6天
+        let rows = Math.ceil((firstDay + dayOfMonth) / 7);
+        let day = 1;
+        for (let row = 0; row < rows; row++) {
+          let tr = document.createElement("tr");
+          //把一周的天數加入td
+          for (let col = 0; col < 7; col++) {
+            let td = document.createElement("td");
+            if (row == 0 && col < firstDay) {
+              //(第一周 並且在第一天之前的天數)=上個月
+              td.innerText = "A";
+            } else {
+              if (day <= dayOfMonth) {
+                //這個月
+                let d = day;
+                td.innerText = day;
+              } else {
+                td.innerText = "B";
+              }
+              day++;
+            }
+            tr.appendChild(td);
+          }
+          dateArea.appendChild(tr);
+        }
+      }
+      function nextMonth() {
+        month++;
+        if (month == 12) {
+          year++;
+          month = 0;
+        }
+        renderDate();
+      }
+      function previousMonth() {
+        month--;
+        if (month == -1) {
+          year--;
+          month = 11;
+        }
+        renderDate();
+      }
+      //window.onload
+      window.onload = function () {
+        renderDate();
+      };
+    </script>
+  </body>
+</html>
