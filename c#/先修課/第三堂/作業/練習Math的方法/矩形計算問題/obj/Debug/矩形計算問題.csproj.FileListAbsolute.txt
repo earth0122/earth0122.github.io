@@ -1,8 +1,0 @@
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\矩形計算問題\obj\Debug\矩形計算問題.csproj.AssemblyReference.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\矩形計算問題\obj\Debug\矩形計算問題.csproj.SuggestedBindingRedirects.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\矩形計算問題\obj\Debug\矩形計算問題.csproj.CoreCompileInputs.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\矩形計算問題\bin\Debug\矩形計算問題.exe.config
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\矩形計算問題\bin\Debug\矩形計算問題.exe
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\矩形計算問題\bin\Debug\矩形計算問題.pdb
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\矩形計算問題\obj\Debug\矩形計算問題.exe
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\矩形計算問題\obj\Debug\矩形計算問題.pdb

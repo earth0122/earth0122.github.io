@@ -1,0 +1,6 @@
+C:\Users\tommy\Desktop\class\正課\C#\DLLSamples\MyLibrary\bin\Debug\MyLibrary.dll
+C:\Users\tommy\Desktop\class\正課\C#\DLLSamples\MyLibrary\bin\Debug\MyLibrary.pdb
+C:\Users\tommy\Desktop\class\正課\C#\DLLSamples\MyLibrary\obj\Debug\MyLibrary.csproj.AssemblyReference.cache
+C:\Users\tommy\Desktop\class\正課\C#\DLLSamples\MyLibrary\obj\Debug\MyLibrary.csproj.CoreCompileInputs.cache
+C:\Users\tommy\Desktop\class\正課\C#\DLLSamples\MyLibrary\obj\Debug\MyLibrary.dll
+C:\Users\tommy\Desktop\class\正課\C#\DLLSamples\MyLibrary\obj\Debug\MyLibrary.pdb

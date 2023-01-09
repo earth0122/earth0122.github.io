@@ -1,8 +1,0 @@
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\設計圓形類別（★）\bin\Debug\設計圓形類別（★）.exe.config
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\設計圓形類別（★）\bin\Debug\設計圓形類別（★）.exe
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\設計圓形類別（★）\bin\Debug\設計圓形類別（★）.pdb
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\設計圓形類別（★）\obj\Debug\設計圓形類別（★）.csproj.AssemblyReference.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\設計圓形類別（★）\obj\Debug\設計圓形類別（★）.csproj.SuggestedBindingRedirects.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\設計圓形類別（★）\obj\Debug\設計圓形類別（★）.csproj.CoreCompileInputs.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\設計圓形類別（★）\obj\Debug\設計圓形類別（★）.exe
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\設計圓形類別（★）\obj\Debug\設計圓形類別（★）.pdb

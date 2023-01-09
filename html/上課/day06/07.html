@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+      }
+      .main-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #6af;
+        position: relative;
+      }
+      .logo img {
+        vertical-align: middle;
+      }
+
+      #menu-control {
+        display: none;
+      }
+      .HB {
+        width: 40px;
+        height: 40px;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .HB span {
+        width: 80%;
+        height: 2px;
+        background-color: #fff;
+      }
+      .main-nav {
+        position: absolute;
+        background-color: #fa0;
+        width: 100%;
+        top: 100%;
+        left: -100%;
+        opacity: 0;
+        transition: 1s;
+      }
+      #menu-control ~ .main-header .main-nav {
+        /* display: block; */
+        left: 0;
+        opacity: 1;
+      }
+      .main-nav a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #333;
+      }
+      .main-nav a + a {
+        border-top: 1px solid #000;
+      }
+      /* @media screen and (max-width:767px){} */
+      /* @media screen and (min-width:768px){} */
+      @media screen and (width<768px) {
+        .HB {
+          display: none;
+        }
+        .main-nav {
+          display: flex;
+          position: relative;
+          top: auto;
+          background-color: transparent;
+        }
+        #menu-control:checked ~ .main-header .main-nav {
+          display: block;
+        }
+        .main-nav a {
+          display: block;
+          padding: 10px 20px;
+          text-decoration: none;
+          color: #333;
+        }
+        .main-nav a + a {
+          border-top: none;
+        }
+        .main-nav a:hover {
+          background-color: #fa0;
+        }
+      }
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+      }
+      @media screen and (768px<=width < 1024px) {
+        .main-header {
+          background-color: #f00;
+        }
+      }
+      @media screen and () {
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" name="" id="menu-control" />
+    <header class="main-header">
+      <!-- ----------------------------- -->
+      <div class="logo">
+        <h1>
+          <a href="#"><img src="https://fakeimg.pl/80x40/200" /></a>
+        </h1>
+      </div>
+      <!-- --------------------------------- -->
+      <label for="menu-control" class="HB">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <!-- -------------------------------- -->
+      <div class="main-nav">
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+      </div>
+    </header>
+  </body>
+</html>

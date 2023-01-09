@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .group{
+            width: 960px;
+            margin: auto;
+        }
+        .item{
+            outline: 1px solid red;
+            margin-bottom: 100px;
+        }
+        .item img{
+            vertical-align: middle;
+        }
+        /* ----------------------------- */
+        .title{
+            width: 320px;
+            color: #fff;
+            position: relative;
+            z-index: 2;
+        }
+        .main-title{
+            background-color: #f00;
+            font-size: 42px;
+        }
+        .title .text{
+            background-color: #000;
+            position: absolute;
+            padding: 20px;
+        }
+        .item:nth-child(even) .title{
+            margin-left: auto;
+        }
+        /* --------------- */
+        .mv{
+            width: 670px;
+            outline: 1px solid blue;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-left: 190px;
+            position: relative;
+        }
+        .mv:after{
+            content: '';
+            /* display: block; */
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(40px, -80%);
+            width: 200px;
+            height: 150px;
+            background-color: #ccc;
+        }
+        .mv .cover{
+            width: 630px;
+            margin-right: -20px;
+            position: relative;
+            z-index: 1;
+        }
+        .mv .cover img{
+            width: 100%;
+        }
+        .mv .btn{
+            width: 60px;
+            height: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        .item:nth-child(even) .mv{
+            margin-left: 100px;
+            flex-direction: row-reverse;
+        }
+        .item:nth-child(even) .cover{
+            margin-right: auto;
+            margin-left: -20px;
+        }
+        /* --------------- */
+        .main-text{
+            width: 640px;
+            background-color: #ccc;
+            margin-left: 50px;
+            margin-top: -20px;
+            padding: 20px;
+            position: relative;
+            z-index: 10;
+        }
+        .main-text .slg{
+            display: flex;
+            align-items: center;
+        }
+        .main-text .slg:after{
+            content: '';
+            display: block;
+            height: 2px;
+            width: 0px;
+            flex-grow: 1;
+            margin-left: 10px;
+            background-color: #f00;
+        }
+        .main-text li{
+            list-style-type: none;
+        }
+        .main-text h3{
+            background-color: #000;
+            color: #fff;
+            width: fit-content;
+            padding: 4px 10px;
+        }
+        .main-text li p{
+            padding-left: 1em;
+            text-indent: -1em;
+        }
+        .main-text li p:before{
+            content: '';
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            background-color: #f00;
+            border-radius: 50%;
+            transform: scale(.3);
+            position: relative;
+            top: 1px;
+        }
+        .item:nth-child(even) .main-text{
+            margin-right: 50px;
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="group">
+        <section class="item">
+            <div class="A title">
+                <h2 class="A1 main-title">
+                    <span class="title-number">01</span>
+                    <span class="title-text">操控樂趣</span>
+                </h2>
+                <div class="A2 text">
+                    <h3>人人滿意的駕駛體驗</h3>
+                    <p>透過最佳重量分配，實現平順起步、直線穩定加速，過彎同時保持車身平穩帶給駕駛更靈敏的道路反饋，享受隨心馳騁的行駛快感。</p>
+                </div>
+            </div>
+            <div class="B mv">
+                <div class="B1 cover">
+                    <img src="https://fakeimg.pl/300x150/fa0">
+                </div>
+                <div class="B2 btn">
+                    <img src="https://fakeimg.pl/60x30/f00">
+                </div>
+            </div>
+            <div class="C main-text">
+                <div class="slg">因為我們做了這些革新</div>
+                <ul>
+                    <li>
+                        <h3>駕駛位置最佳化</h3>
+                        <p>針對駕駛位置進行徹底的修改，讓駕馭者可如同握手般自然且舒適地操控方向盤。</p>
+                    </li>
+                    <li>
+                        <h3>駕馭視野佳</h3>
+                        <p>考量駕駛坐進車內的高度，透過前擋風玻璃位的調整，達到盲區極小化，使駕駛視野更開闊，同步提升駕馭安全。</p>    
+                    </li>
+                    <li>
+                        <h3>更寧靜的車室</h3>
+                        <p>採用最新三層結構的隔音材料，與引擎、變速箱的零件改革，將座艙的震動抑制在最小限度，提供乘客舒適安靜的感受。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="item">
+            <div class="A title">
+                <h2 class="A1 main-title">
+                    <span class="title-number">02</span>
+                    <span class="title-text">操控樂趣</span>
+                </h2>
+                <div class="A2 text">
+                    <h3>人人滿意的駕駛體驗</h3>
+                    <p>透過最佳重量分配，實現平順起步、直線穩定加速，過彎同時保持車身平穩帶給駕駛更靈敏的道路反饋，享受隨心馳騁的行駛快感。</p>
+                </div>
+            </div>
+            <div class="B mv">
+                <div class="B1 cover">
+                    <img src="https://fakeimg.pl/300x200/fa0">
+                </div>
+                <div class="B2 btn">
+                    <img src="https://fakeimg.pl/60x30/f00">
+                </div>
+            </div>
+            <div class="C main-text">
+                <div class="slg">因為我們做了這些革新</div>
+                <ul>
+                    <li>
+                        <h3>駕駛位置最佳化</h3>
+                        <p>針對駕駛位置進行徹底的修改，讓駕馭者可如同握手般自然且舒適地操控方向盤。</p>
+                    </li>
+                    <li>
+                        <h3>駕馭視野佳</h3>
+                        <p>考量駕駛坐進車內的高度，透過前擋風玻璃位的調整，達到盲區極小化，使駕駛視野更開闊，同步提升駕馭安全。</p>    
+                    </li>
+                    <li>
+                        <h3>更寧靜的車室</h3>
+                        <p>採用最新三層結構的隔音材料，與引擎、變速箱的零件改革，將座艙的震動抑制在最小限度，提供乘客舒適安靜的感受。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="item">
+            <div class="A title">
+                <h2 class="A1 main-title">
+                    <span class="title-number">03</span>
+                    <span class="title-text">操控樂趣</span>
+                </h2>
+                <div class="A2 text">
+                    <h3>人人滿意的駕駛體驗</h3>
+                    <p>透過最佳重量分配，實現平順起步、直線穩定加速，過彎同時保持車身平穩帶給駕駛更靈敏的道路反饋，享受隨心馳騁的行駛快感。</p>
+                </div>
+            </div>
+            <div class="B mv">
+                <div class="B1 cover">
+                    <img src="https://fakeimg.pl/300x200/fa0">
+                </div>
+                <div class="B2 btn">
+                    <img src="https://fakeimg.pl/60x30/f00">
+                </div>
+            </div>
+            <div class="C main-text">
+                <div class="slg">因為我們做了這些革新</div>
+                <ul>
+                    <li>
+                        <h3>駕駛位置最佳化</h3>
+                        <p>針對駕駛位置進行徹底的修改，讓駕馭者可如同握手般自然且舒適地操控方向盤。</p>
+                    </li>
+                    <li>
+                        <h3>駕馭視野佳</h3>
+                        <p>考量駕駛坐進車內的高度，透過前擋風玻璃位的調整，達到盲區極小化，使駕駛視野更開闊，同步提升駕馭安全。</p>    
+                    </li>
+                    <li>
+                        <h3>更寧靜的車室</h3>
+                        <p>採用最新三層結構的隔音材料，與引擎、變速箱的零件改革，將座艙的震動抑制在最小限度，提供乘客舒適安靜的感受。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="item">
+            <div class="A title">
+                <h2 class="A1 main-title">
+                    <span class="title-number">04</span>
+                    <span class="title-text">操控樂趣</span>
+                </h2>
+                <div class="A2 text">
+                    <h3>人人滿意的駕駛體驗</h3>
+                    <p>透過最佳重量分配，實現平順起步、直線穩定加速，過彎同時保持車身平穩帶給駕駛更靈敏的道路反饋，享受隨心馳騁的行駛快感。</p>
+                </div>
+            </div>
+            <div class="B mv">
+                <div class="B1 cover">
+                    <img src="https://fakeimg.pl/300x200/fa0">
+                </div>
+                <div class="B2 btn">
+                    <img src="https://fakeimg.pl/60x30/f00">
+                </div>
+            </div>
+            <div class="C main-text">
+                <div class="slg">因為我們做了這些革新</div>
+                <ul>
+                    <li>
+                        <h3>駕駛位置最佳化</h3>
+                        <p>針對駕駛位置進行徹底的修改，讓駕馭者可如同握手般自然且舒適地操控方向盤。</p>
+                    </li>
+                    <li>
+                        <h3>駕馭視野佳</h3>
+                        <p>考量駕駛坐進車內的高度，透過前擋風玻璃位的調整，達到盲區極小化，使駕駛視野更開闊，同步提升駕馭安全。</p>    
+                    </li>
+                    <li>
+                        <h3>更寧靜的車室</h3>
+                        <p>採用最新三層結構的隔音材料，與引擎、變速箱的零件改革，將座艙的震動抑制在最小限度，提供乘客舒適安靜的感受。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,8 +1,0 @@
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\練習Math的方法\bin\Debug\練習Math的方法.exe.config
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\練習Math的方法\bin\Debug\練習Math的方法.exe
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\練習Math的方法\bin\Debug\練習Math的方法.pdb
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\練習Math的方法\obj\Debug\練習Math的方法.csproj.AssemblyReference.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\練習Math的方法\obj\Debug\練習Math的方法.csproj.SuggestedBindingRedirects.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\練習Math的方法\obj\Debug\練習Math的方法.csproj.CoreCompileInputs.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\練習Math的方法\obj\Debug\練習Math的方法.exe
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\作業\練習Math的方法\練習Math的方法\obj\Debug\練習Math的方法.pdb

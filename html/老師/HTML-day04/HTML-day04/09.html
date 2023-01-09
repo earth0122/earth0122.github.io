@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            width: 200px;
+            position: relative;
+        }
+        .card .pic img{
+            width: 100%;
+            vertical-align: top;
+        }
+        .card .text{
+            position: absolute;
+            top: 0px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: #0008;
+            color: #fff;
+            padding: 10px;
+            opacity: 0;
+            transition: 1s;
+        }
+        .card:hover .text{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="card">
+        <div class="pic">
+            <img src="https://picsum.photos/300/200?random=22">
+        </div>
+        <div class="text">
+            <h3>title</h3>
+            <p>加拿大有了，男人高中關鍵，論文長度，英。</p>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

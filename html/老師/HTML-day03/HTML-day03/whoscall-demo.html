@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        .mute{
+            color: #888;
+            font-size: 13px;
+        }
+        .main-header{
+            background-color: #fff;
+            box-shadow: 0 0 10px #000;
+        }
+        .header-content{
+            width: 960px;
+            display: flex;
+            align-items: center;
+            margin: auto;
+            padding: 10px 0;
+        }
+        .main-nav{
+            display: flex;
+        }
+        .main-nav a{
+            padding: 4px 10px;
+            text-decoration: none;
+            color: #000;
+        }
+        .btn-download{
+            border: none;
+            background-color: #090;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 100px;
+        }
+        /* ---------------------------------- */
+        .section-kv{
+            background-image: url('https://d3qzy1rn79qj7v.cloudfront.net/hero_images/valid-number-1440.jpg');
+            background-size: cover;
+            background-position: center center;
+        }
+        .section-kv .kv-content{
+            width: 960px;
+            margin: auto;
+            padding: 100px 0;
+        }
+        .section-kv .kv-content h2{
+            font-size: 42px;
+            color: green;
+        }
+        .section-kv .kv-content p{
+            font-size: 32px;
+        }
+        .section-kv .kv-content a{
+            display: block;
+            width: fit-content;
+            padding: 10px 20px;
+            font-size: 22px;
+            background-color: green;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 100px;
+        }
+        .section-kv .kv-content .ooxx{
+            color: green;
+            font-size: 18px;
+        }
+        .section-kv .radius:last-child{
+            text-align: right;
+        }
+
+        /* ---------------------------------- */
+        .section-call .call{
+            width: 960px;
+            margin: auto;
+            padding: 100px 0;
+        }
+        .section-call .main-title{
+            text-align: center;
+        }
+        .section-call .main-title h2{
+            font-size: 32px;
+            font-weight: 900;
+        }
+        .section-call .main-title p{}
+        .section-call .item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .section-call .item:nth-of-type(odd){
+            flex-direction: row-reverse;
+        }
+        .section-call .item .item-pic{
+            width: 465px;
+        }
+        .section-call .item .item-pic img{
+            width: 100%;
+        }
+        .section-call .item .item-txt{
+            width: 465px;
+        }
+        .section-call .item h3{
+            font-size: 32px;
+            color: green;
+            margin-bottom: 1em;
+            font-weight: 900;
+        }
+        .section-call .item p{
+            line-height: 1.6;
+        }
+        /* ---------------------------------- */
+        .section-partner{
+            background-color: #ccc;
+            padding: 100px 0;
+        }
+        .section-partner .partner{
+            width: 960px;
+            margin: auto;
+        }
+        .section-partner .main-title{
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 1em;
+            font-weight: 900;
+        }
+        .section-partner .item-list{
+            display: flex;
+        }
+        .section-partner .item-list .item{
+            width: 300px;
+            margin: 10px;
+            text-align: center;
+        }
+        .section-partner .item-list .item-pic{}
+        .section-partner .item-list .item-pic img{
+            width: 70%;
+        }
+        .section-partner .item-list .item-txt{}
+
+
+
+        /* ---------------------------------- */
+        .section-share{
+            padding: 100px 0;
+        }
+        .section-share .share{
+            width: 960px;
+            margin: auto;
+        }
+        .section-share .main-title{
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 1em;
+            font-weight: 900;
+        }
+        .section-share .item-list{
+            display: flex;
+        }
+        .section-share .item-list .item{
+            width: 300px;
+            margin: 10px;
+        }
+        .section-share .item-list .logo{
+            text-align: right;
+        }
+        .section-share .item-list .item-txt{}
+
+        /* ---------------------------------- */
+        .section-number{
+            background-color: #ccc;
+            padding: 100px 0;
+        }
+        .section-number .number{}
+        .section-number .main-title{
+            text-align: center;
+        }
+        /* ---------------------------------- */
+        .main-footer{
+            padding: 100px 0;
+            background-color: #2c323f;
+        }
+        .main-footer .footer-content{
+            width: 960px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .main-footer .footer-content .footer-link{
+            display: flex;
+        }
+        .main-footer .footer-content .footer-link .col{
+            margin-right: 20px;
+        }
+        .main-footer .footer-content .footer-link h3{
+            color: #fff;
+            font-size: 18px;
+        }
+        .main-footer .footer-content .footer-link .link-list{}
+        .main-footer .footer-content .footer-link .link-list li{}
+        .main-footer .footer-content .footer-link .link-list a{
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .main-footer .footer-content .footer-social{
+            width: 200px;
+        }
+        .main-footer .footer-content .follow{}
+        .main-footer .footer-content .follow ul{
+            display: flex;
+        }
+        .main-footer .footer-content .powerBy{}
+        
+        .main-footer .footer-copyright{
+            width: 960px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .main-footer .footer-copyright .txt{
+            display: flex;
+        }
+        .main-footer .footer-copyright .txt a{
+            color: #fff;
+            text-decoration: none;
+        }
+        </style>
+</head>
+<body>
+    
+    <header class="main-header">
+        <div class="header-content">
+            <div class="main-logo">
+                <a href="#">
+                    <h1>Whoscall</h1>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <a href="#">Whoscall 進階版</a>
+                <a href="#">Whoscall 認證號碼</a>
+                <a href="#">認識 Whoscall</a>
+                <a href="#">Whoscall 專欄</a>
+                <a href="#">常見問題</a>
+            </nav>
+            <button class="btn-download">免費下載</button>
+        </div>
+    </header>
+    <main>
+        <section class="section-kv">
+            <div class="kv">
+                <div class="radius">
+                    <img src="https://fakeimg.pl/250x150/200">
+                </div>
+                <div class="kv-content">
+                    <h2>whoscall 認證號碼</h2>
+                    <p>電話接通前<br>
+                        讓專業形象為你開場！</p>
+
+                    <a href="#">立即申請</a>
+                    <p class="ooxx">企業方案優惠 $200/月 起</p>
+                </div>
+                <div class="radius">
+                    <img src="https://fakeimg.pl/250x150/200">
+                </div>
+            </div>
+        </section>
+        <section class="section-call">
+            <div class="call">
+                <div class="main-title">
+                    <h2>根據市場調查顯示
+                        超過60%的民眾會選擇忽視或拒接陌生來電。</h2>
+                    <p class="mute">※Pollster 波仕特線上市調 (2014)</p>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <div class="item-pic">
+                            <img src="https://assets.whoscall.com/uploads/tyr/attachment/file/000/002/423/w450_webp_70ac886c-c910-4fc1-b6c2-8f23c7685f9a.png" alt="">
+                        </div>
+                        <div class="item-txt">
+                            <h3>提高2倍電話接聽意願</h3>
+                            <p>Whoscall 認證號碼讓您在全台百萬用戶的來電視窗，顯示公司名稱、姓名等資訊。從此不再是客戶的陌生來電！</p>
+                            <p class="mute">※Whoscall 調查 (2018)</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-pic">
+                            <img src="https://assets.whoscall.com/uploads/tyr/attachment/file/000/002/423/w450_webp_70ac886c-c910-4fc1-b6c2-8f23c7685f9a.png" alt="">
+                        </div>
+                        <div class="item-txt">
+                            <h3>提高2倍電話接聽意願</h3>
+                            <p>Whoscall 認證號碼讓您在全台百萬用戶的來電視窗，顯示公司名稱、姓名等資訊。從此不再是客戶的陌生來電！</p>
+                            <p class="mute">※Whoscall 調查 (2018)</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-pic">
+                            <img src="https://assets.whoscall.com/uploads/tyr/attachment/file/000/002/423/w450_webp_70ac886c-c910-4fc1-b6c2-8f23c7685f9a.png" alt="">
+                        </div>
+                        <div class="item-txt">
+                            <h3>提高2倍電話接聽意願</h3>
+                            <p>Whoscall 認證號碼讓您在全台百萬用戶的來電視窗，顯示公司名稱、姓名等資訊。從此不再是客戶的陌生來電！</p>
+                            <p class="mute">※Whoscall 調查 (2018)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-partner">
+            <div class="partner">
+                <div class="main-title">
+                    <h2>拓展業務的最佳夥伴！</h2>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <div class="pic">
+                            <img src="https://assets.whoscall.com/assets/media/images/ic-number-profile-4e1cc694d36d08ce6cfd50bd5bd5d068.svg" alt="">
+                        </div>
+                        <div class="txt">
+                            <h3>實名認證</h3>
+                            <p>Whoscall 嚴謹的實名審核，讓認證過的電話號碼更值得信任。</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pic">
+                            <img src="https://assets.whoscall.com/assets/media/images/ic-number-profile-4e1cc694d36d08ce6cfd50bd5bd5d068.svg" alt="">
+                        </div>
+                        <div class="txt">
+                            <h3>實名認證</h3>
+                            <p>Whoscall 嚴謹的實名審核，讓認證過的電話號碼更值得信任。</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pic">
+                            <img src="https://assets.whoscall.com/assets/media/images/ic-number-profile-4e1cc694d36d08ce6cfd50bd5bd5d068.svg" alt="">
+                        </div>
+                        <div class="txt">
+                            <h3>實名認證</h3>
+                            <p>Whoscall 嚴謹的實名審核，讓認證過的電話號碼更值得信任。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-share">
+            <div class="share">
+                <div class="main-title">
+                    <h2>用戶經驗分享</h2>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <div class="pic">
+                            <img src="https://fakeimg.pl/30x30/200">
+                        </div>
+                        <h3>沒想到更多客戶主動回電！</h3>
+                        <p>申請 Whoscall 認證號碼後，業務撥打出去的未接來電，客戶更樂意回電了，保險方案的介紹與推動也比以前更即時有效！</p>
+                        <div class="logo">
+                            <img src="https://fakeimg.pl/200x70/200">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pic">
+                            <img src="https://fakeimg.pl/30x30/200">
+                        </div>
+                        <h3>沒想到更多客戶主動回電！</h3>
+                        <p>申請 Whoscall 認證號碼後，業務撥打出去的未接來電，客戶更樂意回電了，保險方案的介紹與推動也比以前更即時有效！</p>
+                        <div class="logo">
+                            <img src="https://fakeimg.pl/200x70/200">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pic">
+                            <img src="https://fakeimg.pl/30x30/200">
+                        </div>
+                        <h3>沒想到更多客戶主動回電！</h3>
+                        <p>申請 Whoscall 認證號碼後，業務撥打出去的未接來電，客戶更樂意回電了，保險方案的介紹與推動也比以前更即時有效！</p>
+                        <div class="logo">
+                            <img src="https://fakeimg.pl/200x70/200">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-number">
+            <div class="number">
+                <div class="main-title">
+                    <h2>馬上申請企業專屬認證號碼！</h2>
+                    <p>每筆 $200/月 起，申辦號碼越多、優惠更多！</p>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="section-form">
+            <div class="number">
+                <div class="main-title">
+                    <h2>馬上申請企業專屬認證號碼！</h2>
+                    <p>每筆 $200/月 起，申辦號碼越多、優惠更多！</p>
+                </div>
+            </div>
+        </section> -->
+    </main>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-link">
+                <div class="col">
+                    <h3>Whoscall</h3>
+                    <ul class="link-list">
+                        <li>
+                            <a href="#">認識 Whoscall</a>
+                        </li>
+                        <li>
+                            <a href="#">Whoscall 進階版</a>
+                        </li>
+                        <li>
+                            <a href="#">Whoscall 專欄</a>
+                        </li>
+                        <li>
+                            <a href="#">Whoscall 認證號碼</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>公司</h3>
+                    <ul class="link-list">
+                        <li>
+                            <a href="#">工作機會</a>
+                        </li>
+                    </ul>
+                    <h3>媒體中心</h3>
+                    <ul class="link-list">
+                        <li>
+                            <a href="#">最新消息</a>
+                        </li>
+                        <li>
+                            <a href="#">品牌識別</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>客戶服務</h3>
+                    <ul class="link-list">
+                        <li>
+                            <a href="#">安全性</a>
+                        </li>
+                        <li>
+                            <a href="#">常見問題</a>
+                        </li>
+                        <li>
+                            <a href="#">聯絡我們</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <div class="follow">
+                    <div>追蹤我們</div>
+                    <ul>
+                        <li>
+                            <a href="#"><img src="https://fakeimg.pl/40x40/200"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="https://fakeimg.pl/40x40/200"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="https://fakeimg.pl/40x40/200"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="https://fakeimg.pl/40x40/200"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="powerBy">
+                    powered by
+                    <img src="https://fakeimg.pl/160x40/200">
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="txt">
+                <p>© 2022 Gogolook. All Rights Reserved.</p>
+                <a href="#">服務條款</a>
+                <a href="#">隱私權政策</a>
+            </div>
+            <div class="lang">
+                <select name="" id="">
+                    <option value="">中文</option>
+                    <option value="">English</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

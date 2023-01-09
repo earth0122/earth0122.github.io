@@ -1,8 +1,0 @@
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab1_HelloWorld\bin\Debug\Lab1_HelloWorld.exe.config
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab1_HelloWorld\bin\Debug\Lab1_HelloWorld.exe
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab1_HelloWorld\bin\Debug\Lab1_HelloWorld.pdb
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab1_HelloWorld\obj\Debug\Lab1_HelloWorld.csproj.AssemblyReference.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab1_HelloWorld\obj\Debug\Lab1_HelloWorld.csproj.SuggestedBindingRedirects.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab1_HelloWorld\obj\Debug\Lab1_HelloWorld.csproj.CoreCompileInputs.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab1_HelloWorld\obj\Debug\Lab1_HelloWorld.exe
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab1_HelloWorld\obj\Debug\Lab1_HelloWorld.pdb

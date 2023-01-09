@@ -1,0 +1,11 @@
+C:\Users\tommy\Desktop\class\正課\C#\OutSamples\OutSample001\bin\Debug\OutSample001.exe.config
+C:\Users\tommy\Desktop\class\正課\C#\OutSamples\OutSample001\bin\Debug\OutSample001.exe
+C:\Users\tommy\Desktop\class\正課\C#\OutSamples\OutSample001\bin\Debug\OutSample001.pdb
+C:\Users\tommy\Desktop\class\正課\C#\OutSamples\OutSample001\obj\Debug\OutSample001.csproj.AssemblyReference.cache
+C:\Users\tommy\Desktop\class\正課\C#\OutSamples\OutSample001\obj\Debug\OutSample001.csproj.SuggestedBindingRedirects.cache
+C:\Users\tommy\Desktop\class\正課\C#\OutSamples\OutSample001\obj\Debug\OutSample001.Form1.resources
+C:\Users\tommy\Desktop\class\正課\C#\OutSamples\OutSample001\obj\Debug\OutSample001.Properties.Resources.resources
+C:\Users\tommy\Desktop\class\正課\C#\OutSamples\OutSample001\obj\Debug\OutSample001.csproj.GenerateResource.cache
+C:\Users\tommy\Desktop\class\正課\C#\OutSamples\OutSample001\obj\Debug\OutSample001.csproj.CoreCompileInputs.cache
+C:\Users\tommy\Desktop\class\正課\C#\OutSamples\OutSample001\obj\Debug\OutSample001.exe
+C:\Users\tommy\Desktop\class\正課\C#\OutSamples\OutSample001\obj\Debug\OutSample001.pdb

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 500px;
+            height: 400px;
+            background-color: #f0a;
+            display: flex;
+        }
+        .child{
+            width: 300px;
+            height: 100px;
+            background-color: #fa0;
+            margin: 5px;
+            font-size: 32px;
+            flex-shrink: 0;
+        }
+        .child:nth-child(1){
+            flex-shrink: 1;
+        }
+        .child:nth-child(2){
+            flex-shrink: 1;
+        }
+        .child:nth-child(3){
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+        <div class="child">child A</div>
+        <div class="child">child B</div>
+        <div class="child">child C</div>
+        <!-- <div class="child">child D</div>
+        <div class="child">child E</div> -->
+    </div>
+
+
+
+    
+</body>
+</html>

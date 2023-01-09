@@ -1,8 +1,0 @@
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\考核\Q1_StringReplace\Q5_StudentObject\bin\Debug\Q5_StudentObject.exe.config
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\考核\Q1_StringReplace\Q5_StudentObject\bin\Debug\Q5_StudentObject.exe
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\考核\Q1_StringReplace\Q5_StudentObject\bin\Debug\Q5_StudentObject.pdb
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\考核\Q1_StringReplace\Q5_StudentObject\obj\Debug\Q5_StudentObject.csproj.AssemblyReference.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\考核\Q1_StringReplace\Q5_StudentObject\obj\Debug\Q5_StudentObject.csproj.SuggestedBindingRedirects.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\考核\Q1_StringReplace\Q5_StudentObject\obj\Debug\Q5_StudentObject.csproj.CoreCompileInputs.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\考核\Q1_StringReplace\Q5_StudentObject\obj\Debug\Q5_StudentObject.exe
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\考核\Q1_StringReplace\Q5_StudentObject\obj\Debug\Q5_StudentObject.pdb

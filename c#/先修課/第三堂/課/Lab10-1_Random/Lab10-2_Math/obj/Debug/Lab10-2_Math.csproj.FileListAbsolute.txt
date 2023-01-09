@@ -1,8 +1,0 @@
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\課\Lab10-1_Random\Lab10-2_Math\bin\Debug\Lab10-2_Math.exe.config
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\課\Lab10-1_Random\Lab10-2_Math\bin\Debug\Lab10-2_Math.exe
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\課\Lab10-1_Random\Lab10-2_Math\bin\Debug\Lab10-2_Math.pdb
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\課\Lab10-1_Random\Lab10-2_Math\obj\Debug\Lab10-2_Math.csproj.AssemblyReference.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\課\Lab10-1_Random\Lab10-2_Math\obj\Debug\Lab10-2_Math.csproj.SuggestedBindingRedirects.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\課\Lab10-1_Random\Lab10-2_Math\obj\Debug\Lab10-2_Math.csproj.CoreCompileInputs.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\課\Lab10-1_Random\Lab10-2_Math\obj\Debug\Lab10-2_Math.exe
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第三堂\課\Lab10-1_Random\Lab10-2_Math\obj\Debug\Lab10-2_Math.pdb

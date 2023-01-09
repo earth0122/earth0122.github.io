@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .card {
+        width: 250px;
+        padding: 10px;
+        border: 1px solid red;
+      }
+      .card img {
+        width: 100%;
+        vertical-align: top;
+        transform: 6s linear;
+      }
+      .card .pic {
+        overflow: hidden;
+      }
+      .card:hover img {
+        transform: scale(1.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="pic">
+        <img src="https://picsum.photos/300/200/?random=10" />
+      </div>
+      <div class="txt">
+        <h3>title</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
+          provident harum impedit placeat voluptates eius quam, quo iusto id
+          quaerat!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

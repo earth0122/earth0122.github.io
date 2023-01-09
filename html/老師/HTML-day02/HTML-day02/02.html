@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 1200px;
+            margin: auto;
+        }
+        .title {
+            text-align: center;
+        }
+        .content{
+            display: flex;
+        }
+        .content .main-pic{
+            width: 380px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .content .main-pic img{
+            width: 100%;
+        }
+        .content .list{
+            width: 390px;
+        }
+        .content .list:first-child{
+            margin-right: 10px;
+        }
+        .content .list:last-child{
+            margin-left: 10px;
+        }
+        .content .list-item{
+            display: flex;
+        }
+        .content .list:first-child .list-item{
+            flex-direction: row-reverse;
+            text-align: right;
+        }
+        .content .list-item .pic{
+            width: 100px;
+        }
+        .content .list-item .pic img{
+            width: 100%;
+            border-radius: 50%;
+        }
+        .content .list:first-child .list-item .pic{
+            margin-left: 20px;
+        }
+        .content .list:last-child .list-item .pic{
+            margin-right: 20px;
+        }
+        .content .list-item .text{
+            width: 270px;
+        }
+    </style>
+</head>
+<body>
+    
+<article class="container">
+    <!-- 上方主標題 -->
+    <div class="title">
+        <h1>title</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, aut deserunt! Cumque, tenetur porro accusamus, nisi velit non deserunt saepe voluptate ipsa iusto ad? Incidunt ratione molestias recusandae cumque error!</p>
+    </div>
+    <!-- 下方子資料 -->
+    <div class="content">
+        <!-- 左側清單資料 -->
+        <div class="list">
+            <div class="list-item">
+                <div class="pic">
+                    <img src="https://fakeimg.pl/200x200/200">
+                </div>
+                <div class="text">
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore deserunt praesenti.</p>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="pic">
+                    <img src="https://fakeimg.pl/200x200/200">
+                </div>
+                <div class="text">
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore deserunt praesenti.</p>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="pic">
+                    <img src="https://fakeimg.pl/200x200/200">
+                </div>
+                <div class="text">
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore deserunt praesenti.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 中間大圖 -->
+        <div class="main-pic">
+            <img src="https://fakeimg.pl/300x600/200">
+        </div>
+        
+        <!-- 右側清單資料 -->
+        <div class="list">
+            <div class="list-item">
+                <div class="pic">
+                    <img src="https://fakeimg.pl/200x200/200">
+                </div>
+                <div class="text">
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore deserunt praesenti.</p>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="pic">
+                    <img src="https://fakeimg.pl/200x200/200">
+                </div>
+                <div class="text">
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore deserunt praesenti.</p>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="pic">
+                    <img src="https://fakeimg.pl/200x200/200">
+                </div>
+                <div class="text">
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore deserunt praesenti.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+
+
+    
+</body>
+</html>

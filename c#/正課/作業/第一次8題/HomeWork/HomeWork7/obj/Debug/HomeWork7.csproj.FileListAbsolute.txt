@@ -1,6 +1,0 @@
-C:\Users\earth\OneDrive\桌面\程式\c#\正課\作業\第一次\HomeWork\HomeWork7\obj\Debug\HomeWork7.csproj.AssemblyReference.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\正課\作業\第一次\HomeWork\HomeWork7\obj\Debug\HomeWork7.csproj.SuggestedBindingRedirects.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\正課\作業\第一次\HomeWork\HomeWork7\obj\Debug\HomeWork7.Form1.resources
-C:\Users\earth\OneDrive\桌面\程式\c#\正課\作業\第一次\HomeWork\HomeWork7\obj\Debug\HomeWork7.Properties.Resources.resources
-C:\Users\earth\OneDrive\桌面\程式\c#\正課\作業\第一次\HomeWork\HomeWork7\obj\Debug\HomeWork7.csproj.GenerateResource.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\正課\作業\第一次\HomeWork\HomeWork7\obj\Debug\HomeWork7.csproj.CoreCompileInputs.cache

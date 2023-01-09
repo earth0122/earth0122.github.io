@@ -1,8 +1,0 @@
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab2_Declare\bin\Debug\Lab2_Declare.exe.config
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab2_Declare\bin\Debug\Lab2_Declare.exe
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab2_Declare\bin\Debug\Lab2_Declare.pdb
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab2_Declare\obj\Debug\Lab2_Declare.csproj.AssemblyReference.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab2_Declare\obj\Debug\Lab2_Declare.csproj.SuggestedBindingRedirects.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab2_Declare\obj\Debug\Lab2_Declare.csproj.CoreCompileInputs.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab2_Declare\obj\Debug\Lab2_Declare.exe
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab2_Declare\obj\Debug\Lab2_Declare.pdb

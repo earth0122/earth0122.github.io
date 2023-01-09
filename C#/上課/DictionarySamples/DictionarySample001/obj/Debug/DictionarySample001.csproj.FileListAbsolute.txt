@@ -1,0 +1,11 @@
+C:\Users\tommy\Desktop\class\正課\作業\DictionarySamples\DictionarySample001\bin\Debug\DictionarySample001.exe.config
+C:\Users\tommy\Desktop\class\正課\作業\DictionarySamples\DictionarySample001\bin\Debug\DictionarySample001.exe
+C:\Users\tommy\Desktop\class\正課\作業\DictionarySamples\DictionarySample001\bin\Debug\DictionarySample001.pdb
+C:\Users\tommy\Desktop\class\正課\作業\DictionarySamples\DictionarySample001\obj\Debug\DictionarySample001.csproj.AssemblyReference.cache
+C:\Users\tommy\Desktop\class\正課\作業\DictionarySamples\DictionarySample001\obj\Debug\DictionarySample001.csproj.SuggestedBindingRedirects.cache
+C:\Users\tommy\Desktop\class\正課\作業\DictionarySamples\DictionarySample001\obj\Debug\DictionarySample001.Form1.resources
+C:\Users\tommy\Desktop\class\正課\作業\DictionarySamples\DictionarySample001\obj\Debug\DictionarySample001.Properties.Resources.resources
+C:\Users\tommy\Desktop\class\正課\作業\DictionarySamples\DictionarySample001\obj\Debug\DictionarySample001.csproj.GenerateResource.cache
+C:\Users\tommy\Desktop\class\正課\作業\DictionarySamples\DictionarySample001\obj\Debug\DictionarySample001.csproj.CoreCompileInputs.cache
+C:\Users\tommy\Desktop\class\正課\作業\DictionarySamples\DictionarySample001\obj\Debug\DictionarySample001.exe
+C:\Users\tommy\Desktop\class\正課\作業\DictionarySamples\DictionarySample001\obj\Debug\DictionarySample001.pdb

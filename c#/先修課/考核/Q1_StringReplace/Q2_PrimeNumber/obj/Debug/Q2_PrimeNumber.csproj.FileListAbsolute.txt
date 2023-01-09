@@ -1,8 +1,0 @@
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\考核\Q1_StringReplace\Q2_PrimeNumber\bin\Debug\Q2_PrimeNumber.exe.config
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\考核\Q1_StringReplace\Q2_PrimeNumber\bin\Debug\Q2_PrimeNumber.exe
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\考核\Q1_StringReplace\Q2_PrimeNumber\bin\Debug\Q2_PrimeNumber.pdb
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\考核\Q1_StringReplace\Q2_PrimeNumber\obj\Debug\Q2_PrimeNumber.csproj.AssemblyReference.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\考核\Q1_StringReplace\Q2_PrimeNumber\obj\Debug\Q2_PrimeNumber.csproj.SuggestedBindingRedirects.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\考核\Q1_StringReplace\Q2_PrimeNumber\obj\Debug\Q2_PrimeNumber.csproj.CoreCompileInputs.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\考核\Q1_StringReplace\Q2_PrimeNumber\obj\Debug\Q2_PrimeNumber.exe
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\考核\Q1_StringReplace\Q2_PrimeNumber\obj\Debug\Q2_PrimeNumber.pdb

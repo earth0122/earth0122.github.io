@@ -1,8 +1,0 @@
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab4_ArrayAndLoop\bin\Debug\Lab4_ArrayAndLoop.exe.config
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab4_ArrayAndLoop\bin\Debug\Lab4_ArrayAndLoop.exe
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab4_ArrayAndLoop\bin\Debug\Lab4_ArrayAndLoop.pdb
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab4_ArrayAndLoop\obj\Debug\Lab4_ArrayAndLoop.csproj.AssemblyReference.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab4_ArrayAndLoop\obj\Debug\Lab4_ArrayAndLoop.csproj.SuggestedBindingRedirects.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab4_ArrayAndLoop\obj\Debug\Lab4_ArrayAndLoop.csproj.CoreCompileInputs.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab4_ArrayAndLoop\obj\Debug\Lab4_ArrayAndLoop.exe
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第一堂\課\BuildSchoolLab\Lab4_ArrayAndLoop\obj\Debug\Lab4_ArrayAndLoop.pdb

@@ -1,0 +1,8 @@
+C:\Users\tommy\Desktop\class\正課\C#\LoopSamples\ForeachSample\bin\Debug\ForeachSample.exe.config
+C:\Users\tommy\Desktop\class\正課\C#\LoopSamples\ForeachSample\bin\Debug\ForeachSample.exe
+C:\Users\tommy\Desktop\class\正課\C#\LoopSamples\ForeachSample\bin\Debug\ForeachSample.pdb
+C:\Users\tommy\Desktop\class\正課\C#\LoopSamples\ForeachSample\obj\Debug\ForeachSample.csproj.AssemblyReference.cache
+C:\Users\tommy\Desktop\class\正課\C#\LoopSamples\ForeachSample\obj\Debug\ForeachSample.csproj.SuggestedBindingRedirects.cache
+C:\Users\tommy\Desktop\class\正課\C#\LoopSamples\ForeachSample\obj\Debug\ForeachSample.csproj.CoreCompileInputs.cache
+C:\Users\tommy\Desktop\class\正課\C#\LoopSamples\ForeachSample\obj\Debug\ForeachSample.exe
+C:\Users\tommy\Desktop\class\正課\C#\LoopSamples\ForeachSample\obj\Debug\ForeachSample.pdb

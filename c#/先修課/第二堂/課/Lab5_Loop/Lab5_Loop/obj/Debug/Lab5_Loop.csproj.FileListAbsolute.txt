@@ -1,8 +1,0 @@
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab5_Loop\bin\Debug\Lab5_Loop.exe.config
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab5_Loop\bin\Debug\Lab5_Loop.exe
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab5_Loop\bin\Debug\Lab5_Loop.pdb
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab5_Loop\obj\Debug\Lab5_Loop.csproj.AssemblyReference.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab5_Loop\obj\Debug\Lab5_Loop.csproj.SuggestedBindingRedirects.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab5_Loop\obj\Debug\Lab5_Loop.csproj.CoreCompileInputs.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab5_Loop\obj\Debug\Lab5_Loop.exe
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab5_Loop\obj\Debug\Lab5_Loop.pdb

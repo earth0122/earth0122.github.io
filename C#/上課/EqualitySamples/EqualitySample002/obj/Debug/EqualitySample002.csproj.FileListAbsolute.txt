@@ -1,0 +1,8 @@
+C:\Users\tommy\Desktop\class\正課\C#\EqualitySamples\EqualitySample002\bin\Debug\EqualitySample002.exe.config
+C:\Users\tommy\Desktop\class\正課\C#\EqualitySamples\EqualitySample002\bin\Debug\EqualitySample002.exe
+C:\Users\tommy\Desktop\class\正課\C#\EqualitySamples\EqualitySample002\bin\Debug\EqualitySample002.pdb
+C:\Users\tommy\Desktop\class\正課\C#\EqualitySamples\EqualitySample002\obj\Debug\EqualitySample002.csproj.AssemblyReference.cache
+C:\Users\tommy\Desktop\class\正課\C#\EqualitySamples\EqualitySample002\obj\Debug\EqualitySample002.csproj.SuggestedBindingRedirects.cache
+C:\Users\tommy\Desktop\class\正課\C#\EqualitySamples\EqualitySample002\obj\Debug\EqualitySample002.csproj.CoreCompileInputs.cache
+C:\Users\tommy\Desktop\class\正課\C#\EqualitySamples\EqualitySample002\obj\Debug\EqualitySample002.exe
+C:\Users\tommy\Desktop\class\正課\C#\EqualitySamples\EqualitySample002\obj\Debug\EqualitySample002.pdb

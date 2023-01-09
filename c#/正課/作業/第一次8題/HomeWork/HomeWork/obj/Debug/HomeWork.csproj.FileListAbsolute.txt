@@ -1,8 +1,0 @@
-C:\Users\earth\OneDrive\桌面\程式\c#\正課\作業\第一次\HomeWork\HomeWork\bin\Debug\HomeWork.exe.config
-C:\Users\earth\OneDrive\桌面\程式\c#\正課\作業\第一次\HomeWork\HomeWork\bin\Debug\HomeWork.exe
-C:\Users\earth\OneDrive\桌面\程式\c#\正課\作業\第一次\HomeWork\HomeWork\bin\Debug\HomeWork.pdb
-C:\Users\earth\OneDrive\桌面\程式\c#\正課\作業\第一次\HomeWork\HomeWork\obj\Debug\HomeWork.csproj.AssemblyReference.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\正課\作業\第一次\HomeWork\HomeWork\obj\Debug\HomeWork.csproj.SuggestedBindingRedirects.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\正課\作業\第一次\HomeWork\HomeWork\obj\Debug\HomeWork.csproj.CoreCompileInputs.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\正課\作業\第一次\HomeWork\HomeWork\obj\Debug\HomeWork.exe
-C:\Users\earth\OneDrive\桌面\程式\c#\正課\作業\第一次\HomeWork\HomeWork\obj\Debug\HomeWork.pdb

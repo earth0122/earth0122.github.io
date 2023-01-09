@@ -1,8 +1,0 @@
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab6_JumpStatement\bin\Debug\Lab6_JumpStatement.exe.config
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab6_JumpStatement\bin\Debug\Lab6_JumpStatement.exe
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab6_JumpStatement\bin\Debug\Lab6_JumpStatement.pdb
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab6_JumpStatement\obj\Debug\Lab6_JumpStatement.csproj.AssemblyReference.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab6_JumpStatement\obj\Debug\Lab6_JumpStatement.csproj.SuggestedBindingRedirects.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab6_JumpStatement\obj\Debug\Lab6_JumpStatement.csproj.CoreCompileInputs.cache
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab6_JumpStatement\obj\Debug\Lab6_JumpStatement.exe
-C:\Users\earth\OneDrive\桌面\程式\c#\先修課\第二堂\課\Lab5_Loop\Lab6_JumpStatement\obj\Debug\Lab6_JumpStatement.pdb

@@ -1,0 +1,8 @@
+C:\Users\tommy\Downloads\LinqHomework_題目\LinqHomework_題目\LinqHomework\bin\Debug\LinqHomework.exe.config
+C:\Users\tommy\Downloads\LinqHomework_題目\LinqHomework_題目\LinqHomework\bin\Debug\LinqHomework.exe
+C:\Users\tommy\Downloads\LinqHomework_題目\LinqHomework_題目\LinqHomework\bin\Debug\LinqHomework.pdb
+C:\Users\tommy\Downloads\LinqHomework_題目\LinqHomework_題目\LinqHomework\obj\Debug\LinqHomework.csproj.AssemblyReference.cache
+C:\Users\tommy\Downloads\LinqHomework_題目\LinqHomework_題目\LinqHomework\obj\Debug\LinqHomework.csproj.SuggestedBindingRedirects.cache
+C:\Users\tommy\Downloads\LinqHomework_題目\LinqHomework_題目\LinqHomework\obj\Debug\LinqHomework.csproj.CoreCompileInputs.cache
+C:\Users\tommy\Downloads\LinqHomework_題目\LinqHomework_題目\LinqHomework\obj\Debug\LinqHomework.exe
+C:\Users\tommy\Downloads\LinqHomework_題目\LinqHomework_題目\LinqHomework\obj\Debug\LinqHomework.pdb

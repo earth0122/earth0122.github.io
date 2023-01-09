@@ -1,0 +1,8 @@
+C:\Users\tommy\Desktop\class\正課\C#\JumpSamples\ContinueSample\bin\Debug\ContinueSample.exe.config
+C:\Users\tommy\Desktop\class\正課\C#\JumpSamples\ContinueSample\bin\Debug\ContinueSample.exe
+C:\Users\tommy\Desktop\class\正課\C#\JumpSamples\ContinueSample\bin\Debug\ContinueSample.pdb
+C:\Users\tommy\Desktop\class\正課\C#\JumpSamples\ContinueSample\obj\Debug\ContinueSample.csproj.AssemblyReference.cache
+C:\Users\tommy\Desktop\class\正課\C#\JumpSamples\ContinueSample\obj\Debug\ContinueSample.csproj.SuggestedBindingRedirects.cache
+C:\Users\tommy\Desktop\class\正課\C#\JumpSamples\ContinueSample\obj\Debug\ContinueSample.csproj.CoreCompileInputs.cache
+C:\Users\tommy\Desktop\class\正課\C#\JumpSamples\ContinueSample\obj\Debug\ContinueSample.exe
+C:\Users\tommy\Desktop\class\正課\C#\JumpSamples\ContinueSample\obj\Debug\ContinueSample.pdb
