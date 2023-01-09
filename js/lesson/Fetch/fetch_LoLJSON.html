@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Fetch LOL JSON - text() & json()方法, 以及錯誤處理</h1>
+
+    <div id="msg"></div>
+
+    <script type="module">
+      import { $g } from "../Modules/helpers.js";
+
+      let jsonUrl =
+        "https://ddragon.leagueoflegends.com/cdn/10.22.1/data/zh_TW/champion.json";
+      let url404 =
+        "https://ddragon.leagueoflegends.com/cdn/10.22.1/data/zh_TW/champion2.json";
+
+      // window.onload = getText(jsonUrl);
+      //window.onload = getText(url404);
+      //window.onload = getTextException(url404);
+      window.onload = getJSON(jsonUrl);
+      //window.onload = getJSON(url404);
+
+      //將JSON轉成text文字
+      function getText(uri) {
+        debugger;
+        fetch(uri)
+          .then((response) => response.text())
+          .then((result) => {
+            $g("#msg").innerHTML = result;
+          })
+          .catch((ex) => {
+            // Handle the error
+            $g("msg").innerHTML = ex;
+          });
+      }
+
+      //將JSON轉成text文字
+      function getTextException(uri) {
+        debugger;
+        fetch(uri)
+          .then((response) => {
+            debugger;
+            //處理網路請求錯誤
+            if (response.ok) {
+              return response.text();
+            } else {
+              let err = new Error(
+                `status :${response.status}, ststusText: ${response.statusText}`
+              );
+              err.response = response;
+              throw err;
+            }
+          })
+          .then((result) => {
+            $g("#msg").innerHTML = result;
+          })
+          .catch((ex) => {
+            // Handle the error
+            debugger;
+            $g("#msg").innerHTML = ex;
+          });
+      }
+
+      //將JSON轉成物件
+      function getJSON(uri) {
+        fetch(uri)
+          .then((response) => {
+            //處理網路請求錯誤
+            if (response.ok) {
+              return response.text();
+            } else {
+              let err = new Error(
+                `status :${response.status}, ststusText: ${response.statusText}`
+              );
+              err.response = response;
+              throw err;
+            }
+          })
+          .then((result) => {
+            $g("#msg").innerHTML = JSON.stringify(result);
+            //應用程式自身運算處理錯誤, 和遠端無關
+            // throw new Error(`系統突發崩潰, 全員請逃離教室, Sogo百貨集合`);
+          })
+          .catch((ex) => {
+            // Handle the error
+            $g("#msg").innerHTML = `${ex.name} : ${ex.message}`;
+          });
+      }
+    </script>
+  </body>
+</html>
