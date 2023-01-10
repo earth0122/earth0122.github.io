@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      //XHR    (舊)
+      //   let xhr = new XMLHttpRequest(); //必須要有這個物件才能用
+      //   xhr.open(
+      //     "GET",
+      //     "https://raw.githubusercontent.com/taihochan/JsonData/main/%E5%8F%B0%E7%81%A3%E8%A1%8C%E6%94%BF%E5%9C%B0%E5%8D%80.json"
+      //   ); //用甚麼方式去存取,號後面 網路資源
+
+      //   xhr.onload = function () {
+      //     //去執行請求動作
+
+      //     console.log(typeof this.responseText); //responseText請求回應的文字     this 離自己最近的物件
+      //     console.table(JSON.parse(this.responseText));
+      //   };
+
+      //   xhr.send(); //送出這個請求
+
+      //Fetch  保證這是一條完整的請求    (新)
+      //   let req = new Request("https://raw.githubusercontent.com/taihochan/JsonData/main/%E5%8F%B0%E7%81%A3%E8%A1%8C%E6%94%BF%E5%9C%B0%E5%8D%80.json",{method:"GET"}) 以前的寫法
+      //   fetch("https://raw.githubusercontent.com/taihochan/JsonData/main/%E5%8F%B0%E7%81%A3%E8%A1%8C%E6%94%BF%E5%9C%B0%E5%8D%80.json") 語法糖
+      //     .then(resp=> resp.json())
+      //     .then(jsonData =>{
+      //         console.log(jsonData)
+      //     })
+
+      //Ajax
+      //   $.ajax({
+      //     url: "https://raw.githubusercontent.com/taihochan/JsonData/main/%E5%8F%B0%E7%81%A3%E8%A1%8C%E6%94%BF%E5%9C%B0%E5%8D%80.json",
+      //     method: "GET", //方式
+      //     dataType: "text",
+      //     success: function (response) {
+      //       //成功
+      //       console.log(response);
+      //     },
+      //     error: function (ex) {
+      //       //失敗
+      //       console.warn(ex);
+      //     },
+      //   });
+
+      //Axios
+      axios
+        .get(
+          "https://raw.githubusercontent.com/taihochan/JsonData/main/%E5%8F%B0%E7%81%A3%E8%A1%8C%E6%94%BF%E5%9C%B0%E5%8D%80.json"
+        )
+        .then((resp) => {
+          console.log(resp);
+          console.log(resp.data);
+        })
+        .catch((ex) => {
+          console.warn(ex);
+        });
+
+      function myFetch(url) {
+        return new Promise((resolve, reject) => {
+          $.ajax({
+            url: url,
+            method: "GET",
+            dataType: "json",
+            success: function (resp) {
+              resolve(resp);
+            },
+            error: function (ex) {
+              reject(ex);
+            },
+          });
+        });
+      }
+      myFetch(
+        "https://raw.githubusercontent.com/taihochan/JsonData/main/%E5%8F%B0%E7%81%A3%E8%A1%8C%E6%94%BF%E5%9C%B0%E5%8D%80.json"
+      ).then((res) => {
+        console.log(res);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function A(isDone) {
+        return new Promise(function (resolve, reject) {
+          // 一定要接2個參數
+          console.log("開始A");
+
+          if (isDone) {
+            return resolve("A成功");
+          } else {
+            return reject("A失敗");
+          }
+        });
+      }
+      function B(isDone) {
+        return new Promise((resolve, reject) => {
+          console.log("開始B");
+
+          if (idDon) {
+            return resolve("B成功");
+          } else {
+            return reject("B失敗");
+          }
+        });
+      }
+      A(true)
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((ex) => {
+          console.warn(ex);
+        });
+
+      // A(true)
+      // .then(res=>{
+      //     B(true)
+      //     .then(res2=>{
+      //         A(true)
+      //         .then(res3=>{
+      //             //...
+      //         })
+      //     })
+      // })
+
+      // A(true)
+      //     .then(res=>{
+      //         return B(true)
+      //     })
+      //     .then(res =>{
+      //         return A(true)
+      //     })
+
+      // A(true)
+      //     .then(()=>B(true))
+      //     .then(()=>A(true))
+      //     .then(()=>{
+      //         console.log("All Done")
+      //     })
+
+      Promise.all([A(true), B(true)]) //兩者都true才會往下執行
+        .then((res) => {
+          let [res1, res2] = res;
+          console.log(res1);
+          console.log(res2);
+        })
+        .catch((ex) => {
+          console.warn(ex);
+        });
+    </script>
+  </body>
+</html>
