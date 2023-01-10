@@ -90,9 +90,13 @@
       </div>
     </div>
     <script>
+      //宣告
       const today = new Date(); //抓到今天
       let year = today.getFullYear(); //年
       let month = today.getMonth(); //月份 1月是0
+
+      let currentIndex;
+      //DOM
       const yearMonthText = document.querySelector(".year-month");
       const dateArea = document.querySelector("tbody");
       const addDateInput = document.querySelector("#add-date");
@@ -123,8 +127,41 @@
                 //這個月
                 let d = day;
                 td.innerText = day;
+
+                if (
+                  localStorage.getItem(`${year}-${month + 1}-${day}`) != null
+                ) {
+                  let ul = document.createElement("ul");
+
+                  let todoList = JSON.parse(
+                    localStorage.getItem(`${year}-${month + 1}-${day}`)
+                  );
+                  todoList.forEach((item, index) => {
+                    let li = document.createElement("li");
+                    li.innerText = item.title;
+
+                    li.onclick = function (e) {
+                      editDateInput.value = `${year}-${month + 1}-${d}`;
+                      editValueInput.value = item.title;
+
+                      currentIndex = index;
+
+                      bootstrap.Modal.getOrCreateInstance(editModal).show();
+                      e.stopPropagation();
+                    };
+
+                    ul.appendChild(li);
+                  });
+                  td.appendChild(ul);
+                }
+
+                td.onclick = function () {
+                  addDateInput.value = `${year}-${month + 1}-${d}`;
+                  bootstrap.Modal.getOrCreateInstance(addModal).show();
+                };
               } else {
-                td.innerText = "";
+                //下個月
+                td.innerText = "B";
               }
               day++;
             }
@@ -150,56 +187,56 @@
         renderDate();
       }
       function addTodoItem() {
-            let date = addDateInput.value
-            let todoItem = addValueInput.value
+        let date = addDateInput.value;
+        let todoItem = addValueInput.value;
 
-            let todoObj = {
-                title: todoItem
-            }
+        let todoObj = {
+          title: todoItem,
+        };
 
-            let todoList = []
+        let todoList = [];
 
-            if (localStorage.getItem(date) == null) {
-                todoList.push(todoObj)
-            } else {
-                todoList = JSON.parse(localStorage.getItem(date))
-                todoList.push(todoObj)
-            }
-
-            localStorage.setItem(date, JSON.stringify(todoList))
-
-            bootstrap.Modal.getOrCreateInstance(addModal).hide()
-
-            renderDate()
+        if (localStorage.getItem(date) == null) {
+          todoList.push(todoObj);
+        } else {
+          todoList = JSON.parse(localStorage.getItem(date));
+          todoList.push(todoObj);
         }
-      function editTodoItem(){
-        let date = editDateInput.value
-            let todoItem = editValueInput.value
 
-            let todoList = JSON.parse(localStorage.getItem(date))
-            
-            todoList[currentIndex] = {
-                title: todoItem
-            }
+        localStorage.setItem(date, JSON.stringify(todoList));
 
-            localStorage.setItem(date, JSON.stringify(todoList))
+        bootstrap.Modal.getOrCreateInstance(addModal).hide();
 
-            bootstrap.Modal.getOrCreateInstance(editModal).hide()
+        renderDate();
+      }
+      function editTodoItem() {
+        let date = editDateInput.value;
+        let todoItem = editValueInput.value;
 
-            renderDate()
+        let todoList = JSON.parse(localStorage.getItem(date));
+
+        todoList[currentIndex] = {
+          title: todoItem,
+        };
+
+        localStorage.setItem(date, JSON.stringify(todoList));
+
+        bootstrap.Modal.getOrCreateInstance(editModal).hide();
+
+        renderDate();
       }
       function deleteTodoItem() {
-            let date = editDateInput.value
+        let date = editDateInput.value;
 
-            let todoList = JSON.parse(localStorage.getItem(date))
-            todoList.splice(currentIndex, 1)
+        let todoList = JSON.parse(localStorage.getItem(date));
+        todoList.splice(currentIndex, 1);
 
-            localStorage.setItem(date, JSON.stringify(todoList))
+        localStorage.setItem(date, JSON.stringify(todoList));
 
-            bootstrap.Modal.getOrCreateInstance(editModal).hide()
+        bootstrap.Modal.getOrCreateInstance(editModal).hide();
 
-            renderDate()
-        }
+        renderDate();
+      }
 
       //window.onload
       window.onload = function () {
