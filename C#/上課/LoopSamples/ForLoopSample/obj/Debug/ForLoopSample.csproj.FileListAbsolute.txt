@@ -1,8 +1,0 @@
-C:\Users\tommy\Desktop\class\正課\C#\LoopSamples\ForLoopSample\bin\Debug\ForLoopSample.exe.config
-C:\Users\tommy\Desktop\class\正課\C#\LoopSamples\ForLoopSample\bin\Debug\ForLoopSample.exe
-C:\Users\tommy\Desktop\class\正課\C#\LoopSamples\ForLoopSample\bin\Debug\ForLoopSample.pdb
-C:\Users\tommy\Desktop\class\正課\C#\LoopSamples\ForLoopSample\obj\Debug\ForLoopSample.csproj.AssemblyReference.cache
-C:\Users\tommy\Desktop\class\正課\C#\LoopSamples\ForLoopSample\obj\Debug\ForLoopSample.csproj.SuggestedBindingRedirects.cache
-C:\Users\tommy\Desktop\class\正課\C#\LoopSamples\ForLoopSample\obj\Debug\ForLoopSample.csproj.CoreCompileInputs.cache
-C:\Users\tommy\Desktop\class\正課\C#\LoopSamples\ForLoopSample\obj\Debug\ForLoopSample.exe
-C:\Users\tommy\Desktop\class\正課\C#\LoopSamples\ForLoopSample\obj\Debug\ForLoopSample.pdb

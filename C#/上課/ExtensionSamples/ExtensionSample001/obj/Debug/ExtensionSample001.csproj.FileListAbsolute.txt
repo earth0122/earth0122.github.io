@@ -1,8 +1,0 @@
-C:\Users\tommy\Desktop\class\lesson\C#\ExtensionSamples\ExtensionSample001\bin\Debug\ExtensionSample001.exe.config
-C:\Users\tommy\Desktop\class\lesson\C#\ExtensionSamples\ExtensionSample001\bin\Debug\ExtensionSample001.exe
-C:\Users\tommy\Desktop\class\lesson\C#\ExtensionSamples\ExtensionSample001\bin\Debug\ExtensionSample001.pdb
-C:\Users\tommy\Desktop\class\lesson\C#\ExtensionSamples\ExtensionSample001\obj\Debug\ExtensionSample001.csproj.AssemblyReference.cache
-C:\Users\tommy\Desktop\class\lesson\C#\ExtensionSamples\ExtensionSample001\obj\Debug\ExtensionSample001.csproj.SuggestedBindingRedirects.cache
-C:\Users\tommy\Desktop\class\lesson\C#\ExtensionSamples\ExtensionSample001\obj\Debug\ExtensionSample001.csproj.CoreCompileInputs.cache
-C:\Users\tommy\Desktop\class\lesson\C#\ExtensionSamples\ExtensionSample001\obj\Debug\ExtensionSample001.exe
-C:\Users\tommy\Desktop\class\lesson\C#\ExtensionSamples\ExtensionSample001\obj\Debug\ExtensionSample001.pdb

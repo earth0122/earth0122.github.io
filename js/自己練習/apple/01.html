@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+  <title>Hello, Apple!</title>
+
+  <style>
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .row .btn-outline-dark:hover {
+      color: unset;
+      background-color: unset;
+    }
+
+    #productBtnGroup > button{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div id="productBtnGroup" class="row mb-3 d-flex justify-content-center">
+      <button id="iphone" type="button" class="product-btn btn btn-dark" onclick="InitProduct(this.innerText)">IPhone</button>
+      <button id="ipad" type="button" class="product-btn btn btn-dark" onclick="InitProduct(this.innerText)">IPad</button>
+      <button id="iphone" type="button" class="product-btn btn btn-dark" onclick="InitProduct(this.innerText)">MacPro</button>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <img id="product-img" src="" class="img-fluid" alt="">
+      </div>
+      <div class="col-12 col-md-6">
+        <div id="color" class="row" style="box-sizing: border-box;">
+          <!-- <button class="col-6 col-md-4 btn btn-outline-dark mb-2">
+            <div class="p-5 d-flex flex-column justify-content-center align-items-center">
+              <i class="fas fa-circle display-4"></i>
+              <span>黑色</span>
+            </div>
+          </button> -->
+        </div>
+        <div id="type" class="row">
+          <!-- <button class="col-6 col-md-4 btn btn-outline-dark mb-2">
+            <div class="p-4 d-flex flex-column justify-content-center align-items-center">
+              <p class="font-weight-bolder">64GB</p>
+              <span>NT$24900</span>
+            </div>
+          </button> -->
+        </div>
+        <div id="price" class="row">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var Product = {
+      IPhone: {
+        Detail: {
+          productName: 'iPhone 11',
+          baseImgUrl: './img/iphone11-select-2019-family.png'
+        },
+        OutWard: [
+          { color: '紅色', colorValue: '#ff0000', imageUrl: './img/iphone-red.png' },
+          { color: '黃色', colorValue: '#ffff00', imageUrl: './img/iphone-yellow.png' },
+          { color: '黑色', colorValue: '#000000', imageUrl: './img/iphone-black.png' },
+        ],
+        Spec: {
+          Storge: [
+            { size: '64GB', fit: 24900 },
+            { size: '128GB', fit: 26900 },
+            { size: '256GB', fit: 30400 },
+          ]
+        }
+      },
+      IPad: {
+        Detail: {
+          productName: 'iPad',
+          baseImgUrl: './img/ipad-hero-unselected-201909_GEO_TW.png'
+        },
+        OutWard: [
+          { color: '太空灰色', colorValue: '#6e6969', imageUrl: './img/ipad-space.png' },
+          { color: '銀色', colorValue: '#b9aeae', imageUrl: './img/ipad-silver.png' },
+          { color: '金色', colorValue: '#ceb7a8', imageUrl: './img/ipad-gold.png' },
+        ],
+        Spec: {
+          Storge: [
+            { size: '32GB', fit: 10900 },
+            { size: '128GB', fit: 13900 },
+          ]
+        }
+      },
+      MacPro: {
+        Detail: {
+          productName: 'MacPro 13',
+          baseImgUrl: './img/mbp13touch-space-gallery1-201907.png'
+        },
+        OutWard: [
+          { color: '太空灰色', colorValue: '#6e6969', imageUrl: './img/mbp13touch-space.png' },
+          { color: '銀色', colorValue: '#b9aeae', imageUrl: './img/mbp13touch-silver.png' },
+        ],
+        Spec: {
+          Storge: [
+            { size: '256GB', fit: 51300 },
+            { size: '512GB', fit: 57300 },
+            { size: '1TB', fit: 63300 },
+            { size: '2TB', fit: 75300 },
+          ]
+        }
+      }
+    };
+
+    
+       
+
+  </script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,8 +1,0 @@
-C:\Users\tommy\Desktop\class\正課\C#\AddSample\AddSample\bin\Debug\AddSample.exe.config
-C:\Users\tommy\Desktop\class\正課\C#\AddSample\AddSample\bin\Debug\AddSample.exe
-C:\Users\tommy\Desktop\class\正課\C#\AddSample\AddSample\bin\Debug\AddSample.pdb
-C:\Users\tommy\Desktop\class\正課\C#\AddSample\AddSample\obj\Debug\AddSample.csproj.AssemblyReference.cache
-C:\Users\tommy\Desktop\class\正課\C#\AddSample\AddSample\obj\Debug\AddSample.csproj.SuggestedBindingRedirects.cache
-C:\Users\tommy\Desktop\class\正課\C#\AddSample\AddSample\obj\Debug\AddSample.csproj.CoreCompileInputs.cache
-C:\Users\tommy\Desktop\class\正課\C#\AddSample\AddSample\obj\Debug\AddSample.exe
-C:\Users\tommy\Desktop\class\正課\C#\AddSample\AddSample\obj\Debug\AddSample.pdb

@@ -1,8 +1,0 @@
-C:\Users\tommy\Desktop\class\正課\C#\LoopSamples\DoWhileLoopSample\bin\Debug\DoWhileLoopSample.exe.config
-C:\Users\tommy\Desktop\class\正課\C#\LoopSamples\DoWhileLoopSample\bin\Debug\DoWhileLoopSample.exe
-C:\Users\tommy\Desktop\class\正課\C#\LoopSamples\DoWhileLoopSample\bin\Debug\DoWhileLoopSample.pdb
-C:\Users\tommy\Desktop\class\正課\C#\LoopSamples\DoWhileLoopSample\obj\Debug\DoWhileLoopSample.csproj.AssemblyReference.cache
-C:\Users\tommy\Desktop\class\正課\C#\LoopSamples\DoWhileLoopSample\obj\Debug\DoWhileLoopSample.csproj.SuggestedBindingRedirects.cache
-C:\Users\tommy\Desktop\class\正課\C#\LoopSamples\DoWhileLoopSample\obj\Debug\DoWhileLoopSample.csproj.CoreCompileInputs.cache
-C:\Users\tommy\Desktop\class\正課\C#\LoopSamples\DoWhileLoopSample\obj\Debug\DoWhileLoopSample.exe
-C:\Users\tommy\Desktop\class\正課\C#\LoopSamples\DoWhileLoopSample\obj\Debug\DoWhileLoopSample.pdb

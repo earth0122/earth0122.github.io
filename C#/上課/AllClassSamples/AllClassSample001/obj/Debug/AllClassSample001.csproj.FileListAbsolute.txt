@@ -1,8 +1,0 @@
-C:\Users\tommy\Desktop\class\正課\C#\AllClassSamples\AllClassSample001\bin\Debug\AllClassSample001.exe.config
-C:\Users\tommy\Desktop\class\正課\C#\AllClassSamples\AllClassSample001\bin\Debug\AllClassSample001.exe
-C:\Users\tommy\Desktop\class\正課\C#\AllClassSamples\AllClassSample001\bin\Debug\AllClassSample001.pdb
-C:\Users\tommy\Desktop\class\正課\C#\AllClassSamples\AllClassSample001\obj\Debug\AllClassSample001.csproj.AssemblyReference.cache
-C:\Users\tommy\Desktop\class\正課\C#\AllClassSamples\AllClassSample001\obj\Debug\AllClassSample001.csproj.SuggestedBindingRedirects.cache
-C:\Users\tommy\Desktop\class\正課\C#\AllClassSamples\AllClassSample001\obj\Debug\AllClassSample001.csproj.CoreCompileInputs.cache
-C:\Users\tommy\Desktop\class\正課\C#\AllClassSamples\AllClassSample001\obj\Debug\AllClassSample001.exe
-C:\Users\tommy\Desktop\class\正課\C#\AllClassSamples\AllClassSample001\obj\Debug\AllClassSample001.pdb

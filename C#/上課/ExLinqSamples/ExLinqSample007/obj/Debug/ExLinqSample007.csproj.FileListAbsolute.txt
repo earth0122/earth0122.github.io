@@ -1,8 +1,0 @@
-C:\Users\tommy\Desktop\class\正課\C#\ExLinqSamples\ExLinqSample007\bin\Debug\ExLinqSample007.exe.config
-C:\Users\tommy\Desktop\class\正課\C#\ExLinqSamples\ExLinqSample007\bin\Debug\ExLinqSample007.exe
-C:\Users\tommy\Desktop\class\正課\C#\ExLinqSamples\ExLinqSample007\bin\Debug\ExLinqSample007.pdb
-C:\Users\tommy\Desktop\class\正課\C#\ExLinqSamples\ExLinqSample007\obj\Debug\ExLinqSample007.csproj.AssemblyReference.cache
-C:\Users\tommy\Desktop\class\正課\C#\ExLinqSamples\ExLinqSample007\obj\Debug\ExLinqSample007.csproj.SuggestedBindingRedirects.cache
-C:\Users\tommy\Desktop\class\正課\C#\ExLinqSamples\ExLinqSample007\obj\Debug\ExLinqSample007.csproj.CoreCompileInputs.cache
-C:\Users\tommy\Desktop\class\正課\C#\ExLinqSamples\ExLinqSample007\obj\Debug\ExLinqSample007.exe
-C:\Users\tommy\Desktop\class\正課\C#\ExLinqSamples\ExLinqSample007\obj\Debug\ExLinqSample007.pdb

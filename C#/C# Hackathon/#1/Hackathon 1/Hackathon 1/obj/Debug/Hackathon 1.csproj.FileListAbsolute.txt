@@ -1,8 +1,0 @@
-C:\Users\tommy\Desktop\class\正課\C# Hackathon\#1\Hackathon 1\Hackathon 1\bin\Debug\Hackathon 1.exe.config
-C:\Users\tommy\Desktop\class\正課\C# Hackathon\#1\Hackathon 1\Hackathon 1\bin\Debug\Hackathon 1.exe
-C:\Users\tommy\Desktop\class\正課\C# Hackathon\#1\Hackathon 1\Hackathon 1\bin\Debug\Hackathon 1.pdb
-C:\Users\tommy\Desktop\class\正課\C# Hackathon\#1\Hackathon 1\Hackathon 1\obj\Debug\Hackathon 1.csproj.AssemblyReference.cache
-C:\Users\tommy\Desktop\class\正課\C# Hackathon\#1\Hackathon 1\Hackathon 1\obj\Debug\Hackathon 1.csproj.SuggestedBindingRedirects.cache
-C:\Users\tommy\Desktop\class\正課\C# Hackathon\#1\Hackathon 1\Hackathon 1\obj\Debug\Hackathon 1.csproj.CoreCompileInputs.cache
-C:\Users\tommy\Desktop\class\正課\C# Hackathon\#1\Hackathon 1\Hackathon 1\obj\Debug\Hackathon 1.exe
-C:\Users\tommy\Desktop\class\正課\C# Hackathon\#1\Hackathon 1\Hackathon 1\obj\Debug\Hackathon 1.pdb

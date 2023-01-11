@@ -1,8 +1,0 @@
-C:\Users\tommy\Desktop\class\lesson\C#\ConstructorSamples\ContructorSample001\bin\Debug\ContructorSample001.exe.config
-C:\Users\tommy\Desktop\class\lesson\C#\ConstructorSamples\ContructorSample001\bin\Debug\ContructorSample001.exe
-C:\Users\tommy\Desktop\class\lesson\C#\ConstructorSamples\ContructorSample001\bin\Debug\ContructorSample001.pdb
-C:\Users\tommy\Desktop\class\lesson\C#\ConstructorSamples\ContructorSample001\obj\Debug\ContructorSample001.csproj.AssemblyReference.cache
-C:\Users\tommy\Desktop\class\lesson\C#\ConstructorSamples\ContructorSample001\obj\Debug\ContructorSample001.csproj.SuggestedBindingRedirects.cache
-C:\Users\tommy\Desktop\class\lesson\C#\ConstructorSamples\ContructorSample001\obj\Debug\ContructorSample001.csproj.CoreCompileInputs.cache
-C:\Users\tommy\Desktop\class\lesson\C#\ConstructorSamples\ContructorSample001\obj\Debug\ContructorSample001.exe
-C:\Users\tommy\Desktop\class\lesson\C#\ConstructorSamples\ContructorSample001\obj\Debug\ContructorSample001.pdb
