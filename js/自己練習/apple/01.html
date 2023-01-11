@@ -131,22 +131,10 @@
         }
       }
     };
-    
-    
-       
-
   </script>
   <script>
-    
-    
-    
-    
     //變數
     const outWard = Product
-    
-    
-    
-
     // DOM
     const iphone = document.querySelector("#iphone")
     const ipad = document.querySelector("#ipad")
@@ -157,16 +145,13 @@
     // console.log(iphone)
     // console.log(ipad)
     // console.log(macbook)
-   
-   
+
     //FUNCTION
     function clear(){
-      innerText =""  
-          
+      color.innerText =""           
     }
     //初始化
     
-
     //window onload
     window.onload = function () {
      
@@ -190,20 +175,16 @@ iphone.addEventListener("click", function () {
 
         colorBtn.innerText = '紅色'        
 
-        colorArea.appendChild(colorBtn)
-        
+        colorArea.appendChild(colorBtn)        
 
         colorBtn.addEventListener('click', function () {
-          clear()
+          
           
             pic.src = '/js/自己練習/apple/圖片/iphone-red.png';
 
             // consle.log(pic)
-
         })
-
     }
-
 })
     }  
 ipad.addEventListener("click",function(){
