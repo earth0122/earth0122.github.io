@@ -12,7 +12,13 @@
     />
     <style>
       body {
-        background-color: #fa0;
+        /* background-color: #fa0; */
+        background-image: url(https://th.bing.com/th/id/OIP.GwYm4ledjABUsvWe0jPxogHaFK?w=265&h=181&c=7&r=0&o=5&pid=1.7);
+        background-size: cover;
+      }
+      td {
+        font-weight: bolder;
+        font-size: 18px;
       }
     </style>
   </head>
@@ -133,23 +139,21 @@
       //function
       function renderDate() {
         dateArea.innerHTML = "";
-
         yearMonthText.innerText = `${year}年 - ${month + 1}月`;
-
-        //這個月第一天禮拜幾?
-        let firstDay = new Date(year, month, 1).getDay();
-        //這個月有幾天?
-        let dayOfMonth = new Date(year, month + 1, 0).getDate();
-
-        let rows = Math.ceil((dayOfMonth + firstDay) / 7);
+        //第一天是星期幾
+        let firstDay = new Date(year, month, 1).getDay(); //因為換月要重新渲染所以要放到function裡面
+        //這個月有幾天
+        let dayOfMonth = new Date(year, month + 1, 0).getDate(); //要推算有幾天 看下個月的第一天 再往前一天
+        //這個月有幾周 要看這個月第一天是星期幾如果是周6要加6天
+        let rows = Math.ceil((firstDay + dayOfMonth) / 7);
         let day = 1;
-
         for (let row = 0; row < rows; row++) {
           let tr = document.createElement("tr");
+          //把一周的天數加入td
           for (let col = 0; col < 7; col++) {
             let td = document.createElement("td");
             if (row == 0 && col < firstDay) {
-              //上個月
+              //(第一周 並且在第一天之前的天數)=上個月
               td.innerText = "";
             } else {
               if (day <= dayOfMonth) {
