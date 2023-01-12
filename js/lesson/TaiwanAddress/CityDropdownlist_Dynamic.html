@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Select / options下拉式選單的製作</h1>
+
+    <!-- <select>
+        <option value="">---請選擇縣市---</option>
+        <option value="taipei">台北</option>
+        <option value="taoyuan">桃園</option>
+        <option value="taichung" selected>台中</option>
+    </select>  -->
+
+    <select id="cities" name="cities"></select>
+
+    <select id="district" name="district"></select>
+
+    <input type="submit" value="提交資料" onclick="submitData()" disabled />
+    <div id="msg"></div>
+
+    <script>
+      //Array陣列元素是Object - 簡單的Array結構-
+      let allCities = [
+        { id: "taipei", name: "台北" },
+        { id: "taoyuan", name: "桃園" },
+        { id: "taichung", name: "台中" },
+      ];
+
+      //Array陣列元素是Object - 稍複雜的Array結構
+      let cityArray = [
+        {
+          name: "taipei",
+          ch_name: "台北",
+          districts: [
+            { id: "taipei01", district: "中正區" },
+            { id: "taipei02", district: "萬華區" },
+            { id: "taipei03", district: "信義區" },
+          ],
+        },
+        {
+          name: "taoyuan",
+          ch_name: "桃園",
+          districts: [
+            { id: "taoyuan01", district: "桃園市" },
+            { id: "taoyuan02", district: "八德市" },
+            { id: "taoyuan03", district: "中壢市" },
+          ],
+        },
+        {
+          name: "taichung",
+          ch_name: "台中",
+          districts: [
+            { id: "taichung01", district: "台中市" },
+            { id: "taichung02", district: "大里市" },
+            { id: "taichung03", district: "清水市" },
+          ],
+        },
+      ];
+
+      let cityObject = {
+        taipei: [
+          { id: "taipei01", district: "中正區" },
+          { id: "taipei02", district: "萬華區" },
+          { id: "taipei03", district: "信義區" },
+        ],
+        taoyuan: [
+          { id: "taoyuan01", district: "桃園市" },
+          { id: "taoyuan02", district: "八德市" },
+          { id: "taoyuan03", district: "中壢市" },
+        ],
+        taichung: [
+          { id: "taichung01", district: "台中市" },
+          { id: "taichung02", district: "大里市" },
+          { id: "taichung03", district: "清水市" },
+        ],
+      };
+
+      /* for (const prop in employee) {
+          console.log(`employee.${prop}:${employee[prop]}`);
+        } */
+
+      //取得select element元素
+      const citySelect = document.getElementById("cities");
+      const districtSelect = document.getElementById("district");
+      const submit = document.querySelector("input[type=submit]");
+      const divMsg = document.getElementById("msg");
+
+      console.log(submit);
+
+      window.onload = createSelect;
+
+      //動態建立City <select>
+      function createSelect() {
+        //City
+        for (let i = 0; i < allCities.length; i++) {
+          let option1 = document.createElement("option");
+          option1.value = allCities[i].id;
+          option1.text = allCities[i].name;
+
+          citySelect.add(option1, null);
+        }
+        //新北
+        let option = document.createElement("option");
+        option.value = "newtaipei";
+        option.text = "新北市";
+        citySelect.add(option, null);
+        //---請選擇縣市---
+        let option2 = document.createElement("option");
+        option2.value = "";
+        option2.text = "---請選擇縣市---";
+        option2.setAttribute("selected", "");
+        citySelect.add(option2, 0);
+
+        //---請選擇行政區---
+        let option3 = document.createElement("option");
+        option3.value = "";
+        option3.text = "---請選擇行政區---";
+        option3.setAttribute("selected", "");
+        districtSelect.add(option3, 0);
+
+        districtSelect.disabled = true;
+      }
+
+      citySelect.onchange = citySelectChange;
+
+      //citySelect.addEventListener("change", citySelectChange);
+
+      //select1 onchange,根據所選縣市，動態建立對映的行政區域選項<option>
+      let selectedCityValue, selectedCityText;
+      function citySelectChange(event) {
+        debugger;
+        //以根據所選縣市為條件，從allDistricts陣列過濾找出應的陣列元素, 裡面即為行政區資料
+        console.log(citySelect.selectedOptions[0]);
+        console.dir(citySelect.selectedOptions[0]);
+
+        selectedCityValue = citySelect.selectedOptions[0].value;
+        selectedCityText = citySelect.selectedOptions[0].text;
+
+        //清除並重新建立District <select>中所有Options
+        //districtSelect.innerHTML="";
+
+        districtSelect.length = 1;
+
+        //防呆
+        //如果未選擇City則return
+        if (selectedCityValue == "") {
+          districtSelect.length = 1; //清空第二個下拉式選單,只保留第一個option項目
+          districtSelect.disabled = true;
+          submit.disabled = true;
+          msg.innerHTML = "";
+          return;
+        }
+
+        //從cityObject[CityName]取得值，其值為陣列
+        let districtyArray = cityObject[selectedCityValue];
+
+        districtyArray.forEach((dt) => {
+          let opt = document.createElement("option");
+          opt.value = dt.id;
+          opt.text = dt.district;
+          districtSelect.add(opt);
+        });
+
+        districtSelect.disabled = false;
+      }
+
+      //事件名稱用change /  input皆可
+      districtSelect.addEventListener("change", () => {
+        if (districtSelect.selectedOptions[0].value == "") {
+          submit.disabled = true;
+          msg.innerHTML = "";
+          return;
+        }
+
+        submit.disabled = false;
+        divMsg.innerText =
+          selectedCityValue +
+          ", " +
+          selectedCityText +
+          ", " +
+          districtSelect.selectedOptions[0].text;
+      });
+
+      function submitData() {
+        // alert('你提交了資料');
+
+        //建立FormData
+        let formData = new FormData();
+        formData.append("city", citySelect.selectedOptions[0].value);
+        formData.append("district", districtSelect.selectedOptions[0].text);
+
+        //傳送FormData資料到指定的Server，將資料交由Server處理
+        let request = new XMLHttpRequest();
+        request.open("POST", "https://www.codemagic.com.tw");
+        request.send(formData);
+      }
+    </script>
+  </body>
+</html>

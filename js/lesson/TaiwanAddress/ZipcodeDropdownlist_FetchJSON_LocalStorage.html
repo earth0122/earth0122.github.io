@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="jumbotron alert-info">
+        <h1>Fetch JSON + localStorage + POST Web API</h1>
+    </div>
+    <!--     
+        <select id="citiesExample" name="cities">
+            <option value="taipei">台北</option>
+            <option value="taoyuan">桃園</option>
+            <option value="taichung">台中</option>
+        </select> 
+        -->
+
+    <select id='city' name='city'></select>
+    <select id='district' name='district'></select>
+    <input type='submit' value='提交資料' disabled>
+
+    <div id='msg'></div>
+
+    <hr>
+
+    <div id="zipcodetable"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+    <script>
+        let citySelect = document.getElementById('city');
+        let districtSelect = document.getElementById('district');
+        let submitButton = document.querySelector('input[type=submit]');
+        let msg = document.getElementById('msg');
+        let zipcodetable = document.getElementById('zipcodetable');
+
+        const url = 'https://raw.githubusercontent.com/apprunner/FileStorage/master/SimpleZipCode.json';
+        let zipcodeArray = [];
+
+        window.onload = function () {
+            fetchJSON(url);
+        };
+
+        function fetchJSON(uri) {
+            if (localStorage.getItem('ZipcodeArray') == null) {
+                //抓取網路JSON資料，動態生成City Dropdownlist           
+                fetch(uri)
+                    .then(response => response.json())
+                    .then(result => {
+                        zipcodeArray = result;
+
+                        //將陣列轉為JSON文字, 儲存在localStorage, 作為快取的作用
+                        localStorage.setItem('ZipcodeArray', JSON.stringify(zipcodeArray));
+                        genSelectOptions(zipcodeArray);
+                    });
+            } else {
+                zipcodeArray = JSON.parse(localStorage.getItem('ZipcodeArray'));
+                genSelectOptions(zipcodeArray);
+            }
+
+            console.log(localStorage.getItem('ZipcodeArray'));
+        }
+
+        //建立Select-option下拉式選單
+        function genSelectOptions(zipcodeArray) {
+            zipcodeArray.forEach((item, index) => {
+                let option1 = document.createElement('option');
+                option1.value = item.city;
+                option1.text = item.city;
+
+                citySelect.add(option1, null);
+            });
+
+            let option2 = document.createElement('option');
+            option2.value = '';
+            option2.text = '---請選擇縣市---';
+            //option2.selected=true;
+            option2.setAttribute('selected', '');    //預設選項
+            citySelect.add(option2, 0);
+
+
+            //產生District Dropdownlist ---請選擇行政區---
+            let option3 = document.createElement('option');
+            option3.value = '';
+            option3.text = '---請選擇行政區---';
+            districtSelect.add(option3, null);
+
+            districtSelect.disabled = true;
+        }
+
+
+        //City選項變更事件
+        citySelect.addEventListener("change", citySelectedChange);
+        citySelect.addEventListener("change", districtsCreateTable);
+
+        function citySelectedChange(event) {
+            //取得選取的縣市資料
+            let cityValue = citySelect.selectedOptions[0].value;
+            let cityText = citySelect.selectedOptions[0].text;
+
+            //如果未選擇City則return
+            if (cityValue == '') {
+                districtSelect.length = 1;  //清空第二個下拉式選單,只保留第一個
+                districtSelect.disabled = true;
+                submitButton.disabled = true;
+                msg.innerHTML = '';
+                return;
+            }
+
+            //清除並重新建立District <select>
+            districtSelect.disabled = false;
+            districtSelect.innerHTML = '';
+            let option0 = document.createElement('option');
+            option0.value = '';
+            option0.text = '---請選擇行政區---';
+            districtSelect.add(option0, null);
+
+            //取得District資料
+            let cityArray = zipcodeArray.filter(item => item.city == cityText);
+            let districts = cityArray[0].districts;
+
+
+            //產生District Dropdownlist各區選項
+            districts.forEach((item, index) => {
+                let option1 = document.createElement('option');
+                option1.value = item.district;
+                option1.text = item.district + " - " + item.zipcode;
+                districtSelect.add(option1);
+            });
+
+            districtSelect.disabled = false;
+        }
+
+        districtSelect.addEventListener('change', function () {
+            let cityValue = citySelect.selectedOptions[0].value;
+            let cityText = citySelect.selectedOptions[0].text;
+            let districtValue = districtSelect.selectedOptions[0].value;
+            let districtText = districtSelect.selectedOptions[0].text;
+
+            if (cityValue != '' && districtValue != '') {
+                msg.innerText = citySelect.selectedOptions[0].text + ',' + districtSelect.selectedOptions[0].text;
+                console.log(cityText + ', ' + districtText);
+                submitButton.disabled = false;
+            }
+            else {
+                msg.innerHTML = '';
+                submitButton.disabled = true;
+            }
+        });
+
+        submitButton.addEventListener('click', submitData);
+
+        //Submit提交資料
+        function submitData() {
+            //建立FormData
+            let formData = new FormData();
+            formData.append("city", citySelect.selectedOptions[0].value);
+            formData.append("district", districtSelect.selectedOptions[0].text.split("-")[0].trim());
+            formData.append("zipcode", districtSelect.selectedOptions[0].text.split("-")[1].trim());
+
+
+            //傳送FormData資料到指定的Server，將資料交由Server處理
+            let xhr = new XMLHttpRequest();
+            xhr.onload = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    msg.innerText = xhr.responseText;
+                    //debugger;
+                }
+                else {
+                    msg.innerText = `發生錯誤: ${xhr.status}, ${xhr.statusText}`;
+                }
+            }
+
+            xhr.open("POST", "https://localhost:44325/api/Zipcode");
+            xhr.send(formData);
+        }
+
+        let data2DArray = []; //ex:[ ["臺北市", "中正區", "100"],  ["臺北市", "大同區", "103"], ...]
+        function districtsCreateTable() {
+            //取得選取的縣市資料
+            let cityValue = citySelect.selectedOptions[0].value;
+            let cityText = citySelect.selectedOptions[0].text;
+
+            //根據選取的City, 以Table列表所有行政區的郵遞區號
+            if (cityValue !== '') {
+
+                let city = zipcodeArray.filter(x => x.city == cityText)[0];
+                let titles = ["縣市", "行政區", "郵遞區號"];
+
+                //debugger;
+                data2DArray = city.districts.map(d => { return [city.city, d.district, d.zipcode] });
+
+                createTable(titles, data2DArray);
+
+                return;
+            }
+        }
+
+
+        //create element & innerText
+        function $ce(element, text) {
+            let el = document.createElement(element);
+
+            //判斷text參數是否合規?
+            if (typeof (text) !== "undefined" && typeof(text)!="" && typeof (text) !== null) {
+                el.innerText = text;
+            }
+
+            return el;
+        }
+
+        function createTable(titles, rowsArray) {
+            //Create a table dynamically
+            table = $ce('table');
+            thead = createThead(titles);
+            tbody = createTbody(rowsArray);
+
+            table.append(thead, tbody);
+
+            zipcodetable.innerHTML = "";
+            zipcodetable.appendChild(table);
+
+            //<h1>用DOM動態建立Table</h1>
+            let h1 = $ce("h1");
+            h1.innerText = "用DOM動態建立Table";
+            zipcodetable.insertBefore(h1, table);
+
+            table.className = "table table-bordered table-striped";
+        }
+
+        //建立標題
+        function createThead(titles) {
+            let Thead = $ce('thead', null);
+            let tr = document.createElement('tr');
+
+            titles.forEach(title => {
+                let th = $ce("th");
+                th.innerText = title;
+
+                tr.append(th);
+            });
+            Thead.append(tr)
+
+            //debugger;
+            return Thead;
+        }
+
+        function createTbody(rowsArray) {
+            let Tbody = $ce("tbody", "");
+            rowsArray.forEach(row => {
+                let tr = $ce("tr");
+                row.forEach(column => {
+                    let td = $ce("td");
+                    if (column.toString().includes("png")) {
+                        td.innerHTML = `<img src="${column}">`;
+                    } else {
+                        td.innerText = column;
+                    }
+
+                    tr.append(td);
+                });
+                Tbody.append(tr);
+            });
+
+            return Tbody;
+        }
+    </script>
+</body>
+
+</html>

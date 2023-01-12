@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>fetch post data to Web Api</h1>
+    <button id="btnPost">Post Data</button>
+    <div id="msg"></div>
+
+    <script>
+        let person = {
+            Id: 1,
+            Name : "Kevin",
+            Email : "kevin@gmail.com"
+        };
+
+        //const apiUrl = "https://localhost:44325/api/lol/CreateHero/"+ hero.Id;
+        //const apiUrl ="https://github.com/apprunner/FileStorage/"+ hero.Id;
+        const apiUrl = "https://localhost:5001/api/Persons";
+
+
+        let btnPost, msg;
+        window.onload=function(){
+            btnPost = document.getElementById("btnPost");
+            msg = document.getElementById("msg");
+
+            btnPost.addEventListener("click", postData);
+        }
+
+        function postData(){
+            let request = new Request(apiUrl, {
+            method: "POST",
+            headers: {
+                "Content-type": "application/json; charset=UTF-8"
+            },
+            body: JSON.stringify(person)
+        });
+
+        fetch(request)
+            .then(response => {
+                //debugger;
+                //檢查response是否ok ?
+                if (response.ok) {
+                    return response.text();
+                } else {
+                    throw new Error(`發生錯誤: ${response.status}, ${response.statusText}`);
+                }
+            })
+            .then(result => {
+                // console.log(result);
+                // document.writeln(result);
+                msg.innerText = result;
+            })
+            .catch(ex => {
+                console.log(ex.response);
+            })
+            .finally();
+        }
+
+
+     
+    </script>
+</body>
+
+</html>
