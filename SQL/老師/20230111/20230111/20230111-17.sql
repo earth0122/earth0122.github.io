@@ -1,0 +1,4 @@
+SELECT
+	*
+FROM Customers
+WHERE Fax IS NOT NULL

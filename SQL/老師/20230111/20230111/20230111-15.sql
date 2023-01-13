@@ -1,0 +1,4 @@
+SELECT TOP 12 WITH TIES
+	*
+FROM Products
+ORDER BY UnitPrice

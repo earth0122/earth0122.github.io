@@ -1,0 +1,6 @@
+SELECT
+	ProductID, ProductName, UnitPrice
+FROM Products
+ORDER BY UnitPrice
+OFFSET 3 ROWS
+FETCH NEXT 6 ROWS ONLY
