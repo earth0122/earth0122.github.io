@@ -13,7 +13,7 @@
     integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
 
-  <title>Hello, Apple!</title>
+  <title>unrealApple</title>
 
   <style>
     body {
@@ -76,7 +76,7 @@
   </div>
 
   <script>    
-    // 利用陣列 包3張圖  利用foreach 取索引 按按鈕 來切換索引 來達到換圖片的效果
+   
     var Product = {
         IPhone: {
         Detail: {
@@ -133,36 +133,36 @@
       }
     };
   </script>
-  <script>
-    //變數
-    const outWard = Product
+  <script>    
     // DOM
     let iphoneBtn = document.querySelector("#iphone")
-    let ipadBtn = document.querySelector("#ipad")
-    let macbookBtn = document.querySelector("#macbook")
-    let colorArea = document.querySelector("#color")
-    let typeArea = document.querySelector("#type")
-    let priceArea = document.querySelector("#price")
+    // let ipadBtn = document.querySelector("#ipad")
+    // let macbookBtn = document.querySelector("#macbook")
     let productImg = document.querySelector("#product-img")
+    let color = document.querySelector("#color")
+    let type = document.querySelector("#type")
+    let price = document.querySelector("#price")
+    
 
     // console.log(iphone)
     // console.log(ipad)
     // console.log(macbook)
 
-    //FUNCTION   初始化
-    function resetProduct(product){    
-    colorArea.innerHTML=""
-    typeArea.innerHTML=""
-    priceArea.innerHTML=""
+    //FUNCTION   
+    function appleProduct(product){  
+      //初始化  
+    color.innerHTML=""
+    type.innerHTML=""
+    price.innerHTML=""
     productImg.setAttribute=("src",Product[product].Detail.baseImgUrl)
     }
     //顏色按鈕
-    let colorRound = document.createElement("div")
+    let colorTitle = document.createElement("div")
     let colorH2 =document.createElement("h2")
     colorH2.innerText = "顏色"
-    colorRound.classList.add("w-100","d-flex","justify-content-center","justify-content","justify-content-md-start")
-    colorRound.appendChild(colorH2)
-    colorArea.appendChild(colorRound)
+    colorTitle.classList.add("w-100","d-flex","justify-content-center","justify-content","justify-content-md-start")
+    colorTitle.appendChild(colorH2)
+    color.appendChild(colorTitle)
 
 
 </script>
