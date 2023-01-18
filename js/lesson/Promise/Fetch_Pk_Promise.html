@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Fetch vs. Promise</h1>
+
+    <button id="btnFetch">Fetch Json</button>
+    <button id="btnPromise">Fetch Json With Promise</button>
+    <button id="btnDelay">Fetch Delay 3s</button>
+    <div id="msg"></div>
+
+    <script>
+      const url =
+        "https://ddragon.leagueoflegends.com/cdn/10.22.1/data/zh_TW/champion.json";
+      let btnFetch, btnPromise, btnDelay, msg;
+
+      window.onload = function () {
+        msg = document.getElementById("msg");
+        btnFetch = document.getElementById("btnFetch");
+        btnPromise = document.getElementById("btnPromise");
+        btnDelay = document.getElementById("btnDelay");
+
+        btnFetch.addEventListener("click", () => {
+          GetJson(url);
+          console.log("完成GetJson方法呼叫");
+        });
+
+        btnPromise.addEventListener("click", () => {
+          let promise1 = GetJsonPromise(url);
+
+          promise1
+            .then((response) => {
+              return response.json();
+            })
+            .then((result) => {
+              console.log(result.data);
+
+              //如果你用setTimeout延後3秒執行/顯示, then會不會等待你??
+              setTimeout(() => {
+                console.log(result.data);
+              }, 3000);
+            })
+            .catch((ex) => {
+              console.log(ex);
+            })
+            .then(() => {
+              console.log("完成GetJsonPromise方法呼叫");
+            });
+        });
+
+        btnDelay.addEventListener("click", () => {
+          let promise1 = GetJsonPromise(url);
+
+          promise1
+            .then((response) => response.json())
+            .then((result) => {
+              //如果你用setTimeout延後3秒執行/顯示, then會不會等待你?
+              //須用Promise包住setTimeout
+              let promise2 = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                  console.log(result.data);
+
+                  resolve("完成GetJsonPromise方法呼叫, 延後3秒執行");
+                }, 3000);
+              });
+              return promise2;
+            })
+            .catch((ex) => {
+              console.log(ex);
+            })
+            .then((result) => {
+              console.log(result);
+            });
+        });
+      };
+
+      function GetJson(uri) {
+        if (uri === "" || uri === undefined || url === null) {
+          alert("uri不得為空值");
+          return;
+        }
+
+        fetch(uri)
+          .then((response) => response.json())
+          .then((result) => {
+            console.log(result.data);
+          })
+          .catch((ex) => {
+            console.log(ex);
+          });
+      }
+
+      function GetJsonPromise(uri) {
+        if (uri === "" || uri === undefined || url === null) {
+          alert("uri不得為空值");
+          return;
+        }
+
+        return fetch(uri);
+      }
+    </script>
+  </body>
+</html>

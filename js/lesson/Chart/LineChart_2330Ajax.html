@@ -1,151 +1,222 @@
 <!DOCTYPE html>
-<html>
 
-<head>
+<html>
+  <head>
     <meta charset="utf-8" />
+
     <title></title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
-        crossorigin="anonymous"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-        crossorigin="anonymous"></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container-fluid">
-        <div class="jumbotron alert-success">
-            <h2>以Line Chart折線圖繪製2020年台積電股價走勢圖</h2>
-        </div>
-        <canvas id="myChart"></canvas>
+      <div class="jumbotron alert-success">
+        <h2>以Line Chart折線圖繪製2020年台積電股價走勢圖</h2>
+      </div>
+
+      <canvas id="myChart"></canvas>
     </div>
+
     <script type="module">
-        import { $drawChart } from "../../modules/helpers.js"
+      import { $drawChart } from "/js/lesson/modules/helpers.js";
 
-        const url2330 = "https://raw.githubusercontent.com/apprunner/FileStorage/master/2330.json";
-        var ctx, chart, array2330;
+      const url2330 =
+        "https://raw.githubusercontent.com/apprunner/FileStorage/master/2330.json";
 
-        window.onload = () => {
-            ctx = document.getElementById("myChart");
-            console.time("xhr");
-            var promise1 = XhrCall(url2330);
-            console.timeEnd("xhr");
+      var ctx, chart, array2330;
 
-            console.time("fetch")
-            var promise1 = fetchJSON(url2330);
-            console.timeEnd("fetch");
-            
-            console.time("async")
-            var promise1 = asyncFetchJSON(url2330);
-            console.timeEnd("async");
+      window.onload = () => {
+        ctx = document.getElementById("myChart");
 
-            promise1
-                .then(result=>{
-                    array2330  = JSON.parse(result);
-                    console.log(array2330);
+        console.time("xhr");
 
-                    //Ex1 - Basic
-                    /*
+        var promise1 = XhrCall(url2330);
+
+        console.timeEnd("xhr");
+
+        console.time("fetch");
+
+        var promise1 = fetchJSON(url2330);
+
+        console.timeEnd("fetch");
+
+        console.time("async");
+
+        var promise1 = asyncFetchJSON(url2330);
+
+        console.timeEnd("async");
+
+        promise1.then((result) => {
+          array2330 = JSON.parse(result);
+
+          console.log(array2330);
+
+          //Ex1 - Basic
+
+          /*
+
                     let xArray=[], yArray=[];
+
                     array2330.forEach(item=>{
+
                         xArray.push(item.Date);
+
                         yArray.push(item.Price);
+
                     });
+
+
 
                     drawChart(xArray, yArray);
+
                     */
 
-                    //Ex2 - map()
-                    //drawChart(array2330.map(x=>x.Date), array2330.map(x=> parseFloat(x.Price) ));
+          //Ex2 - map()
 
-                    //Ex3 -調用module
-                    $drawChart(ctx, array2330.map(x=>x.Date), array2330.map(x=>x.Price));   
-                    
-                    //Ex 4 - map()做複雜的運算
-                    let xArray = array2330.map(x=>x.Date);
-                    let yArray = array2330.map(function(item){
-                        item.Price = parseFloat(item.Price);
-                        item.Price = item.Price > 400 ? item.Price - 50 : item.Price;
-                        
-                        return item.Price;
-                    });
+          drawChart(
+            array2330.map((x) => x.Date),
+            array2330.map((x) => parseFloat(x.Price))
+          );
 
-                    //drawChart(xArray, yArray);                              
-                })
-        }
+          //Ex3 -調用module
 
-        //['1月', '2月', '3月', '4月', '5月', '6月']
-        //[16, 15, 18, 21, 25, 27]
-        function drawChart(xArray, yArray){
-            chart = new Chart(ctx, {
-                type: "line",
-                data: {
-                    labels: xArray,
-                    datasets: [{
-                        label: "台積電",
-                        data: yArray,
-                        fill: false,
-                        backgroundColor: 'rgba(255,165,0,0.3)',
-                        borderColor: 'rgb(255,165,0)',
-                        pointStyle: "circle",
-                        pointBackgroundColor: 'rgb(0,255,0)',
-                        pointRadius: 5,
-                        pointHoverRadius: 10,
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    title: {
-                        display: true,
-                        fontSize: 26,
-                        text: '2020年台積電股價'
-                    },
-                    tooltips: {
-                        mode: 'point',
-                        intersect: true,
-                    },
-                    legend: {
-                        position: 'bottom',
-                        labels: {
-                            fontColor: 'black',
-                        }
-                    }
-                }
-            });
-        }
+          // $drawChart(ctx, array2330.map(x=>x.Date), array2330.map(x=>x.Price));
 
-        //XHR負責網路抓資料, 回傳promise
-        function XhrCall(url) {
-            let promise1 = new Promise((resolve, reject) => {
-                const xhr = new XMLHttpRequest();
-                xhr.onload = () => resolve(xhr.responseText);
-                xhr.onerror = () => reject(xhr.status);
-                xhr.open("GET", url);
-                xhr.send();
-            });
+          //Ex 4 - map()做複雜的運算
 
-            return promise1;
-        }
+          let xArray = array2330.map((x) => x.Date);
 
-        //fetch
-        function fetchJSON(url){
-            return fetch(url).then(r=>r.text());
-        }
+          let yArray = array2330.map(function (item) {
+            item.Price = parseFloat(item.Price);
 
-        //async await
-        async function asyncFetchJSON(url){
-            let response = await fetch(url);
-            let result = await response.text();
+            item.Price = item.Price > 400 ? item.Price - 50 : item.Price;
 
-            return result;
-        }
+            return item.Price;
+          });
+
+          //drawChart(xArray, yArray);
+        });
+      };
+
+      //['1月', '2月', '3月', '4月', '5月', '6月']
+
+      //[16, 15, 18, 21, 25, 27]
+
+      function drawChart(xArray, yArray) {
+        chart = new Chart(ctx, {
+          type: "line",
+
+          data: {
+            labels: xArray,
+
+            datasets: [
+              {
+                label: "台積電",
+
+                data: yArray,
+
+                fill: false,
+
+                backgroundColor: "rgba(255,165,0,0.3)",
+
+                borderColor: "rgb(255,165,0)",
+
+                pointStyle: "circle",
+
+                pointBackgroundColor: "rgb(0,255,0)",
+
+                pointRadius: 5,
+
+                pointHoverRadius: 10,
+              },
+            ],
+          },
+
+          options: {
+            responsive: true,
+
+            title: {
+              display: true,
+
+              fontSize: 26,
+
+              text: "2020年台積電股價",
+            },
+
+            tooltips: {
+              mode: "point",
+
+              intersect: true,
+            },
+
+            legend: {
+              position: "bottom",
+
+              labels: {
+                fontColor: "black",
+              },
+            },
+          },
+        });
+      }
+
+      //XHR負責網路抓資料, 回傳promise
+
+      function XhrCall(url) {
+        let promise1 = new Promise((resolve, reject) => {
+          const xhr = new XMLHttpRequest();
+
+          xhr.onload = () => resolve(xhr.responseText);
+
+          xhr.onerror = () => reject(xhr.status);
+
+          xhr.open("GET", url);
+
+          xhr.send();
+        });
+
+        return promise1;
+      }
+
+      //fetch
+
+      function fetchJSON(url) {
+        return fetch(url).then((r) => r.text());
+      }
+
+      //async await
+
+      async function asyncFetchJSON(url) {
+        let response = await fetch(url);
+
+        let result = await response.text();
+
+        return result;
+      }
     </script>
-</body>
-
+  </body>
 </html>
