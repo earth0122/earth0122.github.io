@@ -77,7 +77,7 @@
   <script>
     // 利用陣列 包3張圖  利用foreach 取索引 按按鈕 來切換索引 來達到換圖片的效果
     var Product = {
-      IPhone: {
+        IPhone: {
         Detail: {
           productName: 'iPhone 11',
           baseImgUrl: './img/iphone11-select-2019-family.png'
@@ -95,7 +95,7 @@
           ]
         }
       },
-      IPad: {
+        IPad: {
         Detail: {
           productName: 'iPad',
           baseImgUrl: './img/ipad-hero-unselected-201909_GEO_TW.png'
@@ -112,7 +112,7 @@
           ]
         }
       },
-      MacPro: {
+        MacPro: {
         Detail: {
           productName: 'MacPro 13',
           baseImgUrl: './img/mbp13touch-space-gallery1-201907.png'
@@ -136,23 +136,27 @@
     //變數
     const outWard = Product
     // DOM
-    const iphone = document.querySelector("#iphone")
-    const ipad = document.querySelector("#ipad")
-    const macbook = document.querySelector("#macbook")
-    const colorArea =document.querySelector("#color")
-    let pic = document.querySelector("#product-img")
+    const iphoneBtn = document.querySelector("#iphone")
+    const ipadBtn = document.querySelector("#ipad")
+    const macbookBtn = document.querySelector("#bacbook")
+    const colorArea = document.querySelector("#color")
+    const typeArea = document.querySelector("#type")
+    const priceArea = document.querySelector("#price")
+
+
 
     // console.log(iphone)
     // console.log(ipad)
     // console.log(macbook)
 
     //FUNCTION
-    function clear(){
-      color.innerText =""           
-    }
+    function resetProduct(product){
     //初始化
-    
+    colorArea.innerHTML =""
+    typeArea.innerHTML = ""
+    priceArea.innerHTML = ""
     //window onload
+    }
     window.onload = function () {
      
 

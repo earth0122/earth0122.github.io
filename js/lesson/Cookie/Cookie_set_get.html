@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Cookie set & get</h1>
+
+    <button onclick="displayCookie()">Get Cookie</button>
+    <div id="msg"></div>
+
+    <script>
+      window.onload = function () {
+        setCookies();
+      };
+
+      function displayCookie() {
+        document.getElementById("msg").innerText =
+          getCookie("name") +
+          ", " +
+          getCookie("email") +
+          ", " +
+          getCookie("gender");
+      }
+
+      let cookieArray, cookie2DArray;
+      const cookieObject = {};
+
+      function getCookie(name) {
+        let cookies = document.cookie;
+
+        //1.用;分號將字串拆分為陣列元素
+        //name=Kevin; email=kevin@gmail.com; theme=drak
+        cookieArray = cookies.split(";");
+        // ['name=奚江華', ' email=kevin@gmail.com', ' theme=drak']
+
+        //2.以等號再拆分
+        //[["name","奚江華"],["email","kevin@gmail.com"],["theme","drak"]]
+
+        cookie2DArray = cookieArray.map((x) => x.trim().split("="));
+
+        //3.建立Cookie物件
+        /*
+            cookie2DArray.forEach(item => {
+                cookieObject[item[0]] = item[1];
+                //cookieObject["name"]=item["Kevin"];
+            })
+            */
+
+        return cookieObject[name] !== undefined
+          ? cookieObject[name]
+          : `找不到cookie-${name}`;
+      }
+
+      function setCookie(key, value) {
+        document.cookie = `${key}=${value}`;
+
+        cookieObject[key] = value;
+      }
+
+      function getCookie2(cookieName) {
+        //讀取cookies
+        let cookies = document.cookie;
+        //⽤用;分號將字串串拆分為陣列列元素
+        let cookieArray = cookies.split(";");
+        //找尋陣列列中含有cookieName的元素
+        let result = cookieArray.find((item) => item.indexOf(cookieName) != -1);
+        //檢測cookie找不到時為undefined
+        if (result === undefined) {
+          return "Can't find the cookie";
+        }
+        //取得=等號右側字串串
+        let cookieValue = result.substring(
+          result.indexOf("=") + 1,
+          result.length
+        );
+        return cookieValue;
+      }
+
+      //設定Cookies
+      function setCookies() {
+        setCookie("name", "Mary");
+        setCookie("email", "mary@gmail.com");
+        setCookie("theme", "light");
+
+        /*
+            document.cookie = "name=Kevin";
+            document.cookie = "email=kevin@gmail.com"
+            document.cookie = "theme=drak";
+
+            console.log(document.cookie);
+            */
+      }
+    </script>
+  </body>
+</html>

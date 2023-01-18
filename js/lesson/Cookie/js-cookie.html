@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>js-cookie.js</h1>
+    <button id="set">set Cookies</button>
+    <button id="get">get Cookies</button>
+    <button id="remove">remove Cookies</button>
+    <ul></ul>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+
+    <script>
+      window.onload = () => {
+        document.querySelector("#set").addEventListener("click", function () {
+          Cookies.set("name", "Kevin");
+          Cookies.set("email", "kevin@gmail.com", { expires: 1, path: "/" });
+          alert("Cookies設定完成!");
+        });
+
+        document.querySelector("#get").addEventListener("click", function () {
+          let name = Cookies.get("name");
+          let email = Cookies.get("email");
+
+          if (name !== undefined && email !== undefined) {
+            let li01 = document.createElement("li");
+            li01.innerText = `name = ${name}`;
+            let li02 = document.createElement("li");
+            li02.innerText = `email = ${email}`;
+
+            document.querySelector("ul").appendChild(li01);
+            document.querySelector("ul").appendChild(li02);
+          } else {
+            alert("Cookies未定義!");
+          }
+        });
+
+        document
+          .querySelector("#remove")
+          .addEventListener("click", function () {
+            Cookies.remove("name");
+            Cookies.remove("email", { path: "/" });
+            alert("Cookies移除完畢!");
+          });
+      };
+    </script>
+
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.mjs"
+    ></script>
+  </body>
+</html>

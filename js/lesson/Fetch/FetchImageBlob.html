@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>fetch vs. async</h1>
+    <button id="fetch">fetch</button>
+    <div id="msg"></div>
+    <div id="container"></div>
+
+    <script>
+      const urlAatrox =
+        "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg";
+      const urlAhri =
+        "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg";
+      const urlAkali =
+        "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_0.jpg";
+
+      let btn1, container;
+      window.onload = function () {
+        btn1 = document.getElementById("fetch");
+        btn1.addEventListener("click", fetchImage.bind(event, urlAatrox));
+
+        container = document.getElementById("container");
+      };
+
+      //pass parameter to addeventlistener -- https://www.codegrepper.com/code-examples/javascript/pass+parameter+to+addeventlistener
+      //Ex1
+      function fetchImage(uri) {
+        console.log(event);
+        console.dir(event.target);
+        console.log(`event:${event}, target:${event.target}`);
+        console.log(
+          `event:${event.constructor.name}, type:${event.type}, target :${event.target.tagName}`
+        );
+
+        fetch(uri)
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            return response.blob();
+          })
+          .then((myBlob) => {
+            let objectURL = URL.createObjectURL(myBlob);
+
+            let img = document.createElement("img");
+            img.src = objectURL;
+
+            container.append(img);
+          })
+          .catch((ex) => {
+            console.log(
+              "There has been a problem with your fetch operation: " +
+                ex.message
+            );
+          });
+      }
+    </script>
+  </body>
+</html>
