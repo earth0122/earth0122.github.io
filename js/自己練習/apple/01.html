@@ -34,6 +34,7 @@
     #productBtnGroup > button{
       margin-left: 10px;
       margin-right: 10px;
+      
     }
   </style>
 
@@ -74,18 +75,18 @@
     </div>
   </div>
 
-  <script>
+  <script>    
     // 利用陣列 包3張圖  利用foreach 取索引 按按鈕 來切換索引 來達到換圖片的效果
     var Product = {
         IPhone: {
         Detail: {
           productName: 'iPhone 11',
-          baseImgUrl: './img/iphone11-select-2019-family.png'
+          baseImgUrl: './圖片/iphone11-select-2019-family.png'
         },
         OutWard: [
-          { color: '紅色', colorValue: '#ff0000', imageUrl: './img/iphone-red.png' },
-          { color: '黃色', colorValue: '#ffff00', imageUrl: './img/iphone-yellow.png' },
-          { color: '黑色', colorValue: '#000000', imageUrl: './img/iphone-black.png' },
+          { color: '紅色', colorValue: '#ff0000', imageUrl: './圖片/iphone-red.png' },
+          { color: '黃色', colorValue: '#ffff00', imageUrl: './圖片/iphone-yellow.png' },
+          { color: '黑色', colorValue: '#000000', imageUrl: './圖片/iphone-black.png' },
         ],
         Spec: {
           Storge: [
@@ -98,12 +99,12 @@
         IPad: {
         Detail: {
           productName: 'iPad',
-          baseImgUrl: './img/ipad-hero-unselected-201909_GEO_TW.png'
+          baseImgUrl: './圖片/ipad-hero-unselected-201909_GEO_TW.png'
         },
         OutWard: [
-          { color: '太空灰色', colorValue: '#6e6969', imageUrl: './img/ipad-space.png' },
-          { color: '銀色', colorValue: '#b9aeae', imageUrl: './img/ipad-silver.png' },
-          { color: '金色', colorValue: '#ceb7a8', imageUrl: './img/ipad-gold.png' },
+          { color: '太空灰色', colorValue: '#6e6969', imageUrl: './圖片/ipad-space.png' },
+          { color: '銀色', colorValue: '#b9aeae', imageUrl: './圖片/ipad-silver.png' },
+          { color: '金色', colorValue: '#ceb7a8', imageUrl: './圖片/ipad-gold.png' },
         ],
         Spec: {
           Storge: [
@@ -115,11 +116,11 @@
         MacPro: {
         Detail: {
           productName: 'MacPro 13',
-          baseImgUrl: './img/mbp13touch-space-gallery1-201907.png'
+          baseImgUrl: './圖片/mbp13touch-space-gallery1-201907.png'
         },
         OutWard: [
-          { color: '太空灰色', colorValue: '#6e6969', imageUrl: './img/mbp13touch-space.png' },
-          { color: '銀色', colorValue: '#b9aeae', imageUrl: './img/mbp13touch-silver.png' },
+          { color: '太空灰色', colorValue: '#6e6969', imageUrl: './圖片/mbp13touch-space.png' },
+          { color: '銀色', colorValue: '#b9aeae', imageUrl: './圖片/mbp13touch-silver.png' },
         ],
         Spec: {
           Storge: [
@@ -136,69 +137,34 @@
     //變數
     const outWard = Product
     // DOM
-    const iphoneBtn = document.querySelector("#iphone")
-    const ipadBtn = document.querySelector("#ipad")
-    const macbookBtn = document.querySelector("#bacbook")
-    const colorArea = document.querySelector("#color")
-    const typeArea = document.querySelector("#type")
-    const priceArea = document.querySelector("#price")
-
-
+    let iphoneBtn = document.querySelector("#iphone")
+    let ipadBtn = document.querySelector("#ipad")
+    let macbookBtn = document.querySelector("#macbook")
+    let colorArea = document.querySelector("#color")
+    let typeArea = document.querySelector("#type")
+    let priceArea = document.querySelector("#price")
+    let productImg = document.querySelector("#product-img")
 
     // console.log(iphone)
     // console.log(ipad)
     // console.log(macbook)
 
-    //FUNCTION
-    function resetProduct(product){
-    //初始化
-    colorArea.innerHTML =""
-    typeArea.innerHTML = ""
-    priceArea.innerHTML = ""
-    //window onload
+    //FUNCTION   初始化
+    function resetProduct(product){    
+    colorArea.innerHTML=""
+    typeArea.innerHTML=""
+    priceArea.innerHTML=""
+    productImg.setAttribute=("src",Product[product].Detail.baseImgUrl)
     }
-    window.onload = function () {
-     
+    //顏色按鈕
+    let colorRound = document.createElement("div")
+    let colorH2 =document.createElement("h2")
+    colorH2.innerText = "顏色"
+    colorRound.classList.add("w-100","d-flex","justify-content-center","justify-content","justify-content-md-start")
+    colorRound.appendChild(colorH2)
+    colorArea.appendChild(colorRound)
 
-iphone.addEventListener("click", function () {
 
-    // console.log(Product.IPhone.OutWard[0].color)
-    clear()
-    pic.src =`/js/自己練習/apple/圖片/iphone11-select-2019-family.png`
-    
-
-    outWard.IPhone.OutWard.forEach(function (item) {
-
-        console.log(item.color)
-
-    });
-
-    for (let item of outWard.IPhone.OutWard) {
-
-        let colorBtn = document.createElement('button')
-
-        colorBtn.innerText = '紅色'        
-
-        colorArea.appendChild(colorBtn)        
-
-        colorBtn.addEventListener('click', function () {
-          
-          
-            pic.src = '/js/自己練習/apple/圖片/iphone-red.png';
-
-            // consle.log(pic)
-        })
-    }
-})
-    }  
-ipad.addEventListener("click",function(){
-  clear()
-  pic.src = `/js/自己練習/apple/圖片/ipad-hero-unselected-201909_GEO_TW.png`  
-  })
-macbook.addEventListener("click",function(){
-  clear()
-  pic.src =`/js/自己練習/apple/圖片/mbp13touch-space-gallery1-201907.png`
-})
 </script>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
