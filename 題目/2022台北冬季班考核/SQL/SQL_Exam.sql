@@ -1,12 +1,25 @@
 USE [Northwind]
 
 --1 列出各產品的供應商名稱
-
+select
+	p.ProductName,s.CompanyName
+from Products p
+inner join Suppliers s  on p.SupplierID = s.SupplierID
 --2 列出各產品的種類名稱
-
+select
+p.ProductName,c.CategoryID
+from Products p
+inner join Categories c on p.CategoryID = c.CategoryID
 --3 列出各訂單的顧客名字
-
+select
+o.OrderID, c.CustomerID
+from Customers c
+inner join Orders o on o.CustomerID = c.CustomerID
 --4 列出各訂單的所負責的物流商名字以及員工名字
+select
+from
+
+
 
 --5 列出1998年的訂單
 
