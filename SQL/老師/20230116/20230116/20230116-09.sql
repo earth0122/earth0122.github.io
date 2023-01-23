@@ -1,0 +1,6 @@
+SELECT * FROM Shippers
+
+INSERT INTO Shippers(CompanyName, Phone)
+VALUES ('ABC', '0999-999999')
+
+SELECT @@IDENTITY

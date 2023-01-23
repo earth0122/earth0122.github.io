@@ -1,0 +1,4 @@
+SELECT * FROM Table9
+
+TRUNCATE TABLE Table9
+
