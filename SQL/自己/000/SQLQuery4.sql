@@ -1,4 +1,4 @@
-select*from Shippers
+select * from Shippers
 
 delete from Shippers
 where CompanyName = 'ABC'

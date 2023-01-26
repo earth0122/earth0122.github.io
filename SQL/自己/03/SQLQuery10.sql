@@ -1,7 +1,5 @@
-﻿SELECT PARSE('2023-01-16' AS datetime USING 'en-us')
-SELECT TRY_PARSE('2023-01-100' AS datetime USING 'en-us')
+create sequence seq1 as int
+start with 2 increment by 3;
+go
 
- 
-
-SELECT PARSE(N'¥1000.34' AS money USING 'ja-jp')
-SELECT PARSE(N'NT$1000.34' AS money USING 'zh-tw')
+select next value for seq1

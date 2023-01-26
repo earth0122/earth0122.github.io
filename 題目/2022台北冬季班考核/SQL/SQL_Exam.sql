@@ -52,24 +52,45 @@ fetch next 5 rows only
 --inner join Products p on p.CategoryID = c.CategoryID
 --order by UnitPrice desc
 --10 列出每個訂單的總金額  2158
-select 
-OrderID,Quantity,UnitPrice,Discount,
-Quantity*UnitPrice*(1-Discount) as total
-from [Order Details] 
-
+--select 
+--o.OrderID,od.ProductID,od.UnitPrice,od.Quantity,od.Discount,
+--od.UnitPrice*od.Quantity*(1-od.Discount)as total
+--from Orders o
+--inner join [Order Details]od on od.OrderID = o.OrderID
+--group by o.OrderID
 --11 列出每個物流商送過的訂單筆數
 --select
-s.CompanyName,o.OrderID
+--s.CompanyName,o.OrderID
 --from Shippers s
 --inner join Orders o on o.ShipVia = s.ShipperID
 --12 列出被下訂次數小於9次的產品
-select
-from [Order Details]
+--select
+--from [Order Details]
 -- (13、14、15請一起寫)
 --13 新增物流商(Shippers)：
 -- 公司名稱: 青杉人才，電話: (02)66057606
 -- 公司名稱: 青群科技，電話: (02)14055374
+select * from Shippers
+insert into Shippers(CompanyName,Phone)
+values
+('青杉人才','(02)66057606'),
+('青群科技','(02)14055374')
 
+update Shippers
+set
+CompanyName = CompanyName+'有限公司',
+Phone ='(02)66057606'
+where CompanyName = '青杉人才' 
+update Shippers
+set
+CompanyName = CompanyName+'有限公司',
+Phone ='(02)66057606'
+where CompanyName = '青群科技' 
+
+delete from Shippers 
+where CompanyName = '青杉人才有限公司'
+delete from Shippers 
+where CompanyName = '青群科技有限公司'
 --14 方才新增的兩筆資料，電話都改成(02)66057606，公司名稱結尾加'有限公司'
 
 --15 刪除剛才兩筆資料

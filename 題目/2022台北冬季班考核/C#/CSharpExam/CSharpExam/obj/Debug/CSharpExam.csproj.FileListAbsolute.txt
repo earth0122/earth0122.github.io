@@ -27,3 +27,11 @@ C:/Users/USER/Desktop/考核/C#/CSharpExam/CSharpExam/obj/Debug/CSharpExam.pdb
 /Users/andyhuang/Downloads/考核/C#/CSharpExam/CSharpExam/obj/Debug/CSharpExam.csproj.CoreCompileInputs.cache
 /Users/andyhuang/Downloads/考核/C#/CSharpExam/CSharpExam/obj/Debug/CSharpExam.exe
 /Users/andyhuang/Downloads/考核/C#/CSharpExam/CSharpExam/obj/Debug/CSharpExam.pdb
+C:\Users\earth\OneDrive\桌面\筆電\earth0122.github.io\題目\2022台北冬季班考核\C#\CSharpExam\CSharpExam\bin\Debug\CSharpExam.exe.config
+C:\Users\earth\OneDrive\桌面\筆電\earth0122.github.io\題目\2022台北冬季班考核\C#\CSharpExam\CSharpExam\bin\Debug\CSharpExam.exe
+C:\Users\earth\OneDrive\桌面\筆電\earth0122.github.io\題目\2022台北冬季班考核\C#\CSharpExam\CSharpExam\bin\Debug\CSharpExam.pdb
+C:\Users\earth\OneDrive\桌面\筆電\earth0122.github.io\題目\2022台北冬季班考核\C#\CSharpExam\CSharpExam\obj\Debug\CSharpExam.csproj.AssemblyReference.cache
+C:\Users\earth\OneDrive\桌面\筆電\earth0122.github.io\題目\2022台北冬季班考核\C#\CSharpExam\CSharpExam\obj\Debug\CSharpExam.csproj.SuggestedBindingRedirects.cache
+C:\Users\earth\OneDrive\桌面\筆電\earth0122.github.io\題目\2022台北冬季班考核\C#\CSharpExam\CSharpExam\obj\Debug\CSharpExam.csproj.CoreCompileInputs.cache
+C:\Users\earth\OneDrive\桌面\筆電\earth0122.github.io\題目\2022台北冬季班考核\C#\CSharpExam\CSharpExam\obj\Debug\CSharpExam.exe
+C:\Users\earth\OneDrive\桌面\筆電\earth0122.github.io\題目\2022台北冬季班考核\C#\CSharpExam\CSharpExam\obj\Debug\CSharpExam.pdb

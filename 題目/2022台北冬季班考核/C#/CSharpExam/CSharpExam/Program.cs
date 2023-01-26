@@ -40,76 +40,61 @@ namespace CSharpExam
             #region 第1題
             // 1. 列出所有課程的名稱
             Console.WriteLine("1. 列出所有課程的名稱");
-            {
+            
                 //作答區
-                //...
-            }
+                var a = courseList.Select(x => x.Name);
 
-            Console.WriteLine($"{Environment.NewLine}");
+
+            Console.WriteLine(string.Join(Environment.NewLine,a));
             #endregion
 
             #region 第2題
             // 2. 列出所有在"L107"教室上課的課程ID
             Console.WriteLine("2. 列出所有在'L107'教室上課的課程ID");
-            {
-                //作答區
-                
-            }
+         
+                var b  = courseList.Where(x=>x.Classroom =="L107").Select(x=>x.CourseId);
 
-            Console.WriteLine($"{Environment.NewLine}");
+            Console.WriteLine(string.Join(Environment.NewLine,b));
             #endregion
 
             #region 第3題
             // 3. 列出所有在'L107'教室上課，並且學分為3的課程ID
             Console.WriteLine("3. 列出所有在'L107'教室上課，並且學分為3的課程ID");
-            {
-                //作答區
 
-            }
+            var c = courseList.Where(x => x.Classroom == "L107" && x.Credit == 3).Select(x => x.CourseId);
 
-            Console.WriteLine($"{Environment.NewLine}");
+            Console.WriteLine(string.Join(Environment.NewLine,c));
             #endregion
 
             #region 第4題
             // 4. 列出所有老師的名字(名字不能重複出現)
             Console.WriteLine("4. 列出所有老師的名字(名字不能重複出現)");
-            {
-                //作答區
+                var d = courseList.Select(x=>x.Teacher).Distinct();
 
-            }
-
-            Console.WriteLine($"{Environment.NewLine}");
+            Console.WriteLine(string.Join(Environment.NewLine,d));
             #endregion
 
             #region 第5題
             // 5. 列出所有有在'L202'上課的老師名字(名字不能重複出現)
             Console.WriteLine("5. 列出所有有在'L202'上課的老師名字(名字不能重複出現)");
-            {
-                //作答區
+            var e = courseList.Where(x => x.Classroom == "L202").Select(x => x.Teacher).Distinct();
 
-            }
 
-            Console.WriteLine($"{Environment.NewLine}");
+            Console.WriteLine(string.Join(Environment.NewLine,e));
             #endregion
 
             #region 第6題
             // 6. 列出所有女性學生的名字
             Console.WriteLine("6. 列出所有女性學生的名字");
-            {
-                //作答區
+            var f = studentList.Where(x => x.Gender == GenderOption.Female).Select(x => x.Name);
 
-            }
-
-            Console.WriteLine($"{Environment.NewLine}");
+            Console.WriteLine(string.Join(Environment.NewLine,f));
             #endregion
 
             #region 第7題
             // 7. 列出有上'Git'這門課的學員名字
             Console.WriteLine("7. 列出有上'Git'這門課的學員名字");
-            {
-                //作答區
-
-            }
+            var g = studentList.Where(x => x.CourseList.Contains("B005"));
 
             Console.WriteLine($"{Environment.NewLine}");
             #endregion
@@ -147,10 +132,7 @@ namespace CSharpExam
             #region 第10題
             // 10. 找出誰修的學分總和小於10
             Console.WriteLine("10. 找出誰修的學分總和小於10");
-            {
-                //作答區
-
-            }
+                
 
             Console.WriteLine($"{Environment.NewLine}");
             #endregion

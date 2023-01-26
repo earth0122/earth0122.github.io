@@ -1,9 +1,14 @@
-select * from Shippers
+select*
 
-set identity_insert Shippers on
+from Shippers
+
+set identity_insert shippers on
 insert into Shippers(CompanyName,Phone,ShipperID)
-values('ABC','0999-999999',100)
-set identity_insert Shippers off
+values('ABC','0999-999999',134)
+
+set identity_insert shippers off
+
+
 insert into Shippers(CompanyName,Phone)
 values('ABC','0999-999999')
 
