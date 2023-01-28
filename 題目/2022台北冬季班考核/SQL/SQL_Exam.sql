@@ -46,26 +46,34 @@ order by UnitPrice
 offset 3 rows
 fetch next 5 rows only
 --9 列出每種類別中最高單價的商品
---select
--- c.CategoryID  ,p.UnitPrice
---from Categories c
---inner join Products p on p.CategoryID = c.CategoryID
---order by UnitPrice desc
---10 列出每個訂單的總金額  2158
---select 
---o.OrderID,od.ProductID,od.UnitPrice,od.Quantity,od.Discount,
---od.UnitPrice*od.Quantity*(1-od.Discount)as total
---from Orders o
---inner join [Order Details]od on od.OrderID = o.OrderID
---group by o.OrderID
+select
+CategoryID,
+max(UnitPrice)
+from Products
+group by CategoryID
+order by CategoryID
+
+--10 列出每個訂單的總金額  835
+select
+o.OrderID,
+sum(od.UnitPrice*od.Quantity*(1-Discount))as total
+from Orders o
+left join [Order Details] od on od.OrderID = o.OrderID
+group by o.OrderID
 --11 列出每個物流商送過的訂單筆數
---select
---s.CompanyName,o.OrderID
---from Shippers s
---inner join Orders o on o.ShipVia = s.ShipperID
+select
+s.CompanyName,
+count(o.OrderID)as'訂單筆數'
+from Shippers s
+left join orders o on o.ShipVia = s.ShipperID
+group by s.CompanyName
 --12 列出被下訂次數小於9次的產品
---select
---from [Order Details]
+select
+od.OrderID,
+count(od.ProductID)
+from [Order Details] od
+group by od.OrderID
+having count(od.ProductID)<9
 -- (13、14、15請一起寫)
 --13 新增物流商(Shippers)：
 -- 公司名稱: 青杉人才，電話: (02)66057606
