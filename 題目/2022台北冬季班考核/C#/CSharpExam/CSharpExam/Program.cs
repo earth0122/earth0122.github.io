@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -94,9 +96,8 @@ namespace CSharpExam
             #region 第7題
             // 7. 列出有上'Git'這門課的學員名字
             Console.WriteLine("7. 列出有上'Git'這門課的學員名字");
-            var g = studentList.Where(x => x.CourseList.Contains("B005"));
-
-            Console.WriteLine($"{Environment.NewLine}");
+            //var g = studentList.Select(x=>$"{x.Name}:{string.Join(Environment.NewLine,courseList.Where(y=>x.CourseList.Contains(y.CourseId)).Select(y=>x.Name=="Git"))}");
+            //Console.WriteLine(string.Join(Environment.NewLine, g));
             #endregion
 
             #region 第8題
@@ -110,42 +111,33 @@ namespace CSharpExam
                     Redis
             */
             Console.WriteLine("8. 列出每個學員上的每一堂課");
-            {
-                //作答區
+            var h = studentList.Select(x => $"{x.Name}:{Environment.NewLine}{string.Join(Environment.NewLine , courseList.Where(y => x.CourseList.Contains(y.CourseId)).Select(y => $"\t{ y.Name}"))}");
 
-            }
-
-            Console.WriteLine($"{Environment.NewLine}");
+            Console.WriteLine(string.Join(Environment.NewLine, h));
             #endregion
 
             #region 第9題
             // 9. 找出誰上的課數量最少
             Console.WriteLine("9. 找出誰上的課數量最少");
-            {
-                //作答區
+            //var i = studentList.Select(x => x.Name).Min(x =>x.CourseList);
 
-            }
-
-            Console.WriteLine($"{Environment.NewLine}");
+           // Console.WriteLine(string.Join(Environment.NewLine, i));
             #endregion
 
             #region 第10題
             // 10. 找出誰修的學分總和小於10
             Console.WriteLine("10. 找出誰修的學分總和小於10");
-                
+            var j = studentList.Select(x => $"{x.Name}{string.Join(Environment.NewLine, courseList.Where(y => x.CourseList.Contains(y.CourseId)).Sum(y => y.Credit))}");
 
-            Console.WriteLine($"{Environment.NewLine}");
+            Console.WriteLine(string.Join(Environment.NewLine, j));
             #endregion
 
             #region 第11題
             // 11. 找出誰最後獲得學分數最高
             Console.WriteLine("11. 找出誰最後獲得學分數最高");
-            {
-                //作答區
+            var k = studentList.Select(x => $"{x.Name}{string.Join(Environment.NewLine, courseList.Where(y => x.CourseList.Contains(y.CourseId)).Sum(y => y.Credit))}");
 
-            }
-
-            Console.WriteLine($"{Environment.NewLine}");
+            Console.WriteLine(string.Join(Environment.NewLine,k));;
             #endregion
 
             #region 第12題(加分題)
