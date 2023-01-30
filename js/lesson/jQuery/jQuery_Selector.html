@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1></h1>
+    <div>
+      <button>js .innerHTML</button>
+      <button>jQuery .html()</button>
+    </div>
+
+    <div id="Msg"></div>
+    <div id="jqMsg"></div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      var btn1, button1, button2;
+    </script>
+
+    <script type="module">
+      import { $g } from "../Modules/helpers.js";
+
+      $g("h1").innerHTML = "JS vs. jQuery";
+
+      btn1 = $g("button:nth-child(1)");
+      button1 = document.querySelector("div>button:first-child");
+      button2 = document.querySelector("div>button:last-child");
+
+      $g("button:first-child").addEventListener("click", function () {
+        $g("#Msg").innerHTML = "<h1>JavaScript Module</h1>";
+      });
+
+      $("button")
+        .last()
+        .click(function () {
+          $("#jqMsg").html("<h1>This is jQuery</h1>");
+        });
+    </script>
+  </body>
+</html>

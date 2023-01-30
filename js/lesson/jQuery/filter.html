@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  </head>
+
+  <body>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>jQuery</li>
+      <li>Vue.js</li>
+    </ul>
+
+    <button>jQuery - Go</button>
+    <button>JS - Go</button>
+    <button>Reset</button>
+    <script>
+      let btn1, btn2, btn3;
+      $(function () {
+        let btn1 = $("button").first();
+        let btn2 = $("button").eq(1);
+        let btnReset = $("button").last();
+
+        btn1.click(go);
+        btn2.on("click", run);
+
+        btnReset.click(reset);
+      });
+
+      //jQuery語法
+      function go() {
+        $("li").filter(":even").css("background-color", "yellow");
+        $("li").filter(":odd").css("background-color", "lightblue");
+      }
+
+      //原生JS語法
+      function run() {
+        //1.NodeList
+        let even = document.querySelectorAll("ul>li:nth-child(even)");
+        let odd = document.querySelectorAll("ul>li:nth-child(odd)");
+
+        //2.NodeList + forEach()
+        even.forEach((x) => {
+          x.style.backgroundColor = "lightpink";
+        });
+        odd.forEach((x) => {
+          x.style.backgroundColor = "lightblue";
+        });
+
+        //3.將Nodelist轉成陣列
+        let evenArray = Array.prototype.slice.call(even);
+        let oddArray = Array.prototype.slice.call(odd);
+
+        evenArray.map((x) => {
+          x.style.backgroundColor = "lightpink";
+        });
+        oddArray.map((x) => {
+          x.style.backgroundColor = "lightblue";
+        });
+      }
+
+      function reset() {
+        window.location.reload();
+      }
+    </script>
+  </body>
+</html>

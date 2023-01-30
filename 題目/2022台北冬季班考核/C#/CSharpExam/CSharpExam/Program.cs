@@ -96,8 +96,9 @@ namespace CSharpExam
             #region 第7題
             // 7. 列出有上'Git'這門課的學員名字
             Console.WriteLine("7. 列出有上'Git'這門課的學員名字");
-            //var g = studentList.Select(x=>$"{x.Name}:{string.Join(Environment.NewLine,courseList.Where(y=>x.CourseList.Contains(y.CourseId)).Select(y=>x.Name=="Git"))}");
-            //Console.WriteLine(string.Join(Environment.NewLine, g));
+         
+            var g = studentList.Where(x => x.CourseList.Contains("B005") || x.CourseList.Contains("B006")).Select(x=>x.Name);
+            Console.WriteLine(string.Join(Environment.NewLine, g));
             #endregion
 
             #region 第8題
@@ -127,7 +128,7 @@ namespace CSharpExam
             #region 第10題
             // 10. 找出誰修的學分總和小於10
             Console.WriteLine("10. 找出誰修的學分總和小於10");
-            var j = studentList.Select(x => $"{x.Name}{string.Join(Environment.NewLine, courseList.Where(y => x.CourseList.Contains(y.CourseId)).Sum(y => y.Credit))}");
+            var j = studentList.Select(x => $"{x.Name}{string.Join(Environment.NewLine, courseList.Where(y => x.CourseList.Contains(y.CourseId)).Sum(y => y.Credit)<10)}");
 
             Console.WriteLine(string.Join(Environment.NewLine, j));
             #endregion

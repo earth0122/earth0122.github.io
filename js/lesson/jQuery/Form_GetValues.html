@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  </head>
+
+  <body>
+    <h1>serializeArray() & serialize()</h1>
+    <form id="form1" action="destination.html">
+      <div>
+        <label id="username">Name : </label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          value=""
+          placeholder="輸入你的名字"
+        />
+      </div>
+      <div>
+        <label id="email">Email : </label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          value=""
+          placeholder="輸入你Email"
+        />
+      </div>
+      <div>
+        <label id="city">City : </label>
+        <select name="city">
+          <option value="taipei" selected>台北市</option>
+          <option value="newtaipei">新北市</option>
+          <option value="taoyuan">桃園市</option>
+        </select>
+      </div>
+      <div>
+        <label id="city">是否同意 : </label>
+        <input type="checkbox" id="agree" name="agree" value="true" />
+      </div>
+      <input type="submit" value="Submit提交" />
+    </form>
+    <hr />
+    <form id="form2" action="destination.html">
+      <div>
+        <label id="username">Name : </label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          value=""
+          placeholder="輸入你的名字"
+        />
+      </div>
+      <div>
+        <label id="email">Email : </label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          value=""
+          placeholder="輸入你Email"
+        />
+      </div>
+      <div>
+        <label id="city">City : </label>
+        <select name="city">
+          <option value="taipei" selected>台北市</option>
+          <option value="newtaipei">新北市</option>
+          <option value="taoyuan">桃園市</option>
+        </select>
+      </div>
+      <div>
+        <label id="city">是否同意 : </label>
+        <input type="checkbox" id="agree" name="agree" value="true" />
+      </div>
+      <input type="submit" value="Submit提交" />
+    </form>
+
+    <script>
+      $("#form1").submit(function (event) {
+        console.log($(this).serializeArray());
+        event.preventDefault();
+      });
+
+      $("#form2").submit(function (event) {
+        console.log($(this).serialize());
+        event.preventDefault();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        body {
+            background: #000;
+            color: white;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .mySwiper2 {
+            height: 80%;
+            width: 100%;
+        }
+
+        .mySwiper {
+            height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+
+        .mySwiper .swiper-slide {
+            width: 25%;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .mySwiper .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <h2><a href="https://swiperjs.com/demos#thumbs-gallery">Swiper.js - Thumb Gallery</a> </h2>
+    <!-- Swiper -->
+
+    <div  class="swiper mySwiper2" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
+        <div class="swiper-wrapper" id="mainphoto">
+            <!-- <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+            </div> -->
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <div thumbsSlider="" class="swiper mySwiper">
+        <div class="swiper-wrapper" id="thumbs">
+            <!-- <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+            </div> -->
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        const urlLoL = 'https://ddragon.leagueoflegends.com/cdn/10.22.1/data/zh_TW/champion.json';
+
+        let namesArray = [];
+        let championsObject = {};
+
+        $(function () {
+            //getJsonHeroData(urlLoL);
+
+            let jqXhr = $.getJSON(urlLoL);
+
+            jqXhr
+                .done(function(result){
+                    championsObject = result.data;
+                    namesArray = Object.keys(championsObject);
+                    if (namesArray.length > 0) {
+                        setSliders(namesArray); //設定silder內容
+                        InitializeSwiper();     //初始Swiper
+                        //document.querySelector('.mySwiper').style.visibility = 'visible';
+                        $('.mySwiper').css("visibility", "visible");
+                    }
+                });
+
+        });
+
+        function getJsonHeroData(uri) {
+            $.getJSON(uri)
+                .done(function (result) {
+                    championsObject = result.data;
+                    namesArray = Object.keys(championsObject);
+                    if (namesArray.length > 0) {
+                        setSliders(namesArray); //設定silder內容
+                        InitializeSwiper();     //初始Swiper
+                        //document.querySelector('.mySwiper').style.visibility = 'visible';
+                        $('.mySwiper').css("visibility", "visible");
+                    }
+                });
+        }
+
+        //設定Slider內容
+        function setSliders(namesArray) {
+            let _namesArray = Array.from(namesArray); //複製陣列
+
+            let mainphoto = $('#mainphoto');
+            let thumbs = $('#thumbs');
+
+            //設定Slider內容
+            _namesArray.forEach((item, index) => {
+                let sliderDiv = $("<div></div>");
+                sliderDiv.addClass("swiper-slide");
+
+                let img = $("<img>");
+                img.attr("src", `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${_namesArray[index]}_0.jpg`);
+                sliderDiv.append(img);
+
+                let $clone1 =  sliderDiv.clone();
+                let $clone2 =  sliderDiv.clone();
+
+                mainphoto.append($clone1);
+                //thumbs.append($clone2);
+                sliderDiv.clone().appendTo(thumbs);
+            });
+        }
+
+        function InitializeSwiper() {
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 10,
+                slidesPerView: 4,
+                freeMode: true,
+                watchSlidesProgress: true,
+            });
+            var swiper2 = new Swiper(".mySwiper2", {
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                thumbs: {
+                    swiper: swiper,
+                },
+            });
+        }
+    </script>
+
+</body>
+
+</html>
