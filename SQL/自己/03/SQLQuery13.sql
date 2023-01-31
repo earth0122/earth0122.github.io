@@ -1,4 +1,4 @@
-select 
-	CustomerID,Fax,
-	ISNULL(Fax,'¨S¶Ç¯u')
+select
+	count(Fax),
+	count(*)
 from Customers

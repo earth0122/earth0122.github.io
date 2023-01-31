@@ -1,3 +1,7 @@
-select*from table9
+select*
 
-truncate table table9
+from Shippers
+insert into Shippers(CompanyName,Phone)
+values('ABC','0999-999999')
+
+select @@IDENTITY

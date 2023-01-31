@@ -1,9 +1,8 @@
 select
- CategoryID,SupplierID,
- avg(UnitPrice),
- min(UnitPrice),
- max(UnitPrice),
- sum(UnitPrice),
- count(UnitPrice)
-from Products
-group by CategoryID,SupplierID
+	c.CategoryName,
+	SUM(od.UnitPrice*od.Quantity*(1-od.Discount)) as total
+from [Order Details] od
+inner join Products p on od.ProductID = p.ProductID
+inner join Categories c on p.CategoryID= c.CategoryID
+group by c.CategoryName
+order by total desc

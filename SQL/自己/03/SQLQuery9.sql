@@ -1,5 +1,4 @@
-select * from Shippers
-
-insert into Shippers(CompanyName,Phone)
-values('ABC','0999-999999')
-select @@IDENTITY
+create sequence Seq1 as int
+start with 2 increment by 3
+go
+select next value for Seq1

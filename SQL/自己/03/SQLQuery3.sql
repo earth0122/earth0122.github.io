@@ -2,11 +2,11 @@ select * from Shippers
 
 update Shippers
 set
-Phone='xyz'
+	Phone = 'xyz'
 where CompanyName = 'ABC'
 
 update Shippers
 set
-CompanyName = 'Hello '+CompanyName,
-Phone = 'phone'
+	CompanyName = 'hello' + CompanyName,
+	phone = 'phone'
 where CompanyName like 'OK%'

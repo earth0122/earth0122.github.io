@@ -1,7 +1,11 @@
-select
-	p.CategoryID,
-	sum(od.UnitPrice*od.Quantity*(1-od.Discount))as total
-from [Order Details] od
-inner join Products p on od.ProductID = p.ProductID
-group by p.CategoryID
-order by total desc
+SELECT
+    ProductID,
+	(select
+	ProductName
+	from Products
+	where ProductID = od.productID
+	) AS ProductName,
+    SUM(UnitPrice * Quantity * (1 - Discount)) AS Total
+FROM [Order Details] od
+GROUP BY ProductID
+ORDER BY Total DESC

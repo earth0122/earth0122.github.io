@@ -1,7 +1,9 @@
-﻿SELECT PARSE('2023-01-16' AS datetime USING 'en-us')
-SELECT TRY_PARSE('2023-01-100' AS datetime USING 'en-us')
-
- 
-
-SELECT PARSE(N'¥1000.34' AS money USING 'ja-jp')
-SELECT PARSE(N'NT$1000.34' AS money USING 'zh-tw')
+select
+categoryID,SupplierID,
+ avg(UnitPrice),
+ min(UnitPrice),
+ max(UnitPrice),
+ sum(UnitPrice),
+ count(UnitPrice)
+from Products
+group by CategoryID,SupplierID
