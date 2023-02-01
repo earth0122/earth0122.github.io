@@ -120,7 +120,7 @@ namespace CSharpExam
             #region 第9題
             // 9. 找出誰上的課數量最少
             Console.WriteLine("9. 找出誰上的課數量最少");
-            var i = studentList.OrderBy(x => x.CourseList.Count).Take(1).Select(x=>x.Name);
+            var i = studentList.OrderBy(x => x.CourseList.Count).First().Name;
 
             Console.WriteLine(string.Join(Environment.NewLine, i));
             #endregion
@@ -139,7 +139,7 @@ namespace CSharpExam
             //sum(credit) max 
             //var k = studentList.Select(x => $"{x.Name}{string.Join(Environment.NewLine, courseList.Where(y => x.CourseList.Contains(y.CourseId)).Sum(y => y.Credit))}");
             //OrderByDescending take(1)            
-            var k = studentList.OrderByDescending(x => x.CourseList.Join(courseList,y=>y,yid=>yid.CourseId,(y,yid)=>yid.Credit).Sum()).Take(1).Select(x=>x.Name);
+            var k = studentList.OrderByDescending(x => x.CourseList.Join(courseList,y=>y,yid=>yid.CourseId,(y,yid)=>yid.Credit).Sum()).First().Name;
             /*var courseLesson = courseList;
             var studentLesson= studentList;
             var k=
