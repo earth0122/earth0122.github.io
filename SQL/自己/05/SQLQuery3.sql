@@ -1,0 +1,15 @@
+SELECT TOP 2
+	ProductID,UnitsInStock
+FROM Products
+
+BEGIN TRY
+  BEGIN TRAN
+UPDATE Products SET UnitsInStock = UnitsInStock+1 WHERE ProductID = 1
+;THROW 50001,'ERROR!!!!',0
+UPDATE Products SET UnitsInStock = UnitsInStock-1 WHERE ProductID = 2
+COMMIT TRAN
+END TRY
+BEGIN CATCH
+  ROLLBACK TRAN
+  PRINT ERROR_MESSAGE()
+END CATCH

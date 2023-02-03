@@ -94,11 +94,12 @@ namespace CSharpExam
             #endregion
 
             #region 第7題
-            // 7. 列出有上'Git'這門課的學員名字
+            // 7. 列出有上'Git'這門課的學員名字*
             Console.WriteLine("7. 列出有上'Git'這門課的學員名字");
-         
-            var g = studentList.Where(x => x.CourseList.Contains("B005") || x.CourseList.Contains("B006")).Select(x=>x.Name);
-            Console.WriteLine(string.Join(Environment.NewLine, g));
+            var g = courseList.Where(x => x.Name == "Git").Select(x => x.CourseId);
+            var g1 = studentList.Where(y => y.CourseList.Intersect(g).Any()).Select(x => x.Name);
+            //var g = studentList.Where(x => x.CourseList.Contains("B005") || x.CourseList.Contains("B006")).Select(x=>x.Name);
+            Console.WriteLine(string.Join(Environment.NewLine, g1));
             #endregion
 
             #region 第8題
@@ -120,26 +121,28 @@ namespace CSharpExam
             #region 第9題
             // 9. 找出誰上的課數量最少
             Console.WriteLine("9. 找出誰上的課數量最少");
-            var i = studentList.OrderBy(x => x.CourseList.Count).First().Name;
-
+            //var i = studentList.OrderBy(x => x.CourseList.Count).First().Name; 同學分gg
+            var i = studentList.GroupBy(x => x.CourseList.Count).OrderBy(x=>x.Key).First().Select(x=>x.Name);
             Console.WriteLine(string.Join(Environment.NewLine, i));
             #endregion
 
             #region 第10題
-            // 10. 找出誰修的學分總和小於10
+            // 10. 找出誰修的學分總和小於10*
             Console.WriteLine("10. 找出誰修的學分總和小於10");
             //var j = studentList.Select(x => $"{x.Name}{string.Join(Environment.NewLine, courseList.Where(y => x.CourseList.Contains(y.CourseId)).Sum(y => y.Credit)<10).Select(y=>x.Name)}");
-            var j = studentList.Where(x => x.CourseList.Join(courseList, y => y, yid => yid.CourseId, (y, yid) => yid.Credit).Sum() < 10).Select(x=>x.Name);
+            //var j = studentList.Where(x => x.CourseList.Join(courseList, y => y, yid => yid.CourseId, (y, yid) => yid.Credit).Sum() < 10).Select(x=>x.Name);
+            var j = courseList.Where(x=>x.)
             Console.WriteLine(string.Join(Environment.NewLine, j));
-            #endregion
+                    #endregion
 
-            #region 第11題
-            // 11. 找出誰最後獲得學分數最高
+                    #region 第11題
+            // 11. 找出誰最後獲得學分數最高*
             Console.WriteLine("11. 找出誰最後獲得學分數最高");
             //sum(credit) max 
-            //var k = studentList.Select(x => $"{x.Name}{string.Join(Environment.NewLine, courseList.Where(y => x.CourseList.Contains(y.CourseId)).Sum(y => y.Credit))}");
-            //OrderByDescending take(1)            
-            var k = studentList.OrderByDescending(x => x.CourseList.Join(courseList,y=>y,yid=>yid.CourseId,(y,yid)=>yid.Credit).Sum()).First().Name;
+            //var k = studentList.Select(x => $"{x.Name}{string.Join(Environment.NewLine, courseList.Where(y => x.CourseList.Contains(y.CourseId)).Sum(y => y.Credit))}");            
+            //OrderByDescending first 相同學分gg            
+            //var k = studentList.OrderByDescending(x => x.CourseList.Join(courseList,y=>y,yid=>yid.CourseId,(y,yid)=>yid.Credit).Sum()).First().Name; 
+            var k = studentList.GroupBy(x=>x.CourseList.Join(courseList,y=>y,yid=>yid.CourseId,(y,yid)=>yid.Credit).Sum()).OrderByDescending(x=>x.Key).First().Select(x=>x.Name);
             /*var courseLesson = courseList;
             var studentLesson= studentList;
             var k=
