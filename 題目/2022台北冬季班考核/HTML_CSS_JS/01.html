@@ -41,7 +41,9 @@
         let addinput = document.createElement("input");
         let editBtn = document.createElement("button");
         let deleteBtn = document.createElement("button");
-        addinput.value = inputValue.value;
+        inputValue.value = addinput.value;
+        editBtn.innerText = "編輯";
+        deleteBtn.innerText = "刪除";
         editBtn.classList.add("h-50px");
         todoitem.appendChild(addDiv);
         todoitem.appendChild(addinput);
