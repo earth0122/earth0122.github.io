@@ -131,7 +131,7 @@ namespace CSharpExam
             Console.WriteLine("10. 找出誰修的學分總和小於10");
             //var j = studentList.Select(x => $"{x.Name}{string.Join(Environment.NewLine, courseList.Where(y => x.CourseList.Contains(y.CourseId)).Sum(y => y.Credit)<10).Select(y=>x.Name)}");
             //var j = studentList.Where(x => x.CourseList.Join(courseList, y => y, yid => yid.CourseId, (y, yid) => yid.Credit).Sum() < 10).Select(x=>x.Name);
-            var j = courseList.Where(x=>x.)
+            var j = studentList.Where(x => courseList.Where(y => x.CourseList.Contains(y.CourseId)).Sum(y => y.Credit) < 10).Select(x => x.Name);
             Console.WriteLine(string.Join(Environment.NewLine, j));
                     #endregion
 
@@ -142,7 +142,8 @@ namespace CSharpExam
             //var k = studentList.Select(x => $"{x.Name}{string.Join(Environment.NewLine, courseList.Where(y => x.CourseList.Contains(y.CourseId)).Sum(y => y.Credit))}");            
             //OrderByDescending first 相同學分gg            
             //var k = studentList.OrderByDescending(x => x.CourseList.Join(courseList,y=>y,yid=>yid.CourseId,(y,yid)=>yid.Credit).Sum()).First().Name; 
-            var k = studentList.GroupBy(x=>x.CourseList.Join(courseList,y=>y,yid=>yid.CourseId,(y,yid)=>yid.Credit).Sum()).OrderByDescending(x=>x.Key).First().Select(x=>x.Name);
+            //var k = studentList.GroupBy(x=>x.CourseList.Join(courseList,y=>y,yid=>yid.CourseId,(y,yid)=>yid.Credit).Sum()).OrderByDescending(x=>x.Key).First().Select(x=>x.Name);
+            var k = studentList.GroupBy(x => courseList.Where(y => x.CourseList.Contains(y.CourseId)).Sum(y => y.Credit)).OrderByDescending(y => y.Key).First().Select(x => x.Name);
             /*var courseLesson = courseList;
             var studentLesson= studentList;
             var k=
