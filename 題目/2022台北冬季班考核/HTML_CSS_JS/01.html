@@ -12,15 +12,9 @@
     />
   </head>
   <body>
-    <div class="wrap">
-      <div class="title">
-        <h1>todolist</h1>
-      </div>
-      <input id="inputValue" placeholder="輸入新增事項" />
-      <button class="addBtn">增加</button>
-      <div class="todoitem"></div>
-    </div>
-
+    <input type="text" class="txt" placeholder="請加入事項" />
+    <input type="button" class="save" value="加入" />
+    <ul class="list"></ul>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
@@ -30,37 +24,39 @@
       src="https://kit.fontawesome.com/11cd7ec45e.js"
       crossorigin="anonymous"
     ></script>
-    <script>
-      //DOM
-      const addBtn = document.querySelector(".addBtn");
-      let todoitem = document.querySelector(".todoitem");
-      let inputValue = document.querySelector("#inputValue");
-      //FUNCTION
-      addBtn.addEventListener("click", function (e) {
-        let addDiv = document.createElement("div");
-        let addInput = document.createElement("input");
-        let editBtn = document.createElement("button");
-        let deleteBtn = document.createElement("button");
-        addInput.classList.add("addValue");
-        let addValue = document.querySelector(".addValue");
-        addInput.value = inputValue.value;
-        //console.log(addValue);
-        //console.log(inputValue);
-        editBtn.innerText = "編輯";
-        deleteBtn.innerText = "刪除";
-        todoitem.appendChild(addDiv);
-        todoitem.appendChild(addInput);
-        todoitem.appendChild(editBtn);
-        todoitem.appendChild(deleteBtn);
 
-        editBtn.addEventListener("click", function (e) {
-        editBtn.innerText = "保存";
-        
+    <script>
+      const list = document.querySelector(".list");
+      const txt = document.querySelector(".txt");
+      const save = document.querySelector(".save");
+
+      let data = [
+       
+      ];
+      function renderData() {
+        let str = "";
+        data.forEach(function (item) {
+          str += `<li>${item.content} <input type="button" class="edit" value="編輯"><input type="button" class="delete" value="刪除"></li>`;
+        });
+        list.innerHTML = str;
+      }
+
+      save.addEventListener("click", function (e) {
+        if (txt.value == "") {
+          alert("請輸入內容");
+          return;
+        }
+        //{
+        // content: "代辦1",
+        //}
+        let obj = {};
+        obj.content = txt.value;
+        data.push(obj);
+        renderData();
       });
-      });
-      
-      //WINDOW
-      window.onload;
+      window.onload = function () {
+        renderData();
+      };
     </script>
   </body>
 </html>
