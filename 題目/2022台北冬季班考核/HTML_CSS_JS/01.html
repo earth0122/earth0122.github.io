@@ -33,22 +33,28 @@
     <script>
       //DOM
       const addBtn = document.querySelector(".addBtn");
-      const todoitem = document.querySelector(".todoitem");
-      const inputValue = document.querySelector(".inputValue");
+      let todoitem = document.querySelector(".todoitem");
+      let inputValue = document.querySelector("#inputValue");
       //FUNCTION
-      addBtn.addEventListener("click", function () {
+      addBtn.addEventListener("click", function (e) {
         let addDiv = document.createElement("div");
-        let addinput = document.createElement("input");
+        let addInput = document.createElement("input");
         let editBtn = document.createElement("button");
         let deleteBtn = document.createElement("button");
-
+        addInput.classList.add("addValue");
+        let addValue = document.querySelector(".addValue");
+        addInput.value = inputValue.value;
+        //console.log(addValue);
+        //console.log(inputValue);
         editBtn.innerText = "編輯";
         deleteBtn.innerText = "刪除";
-        editBtn.classList.add("h-50px");
         todoitem.appendChild(addDiv);
-        todoitem.appendChild(addinput);
+        todoitem.appendChild(addInput);
         todoitem.appendChild(editBtn);
         todoitem.appendChild(deleteBtn);
+      });
+      editBtn.addEventListener("click", function (e) {
+        editBtn.innerText = "保存";
       });
       //WINDOW
       window.onload;
