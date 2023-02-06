@@ -49,7 +49,7 @@
         let addInput = document.createElement("input");
         let editBtn = document.createElement("button");
         let deleteBtn = document.createElement("button");
-        addInput.value = inputValue.value
+        //addInput.value = inputValue.value
         //console.log(addInput);
         //console.log(inputValue);
         editBtn.innerText = "編輯";
@@ -60,19 +60,22 @@
         todoitem.appendChild(deleteBtn);
         obj.content = inputValue.value;
         data.push(obj);
-        renderData();
+        // data.forEach(function (item) {
+        //   addInput.value = item.content;
+        // });
+        //renderData();
 
         editBtn.addEventListener("click", function (e) {
           editBtn.innerText = "保存";
         });
       });
-    //   function renderData() {
-    //     let str = "";
-    //     data.forEach(function (item) {
-    //       str += `${item.content}<div><input type="text" value""> <input type="button" class="edit" value="編輯"><input type="button" class="delete" value="刪除"></div>`;
-    //     });
-    //     todoitem.innerHTML = str;
-    //   }
+      //   function renderData() {
+      //     let str = "";
+      //     data.forEach(function (item) {
+      //       str += `<div><input type="text" value"${item.content}"> <input type="button" class="edit" value="編輯"><input type="button" class="delete" value="刪除"></div>`;
+      //     });
+      //     todoitem.innerHTML = str;
+      //   }
 
       //WINDOW
       window.onload;
