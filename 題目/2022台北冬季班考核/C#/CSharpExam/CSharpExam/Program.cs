@@ -144,11 +144,7 @@ namespace CSharpExam
             //var k = studentList.OrderByDescending(x => x.CourseList.Join(courseList,y=>y,yid=>yid.CourseId,(y,yid)=>yid.Credit).Sum()).First().Name; 
             //var k = studentList.GroupBy(x=>x.CourseList.Join(courseList,y=>y,yid=>yid.CourseId,(y,yid)=>yid.Credit).Sum()).OrderByDescending(x=>x.Key).First().Select(x=>x.Name);
             var k = studentList.GroupBy(x => courseList.Where(y => x.CourseList.Contains(y.CourseId)).Sum(y => y.Credit)).OrderByDescending(y => y.Key).First().Select(x => x.Name);
-            /*var courseLesson = courseList;
-            var studentLesson= studentList;
-            var k=
-            from x in studentList
-            join y */
+          
             Console.WriteLine(string.Join(Environment.NewLine,k));
             #endregion
 
