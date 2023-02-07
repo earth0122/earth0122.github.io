@@ -35,28 +35,56 @@
       const addBtn = document.querySelector(".addBtn");
       let todoitem = document.querySelector(".todoitem");
       let inputValue = document.querySelector("#inputValue");
+      let data = [];
       //FUNCTION
       addBtn.addEventListener("click", function (e) {
+        let obj = {};
         let addDiv = document.createElement("div");
         let addInput = document.createElement("input");
         let editBtn = document.createElement("button");
-        let deleteBtn = document.createElement("button");        
-        addInput.value = inputValue.value;
+        let deleteBtn = document.createElement("button");
+        deleteBtn.classList.add("deleteBTN");
+        addInput.setAttribute("value", inputValue.value);
+        //addInput.value = inputValue.value;
         //console.log(addValue);
         //console.log(inputValue);
         editBtn.innerText = "編輯";
         deleteBtn.innerText = "刪除";
+        addDiv.appendChild(addInput);
+        addDiv.appendChild(editBtn);
+        addDiv.appendChild(deleteBtn);
         todoitem.appendChild(addDiv);
-        todoitem.appendChild(addInput);
-        todoitem.appendChild(editBtn);
-        todoitem.appendChild(deleteBtn);
+
+        obj.content = addInput.value;
+        data.push(obj);
 
         editBtn.addEventListener("click", function (e) {
-        editBtn.innerText = "保存";
-        
+          editBtn.innerText = "保存";
+        });
+        deleteBtn.addEventListener("click", function (e) {
+          let num = e.target.getAttribute("data-num");
+          data.splice(num, 1);
+          renderData();
+        });
       });
-      });
-      
+      function renderData() {
+        todoitem.innerHtml = "";
+        data.forEach(function (item, index) {
+          let div = document.createElement("div");
+          let input1 = document.createElement("input");
+          let btn1 = document.createElement("button");
+          let btn2 = document.createElement("button");
+          btn1.setAttribute("data-num", index);
+
+          btn1.innerText = "編輯";
+          btn2.innerText = "刪除";
+          input1.innerText = item.value;
+          index + 1;
+          div.appendChild(input1);
+          div.appendChild(btn1);
+          div.appendChild(btn2);
+        });
+      }
       //WINDOW
       window.onload;
     </script>

@@ -19,7 +19,7 @@
       <input id="inputValue" placeholder="輸入新增事項" />
       <button class="addBtn">增加</button>
       <div class="todoitem">
-        <!-- <div class="div"><input type="text"></div> <button></button><button></button> -->
+        <!-- <div><input value=""><input type="button" class="edit"value="編輯"><input type="button" class="delete" data-num="${index}" value="刪除"></div> -->
       </div>
     </div>
 
@@ -38,9 +38,12 @@
       let todoitem = document.querySelector(".todoitem");
       let inputValue = document.querySelector("#inputValue");
       let data = [];
-      let obj = {};
       //FUNCTION
-      addBtn.addEventListener("click", function (e) {
+      addBtn.addEventListener("click", function () {
+        //<input type="text" disabled="disabled" />
+
+        let obj = {};
+
         if (inputValue.value == "") {
           alert("請輸入新增事項");
           return;
@@ -49,36 +52,68 @@
         let addInput = document.createElement("input");
         let editBtn = document.createElement("button");
         let deleteBtn = document.createElement("button");
+        deleteBtn.classList.add("deleteBTN");
+        addInput.setAttribute("value", inputValue.value);
+        addInput.setAttribute("disabled", "false");
+        // let deleteBTN = document.querySelector(".delete");
+        // let editBTN = document.querySelector(".edit");
         //addInput.value = inputValue.value
         //console.log(addInput);
         //console.log(inputValue);
         editBtn.innerText = "編輯";
         deleteBtn.innerText = "刪除";
-        todoitem.appendChild(addDiv);
-        todoitem.appendChild(addInput);
-        todoitem.appendChild(editBtn);
-        todoitem.appendChild(deleteBtn);
-        obj.content = inputValue.value;
-        data.push(obj);
-        // data.forEach(function (item) {
-        //   addInput.value = item.content;
-        // });
-        //renderData();
 
+        addDiv.appendChild(addInput);
+        addDiv.appendChild(editBtn);
+        addDiv.appendChild(deleteBtn);
+        todoitem.appendChild(addDiv);
+
+        // let data = [];
+        // let obj = {};
+        // let data =[
+        //   {
+        //     content : 代辦1
+        //   }
+        // ]
+        obj.content = addInput.value;
+        data.push(obj);
+
+        var dataString = JSON.stringify(data);
+        localStorage.setItem("data info", dataString);
+        var getValue = localStorage.getItem("data info");
+        var dataStrParse = JSON.parse(getValue);
+        console.log(dataStrParse);
+
+        let deleteBTN = document.querySelector(".deleteBTN");
+
+        deleteBTN.addEventListener("click", function (e) {
+          let num = e.target.getAttribute("data-num");
+          data.splice(num, 1);
+          renderData();
+        });
         editBtn.addEventListener("click", function (e) {
           editBtn.innerText = "保存";
+          addInput.setAttribute("disabled", "true");
+          renderData();
         });
       });
-      //   function renderData() {
-      //     let str = "";
-      //     data.forEach(function (item) {
-      //       str += `<div><input type="text" value"${item.content}"> <input type="button" class="edit" value="編輯"><input type="button" class="delete" value="刪除"></div>`;
-      //     });
-      //     todoitem.innerHTML = str;
-      //   }
+
+      function renderData() {
+        todoitem.innerHTML = "";
+
+        let str = "";
+        data.forEach(function (item, index) {
+          str += `<div>
+            <input value="${item.content}">
+            <input type="button" data-num="${index}" value="編輯">
+            <input type="button" data-num="${index}" value="刪除">
+            </div>`;
+        });
+        todoitem.innerHTML = str;
+      }
 
       //WINDOW
-      window.onload;
+      //window.onload;
     </script>
   </body>
 </html>

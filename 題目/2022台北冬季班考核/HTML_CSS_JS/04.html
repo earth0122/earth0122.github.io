@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+</head>
+<body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/11cd7ec45e.js" crossorigin="anonymous"></script>
+<script>
+    // 變數
+
+    // DOM
+    const myWrap = document.querySelector(".wrap");
+    const myTaskList = document.querySelector("#my-taskList");
+    const myDelModal = document.querySelector("#my-delModal");
+    const myInputData = document.querySelector("#inpu-taskData");
+    const myCheckbox = document.querySelector("#my-checkbox");
+
+
+    // function
+    // 移除新增的節點內容
+    function removeRander(node) {
+        console.log("..." + node.firstChild);
+        while (node.firstChild) {
+            node.removeChild(node.firstChild);
+        }
+
+    }
+
+    function renderData() {
+        removeRander(myWrap);
+        let data = JSON.parse(localStorage.getItem("todoList"));
+        console.log(data);
+
+        data.forEach((taskName, index) => {
+
+            // <div class="input-group mb-3" id="my-taskList">
+
+            const myDiv = document.createElement("div");
+            myDiv.setAttribute("class", "input-group mb-3");
+            myDiv.setAttribute("id", "my-taskList");
+
+            const inputDiv = document.createElement("div");
+            inputDiv.setAttribute("class", "input-group-text");
+
+            const CheckboxDetail = document.createElement("input");
+            CheckboxDetail.setAttribute("class", "form-check-input mt-0");
+            CheckboxDetail.setAttribute("type", "checkbox");
+            CheckboxDetail.setAttribute("id", "my-checkbox");
+            CheckboxDetail.setAttribute("value", taskName);
+            if (taskName.status == 1) {
+                CheckboxDetail.setAttribute("checked", true);
+            }
+            CheckboxDetail.setAttribute("data-num", index);
+            CheckboxDetail.addEventListener("click", function (e) {
+                console.log(e.target);
+                done(e);
+            }, false)
+
+            inputDiv.appendChild(CheckboxDetail);
+
+            // checkbox區域 寫至 my-taskList
+            myDiv.appendChild(inputDiv);
+
+
+
+            const inputText = document.createElement("input");
+            inputText.setAttribute("type", "text");
+            inputText.setAttribute("class", "form-control");
+            inputText.setAttribute("id", "text" + index);
+            inputText.value = data[index].item;
+            inputText.setAttribute("data-num", index);
+            inputText.setAttribute("disabled", "false");
+            // Text區域 寫至 my-taskList
+            myDiv.appendChild(inputText);
+
+
+
+            const btnEdit = document.createElement("button");
+            btnEdit.setAttribute("type", "button");
+            btnEdit.setAttribute("class", "btn btn-outline-secondary");
+            // btnEdit.setAttribute("onclick", "editTask(e)");
+            btnEdit.setAttribute("id", "edit" + index);
+
+            btnEdit.addEventListener("click", function (e) {
+                console.log(e.target);
+                editTask(e);
+            }, false)
+            btnEdit.innerText = "編輯";
+            btnEdit.setAttribute("style", "display:block");
+            btnEdit.setAttribute("data-num", index);
+
+            // 編輯按鈕 寫至 my-taskList
+            myDiv.appendChild(btnEdit);
+
+            const btnSave = document.createElement("button");
+            btnSave.setAttribute("type", "button");
+            btnSave.setAttribute("class", "btn btn-outline-secondary btn-edit");
+            btnSave.setAttribute("id", "save" + index);
+
+            // btnSave.setAttribute("onclick", "saveTask(e)");
+
+            btnSave.addEventListener("click", function (e) {
+                console.log(e.target);
+                saveTask(e);
+            }, false)
+
+            btnSave.innerText = "保存";
+            btnSave.setAttribute("style", "display:none");
+            btnSave.setAttribute("data-num", index);
+
+            // 保存按鈕 寫至 my-taskList
+            myDiv.appendChild(btnSave);
+
+            const btnDel = document.createElement("button");
+            btnDel.setAttribute("type", "button");
+            btnDel.setAttribute("class", "btn btn-outline-secondary btn-save");
+            // btnDel.setAttribute("onclick", "delTask(e)");
+
+            btnDel.addEventListener("click", function (e) {
+                console.log(e.target);
+                delTask(e);
+            }, false)
+            btnDel.innerText = "刪除";
+
+            btnDel.setAttribute("style", "display:block");
+            btnDel.setAttribute("data-num", index);
+
+            // 刪除按鈕 寫至 my-taskList
+            myDiv.appendChild(btnDel);
+
+            myWrap.appendChild(myDiv);
+        });
+
+    }
+
+    function addTask(e) {
+
+        // 新增資料
+        let inputTask = myInputData.value;
+        let taskList = JSON.parse(localStorage.getItem("todoList"));
+        let taskObj =
+        {
+            status: 0,
+            item: inputTask
+        }
+        taskList.push(taskObj);
+        localStorage.setItem("todoList", JSON.stringify(taskList));
+        renderData();
+        myInputData.value = "";
+
+    }
+    function done(e) {
+
+
+        let num = e.target.getAttribute("data-num");
+        let taskList = JSON.parse(localStorage.getItem("todoList"));
+
+        console.log(taskList[num].status == 0);
+        if (taskList[num].status == 0) {
+            taskList[num].status = 1;
+            localStorage.setItem("todoList", JSON.stringify(taskList));
+            renderData();
+            console.log(taskList[num].status == 0);
+            myCheckbox.setAttribute("checked", "true");
+
+        } else {
+            taskList[num].status = 0;
+            localStorage.setItem("todoList", JSON.stringify(taskList));
+            renderData();
+            console.log(taskList[num].status == 0);
+            myCheckbox.setAttribute("checked", "false");
+        }
+
+
+
+    }
+    function editTask(e) {
+        // 編輯按鈕改成 保存按鈕
+
+        console.log(e.target);
+        let num = e.target.getAttribute("data-num");
+
+
+        const edit_Text = document.querySelector(`#text${num}`);
+        const edit_editbtn = document.querySelector(`#edit${num}`);
+        const edit_savebtn = document.querySelector(`#save${num}`);
+        edit_Text.removeAttribute("disabled");
+        edit_editbtn.setAttribute("style", "display:none");
+        edit_savebtn.setAttribute("style", "display:block");
+
+
+
+
+
+
+
+    }
+
+    function saveTask(e) {
+
+        console.log("進入保存事件");
+
+        console.log(e.target);
+        let num = e.target.getAttribute("data-num");
+
+
+        const edit_Text = document.querySelector(`#text${num}`);
+        const edit_editbtn = document.querySelector(`#edit${num}`);
+        const edit_savebtn = document.querySelector(`#save${num}`);
+        let inputData = edit_Text.value;
+        let taskList = JSON.parse(localStorage.getItem("todoList"));
+        taskList[num].item = inputData;
+        localStorage.setItem("todoList", JSON.stringify(taskList));
+
+        renderData();
+
+
+
+    }
+    function delTask(e) {
+        let num = e.target.getAttribute("data-num");
+        console.log("num:" + num);
+        // 刪除資料
+        let taskList = JSON.parse(localStorage.getItem("todoList"));
+        taskList.splice(num, 1);
+        localStorage.setItem("todoList", JSON.stringify(taskList));
+        renderData();
+
+    }
+    function gotoDel() {
+
+    }
+
+    // window onload
+    window.onload = function () {
+        // 先撈出localstorage的資料,渲染到頁面上
+       
+        let taskList =[];
+        
+        if (localStorage.getItem("todoList") == null) 
+        {
+            let taskObj1 =
+            {
+                status: 1,
+                item: "要運動1小時"
+            }
+            let taskObj2 =
+            {
+                status: 0,
+                item: "要運動2小時"
+            }
+            let taskObj3 =
+            {
+                status: 0,
+                item: "要運動3小時"
+            }
+            taskList.push(taskObj1);
+            taskList.push(taskObj2);
+            taskList.push(taskObj3);
+
+        
+            
+        }else{
+            taskList= JSON.parse(localStorage.getItem("todoList"));
+        }
+
+        console.log(taskList);
+        localStorage.setItem("todoList", JSON.stringify(taskList));
+
+        renderData();
+
+
+        // <div class="input-group mb-3" id="my-taskList">
+        // <div class="input-group-text">
+        //         <input class="form-check-input mt-0" type="checkbox" value=""
+        //             aria-label="Checkbox for following text input">
+        //     </div>
+        //     <input type="text" class="form-control" aria-label="Text input with checkbox">
+        //     <button class="btn btn-outline-secondary" type="button" onclick="editTask()">編輯</button>
+        //     <button class="btn btn-outline-secondary" type="button" onclick="saveTask()">保存</button>
+        //     <button class="btn btn-outline-secondary" type="button" onclick="delTask()">刪除</button>
+
+
+
+
+    }
+
+
+</script>
+
+</body>
+
+</html>
