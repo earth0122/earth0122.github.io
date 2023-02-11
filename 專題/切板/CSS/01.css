@@ -1,0 +1,39 @@
+.container{
+    width: 1200px;
+    
+}
+img{
+    width: 100%;
+    margin-top: 50px;  
+}
+.main-pic{
+    position: relative;
+}
+.absolute-item{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;   
+    
+}
+span{
+    display: block;
+    font-size: 18px;
+    
+}
+.pic-txt{
+    text-align: center;
+    border: 2px solid black;
+    background-color: white;
+    padding: 10px 50px;    
+    border-radius: 10px;
+    
+}
+.pic-txt>h2{
+    font-weight: bolder;
+}
