@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+.container{
+    width: 1200px;    
+}
+.container-txt{
+    border-bottom: 2px solid rgba(8, 153, 8, 0.873);
+    border-width: 5px;
+     width: 160px;/*綠線 */
+    margin: auto;
+    padding-top: 100px;
+    margin-bottom: 70px;
+}
+.container-txt>h2{
+    font-weight: bolder;
+    font-size: 25px;
+}
+.detail{    
+    border: 1px solid rgb(209,213,219);
+}
+
+.name{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgb(209,213,219);
+}
+.name-title{        
+   padding: 0 100px 0 0;  /*TODO:flex ;*/
+  
+
+}
+.name-txt{    
+    
+}
+.name-txt>p{
+    font-size: 10px;
+}
+.email{
+    padding: 20px;
+    display: flex;
+    justify-content:flex-start;
+}
+.email-title{
+    padding: 0 100px 0 0;
+    display: flex;
+   
+}
+.email-txt>p{
+    font-size: 10px;
+}

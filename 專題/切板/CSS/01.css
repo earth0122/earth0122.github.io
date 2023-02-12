@@ -45,7 +45,7 @@ span{
 .main-txt{
     border-bottom: 2px solid rgba(8, 153, 8, 0.873);
     border-width: 5px;
-    width: 100px;
+    width: 100px; /*綠線 */
     margin: auto;
     padding-top: 100px;
     
