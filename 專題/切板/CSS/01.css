@@ -1,9 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
 .container{
     width: 1200px;
     
 }
 img{
     width: 100%;
+    
     margin-top: 50px;  
 }
 .main-pic{
@@ -30,10 +35,146 @@ span{
     text-align: center;
     border: 2px solid black;
     background-color: white;
-    padding: 10px 50px;    
+    padding: 30px 50px;    
     border-radius: 10px;
     
 }
 .pic-txt>h2{
     font-weight: bolder;
 }
+.main-txt{
+    border-bottom: 2px solid rgba(8, 153, 8, 0.873);
+    border-width: 5px;
+    width: 100px;
+    margin: auto;
+    padding-top: 100px;
+    
+
+      
+}
+.main-txt>h2{
+    font-size: 25px;  
+    font-weight: bolder;
+   
+}
+.about-item{
+    display: flex;
+    padding: 50px 30px;
+    justify-content: center;
+    align-items: center;
+}
+.item-about>h3{
+    font-weight: bold;
+    font-size: 20px;
+}
+.item-about>h4{
+    font-weight: bolder;
+    color: green;
+    font-size: 2.25rem;
+}
+.item-about{
+    padding: 20px 50px;
+    text-align: center;
+    width: 100%;
+}
+ul{
+    list-style: none;
+ 
+    margin: 0 1rem;
+}
+a{
+    text-decoration: none;
+}
+.all-card{
+    width: 1200px;
+    display: flex;
+    text-align: center;
+    padding-top: 80px;
+      
+}
+li{
+    display: flex;    
+    justify-content: start;
+   align-items: center;
+   text-align: left;
+   padding-top: 10px;
+   padding-bottom: 5px;
+}
+
+a>h3{
+    font-size: 20px;
+    color: black;
+    font-weight: bolder;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.card-first{
+border: 2px solid rgb(34,159,42);
+margin: 0 20px;
+}
+.card-first>a>h4{
+   color: rgb(34,159,42);
+   font-size: 16px;
+   font-weight: bolder;
+   padding-bottom: 15px;
+    }
+.card-first>a>.card-item>ul>li>i{
+    color: rgb(34,159,42);
+}
+
+.card-item>ul>li>span{
+    color: black;    
+}
+i{
+   padding-right: 10px; 
+}
+.card-second{
+    border: 2px solid rgb(51,102,169);
+    margin: 0 20px;
+}
+.card-third{
+border: 2px solid rgb(160,99,137);
+margin: 0 20px;
+}
+.card-second>a>h4{
+    color: rgb(51,102,169);
+    font-size: 16px;
+    font-weight: bolder;
+    padding-bottom: 15px;
+     }
+ .card-second>a>.card-item>ul>li>i{
+     color: rgb(51,102,169);
+ }
+ .card-third>a>h4{
+    color: rgb(160,99,137);
+    font-size: 16px;
+    font-weight: bolder;
+    padding-bottom: 15px;
+     }
+.card-third>a>.card-item>ul>li>i{
+     color: rgb(160,99,137);
+ }
+ .card-item{
+    background-color: rgb(249, 250, 251);
+    margin: 0 20px;
+    padding: 0 0 15px 0;
+ }
+ .span-first{
+    background-color: rgb(34,159,42);
+    color: white;
+    padding: 10px 0;
+    border-radius: 0.25rem;    
+ }
+ .span-second{
+background-color: rgb(51,102,169);
+color: white;
+padding: 10px 0;
+border-radius: 0.25rem;
+ }
+ .span-third{
+background-color: rgb(160,99,137);
+color: white;
+padding: 10px 0;
+border-radius: 0.25rem;
+ }
