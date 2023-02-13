@@ -22,7 +22,7 @@
           <div class="name">
             <div class="name-title">真實身分/名稱</div>
             <div class="name-txt">
-              <label for="user_name"></label>
+              <!-- <label for="user_name"></label> -->
               <input id="user_name" type="text" />
               <p>
                 提案人必須要用真實姓名註冊會員，嘖嘖不接受匿名或使用他人名義的提案。
@@ -35,7 +35,7 @@
           <div class="email">
             <div class="email-title">電子信箱</div>
             <div class="email-txt">
-              <label for="pw"></label>
+              <!-- <label for="pw"></label> -->
               <input id="pw" type="email" />
               <p>
                 請確認你的信箱位址沒有錯誤，不然嘖嘖會聯絡不到你。如果有誤請到你的
@@ -46,7 +46,7 @@
           <div class="starttime">
             <div class="starttime-title">預計開始時間</div>
             <div class="starttime-txt">
-              <label for=""></label>
+              <!-- <label for=""></label> -->
               <select name="" id="">
                 <option value="2023">2023</option>
                 <option value="2024">2024</option>
@@ -196,7 +196,7 @@
           <div class="endtime">
             <div class="endtime-title">預計結束時間</div>
             <div class="endtime-txt">
-              <label for=""></label>
+              <!-- <label for=""></label> -->
               <select name="" id="">
                 <option value="2023">2023</option>
                 <option value="2024">2024</option>
@@ -344,7 +344,7 @@
           <div class="product">
             <div class="product-title">計畫目標</div>
             <div class="product-txt">
-              <label for=""></label>
+              <!-- <label for=""></label> -->
               <input id="" type="text" />NTD
               <p>請根據你計畫的需求，估算你所需要募集的金額。</p>
             </div>
@@ -352,12 +352,154 @@
           <div class="category">
             <div class="category-title">分類</div>
             <div class="category-txt">
-              <label for=""></label>
+              <!-- <label for=""></label> -->
               <select name="" id="">
-                <option value="2023">2023</option>
-                <option value="2024">2024</option>
+                <option value>選擇計畫分類</option>
+                <option value="1">音樂</option>
+                <option value="2">攝影</option>
+                <option value="3">出版</option>
+                <option value="4">時尚</option>
+                <option value="5">設計</option>
+                <option value="6">表演</option>
+                <option value="7">藝術</option>
+                <option value="8">科技</option>
+                <option value="9">教育</option>
+                <option value="10">遊戲</option>
+                <option value="11">飲食</option>
+                <option value="12">空間</option>
+                <option value="13">社會</option>
+                <option value="14">插畫漫畫</option>
+                <option value="15">電影動畫</option>
+                <option value="16">地方創生</option>
+                <option value="17">挺好店</option>
+                <option value="18">新春賀喜</option>
               </select>
             </div>
+          </div>
+          <div class="productname">
+            <div class="productname-title">計畫名稱</div>
+            <div class="productname-txt">
+              <input id="" type="text" />
+            </div>
+          </div>
+          <div class="productsummary">
+            <div class="productsummary-title">計畫簡介</div>
+            <div class="productsummary-txt">
+              <textarea
+                class="form-control"
+                placeholder="請簡短的介紹這個計畫"
+                id="floatingTextarea"
+              ></textarea>
+              <!-- <label for="floatingTextarea">Comments</label> -->
+            </div>
+          </div>
+          <div class="mainpic">
+            <div class="mainpic-title">封面照片</div>
+            <div class="mainpic-txt">
+              <label for="pw"></label>
+              <input id="pw" type="file" />
+              <!-- TODO:只能選檔案 -->
+              <p>
+                請上傳小於 1MB 的圖片，建議尺寸為 1200 x 675 像素
+                (16:9)，封面圖片可在專案上線前再另行編輯修改。
+              </p>
+            </div>
+          </div>
+          <div class="productexplain">
+            <div class="productexplain-title">計畫說明</div>
+            <div class="productexplain-txt">
+              <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="floatingTextarea"
+              ></textarea>
+              <!-- <label for="floatingTextarea">Comments</label> -->
+              <p>
+                請告訴我們關於你計畫的故事、為什麼大家應該支持你的計畫。（最少
+                350 字）
+                請注意：嘖嘖必須要有足夠的訊息才有辦法審核計畫，如果您所提供的資訊過少，或嘖嘖無法評估計畫的真實性、可行性，計畫就會無法上架。
+              </p>
+            </div>
+          </div>
+          <div class="givebackone">
+            <div class="givebackone-title">回饋選項（一）</div>
+            <div class="givebackone-txt">
+              <!-- <label for=""></label> -->
+              價格
+              <input id="" type="text" placeholder="300" />
+              選項內容
+              <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="floatingTextarea"
+              ></textarea>
+              <label for="floatingTextarea"></label>
+              <p>僅供審核，之後可增加、刪減、或修改。</p>
+              預計出貨日期
+              <select name="" id="">
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                </select>
+                <select name="" id="">
+                  <option value="1">一月</option>
+                  <option value="2">二月</option>
+                  <option value="3">三月</option>
+                  <option value="4">四月</option>
+                  <option value="5">五月</option>
+                  <option value="6">六月</option>
+                  <option value="7">七月</option>
+                  <option value="8">八月</option>
+                  <option value="9">九月</option>
+                  <option value="10">十月</option>
+                  <option value="11">十一月</option>
+                  <option value="12">十二月</option>
+                </select>
+            </div>
+
+          </div>
+          <div class="givebacktwo">
+            <div class="givebacktwo-title">回饋選項（二）</div>
+            <div class="givebacktwo-txt">
+              <!-- <label for=""></label> -->
+              價格
+              <input id="" type="text" placeholder="300" />
+              選項內容
+              <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="floatingTextarea"
+              ></textarea>
+              <label for="floatingTextarea"></label>
+              <p>僅供審核，之後可增加、刪減、或修改。</p>
+              預計出貨日期
+              <select name="" id="">
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                </select>
+                <select name="" id="">
+                  <option value="1">一月</option>
+                  <option value="2">二月</option>
+                  <option value="3">三月</option>
+                  <option value="4">四月</option>
+                  <option value="5">五月</option>
+                  <option value="6">六月</option>
+                  <option value="7">七月</option>
+                  <option value="8">八月</option>
+                  <option value="9">九月</option>
+                  <option value="10">十月</option>
+                  <option value="11">十一月</option>
+                  <option value="12">十二月</option>
+                </select>
+            </div>
+
           </div>
         </form>
       </div>

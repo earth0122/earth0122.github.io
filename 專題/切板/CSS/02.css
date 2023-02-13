@@ -41,7 +41,8 @@
 .email{
     padding: 20px;
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgb(209,213,219);
 }
 .email-title{
     padding: 0 100px 0 0;
@@ -50,4 +51,62 @@
 }
 .email-txt>p{
     font-size: 10px;
+}
+.starttime{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgb(209,213,219);
+}
+.endtime{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgb(209,213,219);
+}
+.product{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgb(209,213,219);
+}
+.category
+{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgb(209,213,219);
+}
+.productname{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+.productsummary{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+.mainpic{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+.productexplain{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgb(209,213,219);
+}
+.givebackone{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgb(209,213,219);
+}
+.givebacktwo{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgb(209,213,219);
 }
