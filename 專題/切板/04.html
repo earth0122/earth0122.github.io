@@ -15,15 +15,16 @@
   <body>
     <div class="container">
       <div class="container-txt">
-        <h2><span>群眾集資</span> 提案</h2>
+        <h2><span>訂閱式專案 </span> 提案</h2>
       </div>
       <div class="detail">
         <form action="">
           <div class="name">
-            <div class="name-title">真實身分/名稱</div>
+            <div class="name-title">
+              <label for="name_title">真實身分/名稱</label>
+            </div>
             <div class="name-txt">
-              <!-- <label for="user_name"></label> -->
-              <input id="user_name" type="text" />
+              <input id="name_title" type="text" />
               <p>
                 提案人必須要用真實姓名註冊會員，嘖嘖不接受匿名或使用他人名義的提案。
                 如提案人非個人，可由團隊代表人先以團隊名稱註冊團隊帳號，再透過
@@ -33,10 +34,11 @@
             </div>
           </div>
           <div class="email">
-            <div class="email-title">電子信箱</div>
+            <div class="email-title">
+              <label for="email_title">電子信箱</label>
+            </div>
             <div class="email-txt">
-              <!-- <label for="pw"></label> -->
-              <input id="pw" type="email" />
+              <input id="email_title" type="email" />
               <p>
                 請確認你的信箱位址沒有錯誤，不然嘖嘖會聯絡不到你。如果有誤請到你的
                 <a href="TODO:">會員頁面</a> 修改。
@@ -44,14 +46,16 @@
             </div>
           </div>
           <div class="starttime">
-            <div class="starttime-title">預計開始時間</div>
+            <div class="starttime-title">
+              <label for="start_time">預計開始時間</label>
+            </div>
             <div class="starttime-txt">
-              <!-- <label for=""></label> -->
-              <select name="" id="">
+              <select name="start_time_1i" id="">
+                <!--TODO:  -->
                 <option value="2023">2023</option>
                 <option value="2024">2024</option>
               </select>
-              <select name="" id="">
+              <select name="start_time_2i" id="">
                 <option value="1">一月</option>
                 <option value="2">二月</option>
                 <option value="3">三月</option>
@@ -65,7 +69,7 @@
                 <option value="11">十一月</option>
                 <option value="12">十二月</option>
               </select>
-              <select name="" id="">
+              <select name="start_time_3i" id="">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -99,7 +103,7 @@
                 <option value="31">31</option>
               </select>
               -
-              <select name="" id="">
+              <select name="start_time_4i" id="">
                 <option value="00">00</option>
                 <option value="01">01</option>
                 <option value="02">02</option>
@@ -126,7 +130,7 @@
                 <option value="23">23</option>
               </select>
               :
-              <select name="" id="">
+              <select name="start_time_5i" id="">
                 <option value="00">00</option>
                 <option value="01">01</option>
                 <option value="02">02</option>
@@ -194,14 +198,15 @@
             </div>
           </div>
           <div class="endtime">
-            <div class="endtime-title">預計結束時間</div>
+            <div class="endtime-title">
+              <label for="end_time">預計結束時間</label>
+            </div>
             <div class="endtime-txt">
-              <!-- <label for=""></label> -->
-              <select name="" id="">
+              <select name="end_time1i" id="">
                 <option value="2023">2023</option>
                 <option value="2024">2024</option>
               </select>
-              <select name="" id="">
+              <select name="end_time2i" id="">
                 <option value="1">一月</option>
                 <option value="2">二月</option>
                 <option value="3">三月</option>
@@ -215,7 +220,7 @@
                 <option value="11">十一月</option>
                 <option value="12">十二月</option>
               </select>
-              <select name="" id="">
+              <select name="end_time3i" id="">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -249,7 +254,7 @@
                 <option value="31">31</option>
               </select>
               -
-              <select name="" id="">
+              <select name="end_time4i" id="">
                 <option value="00">00</option>
                 <option value="01">01</option>
                 <option value="02">02</option>
@@ -276,7 +281,7 @@
                 <option value="23">23</option>
               </select>
               :
-              <select name="" id="">
+              <select name="end_time5i" id="">
                 <option value="00">00</option>
                 <option value="01">01</option>
                 <option value="02">02</option>
@@ -342,18 +347,21 @@
             </div>
           </div>
           <div class="product">
-            <div class="product-title">計畫目標</div>
+            <div class="product-title">
+              <label for="product_title">計畫目標</label>
+            </div>
             <div class="product-txt">
-              <!-- <label for=""></label> -->
-              <input id="" type="text" />NTD
+              <input id="product_title" type="text" />NTD
               <p>請根據你計畫的需求，估算你所需要募集的金額。</p>
             </div>
           </div>
           <div class="category">
-            <div class="category-title">分類</div>
+            <div class="category-title">
+              <label for="category_title">分類</label>
+            </div>
             <div class="category-txt">
-              <!-- <label for=""></label> -->
               <select name="" id="">
+                <!--TODO: -->
                 <option value>選擇計畫分類</option>
                 <option value="1">音樂</option>
                 <option value="2">攝影</option>
@@ -377,39 +385,136 @@
             </div>
           </div>
           <div class="productname">
-            <div class="productname-title">計畫名稱</div>
+            <div class="productname-title">
+              <label for="productname_title">計畫名稱</label>
+            </div>
             <div class="productname-txt">
-              <input id="" type="text" />
+              <input id="productname_title" type="text" />
             </div>
           </div>
           <div class="productsummary">
-            <div class="productsummary-title">計畫簡介</div>
+            <div class="productsummary-title">
+              <label for="productsummary_title">計畫簡介</label>
+            </div>
             <div class="productsummary-txt">
-              <textarea class="form-control" placeholder="請簡短的介紹這個計畫" id="floatingTextarea"></textarea>
-              <!-- <label for="floatingTextarea">Comments</label> -->
+              <textarea
+                class="form-control"
+                placeholder="請簡短的介紹這個計畫"
+                id="productsummary_title"
+              ></textarea>
             </div>
           </div>
           <div class="mainpic">
-            <div class="mainpic-title">封面照片</div>
-            <div class="mainpic-txt">
-              <label for="pw"></label>
-              <input id="pw" type="file">
-              <!-- TODO:只能選檔案 -->
-              <p>請上傳小於 1MB 的圖片，建議尺寸為 1200 x 675 像素 (16:9)，封面圖片可在專案上線前再另行編輯修改。</p>
+            <div class="mainpic-title">
+              <label for="main_title">封面照片</label>
             </div>
-            
+            <div class="mainpic-txt">
+              <input id="main_title" type="file" />
+              <!-- TODO:只能選檔案 -->
+              <p>
+                請上傳小於 1MB 的圖片，建議尺寸為 1200 x 675 像素
+                (16:9)，封面圖片可在專案上線前再另行編輯修改。
+              </p>
+            </div>
           </div>
           <div class="productexplain">
-            <div class="productexplain-title">計畫說明</div>
-            <div class="productexplain-txt">
-              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-              <!-- <label for="floatingTextarea">Comments</label> -->
-              <p>請告訴我們關於你計畫的故事、為什麼大家應該支持你的計畫。（最少 350 字）
-                請注意：嘖嘖必須要有足夠的訊息才有辦法審核計畫，如果您所提供的資訊過少，或嘖嘖無法評估計畫的真實性、可行性，計畫就會無法上架。</p>
+            <div class="productexplain-title">
+              <label for="productexplain_title">計畫說明</label>
             </div>
-            
+            <div class="productexplain-txt">
+              <textarea
+                class="form-control"
+                id="productexplain_title"
+              ></textarea>
+              <p>
+                請告訴我們關於你計畫的故事、為什麼大家應該支持你的計畫。（最少
+                350 字）
+                請注意：嘖嘖必須要有足夠的訊息才有辦法審核計畫，如果您所提供的資訊過少，或嘖嘖無法評估計畫的真實性、可行性，計畫就會無法上架。
+              </p>
+            </div>
           </div>
-
+          <div class="givebackone">
+            <div class="givebackone-title">
+              <h2>回饋選項（一）</h2>
+            </div>
+            <div class="givebackone-txt">
+               <label for="givebackone_title">價格</label>
+               <div class="price-input">
+                <input id="givebackone_title" type="text" placeholder="300" /><span>
+                  每月
+                </span>              
+               </div>
+               <div class="option-container">
+                <label for="givebackone_title">選項內容</label>
+                <textarea class="form-control" id="givebackone_title"></textarea>
+              <p>僅供審核，之後可增加、刪減、或修改。</p>    
+               </div>                        
+            </div>
+          </div>
+          <div class="givebacktwo">
+            <div class="givebacktwo-title">
+              <h2>回饋選項（二）</h2>
+            </div>
+            <div class="givebacktwo-txt">
+               <label for="givebacktwo_title">價格</label>
+               <div class="price-input">
+                <input id="givebacktwo_title" type="text" placeholder="300" /><span>
+                  每月
+                </span>              
+               </div>
+               <div class="option-container">
+                <label for="givebacktwo_title">選項內容</label>
+                <textarea class="form-control" id="givebacktwo_title"></textarea>
+              <p>僅供審核，之後可增加、刪減、或修改。</p>    
+               </div>                        
+            </div>
+          </div>
+          <div class="relatedpages">
+            <div class="relatedpages-title">
+              <label for="relatedpages_title">相關網頁</label>
+            </div>
+            <div class="relatedpages-txt">
+              <input
+                id="relatedpages_title"
+                placeholder="https://example.com"
+                type="url"
+              />
+              <p>
+                請務必提供這個項目，嘖嘖若無法認證您計畫的真實性、可行性等等項目，計畫就會無法上架。
+              </p>
+            </div>
+          </div>
+          <div class="videopages">
+            <div class="videopages-title">
+              <label for="videopages_title">影片網址</label>
+            </div>
+            <div class="videopages-txt">
+              <input
+                id="relatedpages_title"
+                placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                type="url"
+              />
+              <p>
+                附上影片我們才能對計畫有更加的了解。 （請上傳至
+                <a href="#">YouTube</a> 或是 <a href="#">Vimeo</a> ）
+              </p>
+            </div>
+          </div>
+          <div class="cooperate">
+            <div class="cooperate-title">合作條款</div>
+            <div class="cooperate-txt">
+              <label for="cooperate_title">
+                <input
+                  id="cooperate_title"
+                  type="checkbox"
+                />同意提案契約書<br />
+                <input id="cooperate_title" type="checkbox" />提案人
+                (及法定代理人) 均已充分了解且同意合作條款之權利義務
+              </label>
+              <p>請確認你已經閱讀並且同意 嘖嘖 x 提案人合作條款 。</p>
+              <!-- <div class="article">TODO:</div> -->
+            </div>
+          </div>
         </form>
       </div>
     </div>
