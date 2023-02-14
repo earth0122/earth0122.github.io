@@ -362,7 +362,7 @@
               <h2><label for="category_title">分類</label></h2>
             </div>
             <div class="category-txt col-12 col-md-9">
-              <select name="" id="">
+              <select name="" id="category-title">
                 <!--TODO: -->
                 <option value>選擇計畫分類</option>
                 <option value="1">音樂</option>
@@ -442,7 +442,7 @@
             <div class="givebackone-txt col-12 col-md-9">
               <label for="givebackone_title">價格</label>
               <div class="price-input">
-                <input id="givebackone_title" type="text" placeholder="300" />
+                <input id="givebackone_title" type="number" placeholder="300" />
               </div>
               <div class="option-container">
                 <label for="givebackone_title">選項內容</label>
@@ -484,7 +484,7 @@
             <div class="givebacktwo-txt col-12 col-md-9">
               <label for="givebacktwo_title">價格</label>
               <div class="price-input">
-                <input id="givebacktwo_title" type="text" placeholder="300" />
+                <input id="givebacktwo_title" type="number" placeholder="300" />
               </div>
               <div class="option-container">
                 <label for="givebacktwo_title">選項內容</label>
@@ -571,7 +571,7 @@
                 <a href="#">嘖嘖 x 提案人合作條款 </a> 。
               </p>
               <div class="article">
-                <textarea class="form-control" id="givebacktwo_title">
+                <textarea class="form-control" id="article_title">
 嘖嘖網站群眾募資專案委託契約書
                 本契約書為您（提案人）在嘖嘖網站上提出群眾募資專案時，您必須同意的提案契約書內容，當您提出專案內容時，嘖嘖網站會請您詳閱並同意本契約書內容後才可送出。
                 
@@ -755,6 +755,12 @@
                 乙方為公司、法人或其他組織者，如乙方未依本契約履行義務時，甲方得向乙方之法定代理人連帶請求乙方依本契約所生之一切債務，乙方法定代理人願意放棄先訴抗辯權，絕無異議。甲方如因此受有任何損害或甲方因此而致生相關費用（包含但不限於訴訟費用、律師費用及相關文件之作業費用），乙方及其法定代理人並應連帶賠償之。若乙方對甲方依本契約進行提案，視為乙方及乙方法定代理人均充分了解本契約之權利義務內容且均同意本契約之條款。</textarea
                 >
               </div>
+            </div>
+          </div>
+          <div class="decide">
+            <div class="none col-12 col-md-3"></div>
+            <div class="decide-btn col-12 col-md-9">
+              <input type="button" value="確定提案" />
             </div>
           </div>
         </form>
