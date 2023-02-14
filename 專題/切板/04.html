@@ -10,20 +10,20 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./CSS/02.css" />
+    <link rel="stylesheet" href="./CSS/03.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container col-12 col-md-12">
       <div class="container-txt">
-        <h2><span>訂閱式專案 </span> 提案</h2>
+        <h2><span>訂閱式專案</span> 提案</h2>
       </div>
       <div class="detail">
         <form action="">
           <div class="name">
-            <div class="name-title">
-              <label for="name_title">真實身分/名稱</label>
+            <div class="name-title col-12 col-md-3">
+              <h2><label for="name_title">真實身分/名稱</label></h2>
             </div>
-            <div class="name-txt">
+            <div class="name-txt col-12 col-md-9">
               <input id="name_title" type="text" />
               <p>
                 提案人必須要用真實姓名註冊會員，嘖嘖不接受匿名或使用他人名義的提案。
@@ -34,10 +34,10 @@
             </div>
           </div>
           <div class="email">
-            <div class="email-title">
-              <label for="email_title">電子信箱</label>
+            <div class="email-title col-12 col-md-3">
+              <h2><label for="email_title">電子信箱</label></h2>
             </div>
-            <div class="email-txt">
+            <div class="email-txt col-12 col-md-9">
               <input id="email_title" type="email" />
               <p>
                 請確認你的信箱位址沒有錯誤，不然嘖嘖會聯絡不到你。如果有誤請到你的
@@ -46,10 +46,10 @@
             </div>
           </div>
           <div class="starttime">
-            <div class="starttime-title">
-              <label for="start_time">預計開始時間</label>
+            <div class="starttime-title col-12 col-md-3">
+              <h2><label for="start_time">預計開始時間</label></h2>
             </div>
-            <div class="starttime-txt">
+            <div class="starttime-txt col-12 col-md-9">
               <select name="start_time_1i" id="">
                 <!--TODO:  -->
                 <option value="2023">2023</option>
@@ -198,10 +198,10 @@
             </div>
           </div>
           <div class="endtime">
-            <div class="endtime-title">
-              <label for="end_time">預計結束時間</label>
+            <div class="endtime-title col-12 col-md-3">
+              <h2><label for="end_time">預計結束時間</label></h2>
             </div>
-            <div class="endtime-txt">
+            <div class="endtime-txt col-12 col-md-9">
               <select name="end_time1i" id="">
                 <option value="2023">2023</option>
                 <option value="2024">2024</option>
@@ -347,19 +347,21 @@
             </div>
           </div>
           <div class="product">
-            <div class="product-title">
-              <label for="product_title">計畫目標</label>
+            <div class="product-title col-12 col-md-3">
+              <h2><label for="product_title">計畫目標</label></h2>
             </div>
-            <div class="product-txt">
-              <input id="product_title" type="text" />NTD
+            <div class="product-txt col-12 col-md-9">
+              <input id="product_title" placeholder="100000" type="text" /><span
+                >NTD</span
+              >
               <p>請根據你計畫的需求，估算你所需要募集的金額。</p>
             </div>
           </div>
           <div class="category">
-            <div class="category-title">
-              <label for="category_title">分類</label>
+            <div class="category-title col-12 col-md-3">
+              <h2><label for="category_title">分類</label></h2>
             </div>
-            <div class="category-txt">
+            <div class="category-txt col-12 col-md-9">
               <select name="" id="">
                 <!--TODO: -->
                 <option value>選擇計畫分類</option>
@@ -385,18 +387,18 @@
             </div>
           </div>
           <div class="productname">
-            <div class="productname-title">
-              <label for="productname_title">計畫名稱</label>
+            <div class="productname-title col-12 col-md-3">
+              <h2><label for="productname_title">計畫名稱</label></h2>
             </div>
-            <div class="productname-txt">
+            <div class="productname-txt col-12 col-md-9">
               <input id="productname_title" type="text" />
             </div>
           </div>
           <div class="productsummary">
-            <div class="productsummary-title">
-              <label for="productsummary_title">計畫簡介</label>
+            <div class="productsummary-title col-12 col-md-3">
+              <h2><label for="productsummary_title">計畫簡介</label></h2>
             </div>
-            <div class="productsummary-txt">
+            <div class="productsummary-txt col-12 col-md-9">
               <textarea
                 class="form-control"
                 placeholder="請簡短的介紹這個計畫"
@@ -405,10 +407,10 @@
             </div>
           </div>
           <div class="mainpic">
-            <div class="mainpic-title">
-              <label for="main_title">封面照片</label>
+            <div class="mainpic-title col-12 col-md-3">
+              <h2><label for="main_title">封面照片</label></h2>
             </div>
-            <div class="mainpic-txt">
+            <div class="mainpic-txt col-12 col-md-9">
               <input id="main_title" type="file" />
               <!-- TODO:只能選檔案 -->
               <p>
@@ -418,10 +420,10 @@
             </div>
           </div>
           <div class="productexplain">
-            <div class="productexplain-title">
-              <label for="productexplain_title">計畫說明</label>
+            <div class="productexplain-title col-12 col-md-3">
+              <h2><label for="productexplain_title">計畫說明</label></h2>
             </div>
-            <div class="productexplain-txt">
+            <div class="productexplain-txt col-12 col-md-9">
               <textarea
                 class="form-control"
                 id="productexplain_title"
@@ -434,46 +436,95 @@
             </div>
           </div>
           <div class="givebackone">
-            <div class="givebackone-title">
+            <div class="givebackone-title col-12 col-md-3">
               <h2>回饋選項（一）</h2>
             </div>
-            <div class="givebackone-txt">
-               <label for="givebackone_title">價格</label>
-               <div class="price-input">
-                <input id="givebackone_title" type="text" placeholder="300" /><span>
-                  每月
-                </span>              
-               </div>
-               <div class="option-container">
+            <div class="givebackone-txt col-12 col-md-9">
+              <label for="givebackone_title">價格</label>
+              <div class="price-input">
+                <input id="givebackone_title" type="text" placeholder="300" />
+                <span>每月</span>
+              </div>
+              <div class="option-container">
                 <label for="givebackone_title">選項內容</label>
-                <textarea class="form-control" id="givebackone_title"></textarea>
-              <p>僅供審核，之後可增加、刪減、或修改。</p>    
-               </div>                        
+                <textarea
+                  class="form-control"
+                  id="givebackone_title"
+                ></textarea>
+                <p>僅供審核，之後可增加、刪減、或修改。</p>
+                <label for="givebackone_title">預計出貨日期</label>
+                <select name="" id="">
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                </select>
+                <select name="" id="">
+                  <option value="1">一月</option>
+                  <option value="2">二月</option>
+                  <option value="3">三月</option>
+                  <option value="4">四月</option>
+                  <option value="5">五月</option>
+                  <option value="6">六月</option>
+                  <option value="7">七月</option>
+                  <option value="8">八月</option>
+                  <option value="9">九月</option>
+                  <option value="10">十月</option>
+                  <option value="11">十一月</option>
+                  <option value="12">十二月</option>
+                </select>
+              </div>
             </div>
           </div>
           <div class="givebacktwo">
-            <div class="givebacktwo-title">
+            <div class="givebacktwo-title col-12 col-md-3">
               <h2>回饋選項（二）</h2>
             </div>
-            <div class="givebacktwo-txt">
-               <label for="givebacktwo_title">價格</label>
-               <div class="price-input">
-                <input id="givebacktwo_title" type="text" placeholder="300" /><span>
-                  每月
-                </span>              
-               </div>
-               <div class="option-container">
+            <div class="givebacktwo-txt col-12 col-md-9">
+              <label for="givebacktwo_title">價格</label>
+              <div class="price-input">
+                <input id="givebacktwo_title" type="text" placeholder="300" />
+              </div>
+              <div class="option-container">
                 <label for="givebacktwo_title">選項內容</label>
-                <textarea class="form-control" id="givebacktwo_title"></textarea>
-              <p>僅供審核，之後可增加、刪減、或修改。</p>    
-               </div>                        
+                <textarea
+                  class="form-control"
+                  id="givebacktwo_title"
+                ></textarea>
+                <p>僅供審核，之後可增加、刪減、或修改。</p>
+                <label for="givebacktwo_title">預計出貨日期</label>
+                <select name="" id="">
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                </select>
+                <select name="" id="">
+                  <option value="1">一月</option>
+                  <option value="2">二月</option>
+                  <option value="3">三月</option>
+                  <option value="4">四月</option>
+                  <option value="5">五月</option>
+                  <option value="6">六月</option>
+                  <option value="7">七月</option>
+                  <option value="8">八月</option>
+                  <option value="9">九月</option>
+                  <option value="10">十月</option>
+                  <option value="11">十一月</option>
+                  <option value="12">十二月</option>
+                </select>
+              </div>
             </div>
           </div>
           <div class="relatedpages">
-            <div class="relatedpages-title">
-              <label for="relatedpages_title">相關網頁</label>
+            <div class="relatedpages-title col-12 col-md-3">
+              <h2><label for="relatedpages_title">相關網頁</label></h2>
             </div>
-            <div class="relatedpages-txt">
+            <div class="relatedpages-txt col-12 col-md-9">
               <input
                 id="relatedpages_title"
                 placeholder="https://example.com"
@@ -485,10 +536,10 @@
             </div>
           </div>
           <div class="videopages">
-            <div class="videopages-title">
-              <label for="videopages_title">影片網址</label>
+            <div class="videopages-title col-12 col-md-3">
+              <h2><label for="videopages_title">影片網址</label></h2>
             </div>
-            <div class="videopages-txt">
+            <div class="videopages-txt col-12 col-md-9">
               <input
                 id="relatedpages_title"
                 placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
@@ -501,18 +552,29 @@
             </div>
           </div>
           <div class="cooperate">
-            <div class="cooperate-title">合作條款</div>
-            <div class="cooperate-txt">
+            <div class="cooperate-title col-12 col-md-3">
+              <h2>合作條款</h2>
+            </div>
+            <div class="cooperate-txt col-12 col-md-9">
               <label for="cooperate_title">
-                <input
-                  id="cooperate_title"
-                  type="checkbox"
-                />同意提案契約書<br />
-                <input id="cooperate_title" type="checkbox" />提案人
-                (及法定代理人) 均已充分了解且同意合作條款之權利義務
+                <input id="cooperate_title" type="checkbox" />
+                <span>同意提案契約書 </span>
               </label>
-              <p>請確認你已經閱讀並且同意 嘖嘖 x 提案人合作條款 。</p>
-              <!-- <div class="article">TODO:</div> -->
+              <label for="cooperate_title">
+                <input id="cooperate_title" type="checkbox" />
+                <span
+                  >提案人 (及法定代理人)
+                  均已充分了解且同意合作條款之權利義務</span
+                >
+              </label>
+              <p>
+                請確認你已經閱讀並且同意
+                <a href="#">嘖嘖 x 提案人合作條款 </a> 。
+              </p>
+              <div class="article">
+                <textarea class="form-control" id="givebacktwo_title">
+                </textarea>
+              </div>
             </div>
           </div>
         </form>
