@@ -1,9 +1,11 @@
-﻿@model Products
+﻿@model Product //@'m'odel接收的模型
+
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>產品首頁</h1>
+<h1>產品</h1>
+@*'M'odel傳入的資料*@*
+<p>產品名稱: @Model.Name</p> 
+<p>產品價格: @Model.Price</p>
 
-<p>產品名稱:@Model.Name   </p>
-<p>產品價格:@Model.Price  </p>

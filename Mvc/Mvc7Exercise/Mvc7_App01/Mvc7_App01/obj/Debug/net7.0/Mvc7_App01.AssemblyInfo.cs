@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Mvc7_App01")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("MVC7_App01")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("Mvc7_App01")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Mvc7_App01")]
+[assembly: System.Reflection.AssemblyProductAttribute("MVC7_App01")]
+[assembly: System.Reflection.AssemblyTitleAttribute("MVC7_App01")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // 由 MSBuild WriteCodeFragment 類別產生。

@@ -6,12 +6,12 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "Mvc7_App01/1.0.0": {
+      "MVC7_App01/1.0.0": {
         "dependencies": {
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.3"
         },
         "runtime": {
-          "Mvc7_App01.dll": {}
+          "MVC7_App01.dll": {}
         }
       },
       "Humanizer.Core/2.14.1": {
@@ -1914,7 +1914,7 @@
     }
   },
   "libraries": {
-    "Mvc7_App01/1.0.0": {
+    "MVC7_App01/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

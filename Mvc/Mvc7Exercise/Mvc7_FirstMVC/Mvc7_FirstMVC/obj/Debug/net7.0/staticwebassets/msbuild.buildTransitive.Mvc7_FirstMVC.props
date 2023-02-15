@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Mvc7_FirstMVC.props" />
-</Project>

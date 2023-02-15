@@ -3907,23 +3907,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tommy\\.nuget\\packages\\": {},
+    "C:\\Users\\88698\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tommy\\Desktop\\電腦\\earth0122.github.io\\Mvc\\Mvc7Exercise\\Mvc7_Identity\\Mvc7_Identity\\Mvc7_Identity.csproj",
+      "projectUniqueName": "C:\\Buildshool\\ASP.NETCoreMVC\\MVC7Exercise\\Mvc7_Identity\\Mvc7_Identity\\Mvc7_Identity.csproj",
       "projectName": "Mvc7_Identity",
-      "projectPath": "C:\\Users\\tommy\\Desktop\\電腦\\earth0122.github.io\\Mvc\\Mvc7Exercise\\Mvc7_Identity\\Mvc7_Identity\\Mvc7_Identity.csproj",
-      "packagesPath": "C:\\Users\\tommy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tommy\\Desktop\\電腦\\earth0122.github.io\\Mvc\\Mvc7Exercise\\Mvc7_Identity\\Mvc7_Identity\\obj\\",
+      "projectPath": "C:\\Buildshool\\ASP.NETCoreMVC\\MVC7Exercise\\Mvc7_Identity\\Mvc7_Identity\\Mvc7_Identity.csproj",
+      "packagesPath": "C:\\Users\\88698\\.nuget\\packages\\",
+      "outputPath": "C:\\Buildshool\\ASP.NETCoreMVC\\MVC7Exercise\\Mvc7_Identity\\Mvc7_Identity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\tommy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\88698\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

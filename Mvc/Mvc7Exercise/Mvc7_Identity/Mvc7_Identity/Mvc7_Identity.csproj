@@ -4,7 +4,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>aspnet-Mvc7_Identity-9f8cd251-f0a4-4344-b88c-a9ad6b311828</UserSecretsId>
+    <UserSecretsId>aspnet-Mvc7_Identity-fefa7661-5805-4226-af13-a4348b5e783a</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

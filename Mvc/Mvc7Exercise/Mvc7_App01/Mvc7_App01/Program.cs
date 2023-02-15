@@ -20,8 +20,10 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+//路由規則 
 app.MapControllerRoute(
     name: "default",
+    //pattern(預設首頁)
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

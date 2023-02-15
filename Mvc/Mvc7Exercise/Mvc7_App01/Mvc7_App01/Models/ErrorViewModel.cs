@@ -1,6 +1,6 @@
-namespace Mvc7_App01.Models
+namespace MVC7_App01.Models
 {
-#nullable enable
+    #nullable enable
     public class ErrorViewModel
     {
         public string? RequestId { get; set; }
