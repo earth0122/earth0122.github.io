@@ -3,12 +3,10 @@
     padding: 0;    
 }
 .container{
-    width: 1200px; 
+    width: 1200px;    
 }
-.container-txt{
-    border-bottom: 2px solid rgba(8, 153, 8, 0.873);
-    border-width: 5px;
-     width: 160px;/*綠線 */
+.container-txt{    
+    width: 100%;
     margin: auto;
     padding-top: 100px;
     margin-bottom: 70px;
@@ -16,7 +14,12 @@
 .container-txt>h2{
     font-weight: bolder;
     font-size: 25px;
+     width: 14%;/*綠線  */
+    border-bottom: 2px solid rgba(8, 153, 8, 0.873);
+    border-width: 5px;
+    margin: auto;
 }
+
  .detail{    
     border: 1px solid rgb(209,213,219);
 }
@@ -66,6 +69,12 @@ input{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgb(209,213,219);
+}
+.starttime-txt>input{
+    width: 30%;
+}
+.endtime-txt>input{
+    width: 30%;
 }
 .endtime{
     padding: 20px;
@@ -145,7 +154,7 @@ input{
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid rgb(209,213,219);
+    border-bottom: 1px solid rgb(249 250 251);
 }
  h2{
     font-size: 18px;
@@ -156,13 +165,13 @@ p{
     padding-top: 5px;
 }
 #product_title{
-    width: 200px;    
+    width: 25%;    
 }
 .product-txt >span{
     padding-left: 10px;
 }
 #category-title{
-width: 16rem;
+width: 30%;
 }
 #article_title{
     height: 20em;
@@ -175,5 +184,15 @@ width: 16rem;
     border-color: rgb(34 159 42);
     border-width: 2px;
     border-radius: 0.25rem;
-    width: 120px;
+    width: 20%;
+    
+}
+.decide-btn{
+    padding-left: 26%;
+}
+.price-input{
+    width: 50%;
+}
+#cooperate_title{
+
 }

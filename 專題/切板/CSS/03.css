@@ -8,7 +8,7 @@
 .container-txt{
     border-bottom: 2px solid rgba(8, 153, 8, 0.873);
     border-width: 5px;
-     width: 160px;/*綠線 */
+    width: 16%;/*綠線 */
     margin: auto;
     padding-top: 100px;
     margin-bottom: 70px;
@@ -67,6 +67,12 @@ input{
     justify-content: space-between;
     border-bottom: 1px solid rgb(209,213,219);
 }
+.starttime-txt>input{
+    width: 30%;
+}
+.endtime-txt>input{
+    width: 30%;
+}
 .endtime{
     padding: 20px;
     display: flex;
@@ -102,7 +108,7 @@ input{
     padding: 20px;
     display: flex;
     justify-content: space-between;
- 
+   
 }
 .mainpic-txt>input{
     border: 1px solid #e0e0e0;
@@ -145,9 +151,9 @@ input{
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid rgb(209,213,219);
+    border-bottom: 1px solid rgb(249 250 251);
 }
-h2{
+ h2{
     font-size: 18px;
     font-weight: 550;
 }
@@ -156,19 +162,16 @@ p{
     padding-top: 5px;
 }
 #product_title{
-    width: 200px;    
+    width: 25%;    
 }
 .product-txt >span{
     padding-left: 10px;
 }
 #category-title{
-    width: 16rem;
-    }
+width: 30%;
+}
 #article_title{
     height: 20em;
-}
-.decide-btn{
-    padding-top: 5px;
 }
 .decide-btn>input{
     color: rgb(34 159 42);
@@ -178,5 +181,12 @@ p{
     border-color: rgb(34 159 42);
     border-width: 2px;
     border-radius: 0.25rem;
-    width: 120px;
+    width: 20%;
+    
+}
+.decide-btn{
+    padding-left: 26%;
+}
+.price-input{
+    width: 50%;
 }

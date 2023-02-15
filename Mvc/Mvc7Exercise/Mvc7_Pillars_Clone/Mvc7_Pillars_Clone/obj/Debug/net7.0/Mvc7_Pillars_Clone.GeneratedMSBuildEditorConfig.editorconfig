@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\tommy\Desktop\電腦\earth0122.github.io\Mvc\MVC7Exercise\Mvc7_Pillars_Clone\Mvc7_Pillars_Clone
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/MVC7Exercise/Mvc7_Pillars_Clone/Mvc7_Pillars_Clone/Views/Employees/EmployeeList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXEVtcGxveWVlTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/MVC7Exercise/Mvc7_Pillars_Clone/Mvc7_Pillars_Clone/Views/Friends/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJpZW5kc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,12 +48,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/MVC7Exercise/Mvc7_Pillars_Clone/Mvc7_Pillars_Clone/Views/PassDate/PetShop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzc0RhdGVcUGV0U2hvcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/MVC7Exercise/Mvc7_Pillars_Clone/Mvc7_Pillars_Clone/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/MVC7Exercise/Mvc7_Pillars_Clone/Mvc7_Pillars_Clone/Views/Shared/ShowMwssage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNob3dNd3NzYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/MVC7Exercise/Mvc7_Pillars_Clone/Mvc7_Pillars_Clone/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/MVC7Exercise/Mvc7_Pillars_Clone/Mvc7_Pillars_Clone/Views/Test/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/MVC7Exercise/Mvc7_Pillars_Clone/Mvc7_Pillars_Clone/Views/Test/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/MVC7Exercise/Mvc7_Pillars_Clone/Mvc7_Pillars_Clone/Views/_ViewImports.cshtml]

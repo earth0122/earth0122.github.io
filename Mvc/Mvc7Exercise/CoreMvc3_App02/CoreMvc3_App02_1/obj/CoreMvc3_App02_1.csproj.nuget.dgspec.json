@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Buildshool\\ASP.NETCoreMVC\\MVC7Exercise\\CoreMvc3_App02\\CoreMvc3_App02_1\\CoreMvc3_App02_1.csproj": {}
+    "C:\\Users\\tommy\\Desktop\\電腦\\earth0122.github.io\\Mvc\\MVC7Exercise\\CoreMvc3_App02\\CoreMvc3_App02_1\\CoreMvc3_App02_1.csproj": {}
   },
   "projects": {
-    "C:\\Buildshool\\ASP.NETCoreMVC\\MVC7Exercise\\CoreMvc3_App02\\CoreMvc3_App02_1\\CoreMvc3_App02_1.csproj": {
+    "C:\\Users\\tommy\\Desktop\\電腦\\earth0122.github.io\\Mvc\\MVC7Exercise\\CoreMvc3_App02\\CoreMvc3_App02_1\\CoreMvc3_App02_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Buildshool\\ASP.NETCoreMVC\\MVC7Exercise\\CoreMvc3_App02\\CoreMvc3_App02_1\\CoreMvc3_App02_1.csproj",
+        "projectUniqueName": "C:\\Users\\tommy\\Desktop\\電腦\\earth0122.github.io\\Mvc\\MVC7Exercise\\CoreMvc3_App02\\CoreMvc3_App02_1\\CoreMvc3_App02_1.csproj",
         "projectName": "CoreMvc3_App02_1",
-        "projectPath": "C:\\Buildshool\\ASP.NETCoreMVC\\MVC7Exercise\\CoreMvc3_App02\\CoreMvc3_App02_1\\CoreMvc3_App02_1.csproj",
-        "packagesPath": "C:\\Users\\88698\\.nuget\\packages\\",
-        "outputPath": "C:\\Buildshool\\ASP.NETCoreMVC\\MVC7Exercise\\CoreMvc3_App02\\CoreMvc3_App02_1\\obj\\",
+        "projectPath": "C:\\Users\\tommy\\Desktop\\電腦\\earth0122.github.io\\Mvc\\MVC7Exercise\\CoreMvc3_App02\\CoreMvc3_App02_1\\CoreMvc3_App02_1.csproj",
+        "packagesPath": "C:\\Users\\tommy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tommy\\Desktop\\電腦\\earth0122.github.io\\Mvc\\MVC7Exercise\\CoreMvc3_App02\\CoreMvc3_App02_1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\88698\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tommy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

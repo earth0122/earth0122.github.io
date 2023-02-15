@@ -15,7 +15,13 @@ namespace Mvc7_Pillars_Clone.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            ViewData["Developer"] = "陳彥廷";
+            
+            return RedirectToAction("PetShop", "PassDate");
+            //return View("~/Views/PassDate/PetShop.cshtml");
+            //return View("~/Views/Shared/ShowMessage.cshtml");
+            ViewData["Message"] = "Hi ...ChatGPT, 怎麼樣可以交到女友 ";
+            return View("ShowMwssage");
         }
 
         public IActionResult Privacy()
