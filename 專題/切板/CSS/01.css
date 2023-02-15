@@ -23,8 +23,7 @@ img{
     right: 0;
     bottom: 0;
     display: flex;
-    flex-wrap: wrap;   
-    
+    flex-wrap: wrap;       
 }
 span{
     display: block;

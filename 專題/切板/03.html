@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="./CSS/03.css" />
   </head>
   <body>
-    <div class="container col-12 col-md-12">
+    <div class="container">
       <div class="container-txt">
-        <h2><span>預購式專案</span> 提案</h2>
+        <h2>預購式專案 提案</h2>
       </div>
       <div class="detail">
         <form action="">
@@ -24,7 +24,7 @@
               <h2><label for="name_title">真實身分/名稱</label></h2>
             </div>
             <div class="name-txt col-12 col-md-9">
-              <input id="name_title" type="text" />
+              <input id="name_title" type="text" required="required" />
               <p>
                 提案人必須要用真實姓名註冊會員，嘖嘖不接受匿名或使用他人名義的提案。
                 如提案人非個人，可由團隊代表人先以團隊名稱註冊團隊帳號，再透過
@@ -38,7 +38,7 @@
               <h2><label for="email_title">電子信箱</label></h2>
             </div>
             <div class="email-txt col-12 col-md-9">
-              <input id="email_title" type="email" />
+              <input id="email_title" type="email" required="required" />
               <p>
                 請確認你的信箱位址沒有錯誤，不然嘖嘖會聯絡不到你。如果有誤請到你的
                 <a href="TODO:">會員頁面</a> 修改。
@@ -62,6 +62,7 @@
             </div>
             <div class="endtime-txt col-12 col-md-9">
               <input type="datetime-local" />
+
               <p>計畫時間建議為期在 60 天內。</p>
             </div>
           </div>
@@ -70,9 +71,12 @@
               <h2><label for="product_title">計畫目標</label></h2>
             </div>
             <div class="product-txt col-12 col-md-9">
-              <input id="product_title" placeholder="100000" type="text" /><span
-                >NTD</span
-              >
+              <input
+                id="product_title"
+                placeholder="100000"
+                type="text"
+                required="required"
+              /><span>NTD</span>
               <p>請根據你計畫的需求，估算你所需要募集的金額。</p>
             </div>
           </div>
@@ -110,7 +114,7 @@
               <h2><label for="productname_title">計畫名稱</label></h2>
             </div>
             <div class="productname-txt col-12 col-md-9">
-              <input id="productname_title" type="text" />
+              <input id="productname_title" type="text" required="required" />
             </div>
           </div>
           <div class="productsummary">
@@ -122,6 +126,7 @@
                 class="form-control"
                 placeholder="請簡短的介紹這個計畫"
                 id="productsummary_title"
+                required="required"
               ></textarea>
             </div>
           </div>
@@ -146,6 +151,7 @@
               <textarea
                 class="form-control"
                 id="productexplain_title"
+                required="required"
               ></textarea>
               <p>
                 請告訴我們關於你計畫的故事、為什麼大家應該支持你的計畫。（最少
@@ -161,16 +167,23 @@
             <div class="givebackone-txt col-12 col-md-9">
               <label for="givebackone_title">價格</label>
               <div class="price-input">
-                <input id="givebackone_title" type="number" placeholder="300" />
+                <input
+                  id="givebackone_title"
+                  type="number"
+                  placeholder="300"
+                  required="required"
+                />
               </div>
               <div class="option-container">
                 <label for="givebackone_title">選項內容</label>
                 <textarea
                   class="form-control"
                   id="givebackone_title"
+                  required="required"
                 ></textarea>
                 <p>僅供審核，之後可增加、刪減、或修改。</p>
-                <label for="givebackone_title">預計出貨日期</label>
+                <label for="givebackone_title">
+                  預計出貨日期</label>
                 <select name="" id="">
                   <option value="2018">2018</option>
                   <option value="2019">2019</option>
@@ -203,13 +216,19 @@
             <div class="givebacktwo-txt col-12 col-md-9">
               <label for="givebacktwo_title">價格</label>
               <div class="price-input">
-                <input id="givebacktwo_title" type="number" placeholder="300" />
+                <input
+                  id="givebacktwo_title"
+                  type="number"
+                  placeholder="300"
+                  required="required"
+                />
               </div>
               <div class="option-container">
                 <label for="givebacktwo_title">選項內容</label>
                 <textarea
                   class="form-control"
                   id="givebacktwo_title"
+                  required="required"
                 ></textarea>
                 <p>僅供審核，之後可增加、刪減、或修改。</p>
                 <label for="givebacktwo_title">預計出貨日期</label>
@@ -247,6 +266,7 @@
                 id="relatedpages_title"
                 placeholder="https://example.com"
                 type="url"
+                required="required"
               />
               <p>
                 請務必提供這個項目，嘖嘖若無法認證您計畫的真實性、可行性等等項目，計畫就會無法上架。
@@ -262,6 +282,7 @@
                 id="relatedpages_title"
                 placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                 type="url"
+                required="required"
               />
               <p>
                 附上影片我們才能對計畫有更加的了解。 （請上傳至
@@ -276,8 +297,8 @@
             <div class="cooperate-txt col-12 col-md-9">
               <label for="cooperate_title">
                 <input id="cooperate_title" type="checkbox" />
-                <span>同意提案契約書 </span>
-              </label>
+                <span>同意提案契約書</span> </label
+              ><br />
               <label for="cooperate_title">
                 <input id="cooperate_title" type="checkbox" />
                 <span
@@ -471,8 +492,8 @@ DCC*	2.5%
 
 連帶保證責任
 第二十七條
-乙方為公司、法人或其他組織者，如乙方未依本契約履行義務時，甲方得向乙方之法定代理人連帶請求乙方依本契約所生之一切債務，乙方法定代理人願意放棄先訴抗辯權，絕無異議。甲方如因此受有任何損害或甲方因此而致生相關費用（包含但不限於訴訟費用、律師費用及相關文件之作業費用），乙方及其法定代理人並應連帶賠償之。若乙方對甲方依本契約進行提案，視為乙方及乙方法定代理人均充分了解本契約之權利義務內容且均同意本契約之條款。
-                </textarea>
+乙方為公司、法人或其他組織者，如乙方未依本契約履行義務時，甲方得向乙方之法定代理人連帶請求乙方依本契約所生之一切債務，乙方法定代理人願意放棄先訴抗辯權，絕無異議。甲方如因此受有任何損害或甲方因此而致生相關費用（包含但不限於訴訟費用、律師費用及相關文件之作業費用），乙方及其法定代理人並應連帶賠償之。若乙方對甲方依本契約進行提案，視為乙方及乙方法定代理人均充分了解本契約之權利義務內容且均同意本契約之條款。</textarea
+                >
               </div>
             </div>
           </div>

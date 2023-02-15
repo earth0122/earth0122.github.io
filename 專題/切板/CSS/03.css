@@ -3,26 +3,31 @@
     padding: 0;    
 }
 .container{
-    width: 1200px; 
+    width: 1200px;    
 }
-.container-txt{
-    border-bottom: 2px solid rgba(8, 153, 8, 0.873);
-    border-width: 5px;
-    width: 16%;/*綠線 */
+.container-txt{    
+    width: 100%;
     margin: auto;
     padding-top: 100px;
     margin-bottom: 70px;
+    
 }
 .container-txt>h2{
     font-weight: bolder;
     font-size: 25px;
+    width: 20%;/*綠線 */
+    border-bottom: 2px solid rgba(8, 153, 8, 0.873);
+    border-width: 5px;
+    margin: auto;
+    
 }
+
  .detail{    
     border: 1px solid rgb(209,213,219);
 }
-input{
+/* input{
     width: 100%;
-}
+} */
 
 .name{
     padding: 20px;
@@ -34,9 +39,23 @@ input{
 .name-title{     
    /* padding: 0 0px 0 0;  TODO:flex ; */
 } 
-.name-txt{
-    /* width: 75%; */
+.name-txt>input{
+    width: 100%;
 } 
+.email-txt>input{
+    width: 100%;
+}
+.productname-txt>input{
+    width: 100%;
+}
+.relatedpages-txt>input{
+    width: 100%;
+}
+.videopages-txt>input{
+    width: 100%;
+}
+
+
 /* .name-txt>p{
     font-size: 10px;
     padding-top: 5px;
@@ -152,6 +171,7 @@ input{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgb(249 250 251);
+    background-color: rgb(249 250 251);
 }
  h2{
     font-size: 18px;
@@ -189,4 +209,7 @@ width: 30%;
 }
 .price-input{
     width: 50%;
+}
+.cooperate-txt>input{
+width: 5px;
 }
