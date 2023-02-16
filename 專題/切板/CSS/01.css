@@ -3,8 +3,8 @@
     padding: 0;    
 }
 .container{
-    width: 1200px;
-    
+    width: 100%;
+    max-width: 1200px;    
 }
 img{
     width: 100%;
@@ -85,8 +85,8 @@ a{
     text-decoration: none;
 }
 .all-card{
-    width: 1200px;
-    display: flex;
+    width: 100%;
+    /* display: flex; */
     text-align: center;
     padding-top: 80px;
       
@@ -193,3 +193,37 @@ border-radius: 0.25rem;
     padding: 70px 0;
  }
  
+ @media screen and (min-width:576px) {
+    .all-card{
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding-top: 80px;
+          
+    }
+ }
+ @media screen and (min-width:768px) {
+    .all-card{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        padding-top: 80px;          
+    } 
+    .about{
+        width: 100%;
+    }
+    .about-item{
+        width: 100%;
+        /* display: flex; */
+        padding: 50px 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+ }
+ @media screen and (min-width:1024px) {
+   
+ }
+ @media screen and (min-width:1200px) {
+   
+ }
