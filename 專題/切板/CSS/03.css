@@ -17,13 +17,13 @@
     margin: auto;
 }
 
- .detail{    
+ .detail{      
     border: 1px solid rgb(209,213,219);
 }
 /* input{
     width: 100%;
 } */
-.name-title, 
+.name-title,         /*每個表格左邊名字*/
 .email-title, 
 .starttime-title, 
 .endtime-title, 
@@ -38,8 +38,29 @@
 .relatedpages-title, 
 .videopages-title, 
 .cooperate-title{
-      width: 50%;
+    width: 30%;
     font-weight: 700; 
+}
+/* .name-title{
+    margin-right: 70px;
+} */
+.name-txt,         /*每個表格左邊名字*/
+.email-txt, 
+.starttime-txt, 
+.endtime-txt, 
+.product-txt, 
+.category-txt, 
+.productname-txt, 
+.productsummary-txt, 
+.mainpic-txt, 
+.productexplain-txt, 
+.givebackone-txt, 
+.givebacktwo-txt, 
+.relatedpages-txt, 
+.videopages-txt, 
+.cooperate-txt
+{
+    width: 70%;
 }
 .name-txt>input{
     width: 100%;
@@ -57,14 +78,6 @@
     width: 100%;
 }
 
-
-/* .name-txt>p{
-    font-size: 10px;
-    padding-top: 5px;
-}
-.email-txt>p{
-    font-size: 10px;
-} */
 .name{
     padding: 20px;
     /* display: flex; */
@@ -229,67 +242,66 @@ width: 5px;
         display: flex;  
     }
     .email{
-
          display: flex; 
-         justify-content: flex-start; 
-
-    }
+         /* justify-content: flex-start;  */        
+    }    
     .starttime{
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
     }
    
     .endtime{
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
     }
     .product{
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
     }
     .category
     {
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
     }
     .productname{  
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         
     }
     .productsummary{
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
      
     }
     .mainpic{   
         display: flex;
-        justify-content: space-between;       
+        /* justify-content: space-between;        */
     }
     .productexplain{   
         display: flex;
-        justify-content: space-between;  
+        /* justify-content: space-between;   */
     }
     .givebackone{ 
         display: flex;
-        justify-content: space-between;  
+        /* justify-content: space-between;   */
     }
     .givebacktwo{ 
         display: flex;
-        justify-content: space-between;    
+        /* justify-content: space-between;     */
     } 
     .relatedpages{     
         display: flex;
-        justify-content: space-between;  
+        /* justify-content: space-between;   */
     }
     .videopages{   
         display: flex;
-        justify-content: space-between; 
+        /* justify-content: space-between;  */
     }
     .cooperate{
         display: flex;
-        justify-content: space-between;
-    }
+        /* justify-content: space-between; */
+    }    
  }
+ 
  
  
