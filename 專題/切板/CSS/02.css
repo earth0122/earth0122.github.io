@@ -44,13 +44,25 @@
 /* .name-title{
     margin-right: 70px;
 } */
-.name-txt,
-.productexplain-txt{
+.name-txt,         /*每個表格左邊名字*/
+.email-txt, 
+.starttime-txt, 
+.endtime-txt, 
+.product-txt, 
+.category-txt, 
+.productname-txt, 
+.productsummary-txt, 
+.mainpic-txt, 
+.productexplain-txt, 
+.givebackone-txt, 
+.givebacktwo-txt, 
+.relatedpages-txt, 
+.videopages-txt, 
+.cooperate-txt
+{
     width: 70%;
 }
-
 .name-txt>input{
-    
     width: 100%;
 } 
 .email-txt>input{
@@ -288,7 +300,7 @@ width: 5px;
     .cooperate{
         display: flex;
         /* justify-content: space-between; */
-    }
+    }    
  }
  
  
