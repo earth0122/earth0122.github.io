@@ -6,13 +6,12 @@
     width: 100%;
     max-width: 1200px;    
 }
-img{
-    width: 100%;
-    
-    margin-top: 50px;  
-}
-.main-pic{
+.main-pic{                /*上方圖*/
     position: relative;
+}
+img{
+    width: 100%;    
+    margin-top: 50px;  
 }
 .absolute-item{
     justify-content: center;
@@ -25,7 +24,7 @@ img{
     display: flex;
     flex-wrap: wrap;       
 }
-span{
+span{                   /*上方圖文字+卡片打勾後文字*/
     display: block;
     font-size: 18px;
     
@@ -38,7 +37,7 @@ span{
     border-radius: 10px;
     
 }
-.pic-txt>h2{
+.pic-txt>h2{      /*關於嘖嘖*/
     font-weight: bolder;
 }
 .main-txt{
@@ -46,10 +45,7 @@ span{
     border-width: 5px;
     width: 100px; /*綠線 */
     margin: auto;
-    padding-top: 100px;
-    
-
-      
+    padding-top: 100px; 
 }
 .main-txt>h2{
     font-size: 25px;  
@@ -57,7 +53,7 @@ span{
    
 }
 .about-item{
-    display: flex;
+    /* display: flex; */
     padding: 50px 30px;
     justify-content: center;
     align-items: center;
@@ -76,20 +72,21 @@ span{
     text-align: center;
     width: 100%;
 }
-ul{
-    list-style: none;
-    padding: 0 20px 0 0;
-    margin: 0 1rem;
-}
-a{
-    text-decoration: none;
-}
-.all-card{
+
+.all-card{                  /*卡片*/
     width: 100%;
     /* display: flex; */
     text-align: center;
     padding-top: 80px;
       
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0 20px 0 0;
+    margin: 0 1rem;
 }
 li{
     display: flex;    
@@ -99,7 +96,6 @@ li{
    padding-top: 10px;
    padding-bottom: 5px;
 }
-
 a>h3{
     font-size: 20px;
     color: black;
@@ -107,7 +103,6 @@ a>h3{
     padding-top: 30px;
     padding-bottom: 10px;
 }
-
 .card-first{
 border: 2px solid rgb(34,159,42);
 margin: 0 20px;
@@ -121,7 +116,6 @@ margin: 0 20px;
 .card-first>a>.card-item>ul>li>i{
     color: rgb(34,159,42);
 }
-
 .card-item>ul>li>span{
     color: black;    
 }
@@ -141,7 +135,7 @@ margin: 0 20px;
     font-size: 16px;
     font-weight: bolder;
     padding-bottom: 15px;
-     }
+}
  .card-second>a>.card-item>ul>li>i{
      color: rgb(51,102,169);
  }
@@ -177,7 +171,7 @@ color: white;
 padding: 10px 0;
 border-radius: 0.25rem;
  }
- .join{
+ .join{                  /*關於嘖嘖*/
     border-top: 1px solid black;
     padding-top: 30px;
     margin-top: 50px;
@@ -194,36 +188,39 @@ border-radius: 0.25rem;
  }
  
  @media screen and (min-width:576px) {
-    .all-card{
-        width: 100%;
-        display: block;
-        text-align: center;
-        padding-top: 80px;
-          
-    }
- }
- @media screen and (min-width:768px) {
-    .all-card{
-        width: 100%;
-        display: flex;
-        text-align: center;
-        padding-top: 80px;          
-    } 
-    .about{
-        width: 100%;
+    .all-card{    
+        /* display: block;*/
     }
     .about-item{
-        width: 100%;
-        /* display: flex; */
-        padding: 50px 30px;
-        justify-content: center;
-        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 30px 30px 30px;
+       
     }
-    
+    .item-about{
+        width: 100%;
+    }
+ }
+ @media screen and (min-width:768px) {   
+    .all-card{        
+        display: flex;           
+    } 
+    .about-item{
+        display: flex;
+        flex-wrap: wrap;     
+    }
+    .item-about{
+        width: 50%;
+    }
  }
  @media screen and (min-width:1024px) {
-   
+    .about-item{
+        display: flex;        
+    }
+    .item-about{
+        width: 25%;
+    }
  }
- @media screen and (min-width:1200px) {
+ /* @media screen and (min-width:1200px) {
    
- }
+ } */

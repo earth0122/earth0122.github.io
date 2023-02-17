@@ -10,6 +10,7 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./CSS/normalize.css">
     <link rel="stylesheet" href="./CSS/02.css" />
   </head>
   <body>
@@ -20,10 +21,10 @@
       <div class="detail">
         <form action="">
           <div class="name">
-            <div class="name-title">
+            <div class="name-title ">
               <h2><label for="name_title">真實身分/名稱</label></h2>
             </div>
-            <div class="name-txt">
+            <div class="name-txt ">
               <input id="name_title" type="text" required="required" />
               <p>
                 提案人必須要用真實姓名註冊會員，嘖嘖不接受匿名或使用他人名義的提案。
@@ -34,10 +35,10 @@
             </div>
           </div>
           <div class="email">
-            <div class="email-title">
+            <div class="email-title ">
               <h2><label for="email_title">電子信箱</label></h2>
             </div>
-            <div class="email-txt">
+            <div class="email-txt ">
               <input id="email_title" type="email" required="required" />
               <p>
                 請確認你的信箱位址沒有錯誤，不然嘖嘖會聯絡不到你。如果有誤請到你的
@@ -46,10 +47,10 @@
             </div>
           </div>
           <div class="starttime">
-            <div class="starttime-title">
+            <div class="starttime-title ">
               <h2><label for="start_time">預計開始時間</label></h2>
             </div>
-            <div class="starttime-txt">
+            <div class="starttime-txt ">
               <input type="datetime-local" />
               <p>
                 告訴我們你希望什麼時候開始你的計畫（必須是未來的時間），嘖嘖將會為你安排審核順序。嘖嘖至少需要約十個工作天審核你的提案。
@@ -57,20 +58,19 @@
             </div>
           </div>
           <div class="endtime">
-            <div class="endtime-title">
+            <div class="endtime-title ">
               <h2><label for="end_time">預計結束時間</label></h2>
             </div>
-            <div class="endtime-txt">
+            <div class="endtime-txt ">
               <input type="datetime-local" />
-
               <p>計畫時間建議為期在 60 天內。</p>
             </div>
           </div>
           <div class="product">
-            <div class="product-title">
+            <div class="product-title ">
               <h2><label for="product_title">計畫目標</label></h2>
             </div>
-            <div class="product-txt">
+            <div class="product-txt ">
               <input
                 id="product_title"
                 placeholder="100000"
@@ -81,10 +81,10 @@
             </div>
           </div>
           <div class="category">
-            <div class="category-title">
+            <div class="category-title ">
               <h2><label for="category_title">分類</label></h2>
             </div>
-            <div class="category-txt">
+            <div class="category-txt ">
               <select name="" id="category-title">
                 <!--TODO: -->
                 <option value>選擇計畫分類</option>
@@ -110,18 +110,18 @@
             </div>
           </div>
           <div class="productname">
-            <div class="productname-title">
+            <div class="productname-title ">
               <h2><label for="productname_title">計畫名稱</label></h2>
             </div>
-            <div class="productname-txt">
+            <div class="productname-txt ">
               <input id="productname_title" type="text" required="required" />
             </div>
           </div>
           <div class="productsummary">
-            <div class="productsummary-title">
+            <div class="productsummary-title ">
               <h2><label for="productsummary_title">計畫簡介</label></h2>
             </div>
-            <div class="productsummary-txt">
+            <div class="productsummary-txt ">
               <textarea
                 class="form-control"
                 placeholder="請簡短的介紹這個計畫"
@@ -131,10 +131,10 @@
             </div>
           </div>
           <div class="mainpic">
-            <div class="mainpic-title">
+            <div class="mainpic-title ">
               <h2><label for="main_title">封面照片</label></h2>
             </div>
-            <div class="mainpic-txt">
+            <div class="mainpic-txt ">
               <input id="main_title" type="file" />
               <!-- TODO:只能選檔案 -->
               <p>
@@ -144,10 +144,10 @@
             </div>
           </div>
           <div class="productexplain">
-            <div class="productexplain-title">
+            <div class="productexplain-title ">
               <h2><label for="productexplain_title">計畫說明</label></h2>
             </div>
-            <div class="productexplain-txt">
+            <div class="productexplain-txt ">
               <textarea
                 class="form-control"
                 id="productexplain_title"
@@ -161,10 +161,10 @@
             </div>
           </div>
           <div class="givebackone">
-            <div class="givebackone-title">
+            <div class="givebackone-title ">
               <h2>回饋選項（一）</h2>
             </div>
-            <div class="givebackone-txt">
+            <div class="givebackone-txt ">
               <label for="givebackone_title">價格</label>
               <div class="price-input">
                 <input
@@ -209,10 +209,10 @@
             </div>
           </div>
           <div class="givebacktwo">
-            <div class="givebacktwo-title">
+            <div class="givebacktwo-title ">
               <h2>回饋選項（二）</h2>
             </div>
-            <div class="givebacktwo-txt">
+            <div class="givebacktwo-txt ">
               <label for="givebacktwo_title">價格</label>
               <div class="price-input">
                 <input
@@ -257,10 +257,10 @@
             </div>
           </div>
           <div class="relatedpages">
-            <div class="relatedpages-title">
+            <div class="relatedpages-title ">
               <h2><label for="relatedpages_title">相關網頁</label></h2>
             </div>
-            <div class="relatedpages-txt">
+            <div class="relatedpages-txt ">
               <input
                 id="relatedpages_title"
                 placeholder="https://example.com"
@@ -273,10 +273,10 @@
             </div>
           </div>
           <div class="videopages">
-            <div class="videopages-title">
+            <div class="videopages-title ">
               <h2><label for="videopages_title">影片網址</label></h2>
             </div>
-            <div class="videopages-txt">
+            <div class="videopages-txt ">
               <input
                 id="relatedpages_title"
                 placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
@@ -290,10 +290,10 @@
             </div>
           </div>
           <div class="cooperate">
-            <div class="cooperate-title">
+            <div class="cooperate-title ">
               <h2>合作條款</h2>
             </div>
-            <div class="cooperate-txt">
+            <div class="cooperate-txt ">
               <label for="cooperate_title">
                 <input id="cooperate_title" type="checkbox" />
                 <span>同意提案契約書</span> </label
@@ -497,8 +497,8 @@
             </div>
           </div>
           <div class="decide">
-            <div class="none"></div>
-            <div class="decide-btn">
+            <div class="none "></div>
+            <div class="decide-btn ">
               <input type="button" value="確定提案" />
             </div>
           </div>
