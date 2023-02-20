@@ -34,5 +34,9 @@ namespace Mvc7_Pillars_Clone.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        public IActionResult DisplayName()
+        {
+            return Content("David");
+        }
     }
 }

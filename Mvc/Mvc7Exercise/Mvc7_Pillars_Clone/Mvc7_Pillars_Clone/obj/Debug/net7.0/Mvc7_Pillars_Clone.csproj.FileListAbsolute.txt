@@ -273,3 +273,4 @@ C:\Users\tommy\Desktop\電腦\earth0122.github.io\Mvc\MVC7Exercise\Mvc7_Pillars_
 C:\Users\tommy\Desktop\電腦\earth0122.github.io\Mvc\MVC7Exercise\Mvc7_Pillars_Clone\Mvc7_Pillars_Clone\obj\Debug\net7.0\Mvc7_Pillars_Clone.pdb
 C:\Users\tommy\Desktop\電腦\earth0122.github.io\Mvc\MVC7Exercise\Mvc7_Pillars_Clone\Mvc7_Pillars_Clone\obj\Debug\net7.0\Mvc7_Pillars_Clone.genruntimeconfig.cache
 C:\Users\tommy\Desktop\電腦\earth0122.github.io\Mvc\MVC7Exercise\Mvc7_Pillars_Clone\Mvc7_Pillars_Clone\obj\Debug\net7.0\ref\Mvc7_Pillars_Clone.dll
+C:\Users\tommy\Desktop\電腦\earth0122.github.io\Mvc\MVC7Exercise\Mvc7_Pillars_Clone\Mvc7_Pillars_Clone\obj\Debug\net7.0\scopedcss\Views\Shared\Common\_LayoutFriend.cshtml.rz.scp.css

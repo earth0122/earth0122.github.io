@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <Folder Include="Services\" />
+    <Folder Include="Views\Shared\DarkTheme\" />
   </ItemGroup>
 
 </Project>

@@ -40,6 +40,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJpZW5kc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/MVC7Exercise/Mvc7_Pillars_Clone/Mvc7_Pillars_Clone/Views/Friends/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJpZW5kc1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/MVC7Exercise/Mvc7_Pillars_Clone/Mvc7_Pillars_Clone/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -54,6 +58,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/MVC7Exercise/Mvc7_Pillars_Clone/Mvc7_Pillars_Clone/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/MVC7Exercise/Mvc7_Pillars_Clone/Mvc7_Pillars_Clone/Views/Shared/LightTheme/_NavbarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExpZ2h0VGhlbWVcX05hdmJhclBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/MVC7Exercise/Mvc7_Pillars_Clone/Mvc7_Pillars_Clone/Views/Shared/ShowMwssage.cshtml]
@@ -79,6 +87,10 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/MVC7Exercise/Mvc7_Pillars_Clone/Mvc7_Pillars_Clone/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/MVC7Exercise/Mvc7_Pillars_Clone/Mvc7_Pillars_Clone/Views/Shared/Common/_LayoutFriend.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbW1vblxfTGF5b3V0RnJpZW5kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-6viyd8298u
 
 [C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/MVC7Exercise/Mvc7_Pillars_Clone/Mvc7_Pillars_Clone/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s

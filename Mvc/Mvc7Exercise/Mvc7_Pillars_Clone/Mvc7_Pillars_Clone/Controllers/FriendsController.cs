@@ -24,12 +24,15 @@ namespace Mvc7_Pillars_Clone.Controllers
         }
 
         // GET: Friends
-
-        public async Task<IActionResult> Index()
+        [HttpGet]
+        //public async Task<IActionResult> Index()
+        public async Task<IActionResult> ListFriends()
         {
-              return _context.Friend != null ? 
-                          View(await _context.Friend.ToListAsync()) :
-                          Problem("Entity set 'FriendContext.Friend'  is null.");
+              //return _context.Friend != null ? 
+              //            View(await _context.Friend.ToListAsync()) :
+              //            Problem("Entity set 'FriendContext.Friend'  is null.");
+
+            return View("Index", await _context.Friend.ToListAsync());
         }
 
         // GET: Friends/Details/5

@@ -16,6 +16,8 @@ namespace Mvc7_Pillars_Clone.Data
 
         public DbSet<Mvc7_Pillars_Clone.Models.Friend> Friend { get; set; } = default!;
 
+
+
         public DbSet<Mvc7_Pillars_Clone.Models.Employee> Employee { get; set; } = default!;
     }
 }
