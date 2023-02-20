@@ -26,7 +26,7 @@ namespace Mvc7_Boostrap_Clone.Controllers
         }
 
         // GET: Employees/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> IndexBootstrap()
         {
             if (id == null || _context.Employee == null)
             {
