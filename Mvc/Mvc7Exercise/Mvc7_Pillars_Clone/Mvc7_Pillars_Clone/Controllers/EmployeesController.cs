@@ -23,5 +23,30 @@ namespace Mvc7_Pillars_Clone.Controllers
         {
             return View();
         }
+
+        public IActionResult EmployeeList() 
+        {
+            return View(_employees);
+        }
+        public IActionResult FindEmployee(int id) 
+        {
+            Employee emp = new Employee
+            {
+                Id = id,
+                Name = "David",
+                Email = "david@gmail.com",
+                Phone = "0925-155222"
+            };
+            return View(emp);
+        }
+        public IActionResult Create() 
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Create(Employee emp) 
+        {
+            return View();
+        }
     }
 }

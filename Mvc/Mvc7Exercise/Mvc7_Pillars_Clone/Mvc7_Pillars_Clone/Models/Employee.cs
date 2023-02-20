@@ -9,6 +9,8 @@ namespace Mvc7_Pillars_Clone.Models
         public int Id { get; set; }
 
         [Display(Name = "名字")]
+        [Required]
+        [StringLength(12)]
         public string Name { get; set; }
 
         [Display(Name = "連絡電話")]
