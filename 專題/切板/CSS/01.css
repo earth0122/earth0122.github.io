@@ -10,7 +10,7 @@
 .main-pic{                /*上方圖*/
     position: relative;
 }
-img{
+.main-pic>img{
     width: 100%;    
     margin-top: 50px;  
 }
@@ -25,11 +25,10 @@ img{
     display: flex;
     flex-wrap: wrap;       
 }
-span{                   /*上方圖文字+卡片打勾後文字*/
+ span{                   /*上方圖文字+卡片打勾後文字*/
     display: block;
-    font-size: 18px;
-    
-}
+    font-size: 18px;   
+} 
 .pic-txt{
     text-align: center;
     border: 2px solid black;
@@ -79,24 +78,22 @@ span{                   /*上方圖文字+卡片打勾後文字*/
     /* display: flex; */
     text-align: center;
     padding-top: 80px;
-      
+    
 }
-a{
-    text-decoration: none;
-}
-ul{
+
+.card-item ul{
     list-style: none;
     padding: 0 20px 0 0;
     margin: 0 1rem;
 }
-li{
+.card-item li{
     display: flex;    
     justify-content: start;
    align-items: center;
    text-align: left;
    padding-top: 10px;
    padding-bottom: 5px;
-}
+} 
 a>h3{
     font-size: 20px;
     color: black;
@@ -106,7 +103,11 @@ a>h3{
 }
 .card-first{
 border: 2px solid rgb(34,159,42);
-margin: 0 20px;
+margin: 20px 20px;
+padding: 20px;
+}
+.card-first>a{
+    text-decoration: none;
 }
 .card-first>a>h4{
    color: rgb(34,159,42);
@@ -125,11 +126,19 @@ i{
 }
 .card-second{
     border: 2px solid rgb(51,102,169);
-    margin: 0 20px;
+    margin: 20px 20px;
+    padding: 20px;
+}
+.card-second>a{
+    text-decoration: none;
 }
 .card-third{
 border: 2px solid rgb(160,99,137);
-margin: 0 20px;
+margin: 20px 20px;
+padding: 20px;
+}
+.card-third>a{
+    text-decoration: none;
 }
 .card-second>a>h4{
     color: rgb(51,102,169);
@@ -153,24 +162,28 @@ margin: 0 20px;
     background-color: rgb(249, 250, 251);
     margin: 0 20px;
     padding: 0 0 30px 0;
+    
  }
  .span-first{
     background-color: rgb(34,159,42);
     color: white;
     padding: 10px 0;
-    border-radius: 0.25rem;    
+    border-radius: 0.25rem; 
+    margin-top: 40px;   
  }
  .span-second{
 background-color: rgb(51,102,169);
 color: white;
 padding: 10px 0;
 border-radius: 0.25rem;
+ margin-top: 40px; 
  }
  .span-third{
 background-color: rgb(160,99,137);
 color: white;
 padding: 10px 0;
 border-radius: 0.25rem;
+ margin-top: 40px; 
  }
  .join{                  /*關於嘖嘖*/
     border-top: 1px solid black;
@@ -195,10 +208,16 @@ border-radius: 0.25rem;
     margin-left: 10px;
 }
 
+
 .sectionFooter{
     background-color: var(--bs-gray-100); 
     border-top: 1px solid lightgray; 
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;   
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
 }
 
 .sectionFooter .container ul a:hover {
