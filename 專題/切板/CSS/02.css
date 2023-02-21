@@ -1,20 +1,26 @@
-.container{
+.contain{
     width: 100%;
     max-width: 1200px;    
+    margin: auto;
 }
-.container-txt{    
+.contain-txt{    
     width: 100%;
     margin: auto;
     padding-top: 100px;
     margin-bottom: 70px;
+    text-align: center;
 }
-.container-txt>h2{
+.contain-txt>h2{
+    display: inline-block;
     font-weight: bolder;
     font-size: 25px;
-     width: 14%;/*綠線  */
+     /* width: 14%;綠線  */
     border-bottom: 2px solid rgba(8, 153, 8, 0.873);
     border-width: 5px;
     margin: auto;
+}
+a{
+    text-decoration: none;
 }
 
  .detail{      
@@ -40,6 +46,9 @@
 .cooperate-title{
     width: 30%;
     font-weight: 700; 
+}
+.relatedpages-txt p{
+    color: rgb(196 80 89);
 }
 /* .name-title{
     margin-right: 70px;
@@ -222,11 +231,13 @@ width: 30%;
     border-color: rgb(34 159 42);
     border-width: 2px;
     border-radius: 0.25rem;
-    width: 20%;
+    width: 15%;
+    height: 45px;
     
 }
 .decide-btn{
-    padding-left: 26%;
+    /* padding-left: 26%; */
+    padding: 50px 0px 50px 300px;
 }
 .price-input{
     width: 50%;
@@ -235,6 +246,68 @@ width: 30%;
 width: 5px;
 }
 
+.sectionNav .line{
+    width: 1px;
+    height: 30px;
+    background-color: var(--bs-gray-400); 
+    margin-left: 10px;
+}
+
+
+.sectionFooter{
+    background-color: var(--bs-gray-100); 
+    border-top: 1px solid lightgray; 
+    border-bottom: 1px solid lightgray;   
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.sectionFooter .container ul a:hover {
+    color: var(--bs-gray-600);
+}
+
+.iconSocialMedia {
+    box-sizing: border-box;
+}
+
+.iconSocialMedia a {
+    color: var(--bs-gray-600);
+    padding: 0 10px;
+}
+
+.sectionFooter .iconSocialMedia a:hover .fa-facebook {
+    color: #1877f2;
+}
+
+.sectionFooter .iconSocialMedia a:hover .fa-twitter {
+    color: #1da1f2;
+}
+
+.sectionFooter .iconSocialMedia a:hover .fa-instagram {
+    color: #000;
+}
+
+.sectionFooter .iconSocialMedia a:hover .fa-youtube {
+    color: #dc2626;
+}
+
+.sectionFooter .iconSocialMedia a:hover .fa-line {
+    color: #00c300;
+}
+
+.sectionCopyright{
+    background-color: var(--bs-gray-100);
+}
+.container a{
+    text-decoration: none;
+    color: rgb(75 85 99)
+}
+.container li{
+    list-style-type: none;
+}
 
 
 @media screen and (min-width:768px) {   
@@ -301,6 +374,9 @@ width: 5px;
         display: flex;
         /* justify-content: space-between; */
     }    
+    .sectionFooter .navbar-brand {
+        color: #00c300;
+    }
  }
  
  

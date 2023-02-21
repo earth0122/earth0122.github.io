@@ -14,8 +14,70 @@
     <link rel="stylesheet" href="./CSS/02.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="container-txt">
+    <!-- 導覽列 -->
+    <nav class="sectionNav navbar navbar-light w-100">
+      <div class="container d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand fw-bolder fs-2" href="#">呵呵</a>
+          <div class="line"></div>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="./categories.html"
+                >探索</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">提案</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex align-items-center">
+          <a class="nav-link text-secondary m-3" href="#"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <div class="dropdown me-2">
+            <button
+              class="btn dropdown-toggle border border-light"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="https://picsum.photos/30/30/?random=10" />
+            </button>
+            <ul
+              class="dropdown-menu dropdown-menu-end text-center"
+              aria-labelledby="dropdownMenuLink"
+            >
+              <li class=""><a class="dropdown-item" href="#">個人頁面</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">贊助紀錄</a></li>
+              <li><a class="dropdown-item" href="#">追蹤計畫</a></li>
+              <li><a class="dropdown-item" href="#">提案紀錄</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">帳號設定</a></li>
+              <li><a class="dropdown-item" href="#">團隊設定</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><span class="d-inline-block p-1 px-5 border border-danger"
+                    >登出</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="contain">
+      <div class="contain-txt">
         <h2><span>訂閱式專案</span> 提案</h2>
       </div>
       <div class="detail">
@@ -225,7 +287,8 @@
                 required="required"
               />
               <p>
-                請務必提供這個項目，嘖嘖若無法認證您計畫的真實性、可行性等等項目，計畫就會無法上架。
+                該網頁用意是讓專案部審查您計劃的真實性、可行性，並讓贊助者能夠更了解您的計畫，因此請您一定要提供。若沒有官網，相關網頁也可以用媒體報導或是社群媒體連結
+                (如：Meta 粉專) 暫時替代。
               </p>
             </div>
           </div>
@@ -449,6 +512,56 @@ DCC*	2.5%
             </div>
           </div>
         </form>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="sectionFooter">
+      <div class="container">
+        <div class="row mt-3 py-4">
+          <div class="col-12 col-md-3 text-center mb-3">
+            <a class="navbar-brand fs-1 fw-bolder" href="#"
+              ><i class="fa-regular fa-face-smile"></i> 呵呵</a
+            >
+          </div>
+          <div class="col-3 col-md-2 ms-auto">
+            <ul class="question m-0 p-0">
+              <p class="text-dark fw-bolder">幫助</p>
+              <li><a class="d-inline-block py-2" href="#">常見問題</a></li>
+              <li><a class="d-inline-block py-2" href="#">使用條款</a></li>
+              <li><a class="d-inline-block py-2" href="#">隱私權政策</a></li>
+            </ul>
+          </div>
+          <div class="col-3 col-md-2 me-auto">
+            <ul class="aboutUs m-0 p-0">
+              <p class="text-dark fw-bolder">關於</p>
+              <li><a class="d-inline-block py-2" href="#">關於我們</a></li>
+              <li><a class="d-inline-block py-2" href="#">商標資源</a></li>
+              <li>
+                <a class="d-inline-block py-2" href="#">KKFARM 音樂創生</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-5">
+            <div
+              class="iconSocialMedia fs-1 d-flex justify-content-center px-2"
+            >
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-line"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sectionCopyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center my-5">
+            <p>©呵呵股份有限公司</p>
+          </div>
+        </div>
       </div>
     </div>
 
