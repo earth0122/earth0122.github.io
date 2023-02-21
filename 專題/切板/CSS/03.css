@@ -3,6 +3,9 @@
     max-width: 1200px;    
     margin: auto;
 }
+.sectionNav{
+    border-bottom: 1px solid rgb(244,244,245);;
+    }
 .container-txt{    
     width: 100%;
     margin: auto;

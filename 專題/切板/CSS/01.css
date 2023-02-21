@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;    
 }
-.contain{
+.sectionNav{
+border-bottom: 1px solid rgb(244,244,245);;
+}
+.contain{    
     width: 100%;
     max-width: 1200px; 
     margin: auto;   
@@ -12,7 +15,7 @@
 }
 .main-pic>img{
     width: 100%;    
-    margin-top: 50px;  
+    margin-top: 20px;  
 }
 .absolute-item{
     justify-content: center;
@@ -33,6 +36,7 @@ background-color: white;
     display: block;
     font-size: 18px;   
 } 
+
 .pic-txt{
     text-align: center;
     border: 2px solid black;
@@ -40,6 +44,9 @@ background-color: white;
     padding: 30px 50px;    
     border-radius: 10px;
     
+}
+.pic-txt span{
+    padding-top: 25px;
 }
 .pic-txt>h2{      /*關於嘖嘖*/
     font-weight: bolder;
@@ -81,7 +88,7 @@ background-color: white;
     width: 100%;
     /* display: flex; */
     text-align: center;
-    padding-top: 80px;
+    padding-top: 50px;
     
 }
 
