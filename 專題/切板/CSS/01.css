@@ -25,6 +25,10 @@
     display: flex;
     flex-wrap: wrap;       
 }
+.white{
+padding: 20px;
+background-color: white;
+}
  span{                   /*上方圖文字+卡片打勾後文字*/
     display: block;
     font-size: 18px;   
@@ -255,6 +259,13 @@ border-radius: 0.25rem;
 
 .sectionCopyright{
     background-color: var(--bs-gray-100);
+}
+.container a{
+    text-decoration: none;
+    color: rgb(75 85 99)
+}
+.container li{
+    list-style-type: none;
 }
 
  
