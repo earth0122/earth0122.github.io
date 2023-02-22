@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1 v-if="isVisiable">Andy</h1>
+      <!-- <h1 v-if="!isVisiable">Jimmy</h1> -->
+      <h1 v-else>Jimmy</h1>
+
+      <h1 v-show="isVisiable">Bill</h1>
+
+      <button @click="visiableHandle">點我</button>
+    </div>
+
+    <script>
+      const app = new Vue({
+        el: "#app",
+        data: {
+          isVisiable: false,
+        },
+        methods: {
+          visiableHandle() {
+            this.isVisiable = !this.isVisiable;
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

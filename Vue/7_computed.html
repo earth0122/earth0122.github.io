@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <p>{{a}}+{{b}}={{sum}}</p>
+      <p>{{fullName}}</p>
+      <p>{{msg}}</p>
+
+      <hr/>
+
+      <ul>
+        <li v-for="item in cart">
+            品名: {{item.name}} 單價: {{item.price}}
+            數量:<input type="number" v-model="item.amount">
+        </li>
+      </ul>
+      <p>{{total}}</p>
+    </div>
+
+    <script>
+      const app = new Vue({
+        el: "#app",
+        data: {
+          a: 10,
+          b: 20,
+          firstName: "Earth",
+          lastName: "Chen",
+          msg: "",
+          cart:[
+            {name: "牛奶", price : 50 , amount:10},
+            {name: "咖啡", price : 20 , amount:2},
+            {name: "奶茶", price : 10 , amount:3},
+            {name: "奶粉", price : 12 , amount:5},
+            {name: "麥片", price : 15 , amount:1}
+
+        ]
+        },
+        computed: {
+          sum() {
+            return this.a + this.b;
+          },
+          fullName() {
+            return `${this.firstName} ${this.lastName}`;
+          },
+          total(){
+            return this.cart.map(x=>x.price*x.amount).reduce((a,b)=>a+b)
+          }
+        },
+        watch: {
+            fullName: function(){
+                this.msg = "名字變了"
+            }
+        }
+      });
+    </script>
+  </body>
+</html>

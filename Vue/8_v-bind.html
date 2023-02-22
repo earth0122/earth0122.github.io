@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- <img v-bind:src="imgUrl" /> -->
+
+      <input v-bind:type="type" v-model="inputVal" />
+      <button @click="changeType">偷看</button>
+    </div>
+
+    <script>
+      const app = new Vue({
+        el: "#app",
+        data: {
+          imgUrl: "https://picsum.photos/300/200/?random=10",
+          inputVal: "12345678",
+          viewPassword: false,
+        },
+        computed: {
+          type() {
+            return this.viewPassword ? "text" : "password";
+          },
+        },
+        methods: {
+          changeType() {
+            this.viewPassword = !this.viewPassword;
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

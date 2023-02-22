@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  </head>
+  <body>
+    <!-- <div id="app">
+      <h1>...</h1>
+    </div> -->
+
+    <div id="app1">
+      <h1>{{title}}</h1>
+      <h1>{{number}}</h1>
+      <!-- 雙大括號可以做計算 但很不推薦 因為這邊是HTML區段-->
+      <h1>{{isTrue ? "A":"B"}}</h1>
+    </div>
+
+    <div id="app2">
+      <h1>{{title}}</h1>
+    </div>
+
+    <script>
+      //Old
+      //   const h1 = document.querySelector("#app h1");
+      //   h1.innerText = "Build School";
+
+      //Vue
+      const app1 = new Vue({
+        name: "Earth",
+        el: "#app1",
+        data: {
+          title: "Build School",
+          number: 10,
+          isTrue: false,
+        },
+      });
+
+      const app2 = new Vue({
+        name: "app2",
+        el: "#app2",
+        data: {
+          title: "App2",
+        },
+      });
+    </script>
+  </body>
+</html>
