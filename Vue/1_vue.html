@@ -18,6 +18,9 @@
       <h1>{{number}}</h1>
       <!-- 雙大括號可以做計算 但很不推薦 因為這邊是HTML區段-->
       <h1>{{isTrue ? "A":"B"}}</h1>
+      <!-- <h1>{{price}}</h1>-->
+      <h1>{{ price |currency}}</h1>
+      <h1></h1>
     </div>
 
     <div id="app2">
@@ -37,6 +40,12 @@
           title: "Build School",
           number: 10,
           isTrue: false,
+          price: 123456789,
+        },
+        filters: {
+          currency(val) {
+            return `NT$${val.toLocaleString("en-us")}`;
+          },
         },
       });
 
