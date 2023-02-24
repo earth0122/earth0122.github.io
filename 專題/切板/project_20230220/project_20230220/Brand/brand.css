@@ -1,0 +1,122 @@
+/* .header {
+    max-width: 1200px;
+    height: 80px;
+    margin: auto;
+    padding-bottom: 110px;
+}  */
+
+/* 
+body {
+    max-width: 1200px;
+} */
+
+.title {
+    max-width: 1200px;
+    width: 100%;
+    /* border-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #DDDDDD; */
+ 
+}
+img{
+    margin: 20px 0px ;
+}
+
+.context {
+    margin: auto;
+    padding-top: 100px;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.item {
+    /* width: 344px;
+ padding: 10px; */
+ width: 100%;
+ padding-bottom: 50px;
+
+}
+
+.item>h2 {
+    font-size: inherit;
+    font-weight: inherit;
+    border-width: 1px;
+    border-bottom-style: solid;
+    border-color: #DDDDDD;
+    width: 314px;
+}
+
+button{
+    border-radius: 4px;
+    padding: 0.75rem 1.5rem;
+    background-color: transparent; 
+    border: 1px solid;
+}
+/* i{
+    font-family: 'Material Icons';
+} */
+@media screen and (min-width:1024px) {   
+    .context {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: space-between;
+    }
+ }
+
+ .sectionNav .line{
+    width: 1px;
+    height: 30px;
+    background-color: var(--bs-gray-400); 
+    margin-left: 10px;
+}
+
+.sectionFooter{
+    background-color: var(--bs-gray-100); 
+    border-top: 1px solid lightgray; 
+    border-bottom: 1px solid lightgray;
+}
+
+.sectionFooter .container ul a:hover {
+    color: var(--bs-gray-600);
+}
+
+.iconSocialMedia {
+    box-sizing: border-box;
+}
+
+.iconSocialMedia a {
+    color: var(--bs-gray-600);
+    padding: 0 10px;
+}
+
+.sectionFooter .iconSocialMedia a:hover .fa-facebook {
+    color: #1877f2;
+}
+
+.sectionFooter .iconSocialMedia a:hover .fa-twitter {
+    color: #1da1f2;
+}
+
+.sectionFooter .iconSocialMedia a:hover .fa-instagram {
+    color: #000;
+}
+
+.sectionFooter .iconSocialMedia a:hover .fa-youtube {
+    color: #dc2626;
+}
+
+.sectionFooter .iconSocialMedia a:hover .fa-line {
+    color: #00c300;
+}
+
+.sectionCopyright{
+    background-color: var(--bs-gray-100);
+}
+
+@media screen and (min-width <=768px) {
+    .sectionFooter .navbar-brand {
+        color: #00c300;
+    }
+}

@@ -1,0 +1,13 @@
+﻿div#columnheader div {
+    border-radius: 0px !important;
+    background-color: lightgray !important;
+    text-align: center;
+    border: 1px solid black;
+}
+
+div#columnheader div, .row div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+

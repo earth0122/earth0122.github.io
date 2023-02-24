@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewData["Title"] = "SimpleCard";
+}
+
+<div class="h-100 p-3 bg-info rounded-3">
+    <h2>人物牌卡(簡單型)</h2>
+</div>
+
+<div class="row">
+    <!--以下連續呼叫Partial View八次-->
+    <partial name="_SimpleCardPartial" />
+    <partial name="_SimpleCardPartial" />
+    <partial name="_SimpleCardPartial" />
+    <partial name="_SimpleCardPartial" />
+    @await Html.PartialAsync("_SimpleCardPartial")
+    @await Html.PartialAsync("_SimpleCardPartial")
+    @await Html.PartialAsync("_SimpleCardPartial")
+    @await Html.PartialAsync("_SimpleCardPartial")
+
+    <!--等同以下用迴圈執行八次-->
+    @*@for (int i = 0; i < 8; i++)
+        {
+            @await Html.PartialAsync("_SimpleCardPartial")
+        }*@
+
+</div>
+
+@section topCSS{
+    <style>
+        .card {
+            border: 1px solid black;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .headshot {
+            overflow: hidden;
+        }
+
+        .card-title {
+            color: white;
+            background-color: black;
+            display: inline-block;
+            border-radius: 5px;
+            padding: 5px 15px 5px 15px;
+        }
+
+        .card-body {
+            background-color: #ffbf67;
+        }
+
+        .card:hover {
+            box-shadow: 8px 8px 15px #808080;
+            transform: translate(5px,5px);
+        }
+
+        .card:hover img {
+            transform: scale(1.2);
+            transition: transform 0.5s;
+        }
+
+        .card:not(:hover) img {
+            transform: scale(1,1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover .card-body {
+            background-color: lightgreen !important;
+        }
+
+        .card:hover .card-title {
+            color: black;
+            background-color: white !important;
+        }
+    </style>
+}

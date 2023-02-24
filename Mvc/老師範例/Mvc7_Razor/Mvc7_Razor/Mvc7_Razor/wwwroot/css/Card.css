@@ -1,0 +1,45 @@
+﻿.card {
+    border: 1px solid black;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.headshot {
+    overflow: hidden;
+}
+
+.card-title {
+    color: white;
+    background-color: black;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+}
+
+.card-body {
+    background-color: #ffbf67;
+}
+
+.card:hover {
+    box-shadow: 8px 8px 15px #808080;
+    transform: translate(5px,5px);
+}
+
+.card:hover img {
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+.card:not(:hover) img {
+    transform: scale(1,1);
+    transition: transform 0.3s;
+}
+
+.card:hover .card-body {
+    background-color: lightgreen !important;
+}
+
+.card:hover .card-title {
+    color: black;
+    background-color: white !important;
+}

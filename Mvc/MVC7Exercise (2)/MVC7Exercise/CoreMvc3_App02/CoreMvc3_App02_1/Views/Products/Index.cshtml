@@ -1,0 +1,16 @@
+﻿@model Product //@'m'odel接收的模型
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>產品首頁</h1>
+
+<p>產品編號: @Model.Id</p>
+
+<p>產品名稱: @Model.Name</p>
+
+<p>產品價格: @Model.Price</p>
+
+@*拖拉檔案即可, ~/ -> 代表 wwwroot路徑*@
+<img src="~/images/ssd512gb.jpg" />

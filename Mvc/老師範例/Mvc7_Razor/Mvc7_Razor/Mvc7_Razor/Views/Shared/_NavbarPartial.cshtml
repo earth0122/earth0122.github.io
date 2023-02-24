@@ -1,0 +1,70 @@
+﻿<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <div class="container-fluid">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Razor</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                </li>
+                &emsp;
+                <li class="nav-item dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Razor控制器控制器
+                    </button>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="~/Razor/RazorRules">RazorRules</a>
+                        <a class="dropdown-item" href="~/Razor/RazorStatement">RazorStatement</a>
+                        <a class="dropdown-item" href="~/Razor/RazorFunctions">Functions</a>
+                        <a class="dropdown-item" href="~/Razor/InheritsRazorPage">Inherits</a>
+                        <a class="dropdown-item" href="~/Razor/RazorTemplated">RazorTemplated</a>
+                    </ul>
+                </li>
+                &emsp;
+                <li class="nav-item dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        RazorScores控制器
+                    </button>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="~/RazorScores/Scores">Scores</a>
+                        <a class="dropdown-item" href="~/RazorScores/ScoresRazor">ScoresRazor</a>
+                        <a class="dropdown-item" href="~/RazorScores/ScoresRazorPure">ScoresRazorPure</a>
+                    </ul>
+                </li>
+                &emsp;
+                <li class="nav-item dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        PartialView控制器
+                    </button>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="~/PartialView/SimpleCard">SimpleCard</a>
+                        <a class="dropdown-item" href="~/PartialView/CardList">CardList</a>
+                        <a class="dropdown-item" href="~/PartialView/CardListDB">CardList資料庫</a>
+                        <a class="dropdown-item" href="~/PartialView/SeveralWays">Partial View幾種呼叫方式</a>
+                        <a class="dropdown-item" href="~/PartialView/PassViewData2PartialView">View傳遞ViewData到Partial View的幾種語法</a>
+                        <a class="dropdown-item" href="~/PartialView/PassModel2PartialView">View傳遞Model到Partial View的幾種語法</a>
+                    </ul>
+                </li>
+                &emsp;
+                <li class="nav-item dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Vc控制器
+                    </button>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="~/Vc/ScoreViewComponents">ScoreViewComponents</a>
+                        <a class="dropdown-item" href="~/Vc/PvCallVc">PV Call VC</a>                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,128 @@
+﻿@model IEnumerable<Student>
+
+@{
+    ViewData["Title"] = "ScoresRazor";
+    int topId = Convert.ToInt32(ViewData["TopId"]);
+}
+
+<div class="h-100 p-3  text-dark bg-info rounded-3">
+    <h2>學生期中考成績</h2>
+    <P>此為期中考試國文、英文、數學之成績列表。以下要用Razor語法來執行判斷:</P>
+    <ol>
+        <li>如果單科成績低於60分,表示不及格,以紅色顯示</li>
+        <li>如果單科成績高於95分,表示優秀,以藍色顯示</li>
+        <li>如果總成績第一名者,以黃色顯示</li>
+    </ol>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead class="thead-dark text-center text-white bg-dark">
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.Id)</th>
+            <th>@Html.DisplayNameFor(m => m.Name)</th>
+            <th>@Html.DisplayNameFor(m => m.Chinese)</th>
+            <th>@Html.DisplayNameFor(m => m.English)</th>
+            <th>@Html.DisplayNameFor(m => m.Math)</th>
+            <th>@Html.DisplayNameFor(m => m.Total)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var m in Model)
+        {
+            <tr class="text-center">
+                <td>@Html.DisplayFor(x => m.Id)</td>
+                <td>@Html.DisplayFor(x => m.Name)</td>
+
+                <!--中文-->
+                @if (m.Chinese < 60)
+                {
+                    <td class="poor">@Html.DisplayFor(x => m.Chinese)</td>
+                }
+                else if (m.Chinese >= 95)
+                {
+                    <td class="excellent">@Html.DisplayFor(x => m.Chinese)</td>
+                }
+                else
+                {
+                    <td>@Html.DisplayFor(x => m.Chinese)</td>
+                }
+
+                <!--英文-->
+                @if (m.English < 60)
+                {
+                    <td class="poor">@Html.DisplayFor(x => m.English)</td>
+                }
+                else if (m.English >= 95)
+                {
+                    <td class="excellent">@Html.DisplayFor(x => m.English)</td>
+                }
+                else
+                {
+                    <td>@Html.DisplayFor(x => m.English)</td>
+                }
+
+                <!--數學-->
+                @if (m.Math < 60)
+                {
+                    <td class="poor">@Html.DisplayFor(x => m.Math)</td>
+                }
+                else if (m.Math >= 95)
+                {
+                    <td class="excellent">@Html.DisplayFor(x => m.Math)</td>
+                }
+                else
+                {
+                    <td>@Html.DisplayFor(x => m.Math)</td>
+                }
+
+                <!--顯示總分-->
+                @if (m.Id == topId)
+                {
+                    <!--總分最高者-->
+                    <td class="top1">@Html.DisplayFor(x => m.Total)</td>
+                }
+                else
+                {
+                    <td>@Html.DisplayFor(x => m.Total)</td>
+                }
+                <td>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+@section topCSS{
+    <style type="text/css">
+        /*設定Table資料列Hover時的光棒效果*/
+        .table > tbody > tr:hover {
+            background-color: antiquewhite !important;
+        }
+
+        /*成績不及格之CSS*/
+        .poor {
+            color: white !important;
+            background-color: red !important;
+        }
+
+        /*成績優秀之CSS*/
+        .excellent {
+            background-color: aqua !important;
+        }
+
+        /*總分第一名之CSS*/
+        .top1 {
+            background-color: yellow !important;
+            border: 2px dashed black !important;
+            font-weight: 900;
+            font-size: 1.2em;
+        }
+
+        .top1::after {
+            content: ' (總分排名第一)';
+        }
+    </style>
+}
+

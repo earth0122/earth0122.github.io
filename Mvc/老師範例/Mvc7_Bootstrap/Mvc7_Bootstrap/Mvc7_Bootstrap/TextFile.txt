@@ -1,0 +1,8 @@
+﻿<style type="text/css">
+    /*設定Table欄位標題顏色*/
+    table > thead > tr > th {
+        color: white;
+        background-color: black !important;
+        text-align: center;
+    }
+</style>

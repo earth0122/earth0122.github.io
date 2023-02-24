@@ -1,0 +1,90 @@
+﻿@{
+    ViewData["Title"] = "Columns欄位組合";
+
+    Layout = "~/Views/Shared/_LayoutFluid.cshtml";
+}
+
+<div class="h-100 p-3 text-white bg-dark rounded-3 mb-4">
+    <h2>Columns欄位組合自由配，一個row中可由數個不同寬度的欄位組成</h2>
+</div>
+
+<div class="container-fluid">
+    <partial name="_ColumnHeaderPartial" />
+
+    <div class="row">
+        <div class="col-lg-1">.col-lg-1</div>
+        <div class="col-lg-3">.col-lg-3</div>
+        <div class="col-lg-4">.col-lg-4</div>
+        <div class="col-lg-2">.col-lg-2</div>
+        <div class="col-lg-2">.col-lg-2</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2">.col-md-2</div>
+        <div class="col-md-2">.col-md-2</div>
+        <div class="col-md-2">.col-md-2</div>
+        <div class="col-md-2">.col-md-2</div>
+        <div class="col-md-2">.col-md-2</div>
+        <div class="col-md-2">.col-md-2</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">.col-md-3</div>
+        <div class="col-md-3">.col-md-3</div>
+        <div class="col-md-3">.col-md-3</div>
+        <div class="col-md-3">.col-md-3</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-5">.col-md-5</div>
+        <div class="col-md-2">.col-md-2</div>
+        <div class="col-md-5">.col-md-5</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">.col-md-6</div>
+        <div class="col-md-6">.col-md-6</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-7">.col-md-7</div>
+        <div class="col-md-2">.col-md-2</div>
+        <div class="col-md-3">.col-md-3</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">.col-md-8</div>
+        <div class="col-md-4">.col-md-4</div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-9">.col-lg-9</div>
+        <div class="col-lg-2">.col-lg-2</div>
+        <div class="col-lg-1">.col-lg-1</div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-10">.col-lg-10</div>
+        <div class="col-lg-2">.col-lg-2</div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-11">.col-lg-11</div>
+        <div class="col-lg-1">.col-lg-1</div>
+    </div>
+
+</div>
+
+
+
+@section topCSS{
+
+    <link href="~/css/GridColumns.css" rel="stylesheet" />
+    <link href="~/css/ColumnStyle.css" rel="stylesheet" />
+}

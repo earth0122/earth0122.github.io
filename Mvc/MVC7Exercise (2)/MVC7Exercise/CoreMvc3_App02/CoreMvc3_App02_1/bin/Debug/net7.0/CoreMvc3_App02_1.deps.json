@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "CoreMvc3_App02_1/1.0.0": {
+        "runtime": {
+          "CoreMvc3_App02_1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CoreMvc3_App02_1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

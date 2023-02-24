@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewData["Title"] = "PassViewData2PartialView";
+}
+
+<div class="h-100 p-3 bg-info rounded-3">
+    <h1>View傳遞ViewData到Partial View之語法</h1>
+</div>
+
+<div class="alert bg-success">非同步方式(建議)</div>
+
+<h1><span class="badge bg-info">Partial Tag Helpers</span></h1>
+<partial name="_MediaPartial" view-data="ViewData" />
+
+<h1><span class="badge bg-info">PartialAsync()</span></h1>
+@await Html.PartialAsync("_MediaPartial", ViewData)
+
+<h1><span class="badge bg-info">RenderPartialAsync()</span></h1>
+@{ await Html.RenderPartialAsync("_MediaPartial", ViewData); }
+
+<div class="alert bg-danger">同步方式(不建議,容易發生deadlock死結)</div>
+<h1><span class="badge bg-info">Partial()</span></h1>
+@Html.Partial("_MediaPartial", ViewData)
+
+<h1><span class="badge bg-info">RenderPartial()</span></h1>
+@{ Html.RenderPartial("_MediaPartial", ViewData); }
+
+
+@section topCSS{
+    <style>
+        div.alert {
+            background-color: #d9edfd;
+            font-size: larger;
+            font-weight: 900;
+            border: 2px dashed black;
+        }
+    </style>
+}

@@ -1,0 +1,34 @@
+﻿/*設定Table欄位標題顏色*/
+th {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+/*設定Table資料列Hover時的光棒效果*/
+.table > tbody > tr:hover {
+    background-color: antiquewhite !important;
+}
+
+/*成績不及格之CSS*/
+.poor {
+    color: white !important;
+    background-color: red !important;
+}
+
+/*成績優秀之CSS*/
+.excellent {
+    background-color: aqua !important;
+}
+
+/*總分第一名之CSS*/
+.top1 {
+    background-color: yellow !important;
+    border: 2px dashed black !important;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+.top1::after {
+    content: ' (總分排名第一)';
+}

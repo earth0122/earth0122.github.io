@@ -1,0 +1,68 @@
+﻿@inject Microsoft.Extensions.Configuration.IConfiguration config
+
+@{
+    ViewData["Title"] = "RazorFunctions";
+}
+
+<div class="h-100 p-3 bg-success rounded-3">
+    <h1>用@functions宣告Fileds, Properties & Methods</h1>
+</div>
+
+@functions
+{
+
+    public string Name = "聖殿祭司";
+
+    public string RealName { get; } = "奚江華";
+
+    public string GetPhoneNumber()
+    {
+        return "0925-123-123";
+    }
+
+    public string BookTitle()
+    {
+        return @config["Book:Title"] ?? "查無資料";
+    }
+}
+
+<h2>書名 : @BookTitle()</h2>
+<p>筆名 : @Name</p>
+<p>姓名 : @RealName</p>
+<p>電話 : @GetPhoneNumber()</p>
+
+<hr />
+
+
+@functions{
+
+    private void PersonInfo()
+    {
+        <div>
+            <h1>@Name</h1>
+            <p>姓名:@RealName , 電話: @GetPhoneNumber()</p>
+        </div>
+    }
+
+    private async Task RenderCard(string name, string brief, string photo)
+    {
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+                <div class="headshot">
+                    <img class="card-img-top" src="~/images/@photo" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">@name</h5>
+                    <p class="card-text">@brief</p>
+                </div>
+            </div>
+        </div>
+    }
+}
+
+
+@{
+    PersonInfo();
+
+    await RenderCard("星際大戰", "維達元帥", "Vader.jpg");
+}

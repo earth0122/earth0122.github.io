@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "ErrorMessage";
+}
+
+<div class="h-100 p-3 text-white bg-dark rounded-3">
+    <h2>以TempData跨Controller/Actions傳遞資料</h2>
+</div>
+
+
+<h2>訊息摘要 : </h2>
+<ul>
+    <li>使用者 : @TempData["UserName"]</li>
+    <li>時  間 : @TempData["Time"]</li>
+    <li>訊  息 : @TempData["ErrorMessage"]</li>
+    <li>訊  息 : @TempData.Peek("Message")</li>   
+</ul>

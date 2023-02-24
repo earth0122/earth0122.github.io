@@ -1,0 +1,185 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Mvc7_Razor
+build_property.RootNamespace = Mvc7_Razor
+build_property.ProjectDir = C:\Users\tommy\Desktop\電腦\earth0122.github.io\Mvc\老師範例\Mvc7_Razor\Mvc7_Razor\Mvc7_Razor\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\tommy\Desktop\電腦\earth0122.github.io\Mvc\老師範例\Mvc7_Razor\Mvc7_Razor\Mvc7_Razor
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/CRUD/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JVRFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/CRUD/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JVRFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/CRUD/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JVRFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/CRUD/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JVRFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/CRUD/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JVRFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/Labs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFic1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/Labs/RazorToCSharp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFic1xSYXpvclRvQ1NoYXJwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/PartialView/CardList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFZpZXdcQ2FyZExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/PartialView/CardListDB.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFZpZXdcQ2FyZExpc3REQi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/PartialView/PassModel2PartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFZpZXdcUGFzc01vZGVsMlBhcnRpYWxWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/PartialView/PassViewData2PartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFZpZXdcUGFzc1ZpZXdEYXRhMlBhcnRpYWxWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/PartialView/SeveralWays.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFZpZXdcU2V2ZXJhbFdheXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/PartialView/SimpleCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFZpZXdcU2ltcGxlQ2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/RazorScores/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF6b3JTY29yZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/RazorScores/Scores.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF6b3JTY29yZXNcU2NvcmVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/RazorScores/ScoresRazor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF6b3JTY29yZXNcU2NvcmVzUmF6b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/RazorScores/ScoresRazorPure.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF6b3JTY29yZXNcU2NvcmVzUmF6b3JQdXJlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/Razor/InheritsRazorPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF6b3JcSW5oZXJpdHNSYXpvclBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/Razor/MakeRequest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF6b3JcTWFrZVJlcXVlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/Razor/RazorFunctions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF6b3JcUmF6b3JGdW5jdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/Razor/RazorRules.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF6b3JcUmF6b3JSdWxlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/Razor/RazorStatement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF6b3JcUmF6b3JTdGF0ZW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/Razor/RazorTemplated.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF6b3JcUmF6b3JUZW1wbGF0ZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/Shared/_CardListPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXJkTGlzdFBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/Shared/_CardPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXJkUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/Shared/_MediaPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NZWRpYVBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/Shared/_NavbarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZiYXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/Shared/_PortFunctionPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Qb3J0RnVuY3Rpb25QYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/Shared/_SimpleCardPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaW1wbGVDYXJkUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/Shared/_TestPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UZXN0UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/Shared/_VcPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WY1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/Tuple/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHVwbGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/Tuple/TupleTest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHVwbGVcVHVwbGVUZXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/Vc/PvCallVc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmNcUHZDYWxsVmMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/Vc/ScoreViewComponents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmNcU2NvcmVWaWV3Q29tcG9uZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tommy/Desktop/電腦/earth0122.github.io/Mvc/老師範例/Mvc7_Razor/Mvc7_Razor/Mvc7_Razor/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-kt11tf8b5j

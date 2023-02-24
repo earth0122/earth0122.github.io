@@ -1,0 +1,173 @@
+.sectionNav .line{
+    width: 1px;
+    height: 30px;
+    background-color: var(--bs-gray-400); 
+    margin-left: 10px;
+}
+
+.sectionFooter{
+    background-color: var(--bs-gray-100); 
+    border-top: 1px solid lightgray; 
+    border-bottom: 1px solid lightgray;
+}
+
+.sectionFooter .container ul a:hover {
+    color: var(--bs-gray-600);
+}
+
+.iconSocialMedia {
+    box-sizing: border-box;
+}
+
+.iconSocialMedia a {
+    color: var(--bs-gray-600);
+    padding: 0 10px;
+}
+
+.sectionFooter .iconSocialMedia a:hover .fa-facebook {
+    color: #1877f2;
+}
+
+.sectionFooter .iconSocialMedia a:hover .fa-twitter {
+    color: #1da1f2;
+}
+
+.sectionFooter .iconSocialMedia a:hover .fa-instagram {
+    color: #000;
+}
+
+.sectionFooter .iconSocialMedia a:hover .fa-youtube {
+    color: #dc2626;
+}
+
+.sectionFooter .iconSocialMedia a:hover .fa-line {
+    color: #00c300;
+}
+
+.sectionCopyright{
+    background-color: var(--bs-gray-100);
+}
+
+@media screen and (min-width <=768px) {
+    .sectionFooter .navbar-brand {
+        color: #00c300;
+    }
+}
+
+
+
+.header {
+    max-width: 1200px;
+    height: 80px;
+    margin: auto;
+    padding-bottom: 110px;
+}
+
+/* 
+body {
+    max-width: 1200px;
+} */
+
+.title {
+    background-color: rgb(244 244 245);
+    height: 500px;
+    /* display: flex;
+    justify-content: center; */
+}
+
+h2 {
+    letter-spacing: 2px;
+    /* display: inline-block; */
+    margin: auto;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.title>.line {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #DDDDDD;
+    /* border-color: aqua; */
+    margin-bottom: 25px;
+    max-width: 150px;
+    /* display: flex; */
+    justify-content: center;
+    margin: auto;
+}
+
+span {
+    display: inline;
+    letter-spacing: 0px;
+    color: #E78E50;
+}
+
+.title>h3 {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 17px;
+    letter-spacing: .3em;
+}
+
+.title>p {
+
+    max-width: 520px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.context {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding-top: 64px;
+    padding-left: 290px;
+    height: 600px;
+    padding-bottom: 100px;
+
+}
+
+.left {
+    max-width: 375px;
+    margin-right: 30px;
+    background-color: rgb(244 244 245);
+    padding: 2.5rem;
+
+}
+
+.right {
+    max-width: 375px;
+    margin-left: 30px;
+    background-color: rgb(244 244 245);
+    padding: 2rem;
+    padding: 2.5rem;
+}
+
+.item>h3 {
+    font-size: 1.50rem;
+    margin-bottom: 20px;
+}
+
+.item>p {
+    letter-spacing: 2px;
+}
+
+.memo {
+    height: 600px;
+    border-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #DDDDDD;
+    margin-bottom: 80px;
+}
+
+.memo>.right {
+    height: 600px;
+    width: 800px;
+}

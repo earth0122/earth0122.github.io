@@ -1,0 +1,155 @@
+﻿<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <div class="container-fluid">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Pillars</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                </li>
+                &emsp;
+                <li class="nav-item dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        PassData控制器
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="~/PassData/PassViewData">PassViewData動作方法</a>
+                        <a class="dropdown-item" href="~/PassData/ViewDataAttribute">ViewDataAttribute動作方法</a>
+                        <a class="dropdown-item" href="~/PassData/PassViewBag">PassViewBag動作方法</a>
+                        <a class="dropdown-item" href="~/PassData/PassModel">PassModel動作方法</a>
+                        <a class="dropdown-item" href="~/PassData/PetShop">PetShop動作方法</a>
+                        <a class="dropdown-item" href="~/PassData/PassTempData">PassTempData動作方法</a>
+                        <a class="dropdown-item" href="~/PassData/StronglyTypedView">StronglyTypedView動作方法</a>
+                        <a class="dropdown-item" href="~/PassData/StronglyTypedViewList">StronglyTypedViewList動作方法</a>
+                    </div>
+                </li>
+                &emsp;
+                <li class="nav-item dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" ria-expanded="false">
+                        Employees控制器
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="~/Employees/EmployeeList">EmployeeList動作方法</a>
+                    </div>
+                </li>
+                &emsp;
+                <li class="nav-item dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown"  aria-expanded="false">
+                        Friends控制器
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="~/Friends/Index">Index動作方法</a>
+                    </div>
+                </li>
+                &emsp;
+                <li class="nav-item dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown"  aria-expanded="false">
+                        Products控制器
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="~/Products/Index">Index動作方法</a>
+                        <a class="dropdown-item" href="~/Products/ProductList">ProductList動作方法</a>
+                        <a class="dropdown-item" href="~/Products/ProductInfo">ProductInfo動作方法</a>
+                        <a class="dropdown-item" href="~/Products/getStocks">getStocks動作方法</a>
+                    </div>
+                </li>
+                &emsp;
+                <li class="nav-item dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
+                        Results控制器
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="~/Results/Index">Index動作方法</a>
+                        <a class="dropdown-item" href="~/Results/Index2">Index2動作方法</a>
+                        <a class="dropdown-item" href="~/Results/Index3">Index3動作方法</a>
+                        <a class="dropdown-item" href="~/Results/Index4">Index4動作方法</a>
+                        <a class="dropdown-item" href="~/Results/FriendsList">FriendsList動作方法</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="~/Results/getPartialView">getPartialView動作方法</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="~/Results/About">About動作方法</a>
+                        <a class="dropdown-item" href="~/Results/AboutName">AboutName動作方法</a>
+                        <a class="dropdown-item" href="~/Results/getInfomation">getInfomation動作方法</a>
+                        <a class="dropdown-item" href="~/Results/AboutMe">AboutMe動作方法</a>
+                        <a class="dropdown-item" href="~/Results/JsPage">JsPage動作方法</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="~/Results/Empty">Empty動作方法</a>
+                        <a class="dropdown-item" href="~/Results/Nothing">Nothing動作方法</a>
+                        <a class="dropdown-item" href="~/Results/DoNothing">DoNothing動作方法</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="~/Results/JsonFriends">JsonFriends動作方法</a>
+                    </div>
+                </li>
+                &emsp;
+                <li class="nav-item dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
+                        Results控制器
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="~/Results/FileResult">FileResult動作方法</a>
+                        <a class="dropdown-item" href="~/Results/FileImage">FileImage動作方法</a>
+                        <a class="dropdown-item" href="~/Results/FileContentResult">FileContentResult動作方法</a>
+                        <a class="dropdown-item" href="~/Results/ByteArrayContent">ByteArrayContent動作方法</a>
+                        <a class="dropdown-item" href="~/Results/FileStream">FileStream動作方法</a>
+                        <a class="dropdown-item" href="~/Results/PhysicalFileResult">PhysicalFileResult動作方法</a>
+                        <a class="dropdown-item" href="~/Results/VirtualFileResult">VirtualFileResult動作方法</a>
+                        <div class="dropdown-divider">StatusCodeResult</div>
+                        <a class="dropdown-item" href="~/Results/OkResult">OkResult動作方法</a>
+                        <a class="dropdown-item" href="~/Results/NoContentResult">NoContentResult動作方法</a>
+                        <a class="dropdown-item" href="~/Results/BadRequestResult">BadRequestResult動作方法</a>
+                        <a class="dropdown-item" href="~/Results/StatusCodeResult">StatusCodeResult動作方法</a>
+                        <div class="dropdown-divider">ObjectResult</div>
+                        <a class="dropdown-item" href="~/Results/ObjectResult1">ObjectResult動作方法</a>
+                        <a class="dropdown-item" href="~/Results/OkObjectResult1">OkObjectResult動作方法</a>
+                        <a class="dropdown-item" href="~/Results/CreatedResult1">CreateResult動作方法</a>
+                        <a class="dropdown-item" href="~/Results/CreatedAtActionResult1">CreatedAtActionResult動作方法</a>
+                        <a class="dropdown-item" href="~/Results/CreatedAtRouteResult1">CreatedAtRouteResult動作方法</a>
+                        <a class="dropdown-item" href="~/Results/AcceptedResult1">AcceptedResult動作方法</a>
+                        <a class="dropdown-item" href="~/Results/AcceptedAtActionResult1">AcceptedAtActionResult動作方法</a>
+                        <a class="dropdown-item" href="~/Results/AcceptedAtRouteResult1">AcceptedAtRouteResult動作方法</a>
+                        <a class="dropdown-item" href="~/Results/ConflictObjectResult1">ConflictObjectResult動作方法</a>
+                        <a class="dropdown-item" href="~/Results/UnprocessableEntityObjectResult1">UnprocessableEntityObjectResult動作方法</a>
+                    </div>
+                </li>
+
+                &emsp;
+                <li class="nav-item dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-expanded="false">
+                        Results控制器
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="~/Results/TraditionalRedirect">TraditionalRedirect動作方法</a>
+                        <a class="dropdown-item" href="~/Results/RedirectTemp">RedirectTemp動作方法</a>
+                        <a class="dropdown-item" href="~/Results/RedirectToNewDomain">RedirectToNewDomain動作方法</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="~/Results/RedirectToActionResult1">RedirectToActionResult動作方法</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="~/Results/RedirectToRouteResult1">RedirectToRouteResult動作方法</a>
+                        <a class="dropdown-item" href="~/Results/RedirectToRouteResult2">RedirectToBlog2動作方法</a>
+                        <a class="dropdown-item" href="~/Results/RedirectToRouteResult3">RedirectToBlog3動作方法</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="~/Results/LocalRedirectResult1">LocalRedirectResult動作方法</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="~/Results/ForbidResult">ForbidResult動作方法</a>
+                    </div>
+                </li>
+                &emsp;
+                <li class="nav-item dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-expanded="false">
+                        Test控制器
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="~/Test/Index">Index動作方法</a>
+                        <a class="dropdown-item" href="~/Test/arbitrary">Arbitrary 動作方法</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

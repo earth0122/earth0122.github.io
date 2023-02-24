@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "PassViewBag";
+
+    var emps = (List<Employee>)ViewBag.EmpsList;
+}
+
+<div class="h-100 p-3 text-white bg-dark rounded-3">
+    <h2>以ViewBag傳遞資料</h2>
+</div>
+
+
+<ul>
+    <li>Name : @ViewBag.Nickname</li>
+    <li>Height : @ViewBag.Height</li>
+    <li>Weight : @ViewBag.Weight</li>
+    <li>Married : @ViewBag.Married</li>
+</ul>
+
+<hr />
+
+<ul>
+    @foreach (Employee emp in emps)
+    {
+        <li>@emp.Id, @emp.Name, @emp.Phone, @emp.Email</li>
+    }
+</ul>

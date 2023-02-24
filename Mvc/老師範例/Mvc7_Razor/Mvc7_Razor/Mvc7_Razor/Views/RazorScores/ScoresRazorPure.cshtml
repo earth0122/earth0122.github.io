@@ -1,0 +1,90 @@
+﻿@model IEnumerable<Student>
+
+@{
+    ViewBag.Title = "學生期中考成績";
+
+    var Students = (List<Student>)Model;
+
+    //計算所有學生Total總分欄位
+    Students.ForEach(s => s.Total = s.Chinese + s.English + s.Math);
+
+    //找出總分最高者Id
+
+    var topId = Students.OrderByDescending(s => s.Total)
+                        .Select(s => s.Id)
+                        .FirstOrDefault();
+
+
+    //判斷分數等級而回傳樣式 - C# 7.0 - switch match expression
+    string ScoreLevel(int score)
+    {
+        switch (score)
+        {
+            case int s when s < 60 :
+                return "poor";
+            case int s when s >= 95 :
+                return "excellent";
+            default:
+                return "";
+        }
+    }
+
+    //判斷分數等級而回傳樣式 - C# 8.0 - switch expression
+    string ScoreRating(int score) =>
+        score switch
+        {
+            int s when s < 60  => "poor",
+            int s when s >= 95 => "excellent",
+            _ => ""
+        };
+}
+
+<div class="h-100 p-3 text-dark bg-info rounded-3">
+    <h2>學生期中考成績</h2>
+    <P>此為期中考試國文、英文、數學之成績列表。以下要用Razor語法來執行判斷:</P>
+    <ol>
+        <li>如果單科成績低於60分,表示不及格,以紅色顯示</li>
+        <li>如果單科成績高於95分,表示優秀,以藍色顯示</li>
+        <li>如果總成績第一名者,以黃色顯示</li>
+    </ol>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead class="thead-dark text-center text-white bg-dark">
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.Id)</th>
+            <th>@Html.DisplayNameFor(m => m.Name)</th>
+            <th>@Html.DisplayNameFor(m => m.Chinese)</th>
+            <th>@Html.DisplayNameFor(m => m.English)</th>
+            <th>@Html.DisplayNameFor(m => m.Math)</th>
+            <th>@Html.DisplayNameFor(m => m.Total)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var m in Students)
+        {
+        <tr>
+            <td>@Html.DisplayFor(x => m.Id)</td>
+            <td>@Html.DisplayFor(x => m.Name)</td>
+
+            <!--中文-->
+            <td class="@(ScoreLevel(m.Chinese))">@Html.DisplayFor(x => m.Chinese)</td>
+
+            <!--英文-->
+            <td class="@(ScoreRating(m.English))">@Html.DisplayFor(x => m.English)</td>
+
+            <!--數學-->
+            <td class="@(ScoreRating(m.Math))">@Html.DisplayFor(x => m.Math)</td>
+
+            <!--總分最高者-->
+            <td class="@(m.Id==topId?"top1":"")">@Html.DisplayFor(x => m.Total)</td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+
+@section topCSS{
+    <link href="~/css/scorestyle.css" rel="stylesheet" />
+}
+

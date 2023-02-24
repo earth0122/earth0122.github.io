@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "PassViewData";
+
+    var emps = (List<Employee>)ViewData["Employees"];
+}
+
+<div class="h-100 p-3 text-white bg-dark rounded-3">
+    <h2>以ViewData傳遞資料</h2>
+</div>
+
+
+<ul>
+    <li>Name : @ViewData["Name"]</li>
+    <li>Age : @((int)ViewData["Age"] + 1)</li>
+    <li>Single : @ViewData["Single"]</li>
+</ul>
+
+<hr />
+<ul>
+    @foreach (var item in ViewData)
+    {
+        <li>@item.Key, @item.Value</li>
+    }
+</ul>
+
+<hr />
+<ul>
+    @foreach (Employee emp in emps)
+    {
+        <li>@emp.Id, @emp.Name, @emp.Phone, @emp.Email</li>
+    }
+</ul>

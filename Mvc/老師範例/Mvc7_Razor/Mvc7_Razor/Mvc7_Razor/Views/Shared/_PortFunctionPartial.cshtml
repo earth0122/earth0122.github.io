@@ -1,0 +1,47 @@
+﻿@{
+    var portNumber = (int)ViewData["PortNumber"];
+
+    /*
+    var result = "";
+
+    switch (portNumber)
+    {
+        case 80:
+            result = $"{portNumber}, 這是HTTP使用的Port號碼";
+            break;
+        case 110:
+            result = $"{portNumber}, 這是POP3使用的Port號碼";
+            break;
+        case 143:
+            result = $"{portNumber}, 這是IMAP使用的Port號碼";
+            break;
+        case 443:
+            result = $"{portNumber}, 這是HTTPS使用的Port號碼";
+            break;
+        case 587:
+            result = $"{portNumber}, 這是SMTP使用的Port號碼";
+            break;
+        default:
+            result = $"{portNumber}, 這裡沒有記載這個Port號碼的用途";
+            break;
+    }
+    */
+
+    string Port(int port) =>
+        port switch
+        {
+           80 => $"{port}, 這是HTTP使用的Port號碼",
+           110 => $"{port}, 這是POP3使用的Port號碼",
+           143 => $"{port}, 這是IMAP使用的Port號碼",
+           443 => $"{port}, 這是HTTPS使用的Port號碼",
+           587 => $"{port}, 這是SMTP使用的Port號碼",
+           _ => $"{port}, 這裡沒有記載這個Port號碼的用途"
+        };
+}
+
+@*<p>@result</p>*@
+
+<p>@Port(portNumber)</p>
+
+
+

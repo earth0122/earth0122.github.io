@@ -1,0 +1,56 @@
+{
+  "profiles": {
+    //區塊1.使用http
+    "http": {
+      "commandName": "Project",
+      //開啟瀏覽器
+      "launchBrowser": true,
+      "environmentVariables": {
+        //Development開發者
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      //網址
+      "applicationUrl": "http://localhost:5017"
+    },
+    //區塊2.使用https
+    "https": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      //執行後網址https://localhost:7072/Products/Index
+      "launchUrl": "Products/Index",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:7072;http://localhost:5017"
+    },
+    //手動新增
+    "Testing": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "Products/Index",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:7300;http://localhost:5249"
+    },
+    //區塊3.使用IIS Express
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  },
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:14919",
+      "sslPort": 44341
+    }
+  }
+}

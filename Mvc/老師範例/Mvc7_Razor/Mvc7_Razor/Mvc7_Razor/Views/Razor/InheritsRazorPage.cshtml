@@ -1,0 +1,14 @@
+﻿@inherits Mvc7_Razor.RazorPages.CustomRazorPage<TModel>
+
+@{
+    ViewData["Title"] = "InheritsRazorPage";
+}
+
+<div class="h-100 p-3 bg-success rounded-3">
+    <h1>@@Inherits</h1>
+</div>
+
+<p>書籍名稱: @GetBookName()</p>
+<p>ASP.NET Core版本 : @AppVersion</p>
+<p>作者: @Model.Name</p>
+

@@ -1,0 +1,25 @@
+﻿/*設定caption*/
+.table > caption {
+    margin-top: 10px;
+    background-color: lightpink;
+    font-size: xx-large;
+}
+
+/*設定thead顏色*/
+.table > thead > tr {
+    color: white;
+    background-color: #3176b1;
+    font-size: large;
+}
+
+/*設定tfoot顏色及文字對齊*/
+.table > tfoot > tr {
+    color: white;
+    background-color: #3176b1;
+    font-size: large;
+}
+
+/*設定文字對齊*/
+.table > caption, .table > thead > tr > th, table > tbody > tr > td:first-child, .table > tfoot > tr {
+    text-align: center;
+}

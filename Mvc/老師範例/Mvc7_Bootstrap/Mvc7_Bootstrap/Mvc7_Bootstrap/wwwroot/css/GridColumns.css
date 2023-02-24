@@ -1,0 +1,47 @@
+﻿div.alert {
+    background-color: #d9edfd;
+    font-size: larger;
+    font-weight: 900;
+    border: 2px dashed black;
+    margin-top: 10px;
+}
+
+.row {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.row div {
+    border: 1px solid black;
+    font-size:1.3rem;
+    border-radius: 10px;
+}
+
+div#columnheader div {
+    border-radius: 0px !important;
+    background-color: lightgray !important;
+    text-align: center;
+    border: 1px solid black;
+}
+
+div#columnheader div, .row div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+pre {
+    font-family: 'Microsoft JhengHei';
+    font-size: 1em;
+}
+
+pre::first-letter {
+    float: left;
+    font-size: 2em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color:red;
+}
+
+

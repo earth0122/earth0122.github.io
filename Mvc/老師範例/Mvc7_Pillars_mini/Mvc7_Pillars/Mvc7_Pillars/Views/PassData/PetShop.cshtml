@@ -1,0 +1,28 @@
+﻿@model List<string>
+
+@{
+    ViewData["Title"] = "PetShop";
+}
+
+<div class="h-100 p-3 text-white bg-dark rounded-3">
+    <h2>PetShop寵物店</h2>
+</div>
+
+公司名稱: @ViewData["Company"]
+<br />
+公司地址: @ViewBag.Address
+<br />
+
+販賣的寵物有:
+<br />
+<ul>
+    @foreach (var pet in Model)
+    {
+        <li>@pet</li>
+    }
+
+    @*@for(int i=0; i < Model.Count;i++)
+    {
+        <li>@Model[i]</li>
+    }*@
+</ul>
