@@ -1,9 +1,0 @@
-C:\Users\tommy\Desktop\電腦\earth0122.github.io\Mvc\老師範例\Mvc7_Razor\Mvc7_Razor\Mvc7_Razor\obj\Debug\net7.0\Mvc7_Razor.csproj.AssemblyReference.cache
-C:\Users\tommy\Desktop\電腦\earth0122.github.io\Mvc\老師範例\Mvc7_Razor\Mvc7_Razor\Mvc7_Razor\obj\Debug\net7.0\Mvc7_Razor.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\tommy\Desktop\電腦\earth0122.github.io\Mvc\老師範例\Mvc7_Razor\Mvc7_Razor\Mvc7_Razor\obj\Debug\net7.0\Mvc7_Razor.AssemblyInfoInputs.cache
-C:\Users\tommy\Desktop\電腦\earth0122.github.io\Mvc\老師範例\Mvc7_Razor\Mvc7_Razor\Mvc7_Razor\obj\Debug\net7.0\Mvc7_Razor.AssemblyInfo.cs
-C:\Users\tommy\Desktop\電腦\earth0122.github.io\Mvc\老師範例\Mvc7_Razor\Mvc7_Razor\Mvc7_Razor\obj\Debug\net7.0\Mvc7_Razor.csproj.CoreCompileInputs.cache
-C:\Users\tommy\Desktop\電腦\earth0122.github.io\Mvc\老師範例\Mvc7_Razor\Mvc7_Razor\Mvc7_Razor\obj\Debug\net7.0\Mvc7_Razor.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\tommy\Desktop\電腦\earth0122.github.io\Mvc\老師範例\Mvc7_Razor\Mvc7_Razor\Mvc7_Razor\obj\Debug\net7.0\Mvc7_Razor.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\tommy\Desktop\電腦\earth0122.github.io\Mvc\老師範例\Mvc7_Razor\Mvc7_Razor\Mvc7_Razor\obj\Debug\net7.0\Mvc7_Razor.RazorAssemblyInfo.cache
-C:\Users\tommy\Desktop\電腦\earth0122.github.io\Mvc\老師範例\Mvc7_Razor\Mvc7_Razor\Mvc7_Razor\obj\Debug\net7.0\Mvc7_Razor.RazorAssemblyInfo.cs
