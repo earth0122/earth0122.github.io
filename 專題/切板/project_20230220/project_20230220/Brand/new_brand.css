@@ -51,6 +51,7 @@ img{
     border-bottom-style: solid;
     border-color: #DDDDDD;
     width: 314px;
+    padding-bottom: 1rem;
 }
 
 button{
@@ -62,6 +63,13 @@ button{
 /* i{
     font-family: 'Material Icons';
 } */
+.sectionFooter{
+    /* max-width: 1200px; */
+    width: 100%;
+    margin: auto;
+}
+
+
 @media screen and (min-width:1024px) {   
     .context {
         display: flex;
