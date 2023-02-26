@@ -6,10 +6,10 @@
 }
 
 .main-title{
-    /* max-width: 1200px; */
+    max-width: 1200px;
     width: 100%;
     text-align: center;
-    /* margin: auto; */
+    margin: auto;
     padding: 4rem 2rem;
     background-color: rgb(244 244 245);
 }
@@ -31,11 +31,20 @@
 
 }
 
-
-
-
-.about-ite{
+.about{
+    max-width: 1200px;
+    width: 100%;
     margin: auto;
+    justify-content: center;
+    /* display: block; */
+}
+.about-itemone{
+    /* margin: auto; */
+    width: 50%;
+}
+.about-itemtwo{
+    /* margin: auto; */
+    width: 50%;
 }
 
 .about-txt li{
@@ -44,6 +53,7 @@
 .about-txt li h4{
   
 }
+
 
 
 
@@ -63,6 +73,11 @@
 .about{
     display: flex;
  }
-
+.about-itemone{
+    
+}
+.about-itemtwo{
+    /* justify-content: start; */
+}
  
 }
