@@ -74,7 +74,10 @@
     display: flex;
  }
 .about-itemone{
-    
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: flex-end; */
+    text-align: right;
 }
 .about-itemtwo{
     /* justify-content: start; */
