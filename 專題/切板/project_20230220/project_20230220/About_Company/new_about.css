@@ -14,10 +14,29 @@
     background-color: rgb(244 244 245);
 }
 
+.for{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+.for-title{
+    width: 100%;
+    margin-bottom: 4rem;
+    
+}
+.for-container{
+    width: 50%;
+    margin: auto;
+    background-color: rgb(244 244 245);
+
+}
 
 
 
 
+.about-ite{
+    margin: auto;
+}
 
 .about-txt li{
     margin-bottom: 1.5rem;
@@ -37,7 +56,12 @@
 .for{
     display: flex;
 }
+
+.for-title{
+    margin-top: 4rem;
+}
 .about{
     display: flex;
-}
+ }
+ 
 }
