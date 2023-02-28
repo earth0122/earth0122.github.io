@@ -12,33 +12,73 @@
     padding: 4rem 2rem;
     background-color: rgb(244 244 245);
 }
-
+.title h2{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: .1em;
+}
+.title h3{
+    padding-top: 1rem;
+    border-top: 1px solid rgb(229 229 229);
+    width: 16%;
+    margin: auto;
+    letter-spacing: .1em;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+.title h2 span{
+    color: orange;
+}
+.title>p{
+    padding-top: 50px;
+    width: 50%;
+    margin: auto;
+}
 .for{
     max-width: 1200px;
     width: 100%;
     margin: auto;
 }
 .for-title{
-    width: 100%;
+    width: 100%;    
     margin-bottom: 4rem;
     /* margin: auto; */
     margin-top: 4rem;
     
 }
-.for-container{
-    width: 50%;
+.for-containerone{
+    width: 61%;
     margin: auto;
     background-color: rgb(244 244 245);
     padding: 2rem;
     line-height: 1.625;
     font-size: .875rem;
+    margin-right: 10px;
 }
-.for-container h3{
+.for-containerone h3{
     font-size: 1.25rem;
     line-height: 1.75rem;
     color: #101010;
     margin: auto;
+    padding-bottom: 15px;
 }
+.for-containertwo{
+    width: 60%;
+    margin: auto;
+    background-color: rgb(244 244 245);
+    padding: 2rem;
+    line-height: 1.625;
+    font-size: .875rem;
+    margin-left: 10px;
+}
+.for-containertwo h3{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: #101010;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
 
 
 .about{
@@ -47,6 +87,13 @@
     margin: auto;
     justify-content: center;
     /* display: block; */
+}
+.about-title{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+.about-title span{
+    font-size: .75rem;
 }
 .about-itemone{
     /* margin: auto; */
