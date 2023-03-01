@@ -3,86 +3,71 @@
     height: 80px;
     margin: auto;
     padding-bottom: 110px;
-}  */
-
-/* 
-body {
-    max-width: 1200px;
-} */
-.sectionNav{
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
-}
-
-.title {
-    max-width: 1200px;
-    width: 100%;
-    /* border-width: 1px;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-color: #DDDDDD; */
-    margin: auto;
- 
-}
-img{
-    margin: 20px 0px ;
-}
-
-.context {
-    margin: auto;
-    padding-top: 100px;
-    border-top: 1px solid #DDDDDD;
-    border-bottom: 1px solid #DDDDDD;
-}
-
-.item {
-    /* width: 344px;
- padding: 10px; */
- width: 100%;
- padding-bottom: 50px;
-  margin-left: 20px;
-    
-
-}
-
-.item>h2 {
-    font-size: inherit;
-    font-weight: inherit;
-    border-width: 1px;
-    border-bottom-style: solid;
-    border-color: #DDDDDD;
-    width: 314px;
-    padding-bottom: 1rem;
-}
-
-button{
-    border-radius: 4px;
-    padding: 0.75rem 1.5rem;
-    background-color: transparent; 
-    border: 1px solid;
-}
-/* i{
-    font-family: 'Material Icons';
-} 
- .sectionFooter{
-     max-width: 1200px; 
-    width: 100%;
-    margin: auto;
 } */
 
 
-@media screen and (min-width:1024px) {   
-    .context {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-content: space-between;
-    }
-   
- }
 
 
+.containero {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title_1 {
+    font-weight: bold;
+    margin-left: 200px;
+    max-width: 1200px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+p {
+    margin-left: 200px;
+    max-width: 540px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+
+ul {
+    /* list-style-type: disc; */
+    /* max-width: 730px; */
+    margin-left: 230px;
+    /* list-style: none; */
+}
+
+li>p {
+    margin-left: 0px;
+    max-width: 540px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+ul li::before {
+    /*   可以自訂其他形狀 */
+    content: "\2022";
+    /*   顏色 */
+    color: #DDDDDD;
+    font-weight: bold;
+    /*   設定 display */
+    /* display: inline-block; */
+    /*  寬度  */
+    width: 1rem;
+    /*  可以視情況調整形狀的距離  */
+    margin-left: -2rem;
+
+
+}
+hr{
+    margin-left: 200px;
+    max-width: 600px;
+}
 
 .sectionNav{
     border-bottom: 1px solid rgb(244,244,245);;
@@ -101,14 +86,10 @@ a{
 .sectionFooter{
     background-color: var(--bs-gray-100); 
     border-top: 1px solid lightgray; 
-    border-bottom: 1px solid lightgray; 
-     /* max-width: 1200px; */
-     width: 100%;
-     margin: auto;
-      
+    border-bottom: 1px solid lightgray;   
 }
 .container{
-    /* max-width: 1200px; */
+      max-width: 1200px;
     width: 100%;
     margin: auto;
 }

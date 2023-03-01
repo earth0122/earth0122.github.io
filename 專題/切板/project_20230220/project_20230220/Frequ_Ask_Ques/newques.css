@@ -7,6 +7,7 @@
 
 .containero {
     max-width: 1200px;
+    width: 100%;
     /* background-color: gray; */
     margin: auto;
     /* border-bottom-style:solid 10px black; */
@@ -75,7 +76,8 @@
 }
 
 .connection{
-    width: 800px;
+    max-width: 1200px;
+    width: 100%;
     padding-bottom: 30px;
     text-align: center;
     display: flex;
@@ -91,6 +93,19 @@
     pad
 } */
 
+
+
+.contain{
+    width: 100%;
+    max-width: 1200px;    
+    margin: auto;
+}
+.sectionNav{
+    border-bottom: 1px solid rgb(244,244,245);;
+    }
+a{
+    text-decoration: none;
+}
 .sectionNav .line{
     width: 1px;
     height: 30px;
@@ -98,10 +113,16 @@
     margin-left: 10px;
 }
 
+
 .sectionFooter{
     background-color: var(--bs-gray-100); 
     border-top: 1px solid lightgray; 
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;   
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
 }
 
 .sectionFooter .container ul a:hover {
@@ -140,9 +161,15 @@
 .sectionCopyright{
     background-color: var(--bs-gray-100);
 }
-
-@media screen and (min-width <=768px) {
+.container a{
+    text-decoration: none;
+    color: rgb(75 85 99)
+}
+.container li{
+    list-style-type: none;
+}
+@media screen and (min-width:768px) { 
     .sectionFooter .navbar-brand {
         color: #00c300;
     }
-}
+    }

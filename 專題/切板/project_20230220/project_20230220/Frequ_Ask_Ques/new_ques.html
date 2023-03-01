@@ -1,546 +1,852 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>常見問答</title>
-    <link rel="stylesheet" href="/Reset_CSS/normalize.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha3button84-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="ques.css">
-
-</head>
-
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../Reset_CSS/normalize.css" />
+    <link rel="stylesheet" href="./newques.css" />
+  </head>
+  <body>
     <!-- <div class="header"></div> -->
 
     <!-- 導覽列 -->
-    <nav class="sectionNav navbar navbar-light bg-light w-100">
-        <div class="container d-flex justify-content-between">
-            <div class="d-flex align-items-center">
-                <a class="navbar-brand fw-bolder fs-2" href="#">呵呵</a>
-                <div class="line"></div>
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-secondary" href="./categories.html">探索</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-secondary" href="#">提案</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="d-flex align-items-center">
-                <a class="nav-link text-secondary m-3 " href="#"><i class="fa-solid fa-envelope"></i></a>
-                <div class="dropdown me-2">
-                    <button class="btn dropdown-toggle border border-light" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="https://picsum.photos/30/30/?random=10">
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end text-center" aria-labelledby="dropdownMenuLink">
-                        <li class=""><a class="dropdown-item" href="#">個人頁面</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">贊助紀錄</a></li>
-                        <li><a class="dropdown-item" href="#">追蹤計畫</a></li>
-                        <li><a class="dropdown-item" href="#">提案紀錄</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">帳號設定</a></li>
-                        <li><a class="dropdown-item" href="#">團隊設定</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#"><span
-                                    class="d-inline-block p-1 px-5 border border-danger">登出</span></a></li>
-                    </ul>
-                </div>
-            </div>
+    <nav class="sectionNav navbar navbar-light w-100">
+      <div class="container d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand fw-bolder fs-2" href="#">呵呵</a>
+          <div class="line"></div>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="./categories.html"
+                >探索</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">提案</a>
+            </li>
+          </ul>
         </div>
+        <div class="d-flex align-items-center">
+          <a class="nav-link text-secondary m-3" href="#"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <div class="dropdown me-2">
+            <button
+              class="btn dropdown-toggle border border-light"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="https://picsum.photos/30/30/?random=10" />
+            </button>
+            <ul
+              class="dropdown-menu dropdown-menu-end text-center"
+              aria-labelledby="dropdownMenuLink"
+            >
+              <li class=""><a class="dropdown-item" href="#">個人頁面</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">贊助紀錄</a></li>
+              <li><a class="dropdown-item" href="#">追蹤計畫</a></li>
+              <li><a class="dropdown-item" href="#">提案紀錄</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">帳號設定</a></li>
+              <li><a class="dropdown-item" href="#">團隊設定</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><span class="d-inline-block p-1 px-5 border border-danger"
+                    >登出</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
 
-    <div class="container">
-        <h2 class="title_1">常見問答</h2>
+    <div class="containero">
+      <h2 class="title_1">常見問答</h2>
 
-        <h3 class="title_2">發起計畫</h3>
+      <h3 class="title_2">發起計畫</h3>
 
-        <div class="accordion" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseOne">
-                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                        <span style="font-weight:700">集資的時間有限制嗎？</span>
-
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingOne">
-                    <div class="accordion-body">
-                        <p>建議計畫在 35-45 天左右。計畫時間太長對於達標少有幫助，贊助人也會因此看不到您需要資金的急迫性。集資期限並不包括計畫執行時間。計畫執行時間並沒有限制。</p>
-                    </div>
-                </div>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseOne"
+            >
+              <i class="fa-sharp fa-solid fa-caret-right"></i>
+              <span style="font-weight: 700">集資的時間有限制嗎？</span>
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingOne"
+          >
+            <div class="accordion-body">
+              <p>
+                建議計畫在 35-45
+                天左右。計畫時間太長對於達標少有幫助，贊助人也會因此看不到您需要資金的急迫性。集資期限並不包括計畫執行時間。計畫執行時間並沒有限制。
+              </p>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseTwo">
-                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                        <span style="font-weight:700">集資目標有限制嗎？</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingTwo">
-                    <div class="accordion-body">
-                        <p>金額沒有限制。但嘖嘖上的計畫<strong>只要沒有達到目標，收到的贊助金額會全數退回給支持者</strong>。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseThree">
-                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                        <span style="font-weight:700">發起計畫需要付錢嗎？</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingThree">
-                    <div class="accordion-body">
-                        <p>嘖嘖收取計畫成功後金額的
-                            <strong>8%</strong>，其中包含金流服務和嘖嘖收取的手續費以及嘖嘖網站的維護費用。我們收取小額的網站維護費用是為確保嘖嘖能夠長久經營，幫助更多的創作人。
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseFour">
-                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                        <span style="font-weight:700">我發起的計畫集資成功了，什麼時候才能拿到贊助的款項呢？</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingFour">
-                    <div class="accordion-body">
-                        <p>計畫成功結束後，嘖嘖將扣除交付款項所需之手續費後，於<strong>次月十三日前</strong>將剩餘之代收款項給付給提案人。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseFive">
-                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                        <span style="font-weight:700">我發起的計畫集資成功了，我該怎麼聯絡贊助人？</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingFive">
-                    <div class="accordion-body">
-                        <p>計畫成功結束後，提案人的可以在計畫頁面工具箱中找到「贊助人列表」，其中包含所有贊助人的聯絡資料和贊助細節。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingSix">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseSix">
-                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                        <span style="font-weight:700">嘖嘖上的計畫屬於公益勸募的範圍嗎？</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingSix">
-                    <div class="accordion-body">
-                        <p>提案人如欲進行公益集資計畫，建議先向主管機關或專業人士咨詢相關規範，並採取相應措施。另外，嘖嘖建議群眾集資計畫應提供回饋給贊助人。若您的計畫無法提供回饋，就失去了群眾集資「你支持、我回饋」的互益精神。
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseSeven">
-                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                        <span style="font-weight:700">在嘖嘖上面發起計畫有哪些好處？</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingSeven">
-                    <div class="accordion-body">
-                        <p>嘖嘖專注於鼓勵、幫助台灣的創意人做自己想做的事情。在嘖嘖上提案除了會在嘖嘖網站、嘖嘖 facebook
-                            頁面曝光以外，還有機會登上與我們合作的其他社群媒體平台。嘖嘖一直以來專注於設計、藝術、創意類的計畫，已經聚集了一個相當熱情的藝術設計愛好者社群。嘖嘖團隊成員各個來自產品設計、網頁設計、都市設計、時裝設計、音樂等等的背景，將會盡力提供專業意見幫助提案人實現夢想。
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingEight">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseEight">
-                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                        <span style="font-weight:700">在網站上提案以後會發生什麼事情？</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingEight">
-                    <div class="accordion-body">
-                        <p>你將會收到一封嘖嘖的確認收到計畫的信件，這時候你的計畫會在<strong>待審核</strong>的狀態。同時間你可以慢慢將全部內容完成，增加回饋選項等等。嘖嘖專案部同仁完成審核步驟後，如有通過審核，我們會寄送通知信至您註冊會員時所使用的信箱。一切準備成功後，必須聯絡專案團隊，確認計畫內容完成，計畫才會公開在網站上。
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingNine">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseNine">
-                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                        <span style="font-weight:700">我想要提案，但是我的內容還沒有準備好，可以先和你們討論嗎？</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingNine">
-                    <div class="accordion-body">
-                        <p>在嘖嘖上提案後至正式上線前，你都可以繼續修改計畫內容，所以不用擔心資料還沒準備完善就提案，之後有的是時間修改！但請注意還是必須提供足夠的計畫內容以供嘖嘖專案部評估。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingTen">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseTen">
-                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                        <span style="font-weight:700">為什麼計畫要經過審核？</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingTen">
-                    <div class="accordion-body">
-                        <p>嘖嘖一直以來都有獨特的計畫類別和族群，這是因為我們竭力想要培養的一個愛好藝術設計文化的社群，因此我們會就提案的內容做評估。</p>
-                        <p>然而嘖嘖就提案人所刊載內容之真實性、合法性、即時性等並無審查之義務，亦不負任何明示或默示之承諾或擔保。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingEleven">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseEleven" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseEleven">
-                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                        <span style="font-weight:700">我人不在台灣/不是台灣人可以支持計畫嗎？</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseEleven" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingEleven">
-                    <div class="accordion-body">
-                        <p>可以，但是不是所有計畫都會運送到台灣以外的地區。建議您在贊助計畫前使用計畫頁面上的<strong>聯絡提案人</strong>功能來和提案者確認。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingTwelve">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseTwelve" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseTwelve">
-                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                        <span style="font-weight:700">贊助計畫以後什麼時候才會收到回饋？</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwelve" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingTwelve">
-                    <div class="accordion-body">
-                        <p>每一個計畫回饋的選項不一樣，在回饋選項說明下方都會標示<strong>預計送出日期</strong>，但因為選項的預計送出日期都是估計，所以不一定會準確。請密切注意提案人的更新、動態來確定時間。如果有疑惑請使用計畫頁面上的<strong>聯絡提案人</strong>功能來和提案者確認。
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingThirteen">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseTwelve" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseTwelve">
-                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                        <span style="font-weight:700">我支持的計畫沒有成功/失敗了的話，我贊助的錢跑去哪裡？</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwelve" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingTwelve">
-                    <div class="accordion-body">
-                        <p>如果計畫期限到了仍然沒有達到目標，嘖嘖會透過您贊助時的<strong>原付款方式退還你所支持的金額</strong>（不包含虛擬帳號轉帳交易手續費）。您將會收到金流公司所寄出的退款信件，請根據信中的指示完成退款步驟。
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingFourteen">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseFourteen" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseFourteen">
-                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                        <span style="font-weight:700">我想取消贊助或退款，該怎麼做？</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseFourteen" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingFourteen">
-                    <div class="accordion-body">
-                        <p>如果您所支持的計畫仍在計畫集資期間尚未結束，您可以與<a
-                                href="#">嘖嘖客服</a>聯絡，我們會透過您贊助時的原付款方式退還你所支持的金額（不包含虛擬帳號轉帳交易手續費）。如果該計畫已經集資結束，您則需要與提案人聯絡。
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingFifteenth">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseFifteenth" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseFifteenth">
-                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                        <span style="font-weight:700">我想要贊助計畫，可以透過哪些方式呢？</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseFifteenth" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingFifteenth">
-                    <div class="accordion-body">
-                        <p>嘖嘖目前有提供<strong>國內外信用卡刷卡</strong>以及<strong>實體 ATM 付款</strong>。礙於若計畫失敗可能需要退款的狀況，嘖嘖暫時不提供超商繳費的功能。
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingSixteenth">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseSixteenth" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseSixteenth">
-                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                        <span style="font-weight:700">我還沒有收到贊助回饋，怎麼辦？</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseSixteenth" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingSixteenth">
-                    <div class="accordion-body">
-                        <p>在計畫成功以後，計畫進行的資訊將會由提案人提供，嘖嘖部分將不會干涉。如果有疑問可以到計畫頁面查看提案人是否有在提案頁面做出計畫更新，或使用計畫頁面上的<strong>聯絡提案人</strong>功能來和提案者確認。也建議直接到提案計畫粉絲專頁、網站等等，向提案者詢問。如果仍然沒得到回應，歡迎<a
-                                href="#">聯絡嘖嘖</a>並留下聯絡方式，我們將會要求提案人主動聯絡您。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingSeventeenth">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseSeventeenth" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseSeventeenth">
-                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                        <span style="font-weight:700">贊助計畫會有收據嗎？</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseSeventeenth" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingSeventeenth">
-                    <div class="accordion-body">
-                        <p>贊助嘖嘖的計畫後，您會收到由嘖嘖合作的金流公司 Paynow 所寄出的 Email
-                            收款證明，<strong>此證明並非電子發票</strong>。贊助回饋的發票或收據，在計畫成功達標結束後，將由計畫提案人負責處理。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingEighteenth">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseEighteenth" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseEighteenth">
-                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                        <span style="font-weight:700">贊助計畫會有收據嗎？</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseEighteenth" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingEighteenth">
-                    <div class="accordion-body">
-                        <p>贊助嘖嘖的計畫後，您會收到由嘖嘖合作的金流公司 Paynow 所寄出的 Email
-                            收款證明，<strong>此證明並非電子發票</strong>。贊助回饋的發票或收據，在計畫成功達標結束後，將由計畫提案人負責處理。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingNineteenth">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseNineteenth" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseNineteenth">
-                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                        <span style="font-weight:700">我使用實體 ATM 轉帳了，為什麼遲遲沒有收到贊助成功確認信件？</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseNineteenth" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingNineteenth">
-                    <div class="accordion-body">
-                        <p>若在 24 小時後仍未收到確認信件，也確認金額有離開您的銀行帳戶，請<a
-                                href="mailto:support+atm_problem@zeczec.com">聯絡嘖嘖</a>，並提供您的訂單編號。
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingTwentieth">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseTwentieth" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseTwentieth">
-                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                        <span style="font-weight:700">如何訂閱？</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwentieth" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingTwentieth">
-                    <div class="accordion-body">
-                        <p>訂閱式贊助提供提案團隊長期的贊助，多數的訂閱是透過約定授扣完成。<br />
-                            約定授扣在贊助人同意後，會於每月月初進行扣款。</p>
-                        <p>部份專案也提供一次給付多期金額的付款方式。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingTwenty-First">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseTwenty-First" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseTwenty-First">
-                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                        <span style="font-weight:700">如何停止訂閱、取消授扣？</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwenty-First" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingTwenty-First">
-                    <div class="accordion-body">
-                        <p>贊助人可透過「贊助記錄」，在「修改 / 查看記錄」頁面中，透過「停止訂閱」功能按鍵停止訂閱授扣。</p>
-                        <p>若為一次給付多期的訂閱，依該筆款項狀況可能由提案團隊或嘖嘖客服執行退款，詳細情況請提供贊助編號來信<a href="#">嘖嘖客服</a>詢問。</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-
-        <h3 class="other">其他</h3>
-
-        <div class="accordion" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingTwenty-Second">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseTwenty-Second" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseTwenty-Second">
-                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                        <span style="font-weight:700">我想要採訪嘖嘖，怎麼聯絡你們？</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwenty-Second" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingTwenty-Second">
-                    <div class="accordion-body">
-                        <p>請寄信到<a href="#">嘖嘖媒體聯絡信箱</a>。</p>
-                    </div>
-                </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo"
+            >
+              <i class="fa-sharp fa-solid fa-caret-right"></i>
+              <span style="font-weight: 700">集資目標有限制嗎？</span>
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwo"
+          >
+            <div class="accordion-body">
+              <p>
+                金額沒有限制。但嘖嘖上的計畫<strong>只要沒有達到目標，收到的贊助金額會全數退回給支持者</strong>。
+              </p>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingTwenty-Third">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseTwenty-Third" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseTwenty-Third">
-                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                        <span style="font-weight:700">你們有在接受合作提案嗎？要跟誰聯絡？</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwenty-Third" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingTwenty-Third">
-                    <div class="accordion-body">
-                        <p>嘖嘖一直都很希望能參與鼓勵創意人的合作，舉凡講座、座談會、創意市集、表演、聚會活動嘖嘖都很有興趣參與。請寄信到<a
-                                href="mailto:support+collab@zeczec.com">嘖嘖團隊聯絡信箱</a>。如果您是想和嘖嘖上面的計畫提案人合作，請使用計畫頁面上的<strong>聯絡提案人</strong>功能來連絡提案人。
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingTwenty-Fourth">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseTwenty-Fourth" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseTwenty-Fourth">
-                        <i class="fa-sharp fa-solid fa-caret-right"></i>
-                        <span style="font-weight:700">請問可以刪除個人帳號嗎？</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwenty-Fourth" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingTwenty-Fourth">
-                    <div class="accordion-body">
-                        <p><a href="#">請來信</a>並附上您的帳號信箱。</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree"
+            >
+              <i class="fa-sharp fa-solid fa-caret-right"></i>
+              <span style="font-weight: 700">發起計畫需要付錢嗎？</span>
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingThree"
+          >
+            <div class="accordion-body">
+              <p>
+                嘖嘖收取計畫成功後金額的
+                <strong>8%</strong
+                >，其中包含金流服務和嘖嘖收取的手續費以及嘖嘖網站的維護費用。我們收取小額的網站維護費用是為確保嘖嘖能夠長久經營，幫助更多的創作人。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFour"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFour"
+            >
+              <i class="fa-sharp fa-solid fa-caret-right"></i>
+              <span style="font-weight: 700"
+                >我發起的計畫集資成功了，什麼時候才能拿到贊助的款項呢？</span
+              >
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingFour"
+          >
+            <div class="accordion-body">
+              <p>
+                計畫成功結束後，嘖嘖將扣除交付款項所需之手續費後，於<strong>次月十三日前</strong>將剩餘之代收款項給付給提案人。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFive"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFive"
+            >
+              <i class="fa-sharp fa-solid fa-caret-right"></i>
+              <span style="font-weight: 700"
+                >我發起的計畫集資成功了，我該怎麼聯絡贊助人？</span
+              >
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingFive"
+          >
+            <div class="accordion-body">
+              <p>
+                計畫成功結束後，提案人的可以在計畫頁面工具箱中找到「贊助人列表」，其中包含所有贊助人的聯絡資料和贊助細節。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseSix"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseSix"
+            >
+              <i class="fa-sharp fa-solid fa-caret-right"></i>
+              <span style="font-weight: 700"
+                >嘖嘖上的計畫屬於公益勸募的範圍嗎？</span
+              >
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseSix"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingSix"
+          >
+            <div class="accordion-body">
+              <p>
+                提案人如欲進行公益集資計畫，建議先向主管機關或專業人士咨詢相關規範，並採取相應措施。另外，嘖嘖建議群眾集資計畫應提供回饋給贊助人。若您的計畫無法提供回饋，就失去了群眾集資「你支持、我回饋」的互益精神。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseSeven"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseSeven"
+            >
+              <i class="fa-sharp fa-solid fa-caret-right"></i>
+              <span style="font-weight: 700"
+                >在嘖嘖上面發起計畫有哪些好處？</span
+              >
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseSeven"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingSeven"
+          >
+            <div class="accordion-body">
+              <p>
+                嘖嘖專注於鼓勵、幫助台灣的創意人做自己想做的事情。在嘖嘖上提案除了會在嘖嘖網站、嘖嘖
+                facebook
+                頁面曝光以外，還有機會登上與我們合作的其他社群媒體平台。嘖嘖一直以來專注於設計、藝術、創意類的計畫，已經聚集了一個相當熱情的藝術設計愛好者社群。嘖嘖團隊成員各個來自產品設計、網頁設計、都市設計、時裝設計、音樂等等的背景，將會盡力提供專業意見幫助提案人實現夢想。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingEight">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseEight"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseEight"
+            >
+              <i class="fa-sharp fa-solid fa-caret-right"></i>
+              <span style="font-weight: 700"
+                >在網站上提案以後會發生什麼事情？</span
+              >
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseEight"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingEight"
+          >
+            <div class="accordion-body">
+              <p>
+                你將會收到一封嘖嘖的確認收到計畫的信件，這時候你的計畫會在<strong>待審核</strong>的狀態。同時間你可以慢慢將全部內容完成，增加回饋選項等等。嘖嘖專案部同仁完成審核步驟後，如有通過審核，我們會寄送通知信至您註冊會員時所使用的信箱。一切準備成功後，必須聯絡專案團隊，確認計畫內容完成，計畫才會公開在網站上。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingNine">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseNine"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseNine"
+            >
+              <i class="fa-sharp fa-solid fa-caret-right"></i>
+              <span style="font-weight: 700"
+                >我想要提案，但是我的內容還沒有準備好，可以先和你們討論嗎？</span
+              >
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseNine"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingNine"
+          >
+            <div class="accordion-body">
+              <p>
+                在嘖嘖上提案後至正式上線前，你都可以繼續修改計畫內容，所以不用擔心資料還沒準備完善就提案，之後有的是時間修改！但請注意還是必須提供足夠的計畫內容以供嘖嘖專案部評估。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTen">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTen"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTen"
+            >
+              <i class="fa-sharp fa-solid fa-caret-right"></i>
+              <span style="font-weight: 700">為什麼計畫要經過審核？</span>
+            </button>
+          </h2>
+
+          <div
+            id="panelsStayOpen-collapseTen"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTen"
+          >
+            <div class="accordion-body">
+              <p>
+                嘖嘖一直以來都有獨特的計畫類別和族群，這是因為我們竭力想要培養的一個愛好藝術設計文化的社群，因此我們會就提案的內容做評估。
+              </p>
+              <p>
+                然而嘖嘖就提案人所刊載內容之真實性、合法性、即時性等並無審查之義務，亦不負任何明示或默示之承諾或擔保。
+              </p>
+            </div>
+          </div>
+        </div>
+        <h3 class="other">贊助計畫</h3>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingEleven">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseEleven"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseEleven"
+            >
+              <i class="fa-sharp fa-solid fa-caret-right"></i>
+              <span style="font-weight: 700"
+                >我人不在台灣/不是台灣人可以支持計畫嗎？</span
+              >
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseEleven"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingEleven"
+          >
+            <div class="accordion-body">
+              <p>
+                可以，但是不是所有計畫都會運送到台灣以外的地區。建議您在贊助計畫前使用計畫頁面上的<strong>聯絡提案人</strong>功能來和提案者確認。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwelve">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwelve"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwelve"
+            >
+              <i class="fa-sharp fa-solid fa-caret-right"></i>
+              <span style="font-weight: 700"
+                >贊助計畫以後什麼時候才會收到回饋？</span
+              >
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwelve"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwelve"
+          >
+            <div class="accordion-body">
+              <p>
+                每一個計畫回饋的選項不一樣，在回饋選項說明下方都會標示<strong>預計送出日期</strong>，但因為選項的預計送出日期都是估計，所以不一定會準確。請密切注意提案人的更新、動態來確定時間。如果有疑惑請使用計畫頁面上的<strong>聯絡提案人</strong>功能來和提案者確認。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThirteen">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwelve"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwelve"
+            >
+              <i class="fa-sharp fa-solid fa-caret-right"></i>
+              <span style="font-weight: 700"
+                >我支持的計畫沒有成功/失敗了的話，我贊助的錢跑去哪裡？</span
+              >
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwelve"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwelve"
+          >
+            <div class="accordion-body">
+              <p>
+                如果計畫期限到了仍然沒有達到目標，嘖嘖會透過您贊助時的<strong>原付款方式退還你所支持的金額</strong>（不包含虛擬帳號轉帳交易手續費）。您將會收到金流公司所寄出的退款信件，請根據信中的指示完成退款步驟。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFourteen">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFourteen"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFourteen"
+            >
+              <i class="fa-sharp fa-solid fa-caret-right"></i>
+              <span style="font-weight: 700"
+                >我想取消贊助或退款，該怎麼做？</span
+              >
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseFourteen"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingFourteen"
+          >
+            <div class="accordion-body">
+              <p>
+                如果您所支持的計畫仍在計畫集資期間尚未結束，您可以與<a href="#"
+                  >嘖嘖客服</a
+                >聯絡，我們會透過您贊助時的原付款方式退還你所支持的金額（不包含虛擬帳號轉帳交易手續費）。如果該計畫已經集資結束，您則需要與提案人聯絡。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFifteenth">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFifteenth"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFifteenth"
+            >
+              <i class="fa-sharp fa-solid fa-caret-right"></i>
+              <span style="font-weight: 700"
+                >我想要贊助計畫，可以透過哪些方式呢？</span
+              >
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseFifteenth"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingFifteenth"
+          >
+            <div class="accordion-body">
+              <p>
+                嘖嘖目前有提供<strong>國內外信用卡刷卡</strong>以及<strong
+                  >實體 ATM 付款</strong
+                >。礙於若計畫失敗可能需要退款的狀況，嘖嘖暫時不提供超商繳費的功能。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingSixteenth">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseSixteenth"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseSixteenth"
+            >
+              <i class="fa-sharp fa-solid fa-caret-right"></i>
+              <span style="font-weight: 700"
+                >我還沒有收到贊助回饋，怎麼辦？</span
+              >
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseSixteenth"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingSixteenth"
+          >
+            <div class="accordion-body">
+              <p>
+                在計畫成功以後，計畫進行的資訊將會由提案人提供，嘖嘖部分將不會干涉。如果有疑問可以到計畫頁面查看提案人是否有在提案頁面做出計畫更新，或使用計畫頁面上的<strong>聯絡提案人</strong>功能來和提案者確認。也建議直接到提案計畫粉絲專頁、網站等等，向提案者詢問。如果仍然沒得到回應，歡迎<a
+                  href="#"
+                  >聯絡嘖嘖</a
+                >並留下聯絡方式，我們將會要求提案人主動聯絡您。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingSeventeenth">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseSeventeenth"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseSeventeenth"
+            >
+              <i class="fa-sharp fa-solid fa-caret-right"></i>
+              <span style="font-weight: 700">贊助計畫會有收據嗎？</span>
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseSeventeenth"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingSeventeenth"
+          >
+            <div class="accordion-body">
+              <p>
+                贊助嘖嘖的計畫後，您會收到由嘖嘖合作的金流公司 Paynow 所寄出的
+                Email
+                收款證明，<strong>此證明並非電子發票</strong>。贊助回饋的發票或收據，在計畫成功達標結束後，將由計畫提案人負責處理。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingEighteenth">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseEighteenth"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseEighteenth"
+            >
+              <i class="fa-sharp fa-solid fa-caret-right"></i>
+              <span style="font-weight: 700">贊助計畫會有收據嗎？</span>
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseEighteenth"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingEighteenth"
+          >
+            <div class="accordion-body">
+              <p>
+                贊助嘖嘖的計畫後，您會收到由嘖嘖合作的金流公司 Paynow 所寄出的
+                Email
+                收款證明，<strong>此證明並非電子發票</strong>。贊助回饋的發票或收據，在計畫成功達標結束後，將由計畫提案人負責處理。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingNineteenth">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseNineteenth"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseNineteenth"
+            >
+              <i class="fa-sharp fa-solid fa-caret-right"></i>
+              <span style="font-weight: 700"
+                >我使用實體 ATM
+                轉帳了，為什麼遲遲沒有收到贊助成功確認信件？</span
+              >
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseNineteenth"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingNineteenth"
+          >
+            <div class="accordion-body">
+              <p>
+                若在 24
+                小時後仍未收到確認信件，也確認金額有離開您的銀行帳戶，請<a
+                  href="mailto:support+atm_problem@zeczec.com"
+                  >聯絡嘖嘖</a
+                >，並提供您的訂單編號。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwentieth">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwentieth"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwentieth"
+            >
+              <i class="fa-sharp fa-solid fa-caret-right"></i>
+              <span style="font-weight: 700">如何訂閱？</span>
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwentieth"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwentieth"
+          >
+            <div class="accordion-body">
+              <p>
+                訂閱式贊助提供提案團隊長期的贊助，多數的訂閱是透過約定授扣完成。<br />
+                約定授扣在贊助人同意後，會於每月月初進行扣款。
+              </p>
+              <p>部份專案也提供一次給付多期金額的付款方式。</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwenty-First">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwenty-First"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwenty-First"
+            >
+              <i class="fa-sharp fa-solid fa-caret-right"></i>
+              <span style="font-weight: 700">如何停止訂閱、取消授扣？</span>
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwenty-First"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwenty-First"
+          >
+            <div class="accordion-body">
+              <p>
+                贊助人可透過「贊助記錄」，在「修改 /
+                查看記錄」頁面中，透過「停止訂閱」功能按鍵停止訂閱授扣。
+              </p>
+              <p>
+                若為一次給付多期的訂閱，依該筆款項狀況可能由提案團隊或嘖嘖客服執行退款，詳細情況請提供贊助編號來信<a
+                  href="#"
+                  >嘖嘖客服</a
+                >詢問。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="other">其他</h3>
+
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwenty-Second">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwenty-Second"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwenty-Second"
+            >
+              <i class="fa-sharp fa-solid fa-caret-right"></i>
+              <span style="font-weight: 700"
+                >我想要採訪嘖嘖，怎麼聯絡你們？</span
+              >
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwenty-Second"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwenty-Second"
+          >
+            <div class="accordion-body">
+              <p>請寄信到<a href="#">嘖嘖媒體聯絡信箱</a>。</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwenty-Third">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwenty-Third"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwenty-Third"
+            >
+              <i class="fa-sharp fa-solid fa-caret-right"></i>
+              <span style="font-weight: 700"
+                >你們有在接受合作提案嗎？要跟誰聯絡？</span
+              >
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwenty-Third"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwenty-Third"
+          >
+            <div class="accordion-body">
+              <p>
+                嘖嘖一直都很希望能參與鼓勵創意人的合作，舉凡講座、座談會、創意市集、表演、聚會活動嘖嘖都很有興趣參與。請寄信到<a
+                  href="mailto:support+collab@zeczec.com"
+                  >嘖嘖團隊聯絡信箱</a
+                >。如果您是想和嘖嘖上面的計畫提案人合作，請使用計畫頁面上的<strong>聯絡提案人</strong>功能來連絡提案人。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwenty-Fourth">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwenty-Fourth"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwenty-Fourth"
+            >
+              <i class="fa-sharp fa-solid fa-caret-right"></i>
+              <span style="font-weight: 700">請問可以刪除個人帳號嗎？</span>
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwenty-Fourth"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwenty-Fourth"
+          >
+            <div class="accordion-body">
+              <p><a href="#">請來信</a>並附上您的帳號信箱。</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="line"></div>
 
-    <div class='connection'>
-        還是沒有你要的答案？<a href='#'>聯絡我們</a>。
-    </div>
+    <div class="connection">還是沒有你要的答案？<a href="#">聯絡我們</a>。</div>
 
     <!-- footer -->
     <div class="sectionFooter">
-        <div class="container">
-            <div class="row mt-3 py-4">
-                <div class="col-12 col-md-3 text-center mb-3">
-                    <a class="navbar-brand fs-1 fw-bolder" href="#"><i class="fa-regular fa-face-smile"></i> 呵呵</a>
-                </div>
-                <div class="col-3 col-md-2 ms-auto">
-                    <ul class="question m-0 p-0">
-                        <p class="text-dark fw-bolder">幫助</p>
-                        <li><a class="d-inline-block py-2" href="#">常見問題</a></li>
-                        <li><a class="d-inline-block py-2" href="#">使用條款</a></li>
-                        <li><a class="d-inline-block py-2" href="#">隱私權政策</a></li>
-                    </ul>
-                </div>
-                <div class="col-3 col-md-2 me-auto">
-                    <ul class="aboutUs m-0 p-0">
-                        <p class="text-dark fw-bolder">關於</p>
-                        <li><a class="d-inline-block py-2" href="#">關於我們</a></li>
-                        <li><a class="d-inline-block py-2" href="#">商標資源</a></li>
-                        <li><a class="d-inline-block py-2" href="#">KKFARM 音樂創生</a></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-5">
-                    <div class="iconSocialMedia fs-1 d-flex justify-content-center px-2">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="#"><i class="fa-brands fa-line"></i></a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row mt-3 py-4">
+          <div class="col-12 col-md-3 text-center mb-3">
+            <a class="navbar-brand fs-1 fw-bolder" href="#"
+              ><i class="fa-regular fa-face-smile"></i> 呵呵</a
+            >
+          </div>
+          <div class="col-3 col-md-2 ms-auto">
+            <ul class="question m-0 p-0">
+              <p class="text-dark fw-bolder">幫助</p>
+              <li><a class="d-inline-block py-2" href="#">常見問題</a></li>
+              <li><a class="d-inline-block py-2" href="#">使用條款</a></li>
+              <li><a class="d-inline-block py-2" href="#">隱私權政策</a></li>
+            </ul>
+          </div>
+          <div class="col-3 col-md-2 me-auto">
+            <ul class="aboutUs m-0 p-0">
+              <p class="text-dark fw-bolder">關於</p>
+              <li><a class="d-inline-block py-2" href="#">關於我們</a></li>
+              <li><a class="d-inline-block py-2" href="#">商標資源</a></li>
+              <li>
+                <a class="d-inline-block py-2" href="#">KKFARM 音樂創生</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-5">
+            <div
+              class="iconSocialMedia fs-1 d-flex justify-content-center px-2"
+            >
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-line"></i></a>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="sectionCopyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center my-5">
-                    <p>©呵呵股份有限公司</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center my-5">
+            <p>©呵呵股份有限公司</p>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- <div class="footer"></div> -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/11cd7ec45e.js" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/11cd7ec45e.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- <script src="Ques.js"></script> -->
-</body>
-
+  </body>
 </html>
