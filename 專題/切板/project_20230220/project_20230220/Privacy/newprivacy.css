@@ -10,8 +10,21 @@
 
 .containero {
     max-width: 1200px;
-    margin: auto;
+    text-align: left;
+    margin-left: 140px;
 }
+.containero ul li p{
+    max-width: 1200px;
+    width: 50%;
+    margin-left: 0px;
+    max-width: 540px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+.containero ul li{
+    list-style: none;
+}
+
 
 .title_1 {
     font-weight: bold;
@@ -19,6 +32,7 @@
     max-width: 1200px;
     margin-bottom: 20px;
     font-size: 1.5rem;
+    margin-top: 50px;
 }
 
 p {
@@ -42,12 +56,12 @@ ul {
     /* list-style: none; */
 }
 
-li>p {
+/* li>p {
     margin-left: 0px;
     max-width: 540px;
     margin-bottom: 20px;
     margin-top: -20px;
-}
+} */
 
 ul li::before {
     /*   可以自訂其他形狀 */
@@ -70,7 +84,10 @@ hr{
 }
 
 .sectionNav{
-    border-bottom: 1px solid rgb(244,244,245);;
+    border-bottom: 1px solid rgb(244,244,245);
+     max-width: 1200px;
+    width: 100%;
+    margin: auto;
     }
 a{
     text-decoration: none;
@@ -89,7 +106,7 @@ a{
     border-bottom: 1px solid lightgray;   
 }
 .container{
-      max-width: 1200px;
+    max-width: 1200px;
     width: 100%;
     margin: auto;
 }
@@ -140,5 +157,6 @@ a{
 @media screen and (min-width:768px) { 
     .sectionFooter .navbar-brand {
         color: #00c300;
+        margin-left: -150px;
     }
     }
