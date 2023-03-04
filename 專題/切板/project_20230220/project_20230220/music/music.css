@@ -1,3 +1,4 @@
+/*nav的漢堡和計畫說明的RWD卡住*/
 /* body{
     max-width: 1200px;
     width: 100%;
@@ -80,17 +81,17 @@
     text-decoration: none;
     color: #000;
 }
-.container-plan{
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
-}
+
 .container-item{
     /* display: flex; */
-    margin-top: 80px;
+    padding-left: 30px;
+    padding-top: 80px;
     color: #333;
     font-size: 16px;
     line-height: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
 }
 .container-item h2{
     font-size: 32px;
@@ -100,6 +101,8 @@
 .container-item p{
     color: #1e293b;
     line-height: 30px;
+    font-size: 20px;
+    margin-top: 20px;
 }
 .container-item img{
 width: 60%;
@@ -116,16 +119,129 @@ width: 60%;
 .item-aboutSix {
     width: 40%;
 }
+.item-aboutOne,
+.item-aboutFive{
+    margin-right: 100px;
+}
+.item-aboutThree{
+    margin-right: -100px;
+    margin-left: 40px;
+}
+.item-aboutTwo,
+.item-aboutSix{
+    margin-top: 50px;
+}
+.item-aboutFour{
+    margin-left: -50px;
+}
+.title-area{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.04);
+    /* margin: auto; */
+    padding: 60px 30px;
+    margin-top: 150px;
+}
+.area-contain h2{
+    text-align: center;
+    font-weight: bolder;
+}
+
 
 .area-item{
     /* max-width: 1200px; */
     width: 100%;
     display: flex;
-    justify-content: center;
+   
+  
+    /* padding: 50px; */
+    margin: auto;
+}
+.item-area{
+    /* justify-content: center; */
+    display: block;
+    margin: auto;
+    /* justify-content: space-around; */
+    text-align: center;
+    padding-bottom: 70px;
+    width: 100%;
 }
 
 .item-area>img{
-    width: 10%;
+    width: 25%;
+}
+.area-txt{
+    /* font-weight: bolder; */
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.local-btn{
+    display: flex;
+    width: 50%;
+    text-align: center ;
+    margin-top: 30px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.local-btn img{
+    width: 100%;
+
+}
+
+
+
+.img-one{
+    background-color: #000;
+}
+.img-two{
+    background-color: #f8f8f8;
+}
+.faq{
+  background-color:  #f8f8f8;
+  width: 100%;
+}
+.faq-title{
+    text-align: center;
+    padding: 70px 0px;
+    font-weight: bolder;
+    font-size: 32px;
+}
+.faq-container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.other-answer{
+    text-align: center;
+    font-size: 22px;
+    padding: 20px 0px 70px 0px;
+}
+.footer{
+    width: 100%;
+}
+.footer-container{
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+
+    
+}
+.footer-container img{
+    width: 20%;
+}
+.footer-icon img{
+    width: 15%;
+}
+.footer-icon a{
+    padding-right: 10px;
+}
+.footer-about{
+    text-align: center;
+    padding-bottom: 30px;
 }
 @media screen and (min-width:768px) { 
     /*nav漢堡*/
