@@ -1,4 +1,4 @@
-/*nav的漢堡和計畫說明的RWD卡住*/
+/*nav的漢堡和計畫說明的RWD卡住 最下面LOGO圖片大小改不了*/
 /* body{
     max-width: 1200px;
     width: 100%;
@@ -91,7 +91,8 @@
     line-height: 20px;
     max-width: 1200px;
     width: 100%;
-    margin: auto;
+    text-align: center;
+    /* margin: auto; */
 }
 .container-item h2{
     font-size: 32px;
@@ -112,6 +113,7 @@ width: 60%;
 .item-aboutThree,
 .item-aboutFive {
     width: 60%;
+   
 }
 
 .item-aboutTwo,
@@ -219,14 +221,12 @@ width: 60%;
     width: 100%;
 }
 .footer-container{
-    display: flex;
+    /* display: flex; */
     max-width: 1200px;
     width: 100%;
     margin: auto;
     margin-top: 40px;
     margin-bottom: 50px;
-
-    
 }
 .footer-container img{
     width: 20%;
@@ -249,6 +249,17 @@ width: 60%;
     /* padding: 50px; */
     margin: auto;
 }
+.footer-container{
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+/* .footer-container img{
+    width: 70%;
+} */
 }
 @media screen and (min-width:768px) { 
     /*nav漢堡*/
@@ -257,8 +268,17 @@ width: 60%;
 @media screen and (min-width:1024px){
     .container-item{
         display: flex;
+        padding-left: 30px;
+        padding-top: 80px;
+        color: #333;
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        text-align: unset;
     }
     .item-aboutOne{
-
+        
     }
 }
