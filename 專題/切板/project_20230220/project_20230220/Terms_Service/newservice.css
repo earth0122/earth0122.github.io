@@ -6,14 +6,19 @@
     padding-bottom: 110px;
 } */
 
-body {
+/* body {
+    /max-width: 1200px; 
+    width: 100%;
+} */
+.all{
     /* max-width: 1200px; */
     width: 100%;
-}
-
-.containero {
-    max-width: 1200px;
     margin: auto;
+}
+.all .containero{
+    max-width: 1200px;
+    width: 100%;
+    margin-left: 110px;
     
 }
 
@@ -29,13 +34,15 @@ body {
     max-width: 500px;
     margin-bottom: 15px;
     font-size: 20px;
+    line-height: 1.75;
 }
 
 h3 {
-    font-size: 1.125rem;
+    font-size: 25px;
     font-weight: 700;
     line-height: 1.75rem;
     margin-left: 250px;
+    padding-bottom: 20px;
 }
 
 .containero ul {
@@ -54,16 +61,16 @@ li {
 }
 
 /* ul li::before {
-    /*   可以自訂其他形狀 */
+       可以自訂其他形狀 
     content: "\2022";
-    /*   顏色 */
+     顏色 
     color: #DDDDDD;
     font-weight: bold;
-    /*   設定 display */
+      設定 display 
     display: inline-block;
-    /*  寬度  */
+     寬度  
     width: 1rem;
-    /*  可以視情況調整形狀的距離  */
+    可以視情況調整形狀的距離  
     margin-left: -2rem;
 } */
 
@@ -91,7 +98,8 @@ a{
 .sectionFooter{
     background-color: var(--bs-gray-100); 
     border-top: 1px solid lightgray; 
-    border-bottom: 1px solid lightgray;   
+    border-bottom: 1px solid lightgray;  
+    margin-top: 50px; 
 }
 .container{
     max-width: 1200px;
