@@ -1,3 +1,7 @@
+/* body{
+    max-width: 1200px;
+    width: 100%;
+} */
 .nav-bar{
     /* max-width: 1200px; */
     width: 100%;
@@ -39,8 +43,40 @@
     text-decoration: none;
     border-radius: 10px;
 }
+.main-pic{
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url(./pic/639c59d36f16e20352df7615_img02.png);
+    background-position: 0% 50%;
+    background-size: cover;
+}
+.container-plan{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+.container-item{
+    display: flex;
+}
+.item-aboutOne{
+    width: 60%;
+}
+.item-aboutTwo{
+    width: 40%;
+}
 
+.area-item{
+    /* max-width: 1200px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
+.item-area>img{
+    width: 10%;
+}
 @media screen and (min-width:768px) { 
     /*nav漢堡*/
     }
