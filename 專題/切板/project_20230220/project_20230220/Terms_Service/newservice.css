@@ -7,12 +7,14 @@
 } */
 
 body {
-    max-width: 1200px;
+    /* max-width: 1200px; */
+    width: 100%;
 }
 
 .containero {
     max-width: 1200px;
     margin: auto;
+    
 }
 
 .title_1 {
@@ -22,10 +24,11 @@ body {
     margin-bottom: 20px;
 }
 
-p {
+.containero p {
     margin-left: 250px;
     max-width: 500px;
     margin-bottom: 15px;
+    font-size: 20px;
 }
 
 h3 {
@@ -35,7 +38,7 @@ h3 {
     margin-left: 250px;
 }
 
-ul {
+.containero ul {
     list-style-type: disc;
     /* margin-left: 2rem; */
     margin-left: 270px;
@@ -50,7 +53,7 @@ li {
     max-width: 500px;
 }
 
-ul li::before {
+/* ul li::before {
     /*   可以自訂其他形狀 */
     content: "\2022";
     /*   顏色 */
@@ -62,7 +65,7 @@ ul li::before {
     width: 1rem;
     /*  可以視情況調整形狀的距離  */
     margin-left: -2rem;
-}
+} */
 
 
 .contain{
@@ -71,7 +74,8 @@ ul li::before {
     margin: auto;
 }
 .sectionNav{
-    border-bottom: 1px solid rgb(244,244,245);;
+    border-bottom: 1px solid rgb(244,244,245);
+    width: 100%;
     }
 a{
     text-decoration: none;
