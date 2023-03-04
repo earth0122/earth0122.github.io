@@ -150,9 +150,7 @@ width: 60%;
 .area-item{
     /* max-width: 1200px; */
     width: 100%;
-    display: flex;
-   
-  
+    /* display: flex; */
     /* padding: 50px; */
     margin: auto;
 }
@@ -242,6 +240,15 @@ width: 60%;
 .footer-about{
     text-align: center;
     padding-bottom: 30px;
+}
+@media screen and (min-width:576px){
+.area-item{
+    /* max-width: 1200px; */
+    width: 100%;
+    display: flex;
+    /* padding: 50px; */
+    margin: auto;
+}
 }
 @media screen and (min-width:768px) { 
     /*nav漢堡*/
