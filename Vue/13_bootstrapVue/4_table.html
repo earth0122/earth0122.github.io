@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css"
+    />
+
+    <!-- Load polyfills to support older browsers -->
+    <script
+      src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Load Vue followed by BootstrapVue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+
+    <!-- Load the following for BootstrapVueIcons support -->
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue-icons.min.js"></script>
+  </head>
+  <body>
+    <div id="app" class="container">
+      <b-table
+        :items="pokemonList"
+        :fields="fields"
+        :busy="isbusy"
+        :per-page="perpage"
+        :current-page="currentPage"
+      >
+        <template #table-busy>
+          <div class="text-center text-danger my-2">
+            <b-spinner class="align-middle"></b-spinner>
+            <strong>Loading...</strong>
+          </div>
+        </template>
+
+        <template #cell(image)="row">
+          <img : src="row.value" alt="" />
+        </template>
+      </b-table>
+      <b-pagination
+        v-model="currentPage"
+        :total-rows="totalRows"
+        :per-page="perpage"
+        align="fill"
+        size="lg"
+        class="my-0"
+      ></b-pagination>
+    </div>
+    <script>
+      const app = new Vue({
+        el: "#app",
+        data: {
+          //分頁資料
+          perpage: 2,
+          currentPage: 1,
+          isbusy: false,
+          pokemonList: [
+            {
+              id: 13,
+              name: "妙蛙種子",
+              nickName: "種子種子",
+              hp: 45,
+              attack: 49,
+              defanse: 49,
+              spAttack: 65,
+              spDefense: 65,
+              speed: 45,
+              type: "種子寶可夢",
+              image:
+                "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png",
+              _showDetails: true,
+            },
+            {
+              id: 14,
+              name: "妙蛙草",
+              nickName: "哇草哇草",
+              hp: 60,
+              attack: 62,
+              defanse: 63,
+              spAttack: 80,
+              spDefense: 80,
+              speed: 60,
+              type: "種子寶可夢",
+              image:
+                "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png",
+            },
+            {
+              id: 15,
+              name: "皮卡丘",
+              nickName: "皮皮",
+              hp: 35,
+              attack: 55,
+              defanse: 40,
+              spAttack: 55,
+              spDefense: 50,
+              speed: 90,
+              type: "鼠寶可夢",
+              image:
+                "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png",
+            },
+          ],
+          //v1
+          //fields: ['id','name','nickName','image']
+          //v2
+          fields: [
+            { key: "id", label: "#", sortable: false },
+            { key: "image", label: "##" },
+            { key: "name", label: "名稱" },
+            { key: "nickName", label: "暱稱" },
+          ],
+        },
+        computed: {
+          totalRows() {
+            return this.pokemonList.length;
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

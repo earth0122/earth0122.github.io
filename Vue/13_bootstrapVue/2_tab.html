@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css"
+    />
+
+    <!-- Load polyfills to support older browsers -->
+    <script
+      src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Load Vue followed by BootstrapVue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+
+    <!-- Load the following for BootstrapVueIcons support -->
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue-icons.min.js"></script>
+  </head>
+  <body>
+    <div id="my-app" class="">
+      <b-card no-body>
+        <b-tabs v-model="tabIndex" card>
+          <b-tab title="Tab 1" :title-link-class="linkClass(0)"
+            >Tab contents 1</b-tab
+          >
+          <b-tab title="Tab 2" :title-link-class="linkClass(1)"
+            >Tab contents 2</b-tab
+          >
+          <b-tab title="Tab 3" :title-link-class="linkClass(2)"
+            >Tab contents 3</b-tab
+          >
+        </b-tabs>
+      </b-card>
+    </div>
+    <script>
+      const app = new Vue({
+        el: "#my-app",
+        data: {
+          tabIndex: 0,
+        },
+        methods: {
+          linkClass(idx) {
+            if (this.tabIndex === idx) {
+              return ["bg-primary", "text-light"];
+            } else {
+              return ["bg-light", "text-info"];
+            }
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

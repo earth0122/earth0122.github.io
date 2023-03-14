@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap5.3.0+Vue2.0 demo</title>
+    <!-- bootstrap5.3.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- 載入Vue2.0 -->
+    <!-- Vue的作用就是透過資料渲染畫面 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body>
+
+    <div class="container" id="app">
+        <div class="row p-5">
+            <div class="col-12 col-md-6 mb-3">
+                <label for="">Account</label>
+                <input v-model="inputData.account" type="text" :class="{'is-invalid':inputDataCheck.accountError}" class="form-control" name="" id="" />
+                <div class="text-danger small mt-1">
+                    {{inputDataCheck.accountErrorMsg}}
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-3">
+                <label for="">Password</label>
+                <input v-model="inputData.password" type="password" :class="{'is-invalid':inputDataCheck.passwordError}" class="form-control" name="" id="" />
+                <div class="text-danger small mt-1">
+                    {{inputDataCheck.passwordErrorMsg}}
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-3">
+                <label for="">CheckPassword</label>
+                <input v-model="inputData.checkpassword" type="password" :class="{'is-invalid':inputDataCheck.passwordCheckError}" class="form-control" name="" id="" />
+                <div class="text-danger small mt-1">
+                    {{inputDataCheck.passwordCheckErrorMsg}}
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-3">
+                <label for="">Name</label>
+                <input v-model="inputData.name" type="text" class="form-control" name="" id="" />
+                <div class="text-danger small mt-1">
+                </div>
+            </div>
+
+            <div class="col-4 mt-3">
+                <button disabled="!isVerify" class="btn btn-warning">送出</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap5.3.0 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script>
+        //Vue起手式
+        const app = new Vue({
+            el: '#app',
+            data: {
+                inputData:{
+                    account: '',
+                    password: '',
+                    checkpassword: '',
+                    name: ''
+                },
+                inputDataCheck:{
+                    accountError: false,
+                    accountErrorMsg: '',
+                    passwordError: false,
+                    passwordErrorMsg: '',
+                    passwordCheckError: false,
+                    passwordCheckErrorMsg: ''
+                }
+            },
+            computed:{
+                isVerify(){
+                    //哪個迴圈可用來跑物件，就是 for...if...
+                    for(let prop in this.inputDataCheck){
+                        if(this.inputDataCheck[prop] == true){
+                            return false
+                        }
+                    }
+
+                    return true
+                }  
+            },
+            watch:{
+                'inputData.account': {
+                    immediate: true,
+                    handler(){
+                        if(this.inputData.account == ''){
+                            this.inputDataCheck.accountError = true
+                            this.inputDataCheck.accountErrorMsg = '帳號不得為空'
+                        }
+                        else if (this.inputData.account.length < 8) {
+                            this.inputDataCheck.accountError = true
+                            this.inputDataCheck.accountErrorMsg = '帳號長度不可小於8位'
+                        }
+                        else{
+                            this.inputDataCheck.accountError = false
+                            this.inputDataCheck.accountErrorMsg = ''
+                        }
+                    }
+                },
+                'inputData.password': {
+                    immediate: true,
+                    handler(){
+                        //正則表達式
+                        let passwordRegexp = /^[0-9]*$/
+
+                        if(this.inputData.password == ''){
+                            this.inputDataCheck.passwordError = true
+                            this.inputDataCheck.passwordErrorMsg = '密碼不得為空'
+                        }
+                        else if (!passwordRegexp.test(this.inputData.password)) {
+                            this.inputDataCheck.passwordError = true
+                            this.inputDataCheck.passwordErrorMsg = '密碼必須是數字'
+                        }
+                        else{
+                            this.inputDataCheck.passwordError = false
+                            this.inputDataCheck.passwordErrorMsg = ''
+                        }
+                    }
+                },
+                'inputData.passwordCheck': {
+                    immediate: true,
+                    handler(){
+                        //正則表達式
+                        let passwordRegexp = /^[0-9]*$/
+
+                        if(this.inputData.passwordCheck == ''){
+                            this.inputDataCheck.passwordCheckError = true
+                            this.inputDataCheck.passwordCheckErrorMsg = '密碼不得為空'
+                        }
+                        else if (!passwordRegexp.test(this.inputData.passwordCheck)) {
+                            this.inputDataCheck.passwordCheckError = true
+                            this.inputDataCheck.passwordCheckErrorMsg = '密碼必須是數字'
+                        }
+                        else if (this.inputData.password != this.inputData.passwordCheck) {
+                            this.inputDataCheck.passwordCheckError = true
+                            this.inputDataCheck.passwordCheckErrorMsg = '密碼不相同'
+                        }
+                        else{
+                            this.inputDataCheck.passwordCheckError = false
+                            this.inputDataCheck.passwordCheckErrorMsg = ''
+                        }
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

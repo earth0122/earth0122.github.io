@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css"
+    />
+
+    <!-- Load polyfills to support older browsers -->
+    <script
+      src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Load Vue followed by BootstrapVue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+
+    <!-- Load the following for BootstrapVueIcons support -->
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue-icons.min.js"></script>
+  </head>
+  <style>
+    .tab-content {
+      height: 500px;
+    }
+  </style>
+  <body>
+    <div id="app" class="container">
+      <h1>註冊成為會員</h1>
+      <!-- tab -->
+      <b-card no-body>
+        <b-tabs v-model="tabIndex" small card fill>
+          <b-tab title="隱私政策">
+            <b-card>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              sequi fugit ratione cumque explicabo saepe molestiae quidem magnam
+              deserunt nam ipsa harum eveniet eligendi ex inventore, maiores
+              nesciunt atque expedita molestias. Laborum, rem ad suscipit
+              assumenda ex quae pariatur a odit aliquid itaque magnam expedita
+              tempore, nesciunt numquam incidunt tempora dignissimos aspernatur
+              porro ut ipsam, quisquam delectus. Corporis rem natus non dicta
+              quidem. Consequuntur eum doloremque laboriosam magnam omnis
+              maiores eius architecto cumque voluptatibus molestias dicta
+              eligendi praesentium officiis sed sit beatae doloribus labore iure
+              impedit, eaque assumenda perferendis explicabo saepe! Vitae
+              doloremque ipsum sunt reiciendis itaque expedita distinctio ipsam
+              ipsa harum cupiditate quis facere praesentium assumenda,
+              repudiandae maxime, cumque iste pariatur accusamus voluptatibus
+              non provident. Perferendis veritatis, deserunt enim fugit autem
+              illo delectus odio ipsam atque repudiandae ea laudantium,
+              exercitationem, sit expedita. Dignissimos inventore, voluptatum
+              eveniet quibusdam soluta quidem eligendi cupiditate culpa animi
+              labore fugiat libero error suscipit? Ipsa ut obcaecati nisi illum
+              recusandae saepe! Qui, magnam ipsum molestiae dignissimos tempore
+              magni quos ab. Corporis blanditiis deleniti eveniet sit enim
+              consectetur? Tempora quas iure consequatur magni repellendus.
+              Pariatur, tempora cum! Iste ut aliquam modi magnam mollitia
+              reiciendis id et dolor. Deserunt officiis voluptatem fugit ipsum?
+              Corrupti ex tenetur dicta dolore modi reprehenderit ducimus? Esse
+              necessitatibus similique tenetur, obcaecati doloremque ab ex
+              labore accusantium laborum aperiam ipsa eaque dicta atque aliquid
+              ullam error at illo rem voluptas expedita deserunt facilis eius
+              rerum? Et, mollitia expedita? Modi doloremque quisquam atque
+              voluptatem corporis repellat quasi id ut? Sapiente, reiciendis
+              sequi illo earum natus officiis, adipisci ea nesciunt neque ut
+              doloremque veritatis ab libero facere? Numquam eum nisi,
+              blanditiis excepturi fugit provident ipsam consequatur adipisci
+              quis esse totam enim omnis rem quidem tempore eveniet mollitia
+              inventore eius deserunt. Corporis, esse facere sit in id,
+              recusandae cumque perspiciatis ex repellat error veniam delectus
+              et, culpa a itaque nisi dolorem necessitatibus consequuntur vel
+              repudiandae sapiente facilis porro sint. Ea nemo, distinctio velit
+              eaque nisi, blanditiis, recusandae rem molestiae magnam cum vel
+              similique qui. Ipsa impedit vero architecto! Distinctio commodi
+              ipsam sunt inventore hic pariatur enim dolorem. Officiis cumque
+              sequi itaque tempora numquam animi, sunt reiciendis voluptatibus,
+              illum fugiat ducimus. Sint recusandae excepturi incidunt
+              temporibus quidem magni vel necessitatibus laborum saepe?
+              Consectetur sequi esse debitis nulla iure ea vitae maiores atque
+              officia quae, cum reprehenderit facere, assumenda iste laudantium.
+              Fuga totam doloribus odit consectetur dolores distinctio
+              voluptates. Sequi voluptatem, voluptate, quod rem a vitae amet vel
+              totam nam molestiae voluptas sunt debitis esse magnam cum fugiat
+              ipsum repellendus ex impedit qui ipsa delectus dolores? Aperiam
+              ipsum tenetur maxime aspernatur unde aliquid officia, modi
+              perferendis aut facilis necessitatibus! Asperiores, eum deleniti
+              ea molestias voluptatem consequuntur pariatur voluptate quam illum
+              blanditiis qui culpa eligendi ab obcaecati officiis! Quis totam
+              aspernatur non temporibus, nemo pariatur neque aliquam, deleniti
+              tenetur tempora voluptatibus minus. At quia laudantium corrupti.
+              Laboriosam magnam labore ad sapiente quaerat molestiae saepe, enim
+              velit deleniti ipsam, dolorum tempora. Quae quis perferendis
+              delectus quo, sequi recusandae qui modi accusamus eos dignissimos?
+              At eum corrupti ex iure modi sunt.
+            </b-card>
+            <div class="d-flex justify-content-center mt-3">
+              <input type="check" class="form-check-input" type="checkbox" />
+              <label type="check" class="form-check-label">我已滿18歲</label>
+            </div>
+          </b-tab>
+          <b-tab title="填寫基本資料">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-6 mb-3">
+                  <label>Account</label>
+                  <input
+                    v-model="signupData.member.account"
+                    :class=""
+                    type="text"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+            </div>
+          </b-tab>
+        </b-tabs>
+      </b-card>
+
+      <div class="d-flex"></div>
+    </div>
+
+    <div class="d-flex justify-content-between mt-3">
+      <b-button @click="tabIndex--">上一步</b-button>
+      <b-button :disabled="!nextable" v-if="tabIndex &lt 3" @click="tabIndex++"
+        >下一步</b-button
+      >
+      <b-button :disabled="!nextable" v-if="tabIndex ==3" variant=""
+    </div>
+    <script>
+      const app = new Vue({
+        el: "#app",
+        data: {
+          tabIndex: 0,
+          signupData: {
+            //隱私政策
+            alreadyCheck: false,
+            //基本資料填寫
+            member: {
+              account: "",
+            },
+            memberCheck: {
+              accountError: false,
+              accountErrorMsg: "",
+            },
+          },
+        },
+        computed: {
+          nextable() {
+            if (this.tabIndex == 0) {
+              if (this.signupData.alreadyCheck == false) return false;
+            }
+            if (this.tabIndex == 1) {
+              return this.checkMemberVerify();
+            }
+            return true;
+          },
+        },
+        watch: {
+          "signupData.member": {
+            immediate: true,
+            deep: true,
+            handler() {
+              this.checkMember();
+            },
+          },
+        },
+        methods: {
+          checkMember() {
+            //account
+            if (this.signupData.member.account == "") {
+              this.signupData.memberCheck;
+            }
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
