@@ -111,8 +111,10 @@ a{
 .productsummary-title, 
 .mainpic-title, 
 .productexplain-title, 
-.givebackone-title, 
-.givebacktwo-title, 
+.risk-title, 
+.return-title, 
+.service-title,
+.business-title,
 .relatedpages-title, 
 .videopages-title, 
 .cooperate-title{
@@ -135,8 +137,10 @@ a{
 .productsummary-txt, 
 .mainpic-txt, 
 .productexplain-txt, 
-.givebackone-txt, 
-.givebacktwo-txt, 
+.risk-txt, 
+.return-txt, 
+.service-txt, 
+.business-txt, 
 .relatedpages-txt, 
 .videopages-txt, 
 .cooperate-txt
@@ -244,13 +248,25 @@ a{
     justify-content: space-between; */
     border-bottom: 1px solid rgb(209,213,219);
 }
-.givebackone{
+.risk{
     padding: 20px;
     /* display: flex;
     justify-content: space-between; */
     border-bottom: 1px solid rgb(209,213,219);
 }
-.givebacktwo{
+.return{
+    padding: 20px;
+    /* display: flex;
+    justify-content: space-between; */
+    border-bottom: 1px solid rgb(209,213,219);
+} 
+.service{
+    padding: 20px;
+    /* display: flex;
+    justify-content: space-between; */
+    border-bottom: 1px solid rgb(209,213,219);
+} 
+.business{
     padding: 20px;
     /* display: flex;
     justify-content: space-between; */
@@ -365,11 +381,19 @@ width: 5px;
         display: flex;
         /* justify-content: space-between;   */
     }
-    .givebackone{ 
+    .risk{ 
         display: flex;
         /* justify-content: space-between;   */
     }
-    .givebacktwo{ 
+    .return{ 
+        display: flex;
+        /* justify-content: space-between;     */
+    } 
+    .service{ 
+        display: flex;
+        /* justify-content: space-between;     */
+    } 
+    .business{ 
         display: flex;
         /* justify-content: space-between;     */
     } 
@@ -401,8 +425,13 @@ width: 5px;
     /* .decide-btn{
         /* padding-left: 26%; */
         /* padding: 50px 0px 50px 300px; */
-    } */
-    
  }
+#risk_title{
+    height: 20em;
+}
+#return_title{
+    height: 20em;
+}
+
  
  
