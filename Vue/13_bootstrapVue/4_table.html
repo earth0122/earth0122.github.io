@@ -31,24 +31,56 @@
   </head>
   <body>
     <div id="app" class="container">
+      <div class="my-5">
+        <input v-model="filterText" type="text" />
+      </div>
+
       <b-table
         :items="pokemonList"
         :fields="fields"
         :busy="isbusy"
         :per-page="perpage"
         :current-page="currentPage"
+        :filter="filterText"
       >
         <template #table-busy>
           <div class="text-center text-danger my-2">
             <b-spinner class="align-middle"></b-spinner>
-            <strong>Loading...</strong>
+            <strong>Loading</strong>
           </div>
+        </template>
+        <!-- 這邊row代表每一列的資料 -->
+        <template #cell(image)="row">
+          <img :src="row.value" alt="" />
         </template>
 
         <template #cell(image)="row">
-          <img : src="row.value" alt="" />
+          <img :src="row.value" alt="" />
+        </template>
+        <template #cell(action)="row">
+          <button
+            @click="showDetail(row.item)"
+            v-b-modal.modal
+            class="btn btn-primary"
+          >
+            詳細資訊
+          </button>
+          <button @click="row.toggleDetails" class="btn btn-secondary">
+            {{row.detailsShowing ? '隱藏明細':'顯示明細'}}
+          </button>
+          <button @click="deletePokemon(row.item)" class="btn btn-danger">
+            刪除
+          </button>
+        </template>
+        <template #row-details="row">
+          <b-card>
+            <ul>
+              <li v-for="(value, key) in row.item">{{key}}: {{value}}</li>
+            </ul>
+          </b-card>
         </template>
       </b-table>
+
       <b-pagination
         v-model="currentPage"
         :total-rows="totalRows"
@@ -56,15 +88,23 @@
         align="fill"
         size="lg"
         class="my-0"
-      ></b-pagination>
+      >
+      </b-pagination>
+
+      <!-- modal -->
+      <b-modal id="detail-modal" title="detailModal.title">
+        <pre> {{detailModal.content}}</pre>
+      </b-modal>
     </div>
     <script>
       const app = new Vue({
         el: "#app",
         data: {
           //分頁資料
-          perpage: 2,
-          currentPage: 1,
+          perpage: 3, //每頁一筆
+          currentPage: 1, //在第一頁
+          //篩選
+          filterText: "",
           isbusy: false,
           pokemonList: [
             {
@@ -80,7 +120,7 @@
               type: "種子寶可夢",
               image:
                 "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png",
-              _showDetails: true,
+              //_showDetails:true
             },
             {
               id: 14,
@@ -112,18 +152,51 @@
             },
           ],
           //v1
-          //fields: ['id','name','nickName','image']
+          //fileds:['id','name', 'nickName','image']
           //v2
           fields: [
-            { key: "id", label: "#", sortable: false },
+            { key: "id", label: "#", sortable: true },
             { key: "image", label: "##" },
             { key: "name", label: "名稱" },
             { key: "nickName", label: "暱稱" },
+            { key: "action", label: "功能" },
           ],
+          detailModal: {
+            title: "",
+            content: "",
+          },
         },
         computed: {
           totalRows() {
             return this.pokemonList.length;
+          },
+        },
+        methods: {
+          showDetail(data) {
+            this.detailModal.title = data.name;
+            this.detailModal.content = JSON.stringify(data, null, 2);
+          },
+          deletePokemon(data) {
+            //參考文件https://bootstrap-vue.org/docs/components/modal 裡面的Message box相關
+            this.$bvModal
+              .msgBoxConfirm("確定嗎?要刪除他?", {
+                title: "警告",
+                size: "sm",
+                okVariant: "danger",
+                okTitle: "確定",
+                cancelTitle: "取消",
+                footerClass: "p-2",
+                hideHeaderClose: false,
+                centered: true,
+              })
+              .then((value) => {
+                console.log(value);
+                //value布林直
+                if (value !== true) return;
+
+                alert("刪除");
+              });
+            //alert('刪除')
           },
         },
       });

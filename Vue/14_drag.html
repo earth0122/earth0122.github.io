@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- draggable.js -->
+    <!-- CDNJS :: Sortable (https://cdnjs.com/) -->
+    <script src="//cdn.jsdelivr.net/npm/sortablejs@1.8.4/Sortable.min.js"></script>
+    <!-- CDNJS :: Vue.Draggable (https://cdnjs.com/) -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Vue.Draggable/2.20.0/vuedraggable.umd.min.js"></script>
+
+    <style>
+        .handle{
+            cursor: move;
+            width: 30px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                        </tr>
+                    </thead>
+                    <tbody 
+                        is="draggable"
+                        v-model="arr"
+                        tag="tbody"
+                        v-bind="dragOptions"
+                        v-on:start="drag = true"
+                        v-on:end="drag = false"
+                        handle=".handle"
+                        >
+                        <transition-group type="transition" :name="!drag ? 'flip-list' : null ">
+                            <tr v-for="item in arr">
+                                <td class="handle text-nowrap">
+                                    <i class="fa fa-ellipsis-v"></i>
+                                    <i class="fa fa-ellipsis-v"></i>
+                                </td>
+                                <td class="text-nowrap">{{item.id}}</td>
+                                <td class="text-nowrap">{{item.name}}</td>
+                                <td class="text-nowrap">{{item.age}}</td>
+                            </tr>
+                        </transition-group>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                arr:[
+                    {id:1,name:'Jimmy',age:27},
+                    {id:2,name:'Andy',age:28},
+                    {id:3,name:'Bill',age:29},
+                    {id:4,name:'David',age:30},
+                    {id:5,name:'John',age:31},
+                ],
+                dragOptions:{
+                    animation: 200,
+                    group: 'description',
+                    disabled:false,
+                    ghostClass:'ghost' 
+                },
+                drag:false
+
+            }      
+        })
+    </script>
+  </body>
+</html>
